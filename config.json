@@ -1,0 +1,15 @@
+{
+  "repo": "dinopaiva1981/Greencave-site",
+  "branch": "main",
+  "contentPath": "content.json",
+  "sitePath": "index.html",
+  "statePath": ".cms-state.json",
+  "logPath": ".cms-log.json",
+  "backupDir": "backups",
+  "cmsVersion": "2.0.0",
+  "schemaVersion": "1.0.0",
+  "languages": ["pt", "en", "es", "zh", "no"],
+  "defaultLanguage": "pt",
+  "mediaCategories": ["team", "clients", "logos", "icons", "backgrounds", "downloads"],
+  "maxBackups": 20
+}
