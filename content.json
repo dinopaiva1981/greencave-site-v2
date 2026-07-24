@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T18:28:18.294Z",
+  "generatedAt": "2026-07-24T20:06:46.334Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -844,8 +844,19 @@
       "client": "Globoplay · Formata",
       "year": "2025",
       "art": "bloom",
-      "image": "",
-      "gallery": [],
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/34f52b241939343.6962c1100dad2.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-credito-pai.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-no-proximo-apresentador.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-no-proximo-episodio.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_cartela.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_01.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_02.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_03.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/502e79241939343.6962c113dda5d.jpg"
+      ],
       "title": {
         "pt": "My Mum, Your Dad — Brasil",
         "en": "My Mum, Your Dad — Brazil",
@@ -867,7 +878,37 @@
         "zh": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
         "no": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país."
       },
-      "blocks": []
+      "blocks": [
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/766ab7241939343.6962b4a51b2ec.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/476a43241939343.6962bd9929ae6.png",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8d5e7e241939343.6962bd9a74a5d.png"
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/17d90d241939343.6962bd9a75937.png",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/176c04241939343.6962bd9a75189.png",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/06c0fb241939343.6962bd9881fad.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/b07867241939343.6962b4a51b813.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/88ee3e241939343.6962bd9e2a491.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/b897b1241939343.6962bd9cc3e72.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/ad8002241939343.6962bd9c3d7b4.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8836a9241939343.6962bd9c3ddaf.jpg"
+          ]
+        }
+      ]
     },
     {
       "id": "work_ohvqklqq",
