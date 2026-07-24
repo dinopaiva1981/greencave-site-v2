@@ -2179,13 +2179,44 @@ function atmo(w,i){
 const svgImg=(s,eager)=>`<img src="data:image/svg+xml;utf8,${encodeURIComponent(s)}" alt="" ${eager?'':'loading="lazy"'} decoding="async">`;
 const ytId=u=>{const m=String(u||"").match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([\w-]{6,})/);return m?m[1]:null;};
 window.__gcArt=(i,ratio,atmoMode)=>{
+  /* CORREÇÃO: outerHTML espera HTML de verdade — trocar " por &quot; aqui
+     quebrava o atributo src (o navegador lia um &quot; literal como parte
+     da URL da imagem), e o fallback virava um ícone de imagem quebrada em
+     vez da arte gerada. outerHTML não precisa desse escape. */
   const w=C.works[i];
-  return (atmoMode?svgImg(atmo(w,i),true):svgImg(art(w.art,i,ratio))).replace(/"/g,'&quot;');
+  return atmoMode?svgImg(atmo(w,i),true):svgImg(art(w.art,i,ratio));
 };
+const RATIO_CACHE=Object.create(null);
+const clampRatio=(r,lo,hi)=>Math.max(lo,Math.min(hi,r));
+function loadRatio(src){
+  if(!src) return Promise.resolve(null);
+  if(src in RATIO_CACHE) return Promise.resolve(RATIO_CACHE[src]);
+  return new Promise(res=>{
+    const img=new Image();
+    const done=v=>{ RATIO_CACHE[src]=v; res(v); };
+    const timer=setTimeout(()=>done(null),2500);   /* nunca trava o boot por causa de uma imagem lenta/quebrada */
+    img.onload=()=>{ clearTimeout(timer); done(img.naturalWidth/img.naturalHeight); };
+    img.onerror=()=>{ clearTimeout(timer); done(null); };
+    img.src=src;
+  });
+}
+function preloadRatios(){
+  return Promise.all(C.works.filter(w=>w.image).map(w=>loadRatio(w.image)));
+}
 const hasVideo=w=>(w.blocks||[]).some(b=>b.type==="video"&&b.url);
 const vBadge=w=>hasVideo(w)?'<span class="vbadge" title="Vídeo neste case"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>':"";
-const media=(w,i,ratio)=> w.image?`<img src="${esc(w.image)}" alt="${esc(T(w.title))}" loading="lazy" decoding="async" onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},'${ratio}')">`:svgImg(art(w.art,i,ratio));
-const heroMedia=(w,i)=> w.image?`<img src="${esc(w.image)}" alt="${esc(T(w.title))}" decoding="async" onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},null,true)">`:svgImg(atmo(w,i),true);
+const media=(w,i,ratio)=>{
+  if(!w.image) return svgImg(art(w.art,i,ratio));
+  const raw=RATIO_CACHE[w.image];
+  const ar=raw?clampRatio(raw,3/4,16/9):null;   /* faixa do rail/grid: nunca portrait demais nem panorâmico demais */
+  return `<img src="${esc(w.image)}" alt="${esc(T(w.title))}" loading="lazy" decoding="async"${ar?` style="aspect-ratio:${ar.toFixed(4)}"`:''} onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},'${ratio}')">`;
+};
+const heroMedia=(w,i)=>{
+  if(!w.image) return svgImg(atmo(w,i),true);
+  const raw=RATIO_CACHE[w.image];
+  const ar=raw?clampRatio(raw,9/16,21/9):null;  /* hero aceita mais variação, mas com teto */
+  return `<img src="${esc(w.image)}" alt="" decoding="async"${ar?` style="aspect-ratio:${ar.toFixed(4)}"`:''} onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},null,true)">`;
+};
 
 /* ---------- render ---------- */
 function render(){
@@ -2482,7 +2513,7 @@ function openCase(i){
   $('casebody').innerHTML=`
     <p class="k-client">${esc(w.client)}</p>
     <h2>${esc(T(w.title))}</h2>
-    <div class="k-hero">${w.image?`<img src="${esc(w.image)}" alt="" decoding="async" onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},null,true)">`:svgImg(atmo(w,i),true)}</div>
+    <div class="k-hero">${heroMedia(w,i)}</div>
     <div class="cols">
       <div class="facts">
         <div><b>${esc(T(C.ui.ui_client))}</b><span>${esc(w.client)}</span></div>
@@ -2700,6 +2731,13 @@ function loop(){
 
 /* ---------- loader ---------- */
 function boot(){
+  /* mede a proporção de cada imagem ANTES do primeiro render — assim o
+     rail, o grid e o hero já nascem com o tamanho certo, sem esperar a
+     imagem chegar para só então "pular" para o lugar certo. A tela de
+     carregamento abaixo cobre esse tempo, então não há atraso perceptível. */
+  preloadRatios().finally(startBoot);
+}
+function startBoot(){
   render(); loop();
   const loader=$('loader');
   if(reduced){loader.remove();document.body.classList.add('ready');return;}
