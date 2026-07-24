@@ -3320,13 +3320,36 @@ function injectAIToggle(root){
    vídeo (YouTube/Vimeo) e pré-preenche um novo projeto pra você refinar.
    Aviso honesto: depende de um serviço de terceiro (allorigins.win) que eu
    não controlo — se ele sair do ar, a extração para até trocarmos de proxy. */
-const CORS_PROXY='https://api.allorigins.win/raw?url=';
+/* Um proxy CORS público sozinho é frágil por natureza (allorigins.win, por
+   exemplo, falha de forma intermitente — é documentado, não foi só azar).
+   Por isso tenta uma pequena lista, em sequência, e só desiste se todos
+   falharem — muito mais resistente do que apostar num único serviço. */
+const CORS_PROXIES=[
+  u=>'https://api.allorigins.win/raw?url='+encodeURIComponent(u),
+  u=>'https://corsproxy.io/?url='+encodeURIComponent(u),
+  u=>'https://api.codetabs.com/v1/proxy?quest='+encodeURIComponent(u),
+  u=>'https://thingproxy.freeboard.io/fetch/'+u,
+];
 const ICON_BLOCKLIST=/logo|icon|favicon|instagram|behance|linkedin|whatsapp|facebook|twitter|tiktok|youtube-icon|arrow|seta|chevron|bullet/i;
 
-async function fetchViaProxy(url){
-  const r=await fetch(CORS_PROXY+encodeURIComponent(url));
-  if(!r.ok) throw new Error('HTTP '+r.status);
-  return await r.text();
+async function fetchViaProxy(url, onTry){
+  const fails=[];
+  for(let i=0;i<CORS_PROXIES.length;i++){
+    const proxyUrl=CORS_PROXIES[i](url);
+    const host=new URL(proxyUrl.replace(url,'')||proxyUrl).hostname;
+    try{
+      if(onTry) onTry(i+1, CORS_PROXIES.length);
+      const ctrl=new AbortController();
+      const t=setTimeout(()=>ctrl.abort(),12000);
+      const r=await fetch(proxyUrl,{signal:ctrl.signal});
+      clearTimeout(t);
+      if(!r.ok){ fails.push(`proxy ${i+1}: HTTP ${r.status}`); continue; }
+      const text=await r.text();
+      if(!text||text.length<200){ fails.push(`proxy ${i+1}: resposta vazia`); continue; }
+      return text;
+    }catch(e){ fails.push(`proxy ${i+1}: ${e.name==='AbortError'?'demorou demais':'sem resposta'}`); }
+  }
+  throw new Error('Nenhum dos '+CORS_PROXIES.length+' proxies respondeu ('+fails.join('; ')+'). Tente de novo em instantes — são serviços públicos de terceiro, instáveis por natureza.');
 }
 
 function extractFromHtml(html, baseUrl){
@@ -3405,7 +3428,7 @@ async function importFromUrl(url, btn){
   const orig=btn.textContent;
   btn.disabled=true; btn.textContent='Buscando…';
   try{
-    const html=await fetchViaProxy(url);
+    const html=await fetchViaProxy(url, (n,total)=>{ btn.textContent=total>1?`Buscando… (tentativa ${n}/${total})`:'Buscando…'; });
     btn.textContent='Lendo conteúdo…';
     const ex=extractFromHtml(html, url);
     if(!ex.title&&!ex.images.length) throw new Error('Não encontrei conteúdo reconhecível nessa página.');
@@ -3431,7 +3454,7 @@ async function importFromUrl(url, btn){
       if(firstEd) firstEd.click();
     },250);
   }catch(e){
-    toast('Falha ao importar: '+e.message+' (o proxy pode estar fora do ar — tente de novo em instantes).', false);
+    toast('Falha ao importar: '+e.message, false);
   }finally{
     btn.disabled=false; btn.textContent=orig;
   }
