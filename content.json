@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T18:08:24.813Z",
+  "generatedAt": "2026-07-24T18:26:31.694Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -815,11 +815,11 @@
         "media/weasyplan/weasyplan-04.png"
       ],
       "title": {
-        "pt": "Weasyplan — naming ao naming à papelaria",
-        "en": "Weasyplan — naming ao naming à papelaria",
-        "es": "Weasyplan — del naming a la papelería",
-        "zh": "Weasyplan — 从命名到全套物料",
-        "no": "Weasyplan — fra naming til trykksaker"
+        "pt": "Weasyplan — do à papelaria",
+        "en": "Weasyplan — from to stationery",
+        "es": "Weasyplan — desde hasta papelería",
+        "zh": "Weasyplan — 从到文具",
+        "no": "Weasyplan — fra til skrivesaker"
       },
       "tags": {
         "pt": "Naming · Criação & Conceito · DA · Design",
