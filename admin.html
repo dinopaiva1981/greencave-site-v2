@@ -726,6 +726,97 @@ body:has(#gate){overflow:hidden}
 .gc-uplist li.bad .gc-upicn{color:var(--err)}
 .gc-uplist li.bad .gc-upstage{color:#FCA5A5}
 
+/* ── seleção em lote e checkbox nos itens de mídia ─────────────── */
+.mitem{position:relative}
+.gc-mcheck{
+  position:absolute;top:8px;left:8px;z-index:3;width:22px;height:22px;cursor:pointer;
+}
+.gc-mcheck input{position:absolute;opacity:0;width:100%;height:100%;cursor:pointer;margin:0}
+.gc-mcheck span{
+  display:block;width:100%;height:100%;border-radius:6px;background:rgba(15,17,21,.75);
+  border:1.5px solid rgba(255,255,255,.4);backdrop-filter:blur(4px);transition:.15s;
+}
+.gc-mcheck input:checked ~ span{background:var(--green);border-color:var(--green)}
+.gc-mcheck input:checked ~ span::after{
+  content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#06231A;font-size:13px;font-weight:800;
+}
+.mitem.sel{outline:2px solid var(--green);outline-offset:2px;border-radius:11px}
+
+.gc-bulkbar{
+  position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:650;
+  display:flex;align-items:center;gap:14px;background:#1D2129;border:1px solid var(--line);
+  border-radius:99px;padding:10px 12px 10px 20px;box-shadow:var(--sh-lg);
+  opacity:1;transition:opacity .25s,transform .25s;
+}
+.gc-bulkbar.gc-hidden{opacity:0;pointer-events:none;transform:translateX(-50%) translateY(10px)}
+.gc-bulkbar b{color:#fff;font-size:13.5px;font-weight:600;white-space:nowrap}
+.gc-bulkbar .sp{width:1px;height:20px;background:var(--line)}
+.gc-bulkbar .tbtn{padding:8px 16px;font-size:12.5px;white-space:nowrap}
+.gc-bulkbar .tbtn.danger{background:var(--err);border-color:var(--err);color:#fff}
+.gc-bulkbar .tbtn.danger:hover{filter:brightness(1.1)}
+
+/* ── botão "escolher da biblioteca" nos campos do formulário ────── */
+.gc-pickbtn{
+  display:inline-flex;align-items:center;gap:6px;margin:6px 0 2px;
+  background:#1A1F27;border:1px solid var(--line);color:var(--mute);border-radius:8px;
+  padding:6px 12px;font-size:11.5px;font-weight:600;transition:.2s;
+}
+.gc-pickbtn:hover{border-color:var(--green);color:var(--green);background:rgba(52,211,153,.06)}
+
+/* ── overlay do seletor de mídia ──────────────────────────────── */
+.gcpk{position:fixed;inset:0;z-index:800;display:grid;place-items:center;padding:24px;background:rgba(8,10,13,.78);backdrop-filter:blur(6px);opacity:0;transition:opacity .25s}
+.gcpk.on{opacity:1}
+.gcpk-panel{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  width:min(880px,100%);max-height:86vh;display:flex;flex-direction:column;box-shadow:var(--sh-lg);
+  transform:translateY(12px) scale(.98);transition:transform .28s;
+}
+.gcpk.on .gcpk-panel{transform:none}
+.gcpk-head{display:flex;align-items:center;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line)}
+.gcpk-head h3{font-size:15px;font-weight:650;color:#fff;flex:none}
+.gcpk-search{flex:1}
+.gcpk-body{padding:18px;overflow:auto}
+.gcpk-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-bottom:18px}
+.gcpk-cell{
+  background:#141821;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;
+  cursor:pointer;text-align:left;padding:0;transition:.15s;position:relative;
+}
+.gcpk-cell:hover{border-color:#3C4553;transform:translateY(-2px)}
+.gcpk-cell.on{border-color:var(--green);box-shadow:0 0 0 2px rgba(52,211,153,.35)}
+.gcpk-cell.on::after{content:"✓";position:absolute;top:6px;right:6px;width:20px;height:20px;border-radius:99px;background:var(--green);color:#06231A;font-weight:800;font-size:11px;display:grid;place-items:center}
+.gcpk-cell img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#0d1015}
+.gcpk-name{display:block;padding:6px 8px;font-size:11px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gcpk-foot{display:flex;align-items:center;gap:12px;padding:14px 18px;border-top:1px solid var(--line)}
+.gcpk-foot .sel-count{font-size:12.5px;color:var(--mute)}
+
+/* ── selo de build (rodapé da sidebar) ─────────────────────────── */
+#gc-build{
+  font-family:var(--mono);font-size:9px;letter-spacing:.06em;color:var(--mute2);
+  padding:8px 12px 2px;text-align:center;opacity:.6;cursor:help;user-select:text;
+}
+.gc-collapsed #gc-build{display:none}
+
+/* ── selo "IA aplicada" (formulário + card do painel) ──────────── */
+.gc-aitag{
+  display:flex;align-items:flex-start;gap:12px;cursor:pointer;
+  background:#1A1F27;border:1px solid var(--line);border-radius:11px;
+  padding:13px 16px;margin:14px 0 4px;transition:.2s;
+}
+.gc-aitag:hover{border-color:#3C4553}
+.gc-aitag input{position:absolute;opacity:0;width:0;height:0}
+.gc-aitag-box{
+  width:19px;height:19px;border-radius:6px;border:1.5px solid var(--line);background:#141821;
+  flex:none;margin-top:1px;position:relative;transition:.15s;
+}
+.gc-aitag input:checked ~ .gc-aitag-box{background:var(--green);border-color:var(--green)}
+.gc-aitag input:checked ~ .gc-aitag-box::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#06231A;font-size:12px;font-weight:800}
+.gc-aitag-txt{font-size:12.5px;color:var(--mute);line-height:1.5}
+.gc-aitag-txt b{display:block;color:var(--txt);font-size:13px;font-weight:650;margin-bottom:2px}
+
+.pcard .badge.ai-badge{
+  top:9px;left:auto;right:9px;background:rgba(52,211,153,.16);border-color:rgba(52,211,153,.5);color:var(--green);
+}
+
 </style>
 </head>
 <body>
@@ -2055,6 +2146,7 @@ window.renderSide=function(){
     requestAnimationFrame(()=>{ if(typeof positionSideInd==='function') positionSideInd(); });
   });
   s.appendChild(col);
+  buildBadge();
   try{ if(localStorage.getItem('gc_side')==='1') $('#wrap').classList.add('gc-collapsed'); }catch(_){}
   requestAnimationFrame(()=>{ if(typeof positionSideInd==='function') positionSideInd(); });
 };
@@ -2136,6 +2228,8 @@ function syncLiveEdit(sec,items){
   const sTop=body?body.scrollTop:0;
   slot.innerHTML=''; slot.appendChild(fresh);
   if(body) body.scrollTop=sTop;
+  injectMediaPickers(slot);
+  injectAIToggle(slot);
 }
 
 /* ── 6. visão em cards ─────────────────────────────────────── */
@@ -2154,7 +2248,7 @@ function cardsView(sec){
     works:{arr:DATA.works,label:'Case',layout:'grid',data:w=>({
       title:ml(w.title)||w.client||'Sem título',
       meta:[w.client,w.year].filter(Boolean).join(' · '),
-      tags:ml(w.tags), img:w.image,
+      tags:ml(w.tags), img:w.image, ai:!!w.ai,
       badge:w.kind==='craft'?'Trabalho':'Case', isCase:w.kind!=='craft'})},
     clientes:{arr:DATA.clients,label:'Cliente',layout:'list',data:c=>({title:String(c||''),meta:'',tags:'',img:'',badge:'',isCase:false})},
     servicos:{arr:DATA.services,label:'Serviço',layout:'grid',data:s=>({title:ml(s.title)||'Serviço',meta:'',tags:ml(s.desc),img:'',badge:'',isCase:false})}
@@ -2184,7 +2278,8 @@ function cardsView(sec){
       <div class="lactions"><button class="ed">Editar</button></div>
     </div>`):mk(`<div class="pcard">
       <div class="thumb">${d.img?`<img src="${esc(d.img)}" alt="" loading="lazy">`:`<span class="mono">${esc(initial(d.title))}</span>`}
-        ${d.badge?`<span class="badge ${d.isCase?'case':''}">${esc(d.badge)}</span>`:''}</div>
+        ${d.badge?`<span class="badge ${d.isCase?'case':''}">${esc(d.badge)}</span>`:''}
+        ${d.ai?'<span class="badge ai-badge" title="IA aplicada">✨ IA</span>':''}</div>
       <div class="body"><h3>${esc(d.title)}</h3>
         ${d.meta?`<div class="meta">${esc(d.meta)}</div>`:''}
         ${d.tags?`<div class="tags">${esc(d.tags)}</div>`:''}</div>
@@ -2204,6 +2299,7 @@ function cardsView(sec){
     c.querySelector('.ed').addEventListener('click',()=>{
       const back=it.nextSibling, par=it.parentElement;
       modal(`${spec.label} · ${d.title}`,it,()=>{ par.insertBefore(it,back); renderSec(); },{sec,idx:i});
+      requestAnimationFrame(()=>{ const slot=document.querySelector('.gcm-slot'); injectMediaPickers(slot); injectAIToggle(slot); });
     });
     c.dataset.q=(d.title+' '+d.meta+' '+d.tags).toLowerCase();
     c.dataset.kind=(raw&&raw.kind==='craft')?'craft':'case';
@@ -2777,6 +2873,9 @@ window.listMedia=async function(){
     }
     window.__gcLastUploadCat=null;
   }
+  rebindDeleteButtons();
+  addSelectionCheckboxes();
+  updateBulkBar();
   return r;
 };
 /* injeta o grupo "Projetos" no seletor de categoria do upload */
@@ -2943,6 +3042,261 @@ function syncCard(m){
   c.appendChild(mk('<div class="gc-syncbody"></div>'));
   m.appendChild(c);
   renderSyncCard();
+}
+
+/* ── 8i. exclusão robusta + seleção em lote na Biblioteca ──────────
+   O botão de excluir usava o SHA capturado no momento da listagem. Se o
+   arquivo mudou desde então (ou o repositório foi trocado no meio do
+   caminho — como já aconteceu aqui), o SHA fica velho e o GitHub recusa a
+   exclusão. Agora, antes de excluir, o painel busca o SHA atual de novo —
+   elimina essa classe inteira de falha, com ou sem causa aparente. */
+const SELECTED_MEDIA=new Set();
+async function robustDelete(path){
+  const H=ghHeaders();
+  const g=await fetch(`https://api.github.com/repos/${GHS.repo}/contents/${path}?ref=${GHS.branch}`,{headers:H});
+  if(g.status===404) return {ok:false,reason:`"${path}" não existe mais em ${GHS.repo} — a lista estava desatualizada.`};
+  if(!g.ok) return {ok:false,reason:'Não consegui confirmar o arquivo (HTTP '+g.status+').'};
+  const sha=(await g.json()).sha;
+  const r=await fetch(`https://api.github.com/repos/${GHS.repo}/contents/${path}`,{
+    method:'DELETE',headers:H,
+    body:JSON.stringify({message:'media: remoção via painel',sha,branch:GHS.branch})});
+  if(r.ok) return {ok:true};
+  if(r.status===404) return {ok:false,reason:`Repositório ou caminho não encontrado (confira em Publicação se "${GHS.repo}" é o repositório certo).`};
+  if(r.status===403) return {ok:false,reason:'Token sem permissão de escrita neste repositório.'};
+  return {ok:false,reason:'HTTP '+r.status};
+}
+function rebindDeleteButtons(){
+  document.querySelectorAll('#mgrid [data-del]').forEach(b=>{
+    const fresh=b.cloneNode(true); b.replaceWith(fresh);   /* descarta o listener antigo (sha preso ao load) */
+    fresh.addEventListener('click',async()=>{
+      const path=fresh.dataset.del;
+      if(!confirm('Excluir '+path+' do repositório?'))return;
+      fresh.disabled=true;
+      const res=await robustDelete(path);
+      if(res.ok){
+        toast('Arquivo removido.',true);
+        const it=fresh.closest('.mitem'); if(it){ it.style.transition='opacity .25s'; it.style.opacity='0'; setTimeout(()=>it.remove(),250); }
+        SELECTED_MEDIA.delete(path);
+        updateBulkBar();
+      } else {
+        fresh.disabled=false;
+        toast('Falha ao remover: '+res.reason,false);
+      }
+    });
+  });
+}
+function addSelectionCheckboxes(){
+  document.querySelectorAll('#mgrid .mitem').forEach(it=>{
+    if(it.querySelector('.gc-mcheck'))return;
+    const del=it.querySelector('[data-del]'); if(!del)return;
+    const path=del.dataset.del;
+    const cb=mk(`<label class="gc-mcheck"><input type="checkbox"><span></span></label>`);
+    cb.querySelector('input').addEventListener('change',e=>{
+      if(e.target.checked) SELECTED_MEDIA.add(path); else SELECTED_MEDIA.delete(path);
+      it.classList.toggle('sel',e.target.checked);
+      updateBulkBar();
+    });
+    it.style.position='relative';
+    it.insertBefore(cb,it.firstChild);
+  });
+}
+function bulkBar(){
+  let e=document.getElementById('gc-bulkbar');
+  if(!e){
+    e=mk(`<div id="gc-bulkbar" class="gc-bulkbar gc-hidden">
+      <b></b>
+      <span class="sp"></span>
+      <button class="tbtn ghost" data-cancel>Cancelar seleção</button>
+      <button class="tbtn danger" data-bulkdel>Excluir selecionados</button>
+    </div>`);
+    document.body.appendChild(e);
+    e.querySelector('[data-cancel]').addEventListener('click',()=>{
+      SELECTED_MEDIA.clear();
+      document.querySelectorAll('#mgrid .gc-mcheck input').forEach(i=>i.checked=false);
+      document.querySelectorAll('#mgrid .mitem.sel').forEach(i=>i.classList.remove('sel'));
+      updateBulkBar();
+    });
+    e.querySelector('[data-bulkdel]').addEventListener('click',async()=>{
+      const paths=[...SELECTED_MEDIA];
+      if(!paths.length)return;
+      if(!confirm(`Excluir ${paths.length} arquivo(s) do repositório? Não pode ser desfeito.`))return;
+      const btn=e.querySelector('[data-bulkdel]'); btn.disabled=true;
+      let ok=0, fail=0;
+      for(const p of paths){
+        btn.textContent=`Excluindo… (${ok+fail+1}/${paths.length})`;
+        const res=await robustDelete(p);
+        if(res.ok){ ok++; SELECTED_MEDIA.delete(p);
+          const b=document.querySelector(`#mgrid [data-del="${CSS.escape(p)}"]`);
+          const it=b&&b.closest('.mitem'); if(it) it.remove();
+        } else fail++;
+      }
+      btn.disabled=false; btn.textContent='Excluir selecionados';
+      toast(`${ok} removido(s)${fail?`, ${fail} falharam`:''}.`, !fail);
+      updateBulkBar();
+    });
+  }
+  return e;
+}
+function updateBulkBar(){
+  const e=bulkBar(), n=SELECTED_MEDIA.size;
+  e.classList.toggle('gc-hidden', n===0);
+  e.querySelector('b').textContent = n===1?'1 arquivo selecionado':`${n} arquivos selecionados`;
+}
+
+/* ── 8j. escolher da Biblioteca direto no formulário do projeto ────
+   Em vez de alternar pra aba Biblioteca, copiar a URL e voltar — um botão
+   "Escolher da biblioteca" ao lado do campo abre a lista do que já foi
+   enviado, com clique pra inserir (ou marcar várias, na galeria). */
+let MEDIA_ALL_CACHE=null, MEDIA_ALL_AT=0;
+async function fetchAllMedia(force){
+  if(!force && MEDIA_ALL_CACHE && Date.now()-MEDIA_ALL_AT<15000) return MEDIA_ALL_CACHE;
+  if(!GHS.token||GHS.repo.includes('SEU-')) return [];
+  const cats=[...MEDIA_CATS, ...projectFolders().map(p=>p.key)];
+  const H=ghHeaders();
+  const perCat=await Promise.all(cats.map(async cat=>{
+    try{
+      const r=await fetch(`https://api.github.com/repos/${GHS.repo}/contents/media/${cat}?ref=${GHS.branch}`,{headers:H});
+      if(!r.ok) return [];
+      return (await r.json()).filter(x=>x.type==='file'&&!x.name.startsWith('.'))
+        .map(x=>({path:`media/${cat}/${x.name}`,name:x.name,cat,
+          url:`https://raw.githubusercontent.com/${GHS.repo}/${GHS.branch}/media/${cat}/${x.name}`}));
+    }catch(_){ return []; }
+  }));
+  MEDIA_ALL_CACHE=perCat.flat(); MEDIA_ALL_AT=Date.now();
+  return MEDIA_ALL_CACHE;
+}
+function pickerLabel(cat){
+  const p=projectFolders().find(x=>x.key===cat);
+  return p?p.label:cat;
+}
+async function openMediaPicker({multi,onInsert}){
+  if(!GHS.token){ toast('Cole o token do GitHub na aba Biblioteca ou Publicação primeiro.',false); return; }
+  const ov=mk(`<div class="gcpk"><div class="gcpk-panel">
+    <div class="gcpk-head">
+      <h3>${multi?'Escolher imagens da biblioteca':'Escolher imagem da biblioteca'}</h3>
+      <div class="gc-search gcpk-search">${svg('search','')}<input type="text" placeholder="Buscar por nome ou projeto…"></div>
+      <button class="ic" data-x>✕</button>
+    </div>
+    <div class="gcpk-body"><div class="hint">Carregando…</div></div>
+    <div class="gcpk-foot ${multi?'':'gc-hidden'}"><span class="sel-count">0 selecionadas</span><span class="sp"></span><button class="tbtn" data-add disabled>Adicionar selecionadas</button></div>
+  </div></div>`);
+  document.body.appendChild(ov);
+  requestAnimationFrame(()=>ov.classList.add('on'));
+  const close=()=>{ ov.classList.remove('on'); setTimeout(()=>ov.remove(),220); };
+  ov.addEventListener('click',e=>{ if(e.target===ov)close(); });
+  ov.querySelector('[data-x]').addEventListener('click',close);
+  const escKey=e=>{ if(e.key==='Escape'){close(); window.removeEventListener('keydown',escKey);} };
+  window.addEventListener('keydown',escKey);
+
+  const body=ov.querySelector('.gcpk-body');
+  const items=await fetchAllMedia();
+  if(!items.length){ body.innerHTML='<div class="hint">Nenhum arquivo na biblioteca ainda. Envie em Biblioteca → Arraste imagens aqui.</div>'; return; }
+
+  const byCat={};
+  items.forEach(it=>{ (byCat[it.cat]=byCat[it.cat]||[]).push(it); });
+  body.innerHTML='';
+  const selected=new Set();
+  Object.keys(byCat).forEach(cat=>{
+    body.appendChild(mk(`<div class="mcat-h">${esc(pickerLabel(cat))} <span>(${byCat[cat].length})</span></div>`));
+    const row=mk('<div class="gcpk-row"></div>');
+    byCat[cat].forEach(it=>{
+      const cell=mk(`<button type="button" class="gcpk-cell" title="${esc(it.name)}">
+        <img src="${esc(it.url)}" alt="" loading="lazy">
+        <span class="gcpk-name">${esc(it.name)}</span>
+      </button>`);
+      cell.dataset.q=(it.name+' '+pickerLabel(cat)).toLowerCase();
+      cell.addEventListener('click',()=>{
+        if(!multi){ onInsert(it.url); close(); return; }
+        cell.classList.toggle('on');
+        if(cell.classList.contains('on')) selected.add(it.url); else selected.delete(it.url);
+        const n=selected.size;
+        ov.querySelector('.sel-count').textContent=n===1?'1 selecionada':n+' selecionadas';
+        ov.querySelector('[data-add]').disabled=n===0;
+      });
+      row.appendChild(cell);
+    });
+    body.appendChild(row);
+  });
+  const addBtn=ov.querySelector('[data-add]');
+  if(addBtn) addBtn.addEventListener('click',()=>{ onInsert([...selected]); close(); });
+  const search=ov.querySelector('.gcpk-search input');
+  search.addEventListener('input',()=>{
+    const s=search.value.toLowerCase().trim();
+    body.querySelectorAll('.gcpk-cell').forEach(c=>c.classList.toggle('gc-hidden', !!s && !c.dataset.q.includes(s)));
+    body.querySelectorAll('.mcat-h').forEach(h=>{
+      const row=h.nextElementSibling;
+      const anyVisible=row&&[...row.querySelectorAll('.gcpk-cell')].some(c=>!c.classList.contains('gc-hidden'));
+      h.classList.toggle('gc-hidden', s? !anyVisible : false);
+      if(row) row.classList.toggle('gc-hidden', s? !anyVisible : false);
+    });
+  });
+}
+/* campos de URL única (abrem o seletor e inserem com 1 clique) — cobre o
+   projeto inteiro: imagem principal do case, e cada bloco de imagem/dupla
+   dentro do "Conteúdo da página do case". */
+const SINGLE_URL_LABELS=/^(imagem principal \(url\)|url da imagem|imagem esquerda \(url\)|imagem direita \(url\))$/i;
+/* campos de lista (textarea, uma URL por linha) — galeria rápida do
+   projeto e o bloco "+ Galeria" dentro do conteúdo do case. */
+const MULTI_URL_LABELS=/^(galeria r[aá]pida \(urls — uma por linha\)|imagens \(uma url por linha\))$/i;
+
+function injectMediaPickers(root){
+  if(!root)return;
+  root.querySelectorAll('.field').forEach(f=>{
+    if(f.querySelector('.gc-pickbtn'))return;
+    const lb=f.querySelector('label'); if(!lb)return;
+    const txt=lb.textContent.trim();
+    const input=f.querySelector(':scope > input[type=text]');
+    const area=f.querySelector(':scope > textarea');
+    if(input&&SINGLE_URL_LABELS.test(txt)){
+      const btn=mk('<button type="button" class="gc-pickbtn">📁 Escolher da biblioteca</button>');
+      btn.addEventListener('click',()=>openMediaPicker({multi:false,onInsert:url=>{
+        input.value=url; input.dispatchEvent(new Event('input',{bubbles:true}));
+        toast('Imagem selecionada.',true);
+      }}));
+      lb.insertAdjacentElement('afterend',btn);
+    }
+    if(area&&MULTI_URL_LABELS.test(txt)){
+      const btn=mk('<button type="button" class="gc-pickbtn">📁 Escolher da biblioteca</button>');
+      btn.addEventListener('click',()=>openMediaPicker({multi:true,onInsert:urls=>{
+        const cur=area.value.split('\n').map(s=>s.trim()).filter(Boolean);
+        urls.forEach(u=>{ if(!cur.includes(u)) cur.push(u); });
+        area.value=cur.join('\n');
+        area.dispatchEvent(new Event('input',{bubbles:true}));
+        toast(`${urls.length} imagem(ns) adicionada(s).`,true);
+      }}));
+      lb.insertAdjacentElement('afterend',btn);
+    }
+  });
+}
+
+/* ── 8k. selo de build visível ──────────────────────────────────
+   Pra nunca mais precisar abrir o código-fonte pra saber se o navegador
+   está com a versão certa em cache: um selo discreto no rodapé da sidebar. */
+const GC_BUILD='V3.5 · 2026-07-24-1908';
+function buildBadge(){
+  const s=document.getElementById('side'); if(!s||document.getElementById('gc-build'))return;
+  s.appendChild(mk(`<div id="gc-build" title="Versão do painel carregada agora — se isso não bater com o que eu te mandei, é cache do navegador (Cmd+Shift+R resolve)">${esc(GC_BUILD)}</div>`));
+}
+
+/* ── 8l. selo "IA Aplicada" — checkbox no formulário do projeto ────
+   Grava em w.ai (booleano). Quando marcado, o site mostra um selo "IA
+   aplicada" na capa (rail e grid de trabalhos) e no topo da página do case
+   (sobre o hero e ao lado do nome do cliente). */
+function injectAIToggle(root){
+  if(!root||!LIVE_EDIT||LIVE_EDIT.sec!=='works')return;
+  if(root.querySelector('.gc-aitag'))return;
+  const w=DATA.works[LIVE_EDIT.idx]; if(!w)return;
+  const fields=[...root.querySelectorAll('.field')];
+  const artField=fields.find(f=>f.querySelector('label')?.textContent.trim()==='Arte de capa');
+  const anchorEl=artField?(artField.closest('.row3')||artField):fields[0];
+  const wrap=mk(`<label class="gc-aitag">
+    <input type="checkbox" ${w.ai?'checked':''}>
+    <span class="gc-aitag-box"></span>
+    <span class="gc-aitag-txt"><b>Inteligência artificial aplicada</b>Mostra o selo "IA aplicada" na capa e no topo da página deste projeto.</span>
+  </label>`);
+  wrap.querySelector('input').addEventListener('change',e=>{ w.ai=e.target.checked; });
+  if(anchorEl&&anchorEl.parentElement) anchorEl.parentElement.insertBefore(wrap,anchorEl.nextSibling);
+  else root.insertBefore(wrap,root.firstChild);
 }
 
 /* ── 9. render ─────────────────────────────────────────────── */

@@ -377,6 +377,19 @@ body.ready #hero .cap{width:1.5em}
 #lbox .lclose{position:fixed;top:18px;right:var(--pad);border:1.5px solid rgba(239,236,229,.4);color:var(--paper);background:rgba(239,236,229,.08);border-radius:99px;padding:13px 22px;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;transition:.3s}
 #lbox .lclose:hover{background:var(--paper);color:var(--ink)}
 .wcard .vbadge,.ccard .vbadge{position:absolute;bottom:14px;left:14px;z-index:2;width:34px;height:34px;border-radius:99px;background:rgba(15,21,22,.72);backdrop-filter:blur(4px);display:grid;place-items:center;color:var(--paper)}
+.aibadge{
+  position:absolute;top:14px;right:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;
+  background:rgba(15,21,22,.78);backdrop-filter:blur(4px);color:var(--paper);border:1px solid rgba(239,236,229,.28);
+  border-radius:99px;padding:6px 12px 6px 9px;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+}
+.aibadge svg{width:12px;height:12px;flex:none}
+#case .k-hero .aibadge{top:18px;right:18px;font-size:11px;padding:7px 14px 7px 10px}
+.k-aitag{
+  display:inline-flex;align-items:center;gap:6px;margin-left:12px;color:var(--teal);
+  font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  border:1px solid currentColor;border-radius:99px;padding:4px 11px 4px 8px;
+}
+.k-aitag svg{width:11px;height:11px}
 .wcard .vbadge svg,.ccard .vbadge svg{width:13px;height:13px;margin-left:2px}
 #case .gal{margin-top:clamp(44px,7vh,80px);display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,26px)}
 #case .gal figure{position:relative;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1.5px solid var(--ink);background:var(--bone);cursor:zoom-in}
@@ -2189,6 +2202,9 @@ window.__gcArt=(i,ratio,atmoMode)=>{
    imagem antes de desenhar a página. Mais simples e sem atraso nenhum. */
 const hasVideo=w=>(w.blocks||[]).some(b=>b.type==="video"&&b.url);
 const vBadge=w=>hasVideo(w)?'<span class="vbadge" title="Vídeo neste case"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>':"";
+const AI_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.9L19 9.5l-5.2 1.6L12 16l-1.8-4.9L5 9.5l5.2-1.6z"/><path d="M19 15l.9 2.4L22 18l-2.1.6L19 21l-.9-2.4L16 18l2.1-.6z"/></svg>';
+const aiBadge=w=>w.ai?`<span class="aibadge" title="Inteligência artificial aplicada neste projeto">${AI_ICON}<span>IA aplicada</span></span>`:"";
+const aiTag=w=>w.ai?`<span class="k-aitag" title="Inteligência artificial aplicada neste projeto">${AI_ICON}<span>IA aplicada</span></span>`:"";
 const media=(w,i,ratio)=> w.image?`<img src="${esc(w.image)}" alt="${esc(T(w.title))}" loading="lazy" decoding="async" onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},'${ratio}')">`:svgImg(art(w.art,i,ratio));
 const heroMedia=(w,i)=> w.image?`<img src="${esc(w.image)}" alt="" decoding="async" onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},null,true)">`:svgImg(atmo(w,i),true);
 
@@ -2246,12 +2262,12 @@ function render(){
   const idxCraft=C.works.map((w,i)=>({w,i})).filter(x=>x.w.kind==="craft");
   $('wrail').innerHTML=idxCases.map(({w,i},n)=>`
     <article class="wcard" data-i="${i}" data-cur="view">
-      <div class="media"><span class="chip${w.client.startsWith("Confidencial")?" nda":""}">${esc(w.client)}</span>${media(w,i,"thumb")}${vBadge(w)}<span class="go">↗</span><span class="no">${String(n+1).padStart(2,"0")}</span></div>
+      <div class="media"><span class="chip${w.client.startsWith("Confidencial")?" nda":""}">${esc(w.client)}</span>${media(w,i,"thumb")}${vBadge(w)}${aiBadge(w)}<span class="go">↗</span><span class="no">${String(n+1).padStart(2,"0")}</span></div>
       <div class="meta"><h3>${esc(T(w.title))}</h3><span class="tags">${esc(T(w.tags))} — ${esc(w.year)}</span></div>
     </article>`).join("");
   $('craftgrid').innerHTML=idxCraft.map(({w,i})=>`
     <article class="ccard reveal" data-i="${i}" data-cur="view">
-      <div class="media"><span class="chip${w.client.startsWith("Confidencial")?" nda":""}">${esc(w.client)}</span>${media(w,i,"thumb")}${vBadge(w)}</div>
+      <div class="media"><span class="chip${w.client.startsWith("Confidencial")?" nda":""}">${esc(w.client)}</span>${media(w,i,"thumb")}${vBadge(w)}${aiBadge(w)}</div>
       <h3>${esc(T(w.title))}</h3>
       <p class="tags">${esc(T(w.tags))} — ${esc(w.year)}</p>
     </article>`).join("");
@@ -2485,9 +2501,9 @@ function openCase(i){
   const w=C.works[i];
   const gal=(w.gallery||[]).filter(Boolean).map(u=>`<figure><img src="${esc(u)}" alt="" loading="lazy" decoding="async"></figure>`).join("");
   $('casebody').innerHTML=`
-    <p class="k-client">${esc(w.client)}</p>
+    <p class="k-client">${esc(w.client)}${aiTag(w)}</p>
     <h2>${esc(T(w.title))}</h2>
-    <div class="k-hero">${heroMedia(w,i)}</div>
+    <div class="k-hero">${heroMedia(w,i)}${aiBadge(w)}</div>
     <div class="cols">
       <div class="facts">
         <div><b>${esc(T(C.ui.ui_client))}</b><span>${esc(w.client)}</span></div>
