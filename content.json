@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T03:51:07.499Z",
+  "generatedAt": "2026-07-24T04:01:46.510Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -539,25 +539,25 @@
       "image": "",
       "gallery": [],
       "title": {
-        "pt": "iPhone 17 Pro — Design & Motion",
-        "en": "iPhone 17 Pro — Design & Motion",
-        "es": "iPhone 17 Pro — Design & Motion",
-        "zh": "iPhone 17 Pro — 设计与动态",
-        "no": "iPhone 17 Pro — Design & Motion"
+        "pt": "Lançamento iPhone 17 Pro — Design & Motion",
+        "en": "iPhone 17 Pro Launch — Design & Motion",
+        "es": "Lanzamiento del iPhone 17 Pro: diseño y movimiento",
+        "zh": "iPhone 17 Pro 发布会——设计与动作",
+        "no": "Lansering av iPhone 17 Pro — Design og bevegelse"
       },
       "tags": {
-        "pt": "Design · Motion · CGI",
-        "en": "Design · Motion · CGI",
-        "es": "Design · Motion · CGI",
-        "zh": "设计 · 动态 · CGI",
-        "no": "Design · Motion · CGI"
+        "pt": "Direção Criativa · Design · Motion ",
+        "en": "Creative Direction · Design · Motion",
+        "es": "Dirección Creativa · Diseño · Motion",
+        "zh": "创意方向·设计·动作",
+        "no": "Kreativ retning · Design · Bevegelse"
       },
       "body": {
-        "pt": "Promo concept de design e motion para o iPhone 17 Pro: direção de arte, animação e finalização em ritmo de filme de lançamento, explorando materiais, luz e tipografia do produto.\nProjeto completo em https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
-        "en": "A design and motion promo concept for the iPhone 17 Pro: art direction, animation and finishing at launch-film pace, exploring the product's materials, light and typography.\nFull project at https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
-        "es": "Concepto promo de design y motion para el iPhone 17 Pro: dirección de arte, animación y finalización al ritmo de un tráiler de lanzamiento, explorando materiales, luz y tipografía del producto.\nProyecto completo en https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
-        "zh": "为 iPhone 17 Pro 打造的宣传概念：art direction、动画与后期制作，节奏如同发布影片，探索产品的材质、光线与字体。\n完整项目见 https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
-        "no": "Promokonsept med design og motion for iPhone 17 Pro: art direction, animasjon og ferdigstillelse i tempoet til en lanseringsfilm, med utforsking av produktets materialer, lys og typografi.\nHele prosjektet på https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion"
+        "pt": "Promo concept de design e motion para o iPhone 17 Pro: direção de arte, animação e finalização.\nProjeto completo em https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+        "en": "Design and motion promo concept for the iPhone 17 Pro: art direction, animation and finalization.\nComplete project at https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+        "es": "Diseño y concepto de promoción en movimiento para el iPhone 17 Pro: dirección de arte, animación y finalización.\nProyecto completo en https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+        "zh": "iPhone 17 Pro 的设计和动作宣传概念：艺术指导、动画和定稿。\n完整项目位于 https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+        "no": "Design og bevegelseskampanjekonsept for iPhone 17 Pro: kunstretning, animasjon og ferdigstillelse.\nFullfør prosjektet på https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion"
       },
       "blocks": [
         {
@@ -570,7 +570,7 @@
             "no": "*Prosessen*"
           },
           "body": {
-            "pt": "Substitua este texto pelos destaques do processo: referências, styleframes, direção de câmera e som.",
+            "pt": "",
             "en": "Replace this text with process highlights: references, styleframes, camera direction and sound.",
             "es": "Reemplaza este texto por los aspectos destacados del proceso: referencias, styleframes, dirección de cámara y sonido.",
             "zh": "请替换为流程亮点：参考资料、风格帧、镜头与声音调度。",
@@ -579,18 +579,14 @@
         },
         {
           "type": "video",
-          "url": "",
+          "url": "https://www.youtube.com/watch?v=fqah0J1wZog",
           "caption": {
-            "pt": "Filme principal — cole aqui a URL do vídeo (YouTube/Vimeo/MP4)",
+            "pt": "",
             "en": "Main film — paste the video URL here",
             "es": "Video principal — pega aquí la URL (YouTube/Vimeo/MP4)",
             "zh": "主视频 — 在此粘贴视频链接（YouTube/Vimeo/MP4）",
             "no": "Hovedvideo — lim inn video-URL her (YouTube/Vimeo/MP4)"
           }
-        },
-        {
-          "type": "gallery",
-          "urls": []
         }
       ],
       "kind": "craft",
@@ -1340,18 +1336,6 @@
           "no": "End-to-end: tjenestedesign, utvikling, betalingssystemer, lansering og administrasjon"
         },
         "id": "lab_envyfmt1"
-      },
-      {
-        "name": "CaveSchool",
-        "partner": "Greencave",
-        "what": {
-          "pt": "Plataforma própria de educação para autodidatas e home schooling",
-          "en": "Own education platform for self-students and home schooling",
-          "es": "Plataforma educativa propia para autoestudiantes y educación en casa.",
-          "zh": "自学和在家自学的自有教育平台",
-          "no": "Egen utdanningsplattform for selvelever og hjemmeundervisning"
-        },
-        "id": "lab_0cmmxtg0"
       },
       {
         "name": "Risco das Bets",
