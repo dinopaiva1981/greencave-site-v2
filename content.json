@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T22:39:06.289Z",
+  "generatedAt": "2026-07-24T22:41:01.911Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -1216,7 +1216,7 @@
       {
         "id": "team_fz4vdyqj",
         "name": "Adrian",
-        "photo": "",
+        "photo": "media/team/adrian.webp",
         "role": {
           "pt": "CTO",
           "en": "CTO",
