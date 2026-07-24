@@ -1895,6 +1895,8 @@ function startDrag(ev,item,arr,rerender,label){
       item.remove(); ph.remove(); document.body.classList.remove('gc-dragging');
       if(!cancel&&to>=0&&to!==from){
         const [x]=arr.splice(from,1); arr.splice(to,0,x);
+        try{ if(typeof markDirty==='function') markDirty(); }catch(_){}
+        try{ if(typeof scheduleAutosave==='function') scheduleAutosave(); }catch(_){}
         if(typeof toast==='function') toast(`${label||'Item'} movido para a posição ${String(to+1).padStart(2,'0')}.`,true);
       }
       rerender();
@@ -1978,14 +1980,22 @@ function header(){
     <h1>${esc(t[0])}</h1><p class="meta">${esc(t[1])}</p></div></header>`);
   m.insertBefore(h,m.firstChild);
 }
-function modal(title,node,onClose){
+/* estado do modal atualmente aberto, para poder realinhá-lo após um
+   re-render disparado por uma edição feita dentro dele (adicionar/excluir
+   bloco, item de galeria, etc.) — ver syncLiveEdit() */
+let LIVE_EDIT=null;      // {sec, idx}
+let CLOSE_ACTIVE_MODAL=null;
+
+function modal(title,node,onClose,liveKey){
+  if(CLOSE_ACTIVE_MODAL) CLOSE_ACTIVE_MODAL();   /* nunca dois modais empilhados */
   const ov=mk(`<div class="gcm"><div class="gcm-panel">
     <div class="gcm-head"><h3>${esc(title)}</h3><span class="kb">ESC</span><button class="ic" data-x>✕</button></div>
     <div class="gcm-body"><div class="gcm-slot"></div></div>
     <div class="gcm-foot"><button class="tbtn" data-ok>Concluir edição</button></div>
   </div></div>`);
   $('.gcm-slot',ov).appendChild(node);
-  /* CORREÇÃO: o motor escuta input/change em #main. Como o modal vive fora do
+  if(liveKey) LIVE_EDIT=liveKey;
+  /* CORREÇÃO 1: o motor escuta input/change em #main. Como o modal vive fora do
      #main, edições feitas nele atualizavam DATA mas não marcavam alteração
      pendente nem disparavam o autosave (o rascunho ficava desatualizado). */
   const relay=()=>{
@@ -2000,12 +2010,30 @@ function modal(title,node,onClose){
   function close(){
     ov.classList.remove('on');
     window.removeEventListener('keydown',key);
+    LIVE_EDIT=null; CLOSE_ACTIVE_MODAL=null;
     setTimeout(()=>{ov.remove(); if(onClose)onClose();},280);
   }
+  CLOSE_ACTIVE_MODAL=close;
   window.addEventListener('keydown',key);
   ov.addEventListener('click',e=>{ if(e.target===ov)close(); });
   ov.querySelector('[data-x]').addEventListener('click',close);
   ov.querySelector('[data-ok]').addEventListener('click',close);
+}
+/* CORREÇÃO 2: adicionar/excluir um bloco, uma imagem de galeria etc. dentro
+   do modal chama o renderSec() global do motor (como sempre chamou) — isso
+   reconstrói #main do zero e o nó que o modal estava exibindo fica órfão,
+   congelado com o estado antigo. Aqui, sempre que cardsView() termina de
+   remontar a lista, se houver um modal aberto para o mesmo item, o conteúdo
+   do modal é trocado pelo nó recém-criado (que já reflete a edição),
+   preservando a posição da rolagem. */
+function syncLiveEdit(sec,items){
+  if(!LIVE_EDIT||LIVE_EDIT.sec!==sec)return;
+  const fresh=items[LIVE_EDIT.idx]; if(!fresh)return;
+  const slot=document.querySelector('.gcm.on .gcm-slot'); if(!slot)return;
+  const body=slot.closest('.gcm-body');
+  const sTop=body?body.scrollTop:0;
+  slot.innerHTML=''; slot.appendChild(fresh);
+  if(body) body.scrollTop=sTop;
 }
 
 /* ── 6. visão em cards ─────────────────────────────────────── */
@@ -2068,7 +2096,7 @@ function cardsView(sec){
     head.insertBefore(del,head.lastElementChild);
     c.querySelector('.ed').addEventListener('click',()=>{
       const back=it.nextSibling, par=it.parentElement;
-      modal(`${spec.label} · ${d.title}`,it,()=>{ par.insertBefore(it,back); renderSec(); });
+      modal(`${spec.label} · ${d.title}`,it,()=>{ par.insertBefore(it,back); renderSec(); },{sec,idx:i});
     });
     c.dataset.q=(d.title+' '+d.meta+' '+d.tags).toLowerCase();
     c.dataset.kind=(raw&&raw.kind==='craft')?'craft':'case';
@@ -2092,6 +2120,7 @@ function cardsView(sec){
   host.insertBefore(grid,addBtnEl||null);
   host.appendChild(bay);
   paint();
+  syncLiveEdit(sec,items);   /* realinha um modal já aberto com o nó recém-criado */
 }
 
 /* ── 7. dashboard V2 ───────────────────────────────────────── */
@@ -2456,6 +2485,23 @@ function addDiagButton(){
   pubBtn.parentElement.insertBefore(b,pubBtn.nextSibling);
   pubBtn.parentElement.insertBefore(box,b.nextSibling);
 }
+
+/* ── 8f. alteração estrutural também marca "pendente" ─────────── */
+/* markDirty/scheduleAutosave só disparavam em input/change — cliques que
+   ADICIONAM, EXCLUEM, DUPLICAM ou REORDENAM itens (blocos do case, linhas de
+   galeria, números, etc.) nunca passavam por ali. Resultado: dá pra montar
+   um bloco inteiro e, ao recarregar sem publicar, perdê-lo em silêncio. */
+document.addEventListener('click',e=>{
+  const t=e.target.closest(
+    '.ic:not(.gcdrag):not([data-x]):not([data-copy]):not([data-del]), .add'
+  );
+  if(!t)return;
+  if(!t.closest('#main, .gcm'))return;
+  setTimeout(()=>{
+    try{ if(typeof markDirty==='function') markDirty(); }catch(_){}
+    try{ if(typeof scheduleAutosave==='function') scheduleAutosave(); }catch(_){}
+  },0);
+},true);
 
 /* ── 9. render ─────────────────────────────────────────────── */
 const _renderSec=window.renderSec;
