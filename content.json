@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T18:05:59.104Z",
+  "generatedAt": "2026-07-24T18:08:24.813Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -723,43 +723,7 @@
         "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
         "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
       },
-      "blocks": [
-        {
-          "type": "duo",
-          "url1": "media/projetos/polonia/pgif2.gif",
-          "url2": "media/projetos/polonia/pgif1.gif"
-        },
-        {
-          "type": "gallery",
-          "urls": [
-            "media/projetos/polonia/p001.png",
-            "media/projetos/polonia/p002.png",
-            "media/projetos/polonia/p003.png",
-            "media/projetos/polonia/p004.png"
-          ]
-        },
-        {
-          "type": "image",
-          "url": "media/projetos/polonia/p001.png",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "duo",
-          "url1": "media/projetos/polonia/p006.png",
-          "url2": "media/projetos/polonia/p007.png"
-        },
-        {
-          "type": "duo",
-          "url1": "media/projetos/polonia/pgif3.gif",
-          "url2": "media/projetos/polonia/pgif4.gif"
-        }
-      ]
+      "blocks": []
     },
     {
       "kind": "craft",
