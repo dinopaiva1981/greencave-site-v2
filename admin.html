@@ -3455,11 +3455,12 @@ function extractFromHtml(html, baseUrl){
   return {title, desc, body: body||desc, images: images.slice(0,20), video, tags};
 }
 
-function createWorkFromExtraction(ex, sourceUrl){
+async function createWorkFromExtraction(ex, sourceUrl){
   if(!ex.title&&!ex.images.length) throw new Error('Não encontrei conteúdo reconhecível — confira se colou a página certa.');
+  const clientName=(ex.title||'').split(/[—-]/)[0].trim().slice(0,40) || 'Cliente';
   const w={
     id:genId('work'), kind:'case',
-    client: (ex.title||'').split(/[—-]/)[0].trim().slice(0,40) || 'Cliente',
+    client: clientName,
     year: new Date().getFullYear(),
     art:'wave',
     image: ex.images[0]||'',
@@ -3470,10 +3471,101 @@ function createWorkFromExtraction(ex, sourceUrl){
     blocks: ex.video ? [{type:'video', url:ex.video, caption:ml5('')}] : [],
     _importedFrom: sourceUrl||''
   };
+
+  /* espelhar as imagens para o repositório — o pedido do Dino: não depender
+     do CDN de origem. Só faz sentido se houver token (senão não dá pra subir
+     nada); e é opcional, porque o usuário pode preferir revisar antes. */
+  const allImgs=ex.images.slice(0,9);
+  if(allImgs.length && GHS.token && !GHS.repo.includes('SEU-')){
+    const wantMirror=confirm(`Encontrei ${allImgs.length} imagem(ns). Quer que eu baixe e suba todas para o SEU repositório agora (media/projetos/${slug(clientName)}/), pra não depender do site de origem?\n\nOK = subir para o meu GitHub (recomendado)\nCancelar = manter os links originais por enquanto`);
+    if(wantMirror){
+      const panel=uploadPanel();
+      const list=panel.querySelector('.gc-uplist'), bar=panel.querySelector('.gc-upbar i'), txt=panel.querySelector('.gc-uptext');
+      panel.classList.remove('gc-hidden');
+      list.innerHTML=''; allImgs.forEach((u,i)=>list.appendChild(mk(`<li data-i="${i}"><span class="gc-upicn">⏳</span><span class="gc-upname">imagem ${i+1}</span><span class="gc-upstage">na fila…</span></li>`)));
+      const {map,ok,total}=await mirrorImages(allImgs, slug(clientName), (done,tot,cur)=>{
+        bar.style.width=Math.round(done/tot*100)+'%';
+        txt.textContent=cur?`Baixando e subindo ${done+1} de ${tot}…`:`Concluído: ${done} de ${tot}.`;
+        const li=list.querySelector(`li[data-i="${done}"]`);
+        list.querySelectorAll('li').forEach((el,idx)=>{
+          const st=el.querySelector('.gc-upstage'), ic=el.querySelector('.gc-upicn');
+          if(idx<done){ st.textContent='no repositório ✓'; ic.textContent='✓'; el.className='ok'; }
+          else if(idx===done && cur){ st.textContent='baixando + subindo…'; }
+        });
+      });
+      /* trocar as URLs originais pelas do repositório */
+      w.image = map[w.image]||w.image;
+      w.gallery = w.gallery.map(u=>map[u]||u);
+      txt.textContent=`${ok} de ${total} imagens agora no seu repositório.`;
+      bar.style.width='100%';
+      setTimeout(()=>panel.classList.add('gc-hidden'), 2600);
+      toast(`${ok}/${total} imagens copiadas para o seu GitHub em media/projetos/${slug(clientName)}/.`, ok>0);
+    }
+  }
+
   DATA.works.unshift(w);
   renderSec();
-  toast(`Importado: ${ex.images.length} imagem(ns)${ex.video?', 1 vídeo':''}, texto e tags — revise antes de publicar.`, true);
+  if(!allImgs.length || !GHS.token) toast(`Importado: ${ex.images.length} imagem(ns)${ex.video?', 1 vídeo':''}, texto e tags — revise antes de publicar.`, true);
   setTimeout(()=>{ const firstEd=document.querySelector('#main .pcard .ed'); if(firstEd) firstEd.click(); },250);
+}
+
+/* ── espelhar imagens externas para o repositório ─────────────────
+   O objetivo do Dino: não depender do CDN de origem (Webflow etc.). Cada
+   imagem importada é baixada (via o mesmo proxy CORS do HTML — o navegador
+   não deixa baixar de outro domínio direto) e reenviada para
+   media/projetos/{slug}/ no próprio repositório. As URLs do projeto passam
+   a apontar para o seu GitHub, não mais para o site de origem. */
+async function fetchImageAsBase64(srcUrl){
+  let lastErr='';
+  for(const build of CORS_PROXIES){
+    try{
+      const ctrl=new AbortController();
+      const t=setTimeout(()=>ctrl.abort(),15000);
+      const r=await fetch(build(srcUrl),{signal:ctrl.signal});
+      clearTimeout(t);
+      if(!r.ok){ lastErr='HTTP '+r.status; continue; }
+      const blob=await r.blob();
+      if(!blob.size){ lastErr='vazio'; continue; }
+      const b64=await new Promise((res,rej)=>{ const fr=new FileReader(); fr.onload=()=>res(fr.result.split(',')[1]); fr.onerror=rej; fr.readAsDataURL(blob); });
+      return { b64, type: blob.type||'image/jpeg' };
+    }catch(e){ lastErr=e.name==='AbortError'?'demorou demais':'sem resposta'; }
+  }
+  throw new Error(lastErr||'falhou');
+}
+function extFromType(t){
+  if(/png/.test(t))return'png'; if(/webp/.test(t))return'webp'; if(/gif/.test(t))return'gif';
+  if(/svg/.test(t))return'svg'; return'jpg';
+}
+async function githubPutImage(path, b64){
+  const api=`https://api.github.com/repos/${GHS.repo}/contents/${path}`;
+  const h=ghHeaders();
+  let sha=null;
+  const g=await fetch(`${api}?ref=${GHS.branch}`,{headers:h});
+  if(g.ok) sha=(await g.json()).sha;
+  const r=await fetch(api,{method:'PUT',headers:h,body:JSON.stringify({
+    message:'media: importado via painel — '+path, content:b64, branch:GHS.branch, ...(sha?{sha}:{})})});
+  if(!r.ok){ const e=await r.json().catch(()=>({})); throw new Error('HTTP '+r.status+(e.message?' — '+e.message:'')); }
+  return `https://raw.githubusercontent.com/${GHS.repo}/${GHS.branch}/${path}`;
+}
+/* espelha uma lista de URLs; devolve mapa {urlOriginal: urlNova}. Mostra
+   progresso num painel reaproveitável. Falhas individuais não abortam o
+   lote — a imagem que não vier fica com a URL original (melhor que nada). */
+async function mirrorImages(urls, slug, onProgress){
+  const folder='projetos/'+slug;
+  const map={}; let done=0, ok=0;
+  for(let i=0;i<urls.length;i++){
+    const src=urls[i];
+    if(onProgress) onProgress(done, urls.length, src);
+    try{
+      const {b64,type}=await fetchImageAsBase64(src);
+      const name=slug+'-'+String(i+1).padStart(2,'0')+'.'+extFromType(type);
+      const newUrl=await githubPutImage(`media/${folder}/${name}`, b64);
+      map[src]=newUrl; ok++;
+    }catch(e){ map[src]=src; /* mantém a original se falhar */ }
+    done++;
+  }
+  if(onProgress) onProgress(done, urls.length, null);
+  return {map, ok, total:urls.length};
 }
 
 async function importFromUrl(url, btn){
@@ -3482,7 +3574,7 @@ async function importFromUrl(url, btn){
   try{
     const html=await fetchViaProxy(url, (n,total)=>{ btn.textContent=total>1?`Buscando… (tentativa ${n}/${total})`:'Buscando…'; });
     btn.textContent='Lendo conteúdo…';
-    createWorkFromExtraction(extractFromHtml(html, url), url);
+    await createWorkFromExtraction(extractFromHtml(html, url), url);
   }catch(e){
     toast('Não consegui buscar automaticamente: '+e.message, false);
     /* abre o caminho manual, que sempre funciona (não depende de proxy) */
@@ -3493,13 +3585,13 @@ async function importFromUrl(url, btn){
   }
 }
 
-function importFromPastedHtml(html, urlHint, btn){
+async function importFromPastedHtml(html, urlHint, btn){
   const orig=btn.textContent;
   btn.disabled=true; btn.textContent='Lendo…';
   try{
     let base=urlHint||'';
     if(!base){ const m=html.match(/<meta[^>]+property=["']og:url["'][^>]+content=["']([^"']+)/i); if(m) base=m[1]; }
-    createWorkFromExtraction(extractFromHtml(html, base||'https://exemplo.com'), base);
+    await createWorkFromExtraction(extractFromHtml(html, base||'https://exemplo.com'), base);
   }catch(e){
     toast('Não consegui ler esse HTML: '+e.message, false);
   }finally{
