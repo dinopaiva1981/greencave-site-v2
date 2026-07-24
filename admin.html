@@ -830,6 +830,21 @@ body:has(#gate){overflow:hidden}
 .gc-importrow .tbtn{flex:none;white-space:nowrap}
 .gc-importbox .hint{margin-top:8px;font-size:11.5px}
 
+/* ── modo manual da importação (colar HTML) ────────────────────── */
+.gc-importbox .gc-manual{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.gc-importbox.manual-open .gc-manual{display:block}
+.gc-manual-steps{font-size:12px;color:var(--mute);line-height:1.6;margin-bottom:12px}
+.gc-manual-steps b{color:var(--txt)}
+.gc-manual-steps ol{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:5px}
+.gc-manual-steps code{background:#141821;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-family:var(--mono);font-size:11px;color:var(--green)}
+.gc-manual textarea{
+  width:100%;min-height:120px;resize:vertical;background:#141821;border:1px solid var(--line);
+  color:var(--txt);border-radius:9px;padding:11px 13px;font-family:var(--mono);font-size:11.5px;line-height:1.5;margin-bottom:10px;
+}
+.gc-manual textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(52,211,153,.16);outline:none}
+.gc-importbox .hint a{color:var(--green);font-weight:600;text-decoration:none}
+.gc-importbox .hint a:hover{text-decoration:underline}
+
 </style>
 </head>
 <body>
@@ -3368,12 +3383,31 @@ function extractFromHtml(html, baseUrl){
   /* imagens: todas as <img>, descartando ícones/logos por nome de arquivo,
      e as óbvias de navegação (dentro de header/nav/footer) */
   const seen=new Set(); const images=[];
-  doc.querySelectorAll('img').forEach(img=>{
-    const src=img.getAttribute('src')||img.getAttribute('data-src')||'';
-    if(!src||seen.has(src))return;
-    if(img.closest('header,nav,footer'))return;
+  const addImg=(src, el)=>{
+    if(!src)return;
+    src=src.split(' ')[0].trim();   /* srcset pode ter "url 800w" — pega só a URL */
+    if(!src||src.startsWith('data:')||seen.has(src))return;
+    if(el&&el.closest&&el.closest('header,nav,footer'))return;
     if(ICON_BLOCKLIST.test(src))return;
     try{ const abs=new URL(src,baseUrl).href; seen.add(src); images.push(abs); }catch(_){}
+  };
+  /* <img>: src, data-src (lazy) e o maior do srcset */
+  doc.querySelectorAll('img').forEach(img=>{
+    const ss=img.getAttribute('srcset')||img.getAttribute('data-srcset');
+    if(ss){ const parts=ss.split(',').map(s=>s.trim()); addImg(parts[parts.length-1], img); }
+    const realSrc=img.getAttribute('src');
+    const lazySrc=img.getAttribute('data-src')||img.getAttribute('data-lazy-src');
+    addImg((!realSrc||realSrc.startsWith('data:')) ? (lazySrc||realSrc) : realSrc, img);
+  });
+  /* <source srcset> dentro de <picture> */
+  doc.querySelectorAll('picture source[srcset]').forEach(s=>{
+    const parts=(s.getAttribute('srcset')||'').split(',').map(x=>x.trim());
+    addImg(parts[parts.length-1], s);
+  });
+  /* background-image inline (comum em SPAs / galerias) */
+  doc.querySelectorAll('[style*="background"]').forEach(el=>{
+    const m=(el.getAttribute('style')||'').match(/url\((['"]?)(.*?)\1\)/);
+    if(m) addImg(m[2], el);
   });
   /* a imagem que o próprio site escolheu como capa (og:image) vem sempre
      primeiro — é a melhor aposta de "capa pretendida" pelo autor original */
@@ -3405,23 +3439,41 @@ function extractFromHtml(html, baseUrl){
       const candidates=[];
       let el=mainP.previousElementSibling, hops=0;
       while(el&&hops<6&&candidates.length<10){
-        if(shortBits(el)){
+        const kids=[...el.children];
+        if(kids.length>=2 && kids.every(shortBits)){
+          /* contêiner de vários chips (ex.: <div><span>tag1</span><span>tag2</span></div>) */
+          candidates.unshift(...kids.map(k=>k.textContent.trim()));
+        } else if(shortBits(el)){
           candidates.unshift(el.textContent.trim());
-        } else {
-          /* o elemento inteiro é longo/composto — talvez seja um CONTÊINER
-             de várias tags (ex.: <div><span>tag1</span><span>tag2</span></div>) */
-          const kids=[...el.children];
-          if(kids.length>=2 && kids.every(shortBits)){
-            candidates.unshift(...kids.map(k=>k.textContent.trim()));
-          }
         }
         el=el.previousElementSibling; hops++;
       }
-      tags=candidates.join(' · ');
+      tags=[...new Set(candidates)].join(' · ');
     }
   }
 
   return {title, desc, body: body||desc, images: images.slice(0,20), video, tags};
+}
+
+function createWorkFromExtraction(ex, sourceUrl){
+  if(!ex.title&&!ex.images.length) throw new Error('Não encontrei conteúdo reconhecível — confira se colou a página certa.');
+  const w={
+    id:genId('work'), kind:'case',
+    client: (ex.title||'').split(/[—-]/)[0].trim().slice(0,40) || 'Cliente',
+    year: new Date().getFullYear(),
+    art:'wave',
+    image: ex.images[0]||'',
+    title: ml5(ex.title||'Novo projeto'),
+    tags: ml5(ex.tags||''),
+    body: ml5(ex.body||''),
+    gallery: ex.images.slice(1,9),
+    blocks: ex.video ? [{type:'video', url:ex.video, caption:ml5('')}] : [],
+    _importedFrom: sourceUrl||''
+  };
+  DATA.works.unshift(w);
+  renderSec();
+  toast(`Importado: ${ex.images.length} imagem(ns)${ex.video?', 1 vídeo':''}, texto e tags — revise antes de publicar.`, true);
+  setTimeout(()=>{ const firstEd=document.querySelector('#main .pcard .ed'); if(firstEd) firstEd.click(); },250);
 }
 
 async function importFromUrl(url, btn){
@@ -3430,31 +3482,26 @@ async function importFromUrl(url, btn){
   try{
     const html=await fetchViaProxy(url, (n,total)=>{ btn.textContent=total>1?`Buscando… (tentativa ${n}/${total})`:'Buscando…'; });
     btn.textContent='Lendo conteúdo…';
-    const ex=extractFromHtml(html, url);
-    if(!ex.title&&!ex.images.length) throw new Error('Não encontrei conteúdo reconhecível nessa página.');
-
-    const w={
-      id:genId('work'), kind:'case',
-      client: ex.title.split(/[—-]/)[0].trim().slice(0,40) || 'Cliente',
-      year: new Date().getFullYear(),
-      art:'wave',
-      image: ex.images[0]||'',
-      title: ml5(ex.title||'Novo projeto'),
-      tags: ml5(ex.tags||''),
-      body: ml5(ex.body||''),
-      gallery: ex.images.slice(1,9),
-      blocks: ex.video ? [{type:'video', url:ex.video, caption:ml5('')}] : [],
-      _importedFrom: url
-    };
-    DATA.works.unshift(w);
-    renderSec();
-    toast(`Importado: ${ex.images.length} imagem(ns)${ex.video?', 1 vídeo':''}, texto e tags — revise antes de publicar.`, true);
-    setTimeout(()=>{
-      const firstEd=document.querySelector('#main .pcard .ed');
-      if(firstEd) firstEd.click();
-    },250);
+    createWorkFromExtraction(extractFromHtml(html, url), url);
   }catch(e){
-    toast('Falha ao importar: '+e.message, false);
+    toast('Não consegui buscar automaticamente: '+e.message, false);
+    /* abre o caminho manual, que sempre funciona (não depende de proxy) */
+    const box=document.getElementById('gc-import');
+    if(box){ box.classList.add('manual-open'); const ta=box.querySelector('textarea'); if(ta){ ta.focus(); ta.scrollIntoView({behavior:'smooth',block:'center'}); } }
+  }finally{
+    btn.disabled=false; btn.textContent=orig;
+  }
+}
+
+function importFromPastedHtml(html, urlHint, btn){
+  const orig=btn.textContent;
+  btn.disabled=true; btn.textContent='Lendo…';
+  try{
+    let base=urlHint||'';
+    if(!base){ const m=html.match(/<meta[^>]+property=["']og:url["'][^>]+content=["']([^"']+)/i); if(m) base=m[1]; }
+    createWorkFromExtraction(extractFromHtml(html, base||'https://exemplo.com'), base);
+  }catch(e){
+    toast('Não consegui ler esse HTML: '+e.message, false);
   }finally{
     btn.disabled=false; btn.textContent=orig;
   }
@@ -3464,15 +3511,30 @@ function injectImportBox(host, addBtnEl){
   if(document.getElementById('gc-import'))return;
   const box=mk(`<div id="gc-import" class="gc-importbox">
     <div class="gc-importrow">
-      <input type="url" placeholder="Cole o link do projeto (ex.: behance.net/... , webflow, wix, etc.)">
+      <input type="url" placeholder="Cole o link do projeto (Webflow, Wix, site próprio…)">
       <button class="tbtn" data-go>✨ Extrair e criar projeto</button>
     </div>
-    <div class="hint">Busca a página, traz título, texto, tags, imagens e vídeo automaticamente. Depois é só refinar.</div>
+    <div class="hint">Tenta buscar a página sozinho. Alguns sites (Behance, Instagram) bloqueiam robôs — nesse caso, use o modo manual abaixo, que <b>sempre funciona</b>. <a href="#" data-toggle>colar HTML manualmente ↴</a></div>
+    <div class="gc-manual">
+      <div class="gc-manual-steps">
+        <b>Modo manual (à prova de bloqueio):</b>
+        <ol>
+          <li>Abra a página do projeto no navegador.</li>
+          <li>Clique com o botão direito → <b>Inspecionar</b>. No painel que abre, clique com o direito na primeira linha (<code>&lt;html&gt;</code>) → <b>Copy</b> → <b>Copy outerHTML</b>.</li>
+          <li>Cole aqui embaixo e clique em Extrair.</li>
+        </ol>
+      </div>
+      <textarea placeholder="Cole aqui o HTML da página (Copy outerHTML)…"></textarea>
+      <button class="tbtn" data-paste>Extrair do HTML colado</button>
+    </div>
   </div>`);
   const input=box.querySelector('input'), go=box.querySelector('[data-go]');
+  const ta=box.querySelector('textarea'), pasteBtn=box.querySelector('[data-paste]');
   const run=()=>{ const url=input.value.trim(); if(!url){toast('Cole uma URL primeiro.',false);return;} importFromUrl(url, go); };
   go.addEventListener('click',run);
   input.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); run(); } });
+  box.querySelector('[data-toggle]').addEventListener('click',e=>{ e.preventDefault(); box.classList.toggle('manual-open'); if(box.classList.contains('manual-open')) ta.focus(); });
+  pasteBtn.addEventListener('click',()=>{ const html=ta.value.trim(); if(html.length<100){toast('Cole o HTML da página primeiro.',false);return;} importFromPastedHtml(html, input.value.trim(), pasteBtn); });
   host.insertBefore(box, addBtnEl||null);
 }
 
