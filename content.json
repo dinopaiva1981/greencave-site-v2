@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T13:22:10.465Z",
+  "generatedAt": "2026-07-24T13:31:35.427Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -602,70 +602,6 @@
       "id": "work_zahtq32w"
     },
     {
-      "id": "work_z0fyh22c",
-      "kind": "craft",
-      "client": "Polônia",
-      "year": "2023",
-      "art": "wave",
-      "image": "",
-      "gallery": [
-        "https://vimeo.com/1189092887?fl=pl&fe=sh"
-      ],
-      "title": {
-        "pt": "Abertura para Documentário Polonês",
-        "en": "Opening for Polish Documentary",
-        "es": "Inauguración del documental polaco",
-        "zh": "波兰纪录片开幕",
-        "no": "Åpning for polsk dokumentar"
-      },
-      "tags": {
-        "pt": "Motion · Cinema · Style Frame — 2023",
-        "en": "Motion · Cinema · Style Frame — 2023",
-        "es": "Motion · Cinema · Style Frame — 2023",
-        "zh": "Motion · Cinema · Style Frame — 2023",
-        "no": "Motion · Cinema · Style Frame — 2023"
-      },
-      "body": {
-        "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
-        "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
-      },
-      "blocks": []
-    },
-    {
-      "id": "work_f0i6pxqm",
-      "kind": "craft",
-      "client": "Disney ESPN",
-      "year": "2024",
-      "art": "rings",
-      "image": "",
-      "gallery": [],
-      "title": {
-        "pt": "Bola de Prata 2024",
-        "en": "Bola de Prata 2024",
-        "es": "Bola de Prata 2024",
-        "zh": "Bola de Prata 2024",
-        "no": "Bola de Prata 2024"
-      },
-      "tags": {
-        "pt": "Motion · 2D/3D · Broadcast — 2024",
-        "en": "Motion · 2D/3D · Broadcast — 2024",
-        "es": "Motion · 2D/3D · Broadcast — 2024",
-        "zh": "Motion · 2D/3D · Broadcast — 2024",
-        "no": "Motion · 2D/3D · Broadcast — 2024"
-      },
-      "body": {
-        "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
-        "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
-      },
-      "blocks": []
-    },
-    {
       "kind": "craft",
       "client": "Huggies · Disney",
       "year": "2021",
@@ -726,52 +662,68 @@
       "id": "work_ccb7qbfm"
     },
     {
-      "id": "work_ohvqklqq",
-      "kind": "craft",
-      "client": "Suzano",
-      "year": "2021",
-      "art": "scan",
-      "image": "media/suzano/suzano-01.png",
-      "gallery": [
-        "media/suzano/suzano-02.png",
-        "media/suzano/suzano-03.jpg",
-        "media/suzano/suzano-04.jpg",
-        "media/suzano/suzano-05.png"
-      ],
+      "id": "work_jvssafo1",
+      "kind": "case",
+      "client": "Aché Laboratórios",
+      "year": "2023",
+      "art": "orbit",
+      "image": "",
+      "gallery": [],
       "title": {
-        "pt": "Nunca é sorte, sempre é atenção!",
-        "en": "It's never luck, it's always attention!",
-        "es": "Nunca é sorte, sempre é atenção!",
-        "zh": "Nunca é sorte, sempre é atenção!",
-        "no": "Nunca é sorte, sempre é atenção!"
+        "pt": "Cuidados Pela Vida",
+        "en": "Cuidados Pela Vida",
+        "es": "Cuidados Pela Vida",
+        "zh": "Cuidados Pela Vida",
+        "no": "Cuidados Pela Vida"
       },
       "tags": {
-        "pt": "Design · DA · Ilustração · Operação Criativa — 2021",
-        "en": "Design · DA · Illustration · Creative Ops — 2021",
-        "es": "Design · DA · Ilustração · Operação Criativa — 2021",
-        "zh": "Design · DA · Ilustração · Operação Criativa — 2021",
-        "no": "Design · DA · Ilustração · Operação Criativa — 2021"
+        "pt": "Branded Content · Motion · Saúde",
+        "en": "Branded Content · Motion · Health",
+        "es": "Branded Content · Motion · Saúde",
+        "zh": "Branded Content · Motion · Saúde",
+        "no": "Branded Content · Motion · Saúde"
       },
       "body": {
-        "pt": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-        "en": "Co-created with Suzano Brazil's communications team, the campaign reinforces the importance of paying attention at work to avoid errors and accidents — art, illustration and motion serving a serious theme without losing warmth.",
-        "es": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-        "zh": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-        "no": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza."
+        "pt": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+        "en": "Branded content for Aché Laboratórios' wellness and benefits platform, connecting patients to discounts and quality care — a health topic that called for clarity without losing human warmth.",
+        "es": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+        "zh": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+        "no": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano."
       },
-      "blocks": [
-        {
-          "type": "video",
-          "url": "https://vimeo.com/644500277",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        }
-      ]
+      "blocks": []
+    },
+    {
+      "id": "work_z0fyh22c",
+      "kind": "craft",
+      "client": "Polônia",
+      "year": "2023",
+      "art": "wave",
+      "image": "",
+      "gallery": [
+        "https://vimeo.com/1189092887?fl=pl&fe=sh"
+      ],
+      "title": {
+        "pt": "Abertura para Documentário Polonês",
+        "en": "Opening for Polish Documentary",
+        "es": "Inauguración del documental polaco",
+        "zh": "波兰纪录片开幕",
+        "no": "Åpning for polsk dokumentar"
+      },
+      "tags": {
+        "pt": "Motion · Cinema · Style Frame — 2023",
+        "en": "Motion · Cinema · Style Frame — 2023",
+        "es": "Motion · Cinema · Style Frame — 2023",
+        "zh": "Motion · Cinema · Style Frame — 2023",
+        "no": "Motion · Cinema · Style Frame — 2023"
+      },
+      "body": {
+        "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
+        "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
+      },
+      "blocks": []
     },
     {
       "kind": "craft",
@@ -821,64 +773,33 @@
       "id": "work_xpp28h08"
     },
     {
-      "id": "work_n7lorw8r",
-      "kind": "case",
-      "client": "Globoplay · Formata",
-      "year": "2025",
-      "art": "bloom",
+      "id": "work_f0i6pxqm",
+      "kind": "craft",
+      "client": "Disney ESPN",
+      "year": "2024",
+      "art": "rings",
       "image": "",
       "gallery": [],
       "title": {
-        "pt": "My Mum, Your Dad — Brasil",
-        "en": "My Mum, Your Dad — Brazil",
-        "es": "My Mum, Your Dad — Brasil",
-        "zh": "My Mum, Your Dad — Brasil",
-        "no": "My Mum, Your Dad — Brasil"
+        "pt": "Bola de Prata 2024",
+        "en": "Bola de Prata 2024",
+        "es": "Bola de Prata 2024",
+        "zh": "Bola de Prata 2024",
+        "no": "Bola de Prata 2024"
       },
       "tags": {
-        "pt": "Branded Content · Motion · Reality — 2025",
-        "en": "Branded Content · Motion · Reality — 2025",
-        "es": "Branded Content · Motion · Reality — 2025",
-        "zh": "Branded Content · Motion · Reality — 2025",
-        "no": "Branded Content · Motion · Reality — 2025"
+        "pt": "Motion · 2D/3D · Broadcast — 2024",
+        "en": "Motion · 2D/3D · Broadcast — 2024",
+        "es": "Motion · 2D/3D · Broadcast — 2024",
+        "zh": "Motion · 2D/3D · Broadcast — 2024",
+        "no": "Motion · 2D/3D · Broadcast — 2024"
       },
       "body": {
-        "pt": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-        "en": "The Brazilian version of the dating reality format already running in markets like the UK, Poland and Canada — produced by Formata for Globoplay. Branded content and motion to bring the format's arrival in Brazil to life.",
-        "es": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-        "zh": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-        "no": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país."
-      },
-      "blocks": []
-    },
-    {
-      "id": "work_jvssafo1",
-      "kind": "case",
-      "client": "Aché Laboratórios",
-      "year": "2023",
-      "art": "orbit",
-      "image": "",
-      "gallery": [],
-      "title": {
-        "pt": "Cuidados Pela Vida",
-        "en": "Cuidados Pela Vida",
-        "es": "Cuidados Pela Vida",
-        "zh": "Cuidados Pela Vida",
-        "no": "Cuidados Pela Vida"
-      },
-      "tags": {
-        "pt": "Branded Content · Motion · Saúde",
-        "en": "Branded Content · Motion · Health",
-        "es": "Branded Content · Motion · Saúde",
-        "zh": "Branded Content · Motion · Saúde",
-        "no": "Branded Content · Motion · Saúde"
-      },
-      "body": {
-        "pt": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
-        "en": "Branded content for Aché Laboratórios' wellness and benefits platform, connecting patients to discounts and quality care — a health topic that called for clarity without losing human warmth.",
-        "es": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
-        "zh": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
-        "no": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano."
+        "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
+        "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
       },
       "blocks": []
     },
@@ -916,6 +837,85 @@
       },
       "blocks": [],
       "id": "work_xs7gsz4c"
+    },
+    {
+      "id": "work_n7lorw8r",
+      "kind": "case",
+      "client": "Globoplay · Formata",
+      "year": "2025",
+      "art": "bloom",
+      "image": "",
+      "gallery": [],
+      "title": {
+        "pt": "My Mum, Your Dad — Brasil",
+        "en": "My Mum, Your Dad — Brazil",
+        "es": "My Mum, Your Dad — Brasil",
+        "zh": "My Mum, Your Dad — Brasil",
+        "no": "My Mum, Your Dad — Brasil"
+      },
+      "tags": {
+        "pt": "Branded Content · Motion · Reality — 2025",
+        "en": "Branded Content · Motion · Reality — 2025",
+        "es": "Branded Content · Motion · Reality — 2025",
+        "zh": "Branded Content · Motion · Reality — 2025",
+        "no": "Branded Content · Motion · Reality — 2025"
+      },
+      "body": {
+        "pt": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+        "en": "The Brazilian version of the dating reality format already running in markets like the UK, Poland and Canada — produced by Formata for Globoplay. Branded content and motion to bring the format's arrival in Brazil to life.",
+        "es": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+        "zh": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+        "no": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país."
+      },
+      "blocks": []
+    },
+    {
+      "id": "work_ohvqklqq",
+      "kind": "craft",
+      "client": "Suzano",
+      "year": "2021",
+      "art": "scan",
+      "image": "media/suzano/suzano-01.png",
+      "gallery": [
+        "media/suzano/suzano-02.png",
+        "media/suzano/suzano-03.jpg",
+        "media/suzano/suzano-04.jpg",
+        "media/suzano/suzano-05.png"
+      ],
+      "title": {
+        "pt": "Nunca é sorte, sempre é atenção!",
+        "en": "It's never luck, it's always attention!",
+        "es": "Nunca é sorte, sempre é atenção!",
+        "zh": "Nunca é sorte, sempre é atenção!",
+        "no": "Nunca é sorte, sempre é atenção!"
+      },
+      "tags": {
+        "pt": "Design · DA · Ilustração · Operação Criativa — 2021",
+        "en": "Design · DA · Illustration · Creative Ops — 2021",
+        "es": "Design · DA · Ilustração · Operação Criativa — 2021",
+        "zh": "Design · DA · Ilustração · Operação Criativa — 2021",
+        "no": "Design · DA · Ilustração · Operação Criativa — 2021"
+      },
+      "body": {
+        "pt": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+        "en": "Co-created with Suzano Brazil's communications team, the campaign reinforces the importance of paying attention at work to avoid errors and accidents — art, illustration and motion serving a serious theme without losing warmth.",
+        "es": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+        "zh": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+        "no": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/644500277",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ]
     },
     {
       "id": "work_cel48cmk",
