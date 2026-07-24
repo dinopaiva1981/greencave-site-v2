@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T04:21:41.260Z",
+  "generatedAt": "2026-07-24T04:24:40.423Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -630,7 +630,19 @@
         "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
         "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
       },
-      "blocks": []
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/1189092887?fl=pl&fe=sh",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ]
     },
     {
       "id": "work_f0i6pxqm",
