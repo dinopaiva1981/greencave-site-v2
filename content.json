@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T04:20:00.369Z",
+  "generatedAt": "2026-07-24T04:21:41.260Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -604,17 +604,17 @@
     {
       "id": "work_z0fyh22c",
       "kind": "craft",
-      "client": "Documentário Internacional",
+      "client": "Polônia",
       "year": "2023",
       "art": "wave",
       "image": "",
       "gallery": [],
       "title": {
-        "pt": "Abertura para documentário internacional",
-        "en": "Opening for an international documentary",
-        "es": "Abertura para documentário internacional",
-        "zh": "Abertura para documentário internacional",
-        "no": "Abertura para documentário internacional"
+        "pt": "Abertura para Documentário Polonês",
+        "en": "Opening for Polish Documentary",
+        "es": "Inauguración del documental polaco",
+        "zh": "波兰纪录片开幕",
+        "no": "Åpning for polsk dokumentar"
       },
       "tags": {
         "pt": "Motion · Cinema · Style Frame — 2023",
