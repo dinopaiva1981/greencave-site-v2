@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T14:39:06.090Z",
+  "generatedAt": "2026-07-24T16:18:23.983Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -365,13 +365,13 @@
     "Globo",
     "ESPN",
     "Shellbox",
+    "Elanco",
     "Suzano",
     "Huggies",
     "TV TEM",
     "Stone",
     "VMLY&R",
     "GNT",
-    "Elanco",
     "Fremantle"
   ],
   "services": [
@@ -698,7 +698,7 @@
       "client": "Polônia",
       "year": "2023",
       "art": "wave",
-      "image": "",
+      "image": "media/polonia/pool-oo1.png",
       "gallery": [
         "https://vimeo.com/1189092887?fl=pl&fe=sh"
       ],
@@ -871,7 +871,7 @@
     },
     {
       "id": "work_ohvqklqq",
-      "kind": "craft",
+      "kind": "case",
       "client": "Suzano",
       "year": "2021",
       "art": "scan",
