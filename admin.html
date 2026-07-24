@@ -667,6 +667,36 @@ body:has(#gate){overflow:hidden}
   .lactions .ed{padding:6px 10px}
 }
 
+/* ── sincronização com GitHub ───────────────────────────────── */
+.gc-pill.sync{cursor:default}
+.gc-pill.sync.warn i{background:var(--warn)}
+.gc-pill.sync.err i{background:var(--err)}
+.gc-syncbody{display:flex;flex-direction:column;gap:0}
+.gc-syncrow{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}
+.gc-syncrow:last-child{border:0}
+.gc-syncrow span{color:var(--mute2);font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase}
+.gc-syncrow b{color:var(--txt);font-weight:600;text-align:right;max-width:70%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gc-dot{display:inline-flex;align-items:center;gap:7px}
+.gc-dot::before{content:"";width:8px;height:8px;border-radius:99px;background:var(--mute2)}
+.gc-dot.ok::before{background:var(--green);box-shadow:0 0 8px rgba(52,211,153,.7)}
+.gc-dot.warn::before{background:var(--warn)}
+.gc-dot.err::before{background:var(--err)}
+
+.gc-synctoast{
+  position:fixed;right:24px;bottom:24px;z-index:700;width:min(380px,calc(100vw - 48px));
+  background:#1D2129;border:1px solid var(--line);border-radius:14px;padding:18px 20px;
+  box-shadow:var(--sh-lg);opacity:0;transform:translateY(16px) scale(.97);
+  transition:opacity .3s,transform .3s;
+}
+.gc-synctoast.on{opacity:1;transform:none}
+.gc-synctoast b{display:block;color:#fff;font-size:14.5px;font-weight:650;margin-bottom:6px}
+.gc-synctoast p{color:var(--mute);font-size:13px;line-height:1.55;margin:0 0 14px}
+.gc-synctoast.conflict{border-color:rgba(245,158,11,.4)}
+.gc-synctoast.conflict b{color:#F5C871}
+.gc-synctoast .row{display:flex;gap:8px;flex-wrap:wrap}
+.gc-synctoast .row .tbtn{padding:8px 14px;font-size:12.5px}
+.gc-synctoast .row .tbtn[disabled]{opacity:.4;cursor:not-allowed}
+
 </style>
 </head>
 <body>
@@ -2240,6 +2270,7 @@ function recentActivity(m){
 const _dashboard=window.dashboard;
 window.dashboard=function(m){
   statusBar(m);
+  syncCard(m);
   const D=DATA;
   const c=card('Visão geral do conteúdo','Números lidos direto do content.json carregado.');
   const k=mk('<div class="kpis"></div>');
@@ -2295,6 +2326,7 @@ function mountData(data,raw){
   try{ setStatus((typeof DIRTY!=='undefined'&&DIRTY)?'dirty':'clean'); }catch(_){}
   try{ if(typeof checkDraftRecovery==='function') checkDraftRecovery(); }catch(_){}
   try{ if(typeof fetchContentSha==='function') fetchContentSha().then(s=>{LOADED_SHA=s;}); }catch(_){}
+  if(!window.__gcSyncStarted){ window.__gcSyncStarted=true; setTimeout(startSyncPolling,1200); }
 }
 async function tryPaths(){
   const cands=[];
@@ -2351,6 +2383,15 @@ if(typeof autoLoadPublished==='function'){
       if(!r.ok) setTimeout(emptyState,60);
       else if(typeof toast==='function') toast('Conteúdo carregado automaticamente.',true);
     }
+    /* CORREÇÃO: a sincronização só começava a ser checada quando o
+       carregamento passava pelo caminho alternativo (tryPaths/mountData).
+       No caso comum — o autoLoadPublished original funcionando de primeira —
+       esse gatilho nunca disparava e o painel nunca via se havia uma versão
+       nova. Agora dispara sempre que o conteúdo termina de carregar, por
+       qualquer caminho. */
+    if(!window.__gcSyncStarted && !document.getElementById('wrap').hidden){
+      window.__gcSyncStarted=true; setTimeout(startSyncPolling,1200);
+    }
     return true;
   };
 }
@@ -2401,6 +2442,7 @@ if(typeof ghPublish==='function'){
     try{
       const r=await _pub.apply(this,arguments);
       setStatus((typeof DIRTY!=='undefined'&&DIRTY===false)?'done':(before?'dirty':'clean'));
+      checkSync(false);   /* atualiza autor/data/SHA remoto — evita aviso de "versão nova" falso logo após publicar */
       return r;
     }catch(e){ setStatus('error'); throw e; }
   };
@@ -2640,6 +2682,160 @@ function injectProjectOptions(){
   const og=mk('<optgroup label="Projetos (Trabalhos/Cases)"></optgroup>');
   folders.forEach(p=>og.appendChild(mk(`<option value="${esc(p.key)}">${esc(p.label)}</option>`)));
   sel.appendChild(og);
+}
+
+/* ── 8h. Sincronização inteligente com GitHub ──────────────────────
+   Reaproveita o mecanismo que o motor já tem para detectar conflito na
+   publicação (LOADED_SHA vs. fetchContentSha() do content.json) como fonte
+   de verdade sobre "existe algo novo" — não duplica nem substitui essa
+   lógica, só observa o mesmo SHA e some com metadados legíveis do commit
+   (autor, data, mensagem) para exibir ao usuário. Nunca baixa content.json
+   de novo sozinho: só na checagem periódica pergunta pelo HEAD (leve), e só
+   baixa o conteúdo de fato quando o usuário clica em "Atualizar agora". */
+const SYNC={remoteAuthor:'',remoteDate:null,remoteMsg:'',connected:null,lastCheck:null,outdated:false,checking:false};
+let SYNC_TIMER=null, SYNC_TOAST_SHOWN=false;
+
+async function fetchHeadCommit(){
+  if(!GHS.repo||GHS.repo.includes('SEU-'))return null;
+  const H=(GHS.token&&typeof ghHeaders==='function')?ghHeaders():{Accept:'application/vnd.github+json'};
+  try{
+    const r=await fetch(`https://api.github.com/repos/${GHS.repo}/commits/${GHS.branch||'main'}`,{headers:H});
+    if(!r.ok){ SYNC.connected=false; return null; }
+    const j=await r.json(); SYNC.connected=true;
+    return {
+      author:(j.commit&&j.commit.author&&j.commit.author.name)||'—',
+      date:(j.commit&&j.commit.author&&j.commit.author.date)||null,
+      message:((j.commit&&j.commit.message)||'').split('\n')[0],
+      sha:j.sha
+    };
+  }catch(_){ SYNC.connected=false; return null; }
+}
+
+async function checkSync(notifyIfNew){
+  if(SYNC.checking)return; SYNC.checking=true;
+  try{
+    const [commit,blobSha]=await Promise.all([
+      fetchHeadCommit(),
+      (typeof fetchContentSha==='function'?fetchContentSha():Promise.resolve(null))
+    ]);
+    SYNC.lastCheck=Date.now();
+    if(commit) Object.assign(SYNC,{remoteAuthor:commit.author,remoteDate:commit.date,remoteMsg:commit.message});
+    const local=(typeof LOADED_SHA!=='undefined')?LOADED_SHA:null;
+    const wasOutdated=SYNC.outdated;
+    SYNC.outdated=!!(blobSha&&local&&blobSha!==local);
+    if(SYNC.outdated&&notifyIfNew&&(!wasOutdated||!SYNC_TOAST_SHOWN)) showSyncToast();
+    if(!SYNC.outdated) hideSyncToast();
+    renderSyncUI();
+  } finally { SYNC.checking=false; }
+}
+
+window.gcCheckSync=checkSync;   /* hook manual p/ depuração, igual gcSetStatus */
+function startSyncPolling(){
+  if(SYNC_TIMER)clearInterval(SYNC_TIMER);
+  checkSync(true);
+  SYNC_TIMER=setInterval(()=>checkSync(true),30000);   /* só pergunta o HEAD — nunca baixa content.json sozinho */
+}
+
+const relTime=t=>{
+  if(!t)return'—';
+  const s=(Date.now()-new Date(t).getTime())/1000;
+  if(s<60)return'agora'; if(s<3600)return Math.floor(s/60)+' min atrás';
+  if(s<86400)return Math.floor(s/3600)+'h atrás'; return Math.floor(s/86400)+'d atrás';
+};
+
+function showSyncToast(){
+  if(document.getElementById('gc-synctoast'))return;
+  SYNC_TOAST_SHOWN=true;
+  const dirty=(typeof DIRTY!=='undefined')&&DIRTY;
+  const box=mk(dirty?`
+    <div id="gc-synctoast" class="gc-synctoast conflict">
+      <b>Existe uma versão mais recente no GitHub.</b>
+      <p>Mas você possui alterações locais não publicadas.<br>Publique ou descarte suas alterações antes de sincronizar.</p>
+      <div class="row">
+        <button data-pub class="tbtn">Publicar</button>
+        <button data-discard class="tbtn ghost">Descartar</button>
+        <button data-sync class="tbtn ghost" disabled>Sincronizar</button>
+      </div>
+    </div>`:`
+    <div id="gc-synctoast" class="gc-synctoast">
+      <b>Nova publicação disponível</b>
+      <p>Autor: ${esc(SYNC.remoteAuthor)} · ${relTime(SYNC.remoteDate)}${SYNC.remoteMsg?'<br>"'+esc(SYNC.remoteMsg)+'"':''}</p>
+      <div class="row">
+        <button data-update class="tbtn">Atualizar agora</button>
+        <button data-x class="tbtn ghost">Depois</button>
+      </div>
+    </div>`);
+  document.body.appendChild(box);
+  requestAnimationFrame(()=>box.classList.add('on'));
+  const b=sel=>box.querySelector(sel);
+  if(b('[data-update]')) b('[data-update]').addEventListener('click',applyRemoteUpdate);
+  if(b('[data-x]')) b('[data-x]').addEventListener('click',hideSyncToast);
+  if(b('[data-pub]')) b('[data-pub]').addEventListener('click',()=>{ hideSyncToast(); SEC='pub'; renderSide(); renderSec(); scrollTo({top:0,behavior:'smooth'}); });
+  if(b('[data-discard]')) b('[data-discard]').addEventListener('click',()=>{
+    if(!confirm('Descartar TODAS as alterações locais não publicadas? Isso não pode ser desfeito.'))return;
+    try{ localStorage.removeItem('gc_draft'); }catch(_){}
+    try{ clearDirty(); }catch(_){}
+    hideSyncToast();
+    applyRemoteUpdate();
+  });
+}
+function hideSyncToast(){
+  const e=document.getElementById('gc-synctoast'); if(!e)return;
+  e.classList.remove('on'); setTimeout(()=>e.remove(),280);
+  SYNC_TOAST_SHOWN=false;
+}
+async function applyRemoteUpdate(){
+  hideSyncToast();
+  setStatus('publishing');   /* reaproveita o pulso azul do indicador — "atualizando" */
+  const r=await tryPaths();  /* já existente: busca content.json fresco e remonta tudo, sem recarregar a página */
+  if(r&&r.ok){
+    SYNC.outdated=false;
+    toast('Conteúdo atualizado a partir do GitHub.',true);
+    try{ listMedia(); }catch(_){}   /* biblioteca também reflete mídia nova adicionada por fora do painel */
+  } else {
+    toast('Não consegui atualizar agora. Tente de novo em instantes.',false);
+  }
+  renderSyncUI();
+  try{ setStatus((typeof DIRTY!=='undefined'&&DIRTY)?'dirty':'clean'); }catch(_){}
+}
+
+/* indicador discreto e permanente no topo */
+function syncPill(){
+  let e=document.getElementById('gc-syncpill');
+  if(!e){
+    e=mk('<span id="gc-syncpill" class="gc-pill sync"><i></i><b></b></span>');
+    const top=document.getElementById('top'); if(top) top.appendChild(e);
+  }
+  return e;
+}
+function renderSyncUI(){
+  const p=syncPill(); if(!p)return;
+  let cls='ok', txt='GitHub · sincronizado';
+  if(SYNC.connected===false){ cls='err'; txt='GitHub · desconectado'; }
+  else if(SYNC.outdated){ cls='warn'; txt='GitHub · atualização disponível'; }
+  p.className='gc-pill sync '+cls;
+  p.querySelector('b').textContent=txt;
+  p.title=SYNC.lastCheck?('Última checagem: '+new Date(SYNC.lastCheck).toLocaleTimeString('pt-BR')):'';
+  renderSyncCard();
+}
+/* cartão no Dashboard */
+function renderSyncCard(){
+  const c=document.getElementById('gc-synccard'); if(!c)return;
+  const body=c.querySelector('.gc-syncbody'); if(!body)return;
+  const st = SYNC.connected===false ? ['err','Desconectado'] : SYNC.outdated ? ['warn','Nova versão disponível'] : ['ok','Sincronizado'];
+  body.innerHTML=`
+    <div class="gc-syncrow"><span>Último commit</span><b>${esc(SYNC.remoteMsg||'—')}</b></div>
+    <div class="gc-syncrow"><span>Autor</span><b>${esc(SYNC.remoteAuthor||'—')}</b></div>
+    <div class="gc-syncrow"><span>Quando</span><b>${relTime(SYNC.remoteDate)}</b></div>
+    <div class="gc-syncrow"><span>Status</span><b class="gc-dot ${st[0]}">${st[1]}</b></div>
+    <div class="gc-syncrow"><span>Última checagem</span><b>${SYNC.lastCheck?new Date(SYNC.lastCheck).toLocaleTimeString('pt-BR'):'—'}</b></div>`;
+}
+function syncCard(m){
+  const c=card('GitHub','Estado de sincronização com o repositório — verificado a cada 30 segundos.');
+  c.id='gc-synccard';
+  c.appendChild(mk('<div class="gc-syncbody"></div>'));
+  m.appendChild(c);
+  renderSyncCard();
 }
 
 /* ── 9. render ─────────────────────────────────────────────── */

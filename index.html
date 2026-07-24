@@ -280,9 +280,8 @@ body.ready #hero .cap{width:1.5em}
 #wrail::-webkit-scrollbar{display:none}
 #wrail.drag{cursor:grabbing;scroll-snap-type:none}
 .wcard{flex:0 0 auto;width:clamp(300px,66vw,860px);scroll-snap-align:center;cursor:pointer}
-.wcard .media{position:relative;border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--bone);display:flex}
-.wcard .media>svg{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform 1s var(--ease)}
-.wcard .media>img{width:100%;height:auto;max-height:64vh;object-fit:contain;transition:transform 1s var(--ease);background:var(--bone)}
+.wcard .media{position:relative;border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--bone);aspect-ratio:16/9}
+.wcard .media>svg,.wcard .media>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
 .wcard:hover .media>svg,.wcard:hover .media>img{transform:scale(1.04)}
 .wcard .chip{position:absolute;top:16px;left:16px;background:var(--paper);border:1.5px solid var(--ink);border-radius:99px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:8px 14px;z-index:2}
 .chip.nda{background:var(--ink);color:var(--bone);border-color:var(--ink)}
@@ -322,9 +321,8 @@ body.ready #hero .cap{width:1.5em}
 #craft .grid{margin-top:clamp(44px,6vh,80px);column-count:3;column-gap:clamp(16px,2.2vw,30px)}
 #craft .grid .ccard{break-inside:avoid;margin-bottom:clamp(16px,2.2vw,30px)}
 .ccard{cursor:pointer}
-.ccard .media{position:relative;border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--bone);display:flex}
-.ccard .media>svg{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .9s var(--ease)}
-.ccard .media>img{width:100%;height:auto;object-fit:contain;transition:transform .9s var(--ease);background:var(--bone)}
+.ccard .media{position:relative;border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--bone);aspect-ratio:16/9}
+.ccard .media>svg,.ccard .media>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
 .ccard:hover .media>svg,.ccard:hover .media>img{transform:scale(1.05)}
 .ccard .chip{position:absolute;top:12px;left:12px;background:var(--paper);border:1.5px solid var(--ink);border-radius:99px;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:6px 11px;z-index:2}
 .ccard h3{font-family:var(--disp);font-weight:740;text-transform:uppercase;letter-spacing:-.018em;font-size:clamp(16px,1.6vw,22px);line-height:1.05;margin-top:14px;transition:color .3s}
@@ -342,9 +340,8 @@ body.ready #hero .cap{width:1.5em}
 #case .k-client{font-size:12px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--teal);margin-bottom:20px;display:flex;align-items:center;gap:12px}
 #case .k-client::before{content:"";width:10px;height:10px;background:var(--green);border-radius:2px}
 #case h2{font-family:var(--disp);font-stretch:125%;font-size:clamp(38px,6.4vw,92px);font-weight:790;line-height:.94;text-transform:uppercase;max-width:16ch}
-#case .k-hero{margin:48px 0;border-radius:12px;overflow:hidden;background:var(--bone);border:1.5px solid var(--ink);display:flex}
-#case .k-hero>svg{width:100%;aspect-ratio:16/9;object-fit:cover}
-#case .k-hero>img{width:100%;height:auto;max-height:min(76vh,880px);object-fit:contain;background:var(--bone)}
+#case .k-hero{margin:48px 0;border-radius:12px;overflow:hidden;background:var(--bone);border:1.5px solid var(--ink);position:relative;aspect-ratio:16/9}
+#case .k-hero>svg,#case .k-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 #case .cols{display:grid;grid-template-columns:.8fr 1.6fr;gap:clamp(28px,5vw,90px)}
 #case .facts{display:flex;flex-direction:column;border-top:1.5px solid var(--ink);align-self:start}
 #case .facts>div{padding:16px 2px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;font-size:14px}
@@ -364,16 +361,16 @@ body.ready #hero .cap{width:1.5em}
 #case .blk figure{border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--bone);cursor:zoom-in}
 #case .blk figure img{width:100%;display:block}
 #case .blk figcaption{border-top:1.5px solid var(--ink);padding:12px 16px;font-size:13px;color:var(--mute);background:var(--paper)}
-#case .blk-duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,26px);align-items:end}
-#case .blk-duo figure{display:flex}
-#case .blk-duo figure img{width:100%;height:auto;display:block}
+#case .blk-duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,26px)}
+#case .blk-duo figure{position:relative;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:var(--bone)}
+#case .blk-duo figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 #case .blk-video .vwrap{position:relative;aspect-ratio:16/9;border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--ink)}
 #case .blk-video iframe,#case .blk-video video{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
 #case .blk-video figcaption{margin-top:10px;font-size:13px;color:var(--mute)}
-#case .blk-gal{column-count:2;column-gap:clamp(14px,2vw,26px)}
-#case .blk-gal figure{break-inside:avoid;margin-bottom:clamp(14px,2vw,26px);cursor:zoom-in}
-#case .blk-gal figure img{width:100%;height:auto;display:block}
-@media(max-width:820px){#case .blk-duo{grid-template-columns:1fr}#case .blk-gal{column-count:1}}
+#case .blk-gal{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,26px)}
+#case .blk-gal figure{position:relative;aspect-ratio:4/3;border-radius:10px;overflow:hidden;cursor:zoom-in;background:var(--bone)}
+#case .blk-gal figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:820px){#case .blk-duo{grid-template-columns:1fr}#case .blk-gal{grid-template-columns:1fr}}
 #lbox{position:fixed;inset:0;z-index:400;background:rgba(11,16,17,.94);display:grid;place-items:center;padding:clamp(20px,5vh,60px);opacity:0;pointer-events:none;transition:opacity .3s var(--ease)}
 #lbox.open{opacity:1;pointer-events:auto}
 #lbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 40px 90px -30px rgba(0,0,0,.6)}
@@ -381,10 +378,11 @@ body.ready #hero .cap{width:1.5em}
 #lbox .lclose:hover{background:var(--paper);color:var(--ink)}
 .wcard .vbadge,.ccard .vbadge{position:absolute;bottom:14px;left:14px;z-index:2;width:34px;height:34px;border-radius:99px;background:rgba(15,21,22,.72);backdrop-filter:blur(4px);display:grid;place-items:center;color:var(--paper)}
 .wcard .vbadge svg,.ccard .vbadge svg{width:13px;height:13px;margin-left:2px}
-#case .gal{margin-top:clamp(44px,7vh,80px);column-count:2;column-gap:clamp(14px,2vw,26px)}
-#case .gal figure{border-radius:12px;overflow:hidden;border:1.5px solid var(--ink);background:var(--bone);break-inside:avoid;margin-bottom:clamp(14px,2vw,26px);cursor:zoom-in}
-#case .gal img{width:100%;height:auto;display:block}
-@media(max-width:860px){#case .cols{grid-template-columns:1fr}#case .gal{column-count:1}}
+#case .gal{margin-top:clamp(44px,7vh,80px);display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,26px)}
+#case .gal figure{position:relative;aspect-ratio:4/3;border-radius:12px;overflow:hidden;border:1.5px solid var(--ink);background:var(--bone);cursor:zoom-in}
+#case .gal figure:nth-child(3n){grid-column:span 2;aspect-ratio:21/9}
+#case .gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:860px){#case .cols{grid-template-columns:1fr}#case .gal{grid-template-columns:1fr}#case .gal figure:nth-child(3n){grid-column:span 1;aspect-ratio:4/3}}
 
 /* ---------- about ---------- */
 #about .manif{background:var(--teal);color:var(--bone);border-radius:16px;padding:clamp(34px,6vh,70px) clamp(24px,4vw,64px);margin-top:clamp(40px,6vh,70px);position:relative;overflow:hidden}
@@ -2186,37 +2184,13 @@ window.__gcArt=(i,ratio,atmoMode)=>{
   const w=C.works[i];
   return atmoMode?svgImg(atmo(w,i),true):svgImg(art(w.art,i,ratio));
 };
-const RATIO_CACHE=Object.create(null);
-const clampRatio=(r,lo,hi)=>Math.max(lo,Math.min(hi,r));
-function loadRatio(src){
-  if(!src) return Promise.resolve(null);
-  if(src in RATIO_CACHE) return Promise.resolve(RATIO_CACHE[src]);
-  return new Promise(res=>{
-    const img=new Image();
-    const done=v=>{ RATIO_CACHE[src]=v; res(v); };
-    const timer=setTimeout(()=>done(null),2500);   /* nunca trava o boot por causa de uma imagem lenta/quebrada */
-    img.onload=()=>{ clearTimeout(timer); done(img.naturalWidth/img.naturalHeight); };
-    img.onerror=()=>{ clearTimeout(timer); done(null); };
-    img.src=src;
-  });
-}
-function preloadRatios(){
-  return Promise.all(C.works.filter(w=>w.image).map(w=>loadRatio(w.image)));
-}
+/* CAPAS: padrão único 16:9 (rail, grid de trabalhos e hero do case) — a
+   proporção fixa reserva o espaço sozinha, via CSS, sem precisar medir a
+   imagem antes de desenhar a página. Mais simples e sem atraso nenhum. */
 const hasVideo=w=>(w.blocks||[]).some(b=>b.type==="video"&&b.url);
 const vBadge=w=>hasVideo(w)?'<span class="vbadge" title="Vídeo neste case"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>':"";
-const media=(w,i,ratio)=>{
-  if(!w.image) return svgImg(art(w.art,i,ratio));
-  const raw=RATIO_CACHE[w.image];
-  const ar=raw?clampRatio(raw,3/4,16/9):null;   /* faixa do rail/grid: nunca portrait demais nem panorâmico demais */
-  return `<img src="${esc(w.image)}" alt="${esc(T(w.title))}" loading="lazy" decoding="async"${ar?` style="aspect-ratio:${ar.toFixed(4)}"`:''} onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},'${ratio}')">`;
-};
-const heroMedia=(w,i)=>{
-  if(!w.image) return svgImg(atmo(w,i),true);
-  const raw=RATIO_CACHE[w.image];
-  const ar=raw?clampRatio(raw,9/16,21/9):null;  /* hero aceita mais variação, mas com teto */
-  return `<img src="${esc(w.image)}" alt="" decoding="async"${ar?` style="aspect-ratio:${ar.toFixed(4)}"`:''} onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},null,true)">`;
-};
+const media=(w,i,ratio)=> w.image?`<img src="${esc(w.image)}" alt="${esc(T(w.title))}" loading="lazy" decoding="async" onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},'${ratio}')">`:svgImg(art(w.art,i,ratio));
+const heroMedia=(w,i)=> w.image?`<img src="${esc(w.image)}" alt="" decoding="async" onerror="this.onerror=null;this.outerHTML=window.__gcArt(${i},null,true)">`:svgImg(atmo(w,i),true);
 
 /* ---------- render ---------- */
 function render(){
@@ -2731,13 +2705,6 @@ function loop(){
 
 /* ---------- loader ---------- */
 function boot(){
-  /* mede a proporção de cada imagem ANTES do primeiro render — assim o
-     rail, o grid e o hero já nascem com o tamanho certo, sem esperar a
-     imagem chegar para só então "pular" para o lugar certo. A tela de
-     carregamento abaixo cobre esse tempo, então não há atraso perceptível. */
-  preloadRatios().finally(startBoot);
-}
-function startBoot(){
   render(); loop();
   const loader=$('loader');
   if(reduced){loader.remove();document.body.classList.add('ready');return;}
