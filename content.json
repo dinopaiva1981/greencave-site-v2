@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T20:49:21.153Z",
+  "generatedAt": "2026-07-24T21:18:32.522Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -602,6 +602,38 @@
       "id": "work_zahtq32w"
     },
     {
+      "id": "work_jvssafo1",
+      "kind": "case",
+      "client": "Aché Laboratórios",
+      "year": "2023",
+      "art": "orbit",
+      "image": "media/projetos/ache-laboratorios/ache_styleframe_1.jpg",
+      "gallery": [],
+      "title": {
+        "pt": "Cuidados Pela Vida",
+        "en": "Cuidados Pela Vida",
+        "es": "Cuidados Pela Vida",
+        "zh": "Cuidados Pela Vida",
+        "no": "Cuidados Pela Vida"
+      },
+      "tags": {
+        "pt": "Branded Content · Motion · Saúde",
+        "en": "Branded Content · Motion · Health",
+        "es": "Branded Content · Motion · Saúde",
+        "zh": "Branded Content · Motion · Saúde",
+        "no": "Branded Content · Motion · Saúde"
+      },
+      "body": {
+        "pt": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+        "en": "Branded content for Aché Laboratórios' wellness and benefits platform, connecting patients to discounts and quality care — a health topic that called for clarity without losing human warmth.",
+        "es": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+        "zh": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+        "no": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano."
+      },
+      "blocks": [],
+      "ai": true
+    },
+    {
       "kind": "craft",
       "client": "Huggies · Disney",
       "year": "2021",
@@ -660,38 +692,6 @@
         }
       ],
       "id": "work_ccb7qbfm"
-    },
-    {
-      "id": "work_jvssafo1",
-      "kind": "case",
-      "client": "Aché Laboratórios",
-      "year": "2023",
-      "art": "orbit",
-      "image": "media/projetos/ache-laboratorios/ache_styleframe_1.jpg",
-      "gallery": [],
-      "title": {
-        "pt": "Cuidados Pela Vida",
-        "en": "Cuidados Pela Vida",
-        "es": "Cuidados Pela Vida",
-        "zh": "Cuidados Pela Vida",
-        "no": "Cuidados Pela Vida"
-      },
-      "tags": {
-        "pt": "Branded Content · Motion · Saúde",
-        "en": "Branded Content · Motion · Health",
-        "es": "Branded Content · Motion · Saúde",
-        "zh": "Branded Content · Motion · Saúde",
-        "no": "Branded Content · Motion · Saúde"
-      },
-      "body": {
-        "pt": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
-        "en": "Branded content for Aché Laboratórios' wellness and benefits platform, connecting patients to discounts and quality care — a health topic that called for clarity without losing human warmth.",
-        "es": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
-        "zh": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
-        "no": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano."
-      },
-      "blocks": [],
-      "ai": true
     },
     {
       "id": "work_z0fyh22c",
@@ -888,8 +888,7 @@
         "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_01.webp",
         "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_02.webp",
         "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_03.webp",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/502e79241939343.6962c113dda5d.jpg"
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp"
       ],
       "title": {
         "pt": "My Mum, Your Dad — Brasil",
@@ -941,6 +940,17 @@
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/ad8002241939343.6962bd9c3d7b4.jpg",
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8836a9241939343.6962bd9c3ddaf.jpg"
           ]
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/502e79241939343.6962c113dda5d.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
         }
       ]
     },
