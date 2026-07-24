@@ -697,6 +697,35 @@ body:has(#gate){overflow:hidden}
 .gc-synctoast .row .tbtn{padding:8px 14px;font-size:12.5px}
 .gc-synctoast .row .tbtn[disabled]{opacity:.4;cursor:not-allowed}
 
+/* ── progresso de upload da biblioteca de mídia ────────────────── */
+.dropzone.busy{opacity:.6;pointer-events:none;position:relative}
+.dropzone.busy::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;
+  background:repeating-linear-gradient(-45deg,rgba(52,211,153,.08) 0 12px,transparent 12px 24px);
+  animation:gcstripe 1.2s linear infinite;
+}
+@keyframes gcstripe{to{background-position:34px 0}}
+.gc-upload{
+  margin-top:14px;background:var(--card2);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;overflow:hidden;transition:opacity .3s,max-height .3s;max-height:400px;opacity:1;
+}
+.gc-upload.gc-hidden{display:none}
+.gc-upbar{height:4px;border-radius:99px;background:#141821;overflow:hidden;margin-bottom:12px}
+.gc-upbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--green));transition:width .3s var(--ez);border-radius:99px}
+.gc-uprow{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.gc-upspin{width:14px;height:14px;border-radius:99px;border:2px solid var(--line);border-top-color:var(--green);flex:none;animation:gcspin .7s linear infinite}
+@keyframes gcspin{to{transform:rotate(360deg)}}
+.gc-uptext{color:var(--txt);font-size:13px;font-weight:600}
+.gc-uplist{list-style:none;display:flex;flex-direction:column;gap:6px;max-height:180px;overflow:auto}
+.gc-uplist li{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--mute);padding:3px 0}
+.gc-upicn{width:16px;text-align:center;flex:none;font-size:12px}
+.gc-upname{color:var(--txt);font-weight:550;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:220px}
+.gc-upstage{color:var(--mute2);font-family:var(--mono);font-size:11px;white-space:nowrap}
+.gc-uplist li.ok .gc-upicn{color:var(--green)}
+.gc-uplist li.ok .gc-upstage{color:var(--green)}
+.gc-uplist li.bad .gc-upicn{color:var(--err)}
+.gc-uplist li.bad .gc-upstage{color:#FCA5A5}
+
 </style>
 </head>
 <body>
@@ -2610,10 +2639,88 @@ function projectFolders(){
     label:(w.client||'Projeto')+' — '+(ml(w.title)||''),
   }));
 }
-const _uploadMedia=window.uploadMedia;
+/* CORREÇÃO: a função original enviava os arquivos em silêncio total — nada
+   na tela até o toast final. Em conexão lenta ou arquivo grande, parece que
+   travou. Reimplementada aqui com o EXATO mesmo comportamento (mesma
+   deduplicação, mesma compressão pra WebP, mesmo endpoint, mesmo payload,
+   mesmo toast final) — só adicionando um painel de progresso visível a
+   cada etapa de cada arquivo. */
+function uploadPanel(){
+  let e=document.getElementById('gc-upload');
+  if(!e){
+    const dz=document.getElementById('mdrop');
+    e=mk('<div id="gc-upload" class="gc-upload gc-hidden"><div class="gc-upbar"><i></i></div><div class="gc-uprow"><span class="gc-upspin"></span><b class="gc-uptext"></b></div><ul class="gc-uplist"></ul></div>');
+    if(dz&&dz.parentElement) dz.parentElement.insertBefore(e,dz.nextSibling);
+    else document.body.appendChild(e);
+  }
+  return e;
+}
+function setDropzoneBusy(busy){
+  const dz=document.getElementById('mdrop');
+  if(dz) dz.classList.toggle('busy',busy);
+}
 window.uploadMedia=async function(files,category){
   window.__gcLastUploadCat=category;
-  return _uploadMedia.apply(this,arguments);
+  if(GHS.repo.includes('SEU-')){ toast('Configure o repositório na aba Publicação.',false); return; }
+  category=category||'downloads';
+  const panel=uploadPanel();
+  const list=panel.querySelector('.gc-uplist'), bar=panel.querySelector('.gc-upbar i'), txt=panel.querySelector('.gc-uptext');
+  panel.classList.remove('gc-hidden'); setDropzoneBusy(true);
+  const rows=new Map();
+  [...files].forEach(f=>{
+    const row=mk(`<li data-f="${esc(f.name)}"><span class="gc-upicn">⏳</span><span class="gc-upname">${esc(f.name)}</span><span class="gc-upstage">na fila…</span></li>`);
+    list.appendChild(row); rows.set(f,row);
+  });
+  const setRow=(f,icon,stage,cls)=>{
+    const row=rows.get(f); if(!row)return;
+    row.querySelector('.gc-upicn').textContent=icon;
+    row.querySelector('.gc-upstage').textContent=stage;
+    row.className=cls||'';
+  };
+  const setProgress=(done,total)=>{
+    bar.style.width=(total?Math.round(done/total*100):0)+'%';
+    txt.textContent=`Enviando ${Math.min(done+1,total)} de ${total} arquivo${total===1?'':'s'}…`;
+  };
+
+  let ok=0, fail=0, saved=0, done=0;
+  const total=files.length;
+  setProgress(0,total);
+  let existing=new Set();
+  try{
+    const r=await fetch(`https://api.github.com/repos/${GHS.repo}/contents/media/${category}?ref=${GHS.branch}`,{headers:ghHeaders()});
+    if(r.ok) existing=new Set((await r.json()).map(x=>x.name));
+  }catch(_){}
+
+  for(let f of files){
+    if(f.size>20*1024*1024){ toast(f.name+': acima de 20 MB, pulei.',false); setRow(f,'✕','acima de 20 MB','bad'); fail++; done++; setProgress(done,total); continue; }
+    let name=slug(f.name);
+    if(existing.has(name) && !confirm(name+' já existe em media/'+category+'/. Substituir?')){ setRow(f,'—','pulado',''); done++; setProgress(done,total); continue; }
+    try{
+      setRow(f,'⏳','comprimindo…','');
+      const compressed=await compressToWebp(f);
+      let blobToSend=f;
+      if(compressed){ blobToSend=compressed; name=name.replace(/\.(png|jpe?g)$/i,'')+'.webp'; saved+=Math.max(0,f.size-compressed.size); }
+      setRow(f,'⏳','enviando…','');
+      const b64=await new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result.split(',')[1]);r.onerror=rej;r.readAsDataURL(blobToSend);});
+      const api=`https://api.github.com/repos/${GHS.repo}/contents/media/${category}/${name}`;
+      let sha=null;
+      const g=await fetch(`${api}?ref=${GHS.branch}`,{headers:ghHeaders()});
+      if(g.ok) sha=(await g.json()).sha;
+      const r=await fetch(api,{method:'PUT',headers:ghHeaders(),body:JSON.stringify({
+        message:'media: upload via painel — media/'+category+'/'+name, content:b64, branch:GHS.branch, ...(sha?{sha}:{})})});
+      if(!r.ok) throw new Error('HTTP '+r.status);
+      setRow(f,'✓','concluído','ok'); ok++;
+    }catch(e){ setRow(f,'✕','falhou — '+e.message,'bad'); fail++; toast('Falha em '+f.name+': '+e.message,false); }
+    done++; setProgress(done,total);
+  }
+
+  const savedMsg=saved>100000?` (economizou ~${(saved/1048576).toFixed(1)} MB comprimindo)`:'';
+  txt.textContent = fail ? `Concluído com falhas: ${ok} ok, ${fail} falharam.` : `Concluído: ${ok} arquivo${ok===1?'':'s'} enviado${ok===1?'':'s'}${savedMsg}.`;
+  bar.style.width='100%';
+  toast(`${ok} arquivo(s) em media/${category}/${fail?`, ${fail} falharam`:''}${savedMsg}.`, !fail);
+  setDropzoneBusy(false);
+  setTimeout(()=>{ panel.classList.add('gc-hidden'); list.innerHTML=''; bar.style.width='0%'; },fail?5000:2600);
+  if(ok){ try{confetti();}catch(_){} listMedia(); }
 };
 const _listMedia=window.listMedia;
 window.listMedia=async function(){
