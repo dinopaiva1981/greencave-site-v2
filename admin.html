@@ -2318,6 +2318,56 @@ if(typeof ghPublish==='function'){
   };
 }
 
+/* ── 8d. campos de destino da publicação ───────────────────── */
+/* Repositório, Branch e Arquivo eram desenhados a partir da constante GH e
+   não tinham listener: o que fosse digitado sumia no próximo render e nunca
+   chegava a GHS. Aqui os três passam a gravar em GHS e a persistir neste
+   navegador, como já acontecia com o token. */
+const GHKEY='gc_ghs';
+const OVR=(()=>{ try{ return JSON.parse(localStorage.getItem(GHKEY)||'{}')||{}; }catch(_){ return {}; } })();
+/* o config.json carrega de forma assíncrona e reescreve GHS depois deste
+   script; por isso a preferência do usuário é reaplicada após CONFIG_READY
+   e a cada render da aba Publicação. */
+function applyOVR(){
+  if(typeof GHS==='undefined')return;
+  ['repo','branch','path'].forEach(k=>{ if(OVR[k]) GHS[k]=OVR[k]; });
+}
+function saveGHS(){
+  ['repo','branch','path'].forEach(k=>{ OVR[k]=GHS[k]; });
+  try{ localStorage.setItem(GHKEY,JSON.stringify(OVR)); }catch(_){}
+}
+applyOVR();
+try{ if(typeof CONFIG_READY!=='undefined'&&CONFIG_READY&&CONFIG_READY.then) CONFIG_READY.then(applyOVR); }catch(_){}
+function bindPubFields(){
+  if(SEC!=='pub')return;
+  applyOVR();
+  const rp=document.getElementById('gh-repo');
+  if(rp&&!document.getElementById('gc-repohint')) rp.parentElement.appendChild(mk('<div class="hint" id="gc-repohint"></div>'));
+  const map={'gh-repo':'repo','gh-branch':'branch','gh-path':'path'};
+  Object.keys(map).forEach(id=>{
+    const i=document.getElementById(id); if(!i||i.__gcBound)return;
+    const k=map[id];
+    i.value=(typeof GHS!=='undefined'&&GHS[k])||i.value||'';
+    i.addEventListener('input',e=>{
+      e.stopPropagation();                    /* destino não é conteúdo do site */
+      GHS[k]=i.value.trim();
+      saveGHS();
+      if(k==='repo') validRepo(i);
+    });
+    i.__gcBound=true;
+    if(k==='repo') validRepo(i);
+  });
+  const rp2=document.getElementById('gh-repo'); if(rp2) validRepo(rp2);
+}
+function validRepo(i){
+  const v=i.value.trim(), ok=/^[\w.-]+\/[\w.-]+$/.test(v);
+  i.style.borderColor=v&&!ok?'var(--err)':'';
+  const h=document.getElementById('gc-repohint');
+  if(h) h.innerHTML=!v?'usuario/repositorio'
+    :(ok?`Publicando em <b style="color:var(--green)">${esc(v)}</b> · salvo neste navegador`
+        :'<b style="color:var(--err)">Formato inválido</b> — use usuario/repositorio');
+}
+
 /* ── 9. render ─────────────────────────────────────────────── */
 const _renderSec=window.renderSec;
 window.renderSec=function(){
@@ -2327,6 +2377,7 @@ window.renderSec=function(){
   try{ if(!document.getElementById('gc-status')) setStatus((typeof DIRTY!=='undefined'&&DIRTY)?'dirty':'clean'); }catch(e){}
   try{ header(); }catch(e){ console.warn('gc header',e); }
   try{ if(SEC==='works'||SEC==='clientes'||SEC==='servicos') cardsView(SEC); }catch(e){ console.warn('gc cards',e); }
+  try{ bindPubFields(); }catch(e){ console.warn('gc pub',e); }
   return r;
 };
 })();
