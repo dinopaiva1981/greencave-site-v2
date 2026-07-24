@@ -597,6 +597,22 @@ body.gc-dragging{user-select:none;cursor:grabbing}
 /* enquanto o login está na tela, nada rola atrás dele */
 body:has(#gate){overflow:hidden}
 
+/* ── indicador de status da publicação ─────────────────────── */
+.gc-st{
+  display:inline-flex;align-items:center;gap:7px;flex:none;
+  font-size:12px;font-weight:600;letter-spacing:-.01em;white-space:nowrap;
+  background:#1A1F27;border:1px solid var(--line);color:var(--mute);
+  border-radius:99px;padding:6px 13px;transition:.25s;
+}
+.gc-st i{font-style:normal;font-size:11px;line-height:1}
+.gc-st.ok{color:var(--green);border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.08)}
+.gc-st.warn{color:#F5C871;border-color:rgba(245,158,11,.4);background:rgba(245,158,11,.1)}
+.gc-st.busy{color:#7DD3FC;border-color:rgba(56,189,248,.4);background:rgba(56,189,248,.1)}
+.gc-st.busy i{animation:gcpulse 1s infinite}
+.gc-st.done{color:var(--green);border-color:var(--green);background:rgba(52,211,153,.16)}
+.gc-st.err{color:#FCA5A5;border-color:rgba(239,68,68,.45);background:rgba(239,68,68,.12)}
+@keyframes gcpulse{50%{opacity:.35}}
+
 </style>
 </head>
 <body>
@@ -1958,6 +1974,15 @@ function modal(title,node,onClose){
     <div class="gcm-foot"><button class="tbtn" data-ok>Concluir edição</button></div>
   </div></div>`);
   $('.gcm-slot',ov).appendChild(node);
+  /* CORREÇÃO: o motor escuta input/change em #main. Como o modal vive fora do
+     #main, edições feitas nele atualizavam DATA mas não marcavam alteração
+     pendente nem disparavam o autosave (o rascunho ficava desatualizado). */
+  const relay=()=>{
+    try{ if(typeof markDirty==='function') markDirty(); }catch(_){}
+    try{ if(typeof scheduleAutosave==='function') scheduleAutosave(); }catch(_){}
+  };
+  ov.addEventListener('input',relay);
+  ov.addEventListener('change',relay);
   document.body.appendChild(ov);
   requestAnimationFrame(()=>ov.classList.add('on'));
   const key=e=>{ if(e.key==='Escape')close(); };
@@ -1999,7 +2024,7 @@ function cardsView(sec){
   const bay=mk('<div class="gc-hidden"></div>');           /* editores originais seguem vivos aqui */
   const tools=mk(`<div class="gc-tools"><div class="gc-search">${svg('search','')}<input type="text" placeholder="Buscar…"></div></div>`);
   const q=tools.querySelector('input'); q.value=SEARCH[sec]||'';
-  q.addEventListener('input',()=>{ SEARCH[sec]=q.value; paint(); });
+  q.addEventListener('input',e=>{ e.stopPropagation(); SEARCH[sec]=q.value; paint(); });
   if(sec==='works'){
     [['all','Todos'],['case','Cases'],['craft','Trabalhos']].forEach(([k,n])=>{
       const b=mk(`<button class="gc-chip ${FILTERS.works===k?'on':''}">${n}</button>`);
@@ -2179,6 +2204,7 @@ function mountData(data,raw){
   ['langs','dl-json','dl-site','prev-site','autotr','tr-all','go-pub','drawerbtn']
     .forEach(id=>{const e=document.getElementById(id); if(e)e.hidden=false;});
   renderLangs(); renderSide(); renderSec();
+  try{ setStatus((typeof DIRTY!=='undefined'&&DIRTY)?'dirty':'clean'); }catch(_){}
   try{ if(typeof checkDraftRecovery==='function') checkDraftRecovery(); }catch(_){}
   try{ if(typeof fetchContentSha==='function') fetchContentSha().then(s=>{LOADED_SHA=s;}); }catch(_){}
 }
@@ -2241,12 +2267,64 @@ if(typeof autoLoadPublished==='function'){
   };
 }
 
+/* ── 8c. indicador de status da publicação ─────────────────── */
+const ST={
+  clean:['ok','🟢','Publicado'],
+  dirty:['warn','🟡','Alterações não salvas'],
+  publishing:['busy','🔵','Publicando…'],
+  done:['done','✅','Publicado com sucesso'],
+  error:['err','🔴','Falha ao publicar']
+};
+let stTimer=null;
+function statusEl(){
+  let e=document.getElementById('gc-status');
+  if(!e){
+    const top=document.getElementById('top'); if(!top)return null;
+    e=mk('<span id="gc-status" class="gc-st"><i></i><b></b></span>');
+    const anchor=document.getElementById('dirtybadge');
+    if(anchor){ anchor.hidden=true; anchor.style.display='none'; top.insertBefore(e,anchor); }
+    else top.appendChild(e);
+  }
+  return e;
+}
+function setStatus(k){
+  const e=statusEl(); if(!e)return;
+  const [cls,ico,txt]=ST[k]||ST.clean;
+  e.className='gc-st '+cls;
+  e.querySelector('i').textContent=ico;
+  e.querySelector('b').textContent=txt;
+  e.hidden=false;
+  clearTimeout(stTimer);
+  if(k==='done') stTimer=setTimeout(()=>setStatus('clean'),4500);
+  if(k==='error') stTimer=setTimeout(()=>setStatus('dirty'),5000);
+}
+window.gcSetStatus=setStatus;   /* hook manual p/ depuração */
+['markDirty','clearDirty'].forEach(fn=>{
+  if(typeof window[fn]==='function'){
+    const orig=window[fn];
+    window[fn]=function(){ const r=orig.apply(this,arguments); setStatus(fn==='markDirty'?'dirty':'clean'); return r; };
+  }
+});
+if(typeof ghPublish==='function'){
+  const _pub=window.ghPublish;
+  window.ghPublish=async function(){
+    setStatus('publishing');
+    const before=(typeof DIRTY!=='undefined')?DIRTY:true;
+    try{
+      const r=await _pub.apply(this,arguments);
+      setStatus((typeof DIRTY!=='undefined'&&DIRTY===false)?'done':(before?'dirty':'clean'));
+      return r;
+    }catch(e){ setStatus('error'); throw e; }
+  };
+}
+
 /* ── 9. render ─────────────────────────────────────────────── */
 const _renderSec=window.renderSec;
 window.renderSec=function(){
   const r=_renderSec.apply(this,arguments);
   const m=$('#main');
   if(m){ m.style.transition=`opacity .35s ${EZ},transform .35s ${EZ}`; m.style.opacity=1; m.style.transform='none'; }
+  try{ if(!document.getElementById('gc-status')) setStatus((typeof DIRTY!=='undefined'&&DIRTY)?'dirty':'clean'); }catch(e){}
   try{ header(); }catch(e){ console.warn('gc header',e); }
   try{ if(SEC==='works'||SEC==='clientes'||SEC==='servicos') cardsView(SEC); }catch(e){ console.warn('gc cards',e); }
   return r;
