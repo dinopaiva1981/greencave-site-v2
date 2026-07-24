@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T22:00:04.786Z",
+  "generatedAt": "2026-07-24T22:29:25.060Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -634,245 +634,6 @@
       "ai": true
     },
     {
-      "kind": "craft",
-      "client": "Huggies · Disney",
-      "year": "2021",
-      "art": "bloom",
-      "image": "media/huggies-disney/huggies-01.png",
-      "gallery": [
-        "media/huggies-disney/huggies-02.png",
-        "media/huggies-disney/huggies-03.png",
-        "media/huggies-disney/huggies-04.png",
-        "media/huggies-disney/huggies-05.png",
-        "media/huggies-disney/huggies-06.png"
-      ],
-      "title": {
-        "pt": "Para o seu bebê se desenvolver melhor",
-        "en": "Para o seu bebê se desenvolver melhor",
-        "es": "Para que tu bebé se desarrolle mejor",
-        "zh": "让宝宝发育得更好",
-        "no": "For at babyen din skal utvikle seg bedre"
-      },
-      "tags": {
-        "pt": "Design · DA · Ilustração · Animação",
-        "en": "Design · DA · Ilustração · Animação",
-        "es": "Design · DA · Ilustración · Animación",
-        "zh": "设计 · 艺术指导 · 插画 · 动画",
-        "no": "Design · DA · Illustrasjon · Animasjon"
-      },
-      "body": {
-        "pt": "Cocriado com a Disney Company Brasil: assumimos o design e a operação criativa in-company do canal Disney Jr. pra dar corpo ao branded content do lançamento da linha Huggies Supreme Care.",
-        "en": "Co-created with The Walt Disney Company Brazil: we ran design and in-company creative operations for the Disney Jr. channel to bring the branded content for the Huggies Supreme Care launch to life.",
-        "es": "Cocreado con The Walt Disney Company Brasil: asumimos el diseño y la operación creativa in-company del canal Disney Jr. para dar vida al branded content del lanzamiento de la línea Huggies Supreme Care.",
-        "zh": "与迪士尼巴西联合创作：为 Disney Jr. 频道负责设计与内企创意运营，打造 Huggies Supreme Care 系列上线的品牌内容。",
-        "no": "Samskapt med The Walt Disney Company Brasil: vi sto for design og in-company kreativ drift for Disney Jr.-kanalen for å realisere branded content-lanseringen av Huggies Supreme Care."
-      },
-      "blocks": [
-        {
-          "type": "video",
-          "url": "https://vimeo.com/644450305",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "video",
-          "url": "https://vimeo.com/644455631",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        }
-      ],
-      "id": "work_ccb7qbfm"
-    },
-    {
-      "id": "work_z0fyh22c",
-      "kind": "craft",
-      "client": "Polônia",
-      "year": "2023",
-      "art": "wave",
-      "image": "media/projetos/polonia/pol-oo1.png",
-      "gallery": [
-        "https://vimeo.com/1189092887?fl=pl&fe=sh"
-      ],
-      "title": {
-        "pt": "Abertura para Documentário Polonês",
-        "en": "Opening for Polish Documentary",
-        "es": "Inauguración del documental polaco",
-        "zh": "波兰纪录片开幕",
-        "no": "Åpning for polsk dokumentar"
-      },
-      "tags": {
-        "pt": "Motion · Cinema · Style Frame — 2023",
-        "en": "Motion · Cinema · Style Frame — 2023",
-        "es": "Motion · Cinema · Style Frame — 2023",
-        "zh": "Motion · Cinema · Style Frame — 2023",
-        "no": "Motion · Cinema · Style Frame — 2023"
-      },
-      "body": {
-        "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
-        "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
-      },
-      "blocks": [],
-      "ai": true
-    },
-    {
-      "kind": "craft",
-      "client": "Budweiser · Disney ESPN",
-      "year": "2020",
-      "art": "rings",
-      "image": "media/budweiser-disney-espn/crown-01.jpg",
-      "gallery": [
-        "media/budweiser-disney-espn/crown-02.jpg",
-        "media/budweiser-disney-espn/crown-03.jpg",
-        "media/budweiser-disney-espn/crown-04.jpg"
-      ],
-      "title": {
-        "pt": "Behind The Crown",
-        "en": "Behind The Crown",
-        "es": "Behind The Crown",
-        "zh": "Behind The Crown",
-        "no": "Behind The Crown"
-      },
-      "tags": {
-        "pt": "Design · DA · Motion · Gestão Operacional",
-        "en": "Design · DA · Motion · Gestão Operacional",
-        "es": "Design · DA · Motion · Gestión Operativa",
-        "zh": "设计 · 艺术指导 · 动态 · 运营管理",
-        "no": "Design · DA · Motion · Operativ ledelse"
-      },
-      "body": {
-        "pt": "Fomos convidados pela Disney ESPN pra cocriar com a Budweiser um projeto sobre nomes do esporte americano que construíram sua história à base de luta e persistência. Um dos que mais nos orgulha.",
-        "en": "Disney ESPN invited us to co-create with Budweiser a project about American sports figures who built their legacy through struggle and persistence. One we're especially proud of.",
-        "es": "Disney ESPN nos invitó a cocrear con Budweiser un proyecto sobre figuras del deporte estadounidense que construyeron su legado a través de la lucha y la persistencia. Uno de los que más nos enorgullece.",
-        "zh": "Disney ESPN 邀请我们与百威联合创作，讲述那些靠拼搏与坚持成就传奇的美国体育人物。这是我们最引以为豪的项目之一。",
-        "no": "Disney ESPN inviterte oss til å samskape med Budweiser et prosjekt om amerikanske idrettsfigurer som bygget sin arv gjennom kamp og utholdenhet. Et vi er spesielt stolte av."
-      },
-      "blocks": [
-        {
-          "type": "video",
-          "url": "https://vimeo.com/466237063",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        }
-      ],
-      "id": "work_xpp28h08"
-    },
-    {
-      "id": "work_f0i6pxqm",
-      "kind": "craft",
-      "client": "Disney ESPN",
-      "year": "2024",
-      "art": "rings",
-      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png",
-      "gallery": [
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/03bdb7225202777.6841d90f1e26e-2.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/81e9a4225202777.6841da39a0550-2.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/b5f33d225202777.6841db3ed9917.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/aa0d5c225202777.6841da701a9d7.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/01d606225202777.6841db414562a.gif",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/112836225202777.6841db3ed9208.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/399d99225202777.6841db459a9c1.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/6c276a225202777.6841db459b1ef.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/47a47f225202777.6841da931ef61.gif",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/0f24ec225202777.6841da701aecd.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/34c2fd225202777.6841db459be96.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f14a5f225202777.6841db459b74a.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f01166225202777.6841fece7098e.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/c19718225202777.6841da931f567.gif",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/d7c762225202777.6841da35edafd.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/fc84b7225202777.6841da35ed66c.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/db32be225202777.6841db4145ad5.gif",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/ed2de1225202777.6841da6dced4a.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png"
-      ],
-      "title": {
-        "pt": "Bola de Prata 2024",
-        "en": "Bola de Prata 2024",
-        "es": "Bola de Prata 2024",
-        "zh": "Bola de Prata 2024",
-        "no": "Bola de Prata 2024"
-      },
-      "tags": {
-        "pt": "Motion · 2D/3D · Broadcast — 2024",
-        "en": "Motion · 2D/3D · Broadcast — 2024",
-        "es": "Motion · 2D/3D · Broadcast — 2024",
-        "zh": "Motion · 2D/3D · Broadcast — 2024",
-        "no": "Motion · 2D/3D · Broadcast — 2024"
-      },
-      "body": {
-        "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
-        "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
-      },
-      "blocks": [
-        {
-          "type": "video",
-          "url": "https://vimeo.com/1090883760",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        }
-      ]
-    },
-    {
-      "kind": "craft",
-      "client": "Weasyplan",
-      "year": "2023",
-      "art": "grid",
-      "image": "media/weasyplan/weasyplan-01.png",
-      "gallery": [
-        "media/weasyplan/weasyplan-02.png",
-        "media/weasyplan/weasyplan-03.png",
-        "media/weasyplan/weasyplan-04.png"
-      ],
-      "title": {
-        "pt": "Weasyplan — do naming à papelaria",
-        "en": "Weasyplan — from naming to stationery",
-        "es": "Weasyplan: desde el nombre hasta el material de oficina",
-        "zh": "Weasyplan——从命名到文具",
-        "no": "Weasyplan — fra navngivning til skrivesaker"
-      },
-      "tags": {
-        "pt": "Naming · Criação & Conceito · DA · Design",
-        "en": "Naming · Criação & Conceito · DA · Design",
-        "es": "Naming · Creación y Concepto · DA · Design",
-        "zh": "命名 · 创意与概念 · 艺术指导 · 设计",
-        "no": "Naming · Kreasjon & konsept · DA · Design"
-      },
-      "body": {
-        "pt": "\"A sua empresa fora do Brasil.\" Do naming à papelaria: construímos a identidade da Weasyplan, plataforma que ajuda empresas brasileiras a se internacionalizarem — o símbolo da bandeira carrega essa travessia.",
-        "en": "\"Your company outside Brazil.\" From naming to stationery: we built the identity for Weasyplan, a platform that helps Brazilian companies go international — the flag symbol carries that journey.",
-        "es": "\"Tu empresa fuera de Brasil.\" Del naming a la papelería: construimos la identidad de Weasyplan, una plataforma que ayuda a empresas brasileñas a internacionalizarse — el símbolo de la bandera representa ese viaje.",
-        "zh": "\"让你的企业走出巴西。\"从命名到全套物料：我们为 Weasyplan 打造品牌识别 —— 这是一个帮助巴西企业出海的平台，旗帜符号承载着这段征程。",
-        "no": "\"Bedriften din utenfor Brasil.\" Fra naming til trykksaker: vi bygget identiteten til Weasyplan, en plattform som hjelper brasilianske selskaper med internasjonalisering — flaggsymbolet bærer den reisen."
-      },
-      "blocks": [],
-      "id": "work_xs7gsz4c"
-    },
-    {
       "id": "work_n7lorw8r",
       "kind": "case",
       "client": "Globoplay · Formata",
@@ -953,6 +714,298 @@
           }
         }
       ]
+    },
+    {
+      "id": "work_ixoec4v9",
+      "kind": "craft",
+      "client": "Sadia",
+      "year": "2021",
+      "art": "scan",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/60df1d0a2a8866a9af0f86ba_1.jpeg",
+      "title": {
+        "pt": "Fome de NBA - ESPN",
+        "en": "NBA Hunger - ESPN",
+        "es": "Hambre en la NBA - ESPN",
+        "zh": "NBA 饥饿 - ESPN",
+        "no": "NBA Hunger - ESPN"
+      },
+      "tags": {
+        "pt": "Operação Criativa - Branded Content - Motion Graphics",
+        "en": "Creative Operation - Branded Content - Motion Graphics",
+        "es": "Operación creativa - Branded Content - Motion Graphics",
+        "zh": "创意运营-品牌内容-动态图形",
+        "no": "Kreativ drift - Merkevareinnhold - Motion Graphics"
+      },
+      "body": {
+        "pt": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "en": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "es": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "zh": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "no": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021."
+      },
+      "gallery": [
+        "https://cdn.prod.website-files.com/60216155481f533e472c5158/66297bfaf2afed85c8586504_Asset%204.svg",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612c31a4062f71b2127ba943_disney%402x.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0b8d0e3247f23fba52_2.jpeg",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0a2a8866a9af0f86ba_1.jpeg",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0ffb94832e34d12d41_4.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d10c790bf40479604b9_5.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612cfa3135f43778c39c412c_a.jpg",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612cfa2484da1e07373d1727_b.png"
+      ],
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/572242718",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "_importedFrom": ""
+    },
+    {
+      "id": "work_z0fyh22c",
+      "kind": "craft",
+      "client": "Polônia",
+      "year": "2023",
+      "art": "wave",
+      "image": "media/projetos/polonia/pol-oo1.png",
+      "gallery": [
+        "https://vimeo.com/1189092887?fl=pl&fe=sh"
+      ],
+      "title": {
+        "pt": "Abertura para Documentário Polonês",
+        "en": "Opening for Polish Documentary",
+        "es": "Inauguración del documental polaco",
+        "zh": "波兰纪录片开幕",
+        "no": "Åpning for polsk dokumentar"
+      },
+      "tags": {
+        "pt": "Motion · Cinema · Style Frame — 2023",
+        "en": "Motion · Cinema · Style Frame — 2023",
+        "es": "Motion · Cinema · Style Frame — 2023",
+        "zh": "Motion · Cinema · Style Frame — 2023",
+        "no": "Motion · Cinema · Style Frame — 2023"
+      },
+      "body": {
+        "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
+        "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
+      },
+      "blocks": [],
+      "ai": true
+    },
+    {
+      "id": "work_f0i6pxqm",
+      "kind": "craft",
+      "client": "Disney ESPN",
+      "year": "2024",
+      "art": "rings",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/03bdb7225202777.6841d90f1e26e-2.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/81e9a4225202777.6841da39a0550-2.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/b5f33d225202777.6841db3ed9917.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/aa0d5c225202777.6841da701a9d7.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/01d606225202777.6841db414562a.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/112836225202777.6841db3ed9208.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/399d99225202777.6841db459a9c1.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/6c276a225202777.6841db459b1ef.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/47a47f225202777.6841da931ef61.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/0f24ec225202777.6841da701aecd.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/34c2fd225202777.6841db459be96.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f14a5f225202777.6841db459b74a.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f01166225202777.6841fece7098e.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/c19718225202777.6841da931f567.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/d7c762225202777.6841da35edafd.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/fc84b7225202777.6841da35ed66c.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/db32be225202777.6841db4145ad5.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/ed2de1225202777.6841da6dced4a.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png"
+      ],
+      "title": {
+        "pt": "Bola de Prata 2024",
+        "en": "Bola de Prata 2024",
+        "es": "Bola de Prata 2024",
+        "zh": "Bola de Prata 2024",
+        "no": "Bola de Prata 2024"
+      },
+      "tags": {
+        "pt": "Motion · 2D/3D · Broadcast — 2024",
+        "en": "Motion · 2D/3D · Broadcast — 2024",
+        "es": "Motion · 2D/3D · Broadcast — 2024",
+        "zh": "Motion · 2D/3D · Broadcast — 2024",
+        "no": "Motion · 2D/3D · Broadcast — 2024"
+      },
+      "body": {
+        "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
+        "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/1090883760",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "craft",
+      "client": "Huggies · Disney",
+      "year": "2021",
+      "art": "bloom",
+      "image": "media/huggies-disney/huggies-01.png",
+      "gallery": [
+        "media/huggies-disney/huggies-02.png",
+        "media/huggies-disney/huggies-03.png",
+        "media/huggies-disney/huggies-04.png",
+        "media/huggies-disney/huggies-05.png",
+        "media/huggies-disney/huggies-06.png"
+      ],
+      "title": {
+        "pt": "Para o seu bebê se desenvolver melhor",
+        "en": "Para o seu bebê se desenvolver melhor",
+        "es": "Para que tu bebé se desarrolle mejor",
+        "zh": "让宝宝发育得更好",
+        "no": "For at babyen din skal utvikle seg bedre"
+      },
+      "tags": {
+        "pt": "Design · DA · Ilustração · Animação",
+        "en": "Design · DA · Ilustração · Animação",
+        "es": "Design · DA · Ilustración · Animación",
+        "zh": "设计 · 艺术指导 · 插画 · 动画",
+        "no": "Design · DA · Illustrasjon · Animasjon"
+      },
+      "body": {
+        "pt": "Cocriado com a Disney Company Brasil: assumimos o design e a operação criativa in-company do canal Disney Jr. pra dar corpo ao branded content do lançamento da linha Huggies Supreme Care.",
+        "en": "Co-created with The Walt Disney Company Brazil: we ran design and in-company creative operations for the Disney Jr. channel to bring the branded content for the Huggies Supreme Care launch to life.",
+        "es": "Cocreado con The Walt Disney Company Brasil: asumimos el diseño y la operación creativa in-company del canal Disney Jr. para dar vida al branded content del lanzamiento de la línea Huggies Supreme Care.",
+        "zh": "与迪士尼巴西联合创作：为 Disney Jr. 频道负责设计与内企创意运营，打造 Huggies Supreme Care 系列上线的品牌内容。",
+        "no": "Samskapt med The Walt Disney Company Brasil: vi sto for design og in-company kreativ drift for Disney Jr.-kanalen for å realisere branded content-lanseringen av Huggies Supreme Care."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/644450305",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://vimeo.com/644455631",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "id": "work_ccb7qbfm"
+    },
+    {
+      "kind": "craft",
+      "client": "Budweiser · Disney ESPN",
+      "year": "2020",
+      "art": "rings",
+      "image": "media/budweiser-disney-espn/crown-01.jpg",
+      "gallery": [
+        "media/budweiser-disney-espn/crown-02.jpg",
+        "media/budweiser-disney-espn/crown-03.jpg",
+        "media/budweiser-disney-espn/crown-04.jpg"
+      ],
+      "title": {
+        "pt": "Behind The Crown",
+        "en": "Behind The Crown",
+        "es": "Behind The Crown",
+        "zh": "Behind The Crown",
+        "no": "Behind The Crown"
+      },
+      "tags": {
+        "pt": "Design · DA · Motion · Gestão Operacional",
+        "en": "Design · DA · Motion · Gestão Operacional",
+        "es": "Design · DA · Motion · Gestión Operativa",
+        "zh": "设计 · 艺术指导 · 动态 · 运营管理",
+        "no": "Design · DA · Motion · Operativ ledelse"
+      },
+      "body": {
+        "pt": "Fomos convidados pela Disney ESPN pra cocriar com a Budweiser um projeto sobre nomes do esporte americano que construíram sua história à base de luta e persistência. Um dos que mais nos orgulha.",
+        "en": "Disney ESPN invited us to co-create with Budweiser a project about American sports figures who built their legacy through struggle and persistence. One we're especially proud of.",
+        "es": "Disney ESPN nos invitó a cocrear con Budweiser un proyecto sobre figuras del deporte estadounidense que construyeron su legado a través de la lucha y la persistencia. Uno de los que más nos enorgullece.",
+        "zh": "Disney ESPN 邀请我们与百威联合创作，讲述那些靠拼搏与坚持成就传奇的美国体育人物。这是我们最引以为豪的项目之一。",
+        "no": "Disney ESPN inviterte oss til å samskape med Budweiser et prosjekt om amerikanske idrettsfigurer som bygget sin arv gjennom kamp og utholdenhet. Et vi er spesielt stolte av."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/466237063",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "id": "work_xpp28h08"
+    },
+    {
+      "kind": "craft",
+      "client": "Weasyplan",
+      "year": "2023",
+      "art": "grid",
+      "image": "media/weasyplan/weasyplan-01.png",
+      "gallery": [
+        "media/weasyplan/weasyplan-02.png",
+        "media/weasyplan/weasyplan-03.png",
+        "media/weasyplan/weasyplan-04.png"
+      ],
+      "title": {
+        "pt": "Weasyplan — do naming à papelaria",
+        "en": "Weasyplan — from naming to stationery",
+        "es": "Weasyplan: desde el nombre hasta el material de oficina",
+        "zh": "Weasyplan——从命名到文具",
+        "no": "Weasyplan — fra navngivning til skrivesaker"
+      },
+      "tags": {
+        "pt": "Naming · Criação & Conceito · DA · Design",
+        "en": "Naming · Criação & Conceito · DA · Design",
+        "es": "Naming · Creación y Concepto · DA · Design",
+        "zh": "命名 · 创意与概念 · 艺术指导 · 设计",
+        "no": "Naming · Kreasjon & konsept · DA · Design"
+      },
+      "body": {
+        "pt": "\"A sua empresa fora do Brasil.\" Do naming à papelaria: construímos a identidade da Weasyplan, plataforma que ajuda empresas brasileiras a se internacionalizarem — o símbolo da bandeira carrega essa travessia.",
+        "en": "\"Your company outside Brazil.\" From naming to stationery: we built the identity for Weasyplan, a platform that helps Brazilian companies go international — the flag symbol carries that journey.",
+        "es": "\"Tu empresa fuera de Brasil.\" Del naming a la papelería: construimos la identidad de Weasyplan, una plataforma que ayuda a empresas brasileñas a internacionalizarse — el símbolo de la bandera representa ese viaje.",
+        "zh": "\"让你的企业走出巴西。\"从命名到全套物料：我们为 Weasyplan 打造品牌识别 —— 这是一个帮助巴西企业出海的平台，旗帜符号承载着这段征程。",
+        "no": "\"Bedriften din utenfor Brasil.\" Fra naming til trykksaker: vi bygget identiteten til Weasyplan, en plattform som hjelper brasilianske selskaper med internasjonalisering — flaggsymbolet bærer den reisen."
+      },
+      "blocks": [],
+      "id": "work_xs7gsz4c"
     },
     {
       "id": "work_ohvqklqq",
