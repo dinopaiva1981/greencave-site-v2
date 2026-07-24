@@ -624,6 +624,49 @@ body:has(#gate){overflow:hidden}
 .gc-diaglist div span{color:var(--mute);font-size:12.5px;line-height:1.6;display:block}
 .gc-diaglist div span b{display:inline;color:var(--green);font-weight:650}
 
+/* ── biblioteca de mídia: destaque de upload recente e item quebrado ─── */
+.mcat-flash{color:var(--green)!important;position:relative}
+.mcat-flash::after{
+  content:"enviado agora";font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;
+  text-transform:uppercase;background:rgba(52,211,153,.15);border:1px solid rgba(52,211,153,.4);
+  color:var(--green);border-radius:99px;padding:2px 9px;margin-left:10px;
+  animation:mcatpulse 2.2s ease;
+}
+@keyframes mcatpulse{0%{opacity:0}15%{opacity:1}80%{opacity:1}100%{opacity:0}}
+.mbroken{
+  aspect-ratio:1/1;display:grid;place-items:center;text-align:center;padding:8px;
+  background:#1A1F27;border:1px dashed var(--line);border-radius:8px;
+  color:var(--mute2);font-size:10.5px;line-height:1.4;
+}
+
+/* ── lista compacta (Clientes) ─────────────────────────────── */
+.gc-list{display:flex;flex-direction:column;gap:8px}
+.lrow{
+  display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:9px 12px 9px 9px;transition:border-color .2s,background .2s;
+}
+.lrow:hover{border-color:#3C4553;background:var(--card2)}
+.lthumb{
+  width:42px;height:42px;border-radius:9px;background:#141821;border:1px solid var(--line);
+  display:grid;place-items:center;flex:none;overflow:hidden;
+}
+.lthumb img{width:100%;height:100%;object-fit:cover}
+.lthumb .mono{font-family:var(--disp);font-weight:700;font-size:15px;color:#39414F}
+.lbody{flex:1;min-width:0;display:flex;align-items:baseline;gap:10px}
+.lbody h3{font-size:14px;font-weight:650;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lbody .tags{font-size:12px;color:var(--mute2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lactions{display:flex;align-items:center;gap:6px;flex:none}
+.lactions .ic{width:29px;height:29px}
+.lactions .ed{
+  border:1px solid var(--line);background:#20262F;color:var(--txt);border-radius:8px;
+  padding:6px 14px;font-size:12.5px;font-weight:600;transition:.2s;margin-left:2px;
+}
+.lactions .ed:hover{background:var(--green);border-color:var(--green);color:#06231A}
+@media(max-width:560px){
+  .lbody{flex-direction:column;align-items:flex-start;gap:1px}
+  .lactions .ed{padding:6px 10px}
+}
+
 </style>
 </head>
 <body>
@@ -2049,17 +2092,18 @@ function cardsView(sec){
   if(!items.length)return;
   const addBtnEl=host.querySelector(':scope > .add');
   const spec={
-    works:{arr:DATA.works,label:'Case',data:w=>({
+    works:{arr:DATA.works,label:'Case',layout:'grid',data:w=>({
       title:ml(w.title)||w.client||'Sem título',
       meta:[w.client,w.year].filter(Boolean).join(' · '),
       tags:ml(w.tags), img:w.image,
       badge:w.kind==='craft'?'Trabalho':'Case', isCase:w.kind!=='craft'})},
-    clientes:{arr:DATA.clients,label:'Cliente',data:c=>({title:String(c||''),meta:'',tags:'',img:'',badge:'',isCase:false})},
-    servicos:{arr:DATA.services,label:'Serviço',data:s=>({title:ml(s.title)||'Serviço',meta:'',tags:ml(s.desc),img:'',badge:'',isCase:false})}
+    clientes:{arr:DATA.clients,label:'Cliente',layout:'list',data:c=>({title:String(c||''),meta:'',tags:'',img:'',badge:'',isCase:false})},
+    servicos:{arr:DATA.services,label:'Serviço',layout:'grid',data:s=>({title:ml(s.title)||'Serviço',meta:'',tags:ml(s.desc),img:'',badge:'',isCase:false})}
   }[sec];
   if(!spec||spec.arr.length!==items.length) return;        /* trava de segurança: só transforma se casar 1:1 */
+  const isList=spec.layout==='list';
 
-  const grid=mk('<div class="gc-grid"></div>');
+  const grid=mk(`<div class="${isList?'gc-list':'gc-grid'}"></div>`);
   const bay=mk('<div class="gc-hidden"></div>');           /* editores originais seguem vivos aqui */
   const tools=mk(`<div class="gc-tools"><div class="gc-search">${svg('search','')}<input type="text" placeholder="Buscar…"></div></div>`);
   const q=tools.querySelector('input'); q.value=SEARCH[sec]||'';
@@ -2075,7 +2119,11 @@ function cardsView(sec){
   items.forEach((it,i)=>{
     it.__gcArr=null; bay.appendChild(it);
     const raw=spec.arr[i], d=spec.data(raw);
-    const c=mk(`<div class="pcard">
+    const c=isList?mk(`<div class="lrow">
+      <div class="lthumb">${d.img?`<img src="${esc(d.img)}" alt="" loading="lazy">`:`<span class="mono">${esc(initial(d.title))}</span>`}</div>
+      <div class="lbody"><h3>${esc(d.title)}</h3>${d.tags?`<div class="tags">${esc(d.tags)}</div>`:''}</div>
+      <div class="lactions"><button class="ed">Editar</button></div>
+    </div>`):mk(`<div class="pcard">
       <div class="thumb">${d.img?`<img src="${esc(d.img)}" alt="" loading="lazy">`:`<span class="mono">${esc(initial(d.title))}</span>`}
         ${d.badge?`<span class="badge ${d.isCase?'case':''}">${esc(d.badge)}</span>`:''}</div>
       <div class="body"><h3>${esc(d.title)}</h3>
@@ -2085,7 +2133,7 @@ function cardsView(sec){
     </div>`);
     const im=c.querySelector('img'); if(im) im.addEventListener('error',()=>im.style.display='none');
     c.__gcArr=spec.arr;
-    const head=c.querySelector('.pcard-head');
+    const head=c.querySelector(isList?'.lactions':'.pcard-head');
     head.insertBefore(grip(spec.arr,renderSec,spec.label,()=>c),head.firstChild);
     const orig=sel=>it.querySelector(':scope > .item-head > '+sel);
     const dup=mk('<button class="ic dup" title="Duplicar">⧉</button>');
@@ -2106,7 +2154,7 @@ function cardsView(sec){
   function paint(){
     const s=(SEARCH[sec]||'').toLowerCase().trim();
     let vis=0;
-    grid.querySelectorAll('.pcard').forEach(c=>{
+    grid.querySelectorAll(isList?'.lrow':'.pcard').forEach(c=>{
       const okQ=!s||c.dataset.q.indexOf(s)>=0;
       const okF=sec!=='works'||FILTERS.works==='all'||c.dataset.kind===FILTERS.works;
       const on=okQ&&okF; c.classList.toggle('gc-hidden',!on); if(on)vis++;
@@ -2503,6 +2551,97 @@ document.addEventListener('click',e=>{
   },0);
 },true);
 
+/* ── 8g. Biblioteca de mídia: pastas de verdade + sem .gitkeep ── */
+/* Problema 1: listMedia() lista qualquer arquivo de media/{categoria}/,
+   inclusive o .gitkeep (placeholder do git pra manter pasta vazia no
+   versionamento) — que não é imagem nenhuma, daí o ícone quebrado.
+   Problema 2: as "categorias" eram 7 baldes fixos e genéricos, sem nenhuma
+   relação com os projetos cadastrados em Projetos/Trabalhos — por isso
+   escolher uma categoria não tinha como "reconhecer" pasta de projeto
+   nenhuma: essa pasta não existe até agora. Aqui cada projeto ganha sua
+   própria subpasta em media/projetos/{slug-do-cliente}/, gerada a partir
+   do que já está cadastrado em Projetos — na hora de enviar e na hora de
+   listar. */
+function projectFolders(){
+  return (DATA.works||[]).map(w=>({
+    key:'projetos/'+slug(w.client||w.id||'projeto'),
+    label:(w.client||'Projeto')+' — '+(ml(w.title)||''),
+  }));
+}
+const _uploadMedia=window.uploadMedia;
+window.uploadMedia=async function(files,category){
+  window.__gcLastUploadCat=category;
+  return _uploadMedia.apply(this,arguments);
+};
+const _listMedia=window.listMedia;
+window.listMedia=async function(){
+  const grid=document.getElementById('mgrid'); if(!grid)return;
+  const extra=projectFolders();
+  const prevCats=MEDIA_CATS.slice();
+  extra.forEach(p=>{ if(!MEDIA_CATS.includes(p.key)) MEDIA_CATS.push(p.key); });
+  let r;
+  try{ r=await _listMedia.apply(this,arguments); }
+  finally{ MEDIA_CATS.length=0; MEDIA_CATS.push(...prevCats); }  /* não polui o <select> fixo */
+
+  /* remove .gitkeep e qualquer dotfile — nunca é imagem de verdade —
+     e corrige o contador "(N)" de cada grupo, que vinha da contagem crua */
+  grid.querySelectorAll('.mgrid-row').forEach(row=>{
+    row.querySelectorAll('.mitem').forEach(it=>{
+      const nm=(it.querySelector('.mname')||{}).title||'';
+      if(nm.startsWith('.')){ it.remove(); return; }
+      const img=it.querySelector('img');
+      if(img) img.addEventListener('error',()=>{
+        img.replaceWith(mk('<div class="mbroken">arquivo não é uma imagem</div>'));
+      });
+    });
+    const h=row.previousElementSibling;
+    if(h&&h.classList.contains('mcat-h')){
+      const span=h.querySelector('span');
+      if(span) span.textContent='('+row.querySelectorAll('.mitem').length+')';
+    }
+  });
+  /* renomeia os grupos de projeto pra mostrar o nome do cliente, não o slug */
+  grid.querySelectorAll('.mcat-h').forEach(h=>{
+    const raw=h.firstChild.textContent.trim();
+    const p=extra.find(x=>x.key===raw);
+    if(p) h.firstChild.textContent=p.label+' ';
+  });
+  /* remove cabeçalhos de categoria que ficaram vazios (só tinham .gitkeep) */
+  [...grid.querySelectorAll('.mcat-h')].forEach(h=>{
+    const row=h.nextElementSibling;
+    if(row&&row.classList.contains('mgrid-row')&&!row.querySelector('.mitem')){
+      row.remove(); h.remove();
+    }
+  });
+  if(!grid.querySelector('.mitem')&&!grid.querySelector('.hint'))
+    grid.appendChild(mk('<div class="hint">Nenhum arquivo ainda — envie o primeiro acima.</div>'));
+
+  /* destaca e rola até a categoria que acabou de receber upload */
+  const lastCat=window.__gcLastUploadCat;
+  if(lastCat){
+    const target=[...grid.querySelectorAll('.mcat-h')].find(h=>h.firstChild.textContent.trim().startsWith(lastCat)||
+      (extra.find(p=>p.key===lastCat)&&h.firstChild.textContent.trim().startsWith(extra.find(p=>p.key===lastCat).label)));
+    if(target){
+      target.scrollIntoView({behavior:'smooth',block:'center'});
+      target.classList.add('mcat-flash');
+      setTimeout(()=>target.classList.remove('mcat-flash'),2200);
+    }
+    window.__gcLastUploadCat=null;
+  }
+  return r;
+};
+/* injeta o grupo "Projetos" no seletor de categoria do upload */
+function injectProjectOptions(){
+  if(SEC!=='midia')return;
+  const sel=document.getElementById('mcat'); if(!sel||sel.__gcProj)return;
+  sel.__gcProj=true;
+  const folders=projectFolders();
+  if(!folders.length)return;
+  const og=mk('<optgroup label="Projetos (Trabalhos/Cases)"></optgroup>');
+  folders.forEach(p=>og.appendChild(mk(`<option value="${esc(p.key)}">${esc(p.label)}</option>`)));
+  sel.appendChild(og);
+}
+
 /* ── 9. render ─────────────────────────────────────────────── */
 const _renderSec=window.renderSec;
 window.renderSec=function(){
@@ -2513,6 +2652,7 @@ window.renderSec=function(){
   try{ header(); }catch(e){ console.warn('gc header',e); }
   try{ if(SEC==='works'||SEC==='clientes'||SEC==='servicos') cardsView(SEC); }catch(e){ console.warn('gc cards',e); }
   try{ bindPubFields(); addDiagButton(); }catch(e){ console.warn('gc pub',e); }
+  try{ injectProjectOptions(); }catch(e){ console.warn('gc midia',e); }
   return r;
 };
 })();
