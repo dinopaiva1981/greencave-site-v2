@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T22:41:01.911Z",
+  "generatedAt": "2026-07-24T23:15:19.239Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -605,7 +605,7 @@
       "id": "work_jvssafo1",
       "kind": "case",
       "client": "Aché Laboratórios",
-      "year": "2023",
+      "year": "2026",
       "art": "orbit",
       "image": "media/projetos/ache-laboratorios/ache_styleframe_1.jpg",
       "gallery": [],
@@ -617,11 +617,11 @@
         "no": "Cuidados Pela Vida"
       },
       "tags": {
-        "pt": "Branded Content · Motion · Saúde",
-        "en": "Branded Content · Motion · Health",
-        "es": "Branded Content · Motion · Saúde",
-        "zh": "Branded Content · Motion · Saúde",
-        "no": "Branded Content · Motion · Saúde"
+        "pt": "Branded Content · Campanha · Saúde",
+        "en": "Branded Content · Campaign · Health",
+        "es": "Branded Content · Campaña · Salud",
+        "zh": "品牌内容·活动·健康",
+        "no": "Merkevareinnhold · Kampanje · Helse"
       },
       "body": {
         "pt": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
@@ -630,7 +630,59 @@
         "zh": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
         "no": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano."
       },
-      "blocks": [],
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif"
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bef0bd186627903.6578ce2ea13da.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/33f385186627903.6578fb9d40363.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c33ee186627903.6578ce30abd19.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/32d3ff186627903.6578ce2e3851e.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/789f81186627903.6578fcbb3c210.gif",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/6f84e2186627903.6578fb9d41274.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e0c339186627903.6578ce3050b1a.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif"
+          ]
+        }
+      ],
       "ai": true
     },
     {
