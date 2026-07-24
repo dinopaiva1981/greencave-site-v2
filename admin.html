@@ -613,6 +613,17 @@ body:has(#gate){overflow:hidden}
 .gc-st.err{color:#FCA5A5;border-color:rgba(239,68,68,.45);background:rgba(239,68,68,.12)}
 @keyframes gcpulse{50%{opacity:.35}}
 
+/* ── diagnóstico de acesso ao GitHub ───────────────────────── */
+.gc-diaglist{list-style:none;display:flex;flex-direction:column;gap:2px}
+.gc-diaglist li{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#1A1F27;font-size:13px}
+.gc-diaglist b{display:block;color:var(--txt);font-weight:600;margin-bottom:2px}
+.gc-diaglist span.dg{width:9px;height:9px;border-radius:99px;flex:none;margin-top:5px}
+.gc-diaglist span.dg.ok{background:var(--green)}
+.gc-diaglist span.dg.warn{background:var(--warn)}
+.gc-diaglist span.dg.bad{background:var(--err)}
+.gc-diaglist div span{color:var(--mute);font-size:12.5px;line-height:1.6;display:block}
+.gc-diaglist div span b{display:inline;color:var(--green);font-weight:650}
+
 </style>
 </head>
 <body>
@@ -2368,6 +2379,84 @@ function validRepo(i){
         :'<b style="color:var(--err)">Formato inválido</b> — use usuario/repositorio');
 }
 
+
+/* ── 8e. diagnóstico de acesso ao GitHub ───────────────────── */
+/* O erro "403 — Resource not accessible by personal access token" vem da API
+   do GitHub, não do painel. Este teste identifica em qual etapa o acesso falha
+   e devolve a causa provável em vez de um código HTTP solto. */
+async function ghDiag(box){
+  const repo=(document.getElementById('gh-repo')||{}).value?.trim()||GHS.repo;
+  const branch=(document.getElementById('gh-branch')||{}).value?.trim()||GHS.branch||'main';
+  const tok=(document.getElementById('gh-token')||{}).value?.trim()||GHS.token;
+  const cpath=(typeof GHS!=='undefined'&&GHS.contentPath)||'content.json';
+  const line=(st,t,d)=>`<li><span class="dg ${st}"></span><div><b>${t}</b>${d?`<span>${d}</span>`:''}</div></li>`;
+  const out=[];
+  box.innerHTML='<div class="hint">Testando…</div>';
+  if(!tok){ box.innerHTML='<ul class="gc-diaglist">'+line('bad','Nenhum token informado','Cole o token do GitHub acima.')+'</ul>'; return; }
+  const H={Authorization:'Bearer '+tok,Accept:'application/vnd.github+json'};
+  let podeSeguir=true;
+
+  /* 1. o token é válido? */
+  try{
+    const r=await fetch('https://api.github.com/user',{headers:H});
+    if(r.ok){ const j=await r.json(); out.push(line('ok','Token válido','Autenticado como '+esc(j.login||'—'))); }
+    else if(r.status===401){ out.push(line('bad','Token inválido ou expirado','Gere um novo em Settings → Developer settings → Fine-grained tokens.')); podeSeguir=false; }
+    else out.push(line('warn','Não foi possível confirmar o token','HTTP '+r.status));
+  }catch(_){ out.push(line('bad','Sem conexão com a API do GitHub','Verifique sua internet.')); podeSeguir=false; }
+
+  /* 2. o token enxerga o repositório? */
+  if(podeSeguir){
+    try{
+      const r=await fetch(`https://api.github.com/repos/${repo}`,{headers:H});
+      if(r.ok){
+        const j=await r.json();
+        out.push(line('ok','Repositório encontrado',esc(j.full_name)+(j.private?' · privado':' · público')));
+        const p=j.permissions||{};
+        if(p.push) out.push(line('ok','Permissão de escrita','O token pode gravar neste repositório.'));
+        else out.push(line('bad','Token sem permissão de escrita','No token, marque <b>Contents: Read and write</b> para este repositório.'));
+      }
+      else if(r.status===404){ podeSeguir=false; out.push(line('bad','Repositório não encontrado ou fora do alcance do token',
+        'Confira o nome <b>'+esc(repo)+'</b> e, no token, se este repositório está selecionado em <b>Repository access</b>.')); }
+      else if(r.status===403){ podeSeguir=false; out.push(line('bad','Token sem acesso a este repositório',
+        'É o mesmo 403 da publicação. No token: <b>Resource owner</b> = dono do repositório, <b>Repository access</b> incluindo <b>'+esc(repo)+'</b>, e <b>Contents: Read and write</b>. Se o repositório for de uma organização, um admin precisa aprovar o token.')); }
+      else out.push(line('warn','Resposta inesperada ao ler o repositório','HTTP '+r.status));
+    }catch(_){ out.push(line('bad','Falha ao consultar o repositório','')); }
+  }
+
+  /* 3. o branch existe? */
+  if(podeSeguir){
+    try{
+      const r=await fetch(`https://api.github.com/repos/${repo}/branches/${branch}`,{headers:H});
+      if(r.ok) out.push(line('ok','Branch existe',esc(branch)));
+      else if(r.status===404) out.push(line('bad','Branch não encontrado','Não existe "'+esc(branch)+'" neste repositório. Costuma ser <b>main</b> ou <b>master</b>.'));
+      else out.push(line('warn','Não foi possível checar o branch','HTTP '+r.status));
+    }catch(_){}
+  }
+
+  /* 4. o content.json já existe lá? */
+  if(podeSeguir){
+    try{
+      const r=await fetch(`https://api.github.com/repos/${repo}/contents/${cpath}?ref=${branch}`,{headers:H});
+      if(r.ok) out.push(line('ok','content.json encontrado','Será atualizado na publicação.'));
+      else if(r.status===404) out.push(line('warn','content.json ainda não existe','Tudo bem — será criado na primeira publicação.'));
+      else if(r.status===403) out.push(line('bad','Sem permissão para ler o conteúdo','Falta <b>Contents: Read and write</b> no token.'));
+      else out.push(line('warn','Resposta inesperada','HTTP '+r.status));
+    }catch(_){}
+  }
+  box.innerHTML='<ul class="gc-diaglist">'+out.join('')+'</ul>';
+}
+function addDiagButton(){
+  if(SEC!=='pub')return;
+  if(document.getElementById('gc-diagbtn'))return;
+  const pubBtn=[...document.querySelectorAll('#main button')].find(b=>b.textContent.includes('Publicar no GitHub'));
+  if(!pubBtn)return;
+  const b=mk('<button class="tbtn ghost" id="gc-diagbtn" style="margin-left:9px">Testar acesso</button>');
+  const box=mk('<div id="gc-diagbox" style="margin-top:14px"></div>');
+  b.addEventListener('click',()=>ghDiag(box));
+  pubBtn.parentElement.insertBefore(b,pubBtn.nextSibling);
+  pubBtn.parentElement.insertBefore(box,b.nextSibling);
+}
+
 /* ── 9. render ─────────────────────────────────────────────── */
 const _renderSec=window.renderSec;
 window.renderSec=function(){
@@ -2377,7 +2466,7 @@ window.renderSec=function(){
   try{ if(!document.getElementById('gc-status')) setStatus((typeof DIRTY!=='undefined'&&DIRTY)?'dirty':'clean'); }catch(e){}
   try{ header(); }catch(e){ console.warn('gc header',e); }
   try{ if(SEC==='works'||SEC==='clientes'||SEC==='servicos') cardsView(SEC); }catch(e){ console.warn('gc cards',e); }
-  try{ bindPubFields(); }catch(e){ console.warn('gc pub',e); }
+  try{ bindPubFields(); addDiagButton(); }catch(e){ console.warn('gc pub',e); }
   return r;
 };
 })();
