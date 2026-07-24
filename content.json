@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T20:07:34.976Z",
+  "generatedAt": "2026-07-24T20:25:34.900Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -918,12 +918,14 @@
       "client": "Suzano",
       "year": "2021",
       "art": "scan",
-      "image": "media/suzano/suzano-01.png",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/34a724131011115.618c29a5055c0.jpg",
       "gallery": [
-        "media/suzano/suzano-02.png",
-        "media/suzano/suzano-03.jpg",
-        "media/suzano/suzano-04.jpg",
-        "media/suzano/suzano-05.png"
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/13b423131011115.618c194b6482c.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/6e2ea8131011115.618c29e5caf42.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/34a724131011115.618c29a5055c0.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/ec9bd5131011115.618c29a4531c2.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/d0bcf7131011115.618c2f9e2db47.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/c73f8a131011115.618c29a25abf9.png"
       ],
       "title": {
         "pt": "Nunca é sorte, sempre é atenção!",
