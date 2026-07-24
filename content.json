@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T20:06:46.334Z",
+  "generatedAt": "2026-07-24T20:07:34.976Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -690,7 +690,8 @@
         "zh": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
         "no": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano."
       },
-      "blocks": []
+      "blocks": [],
+      "ai": true
     },
     {
       "id": "work_z0fyh22c",
@@ -723,7 +724,8 @@
         "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
         "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
       },
-      "blocks": []
+      "blocks": [],
+      "ai": true
     },
     {
       "kind": "craft",
