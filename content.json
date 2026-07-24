@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T04:01:46.510Z",
+  "generatedAt": "2026-07-24T04:18:45.809Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -536,8 +536,17 @@
       "client": "iPhone 17 Pro",
       "year": "2025",
       "art": "scan",
-      "image": "",
-      "gallery": [],
+      "image": "media/iphone-17-pro/03.jpeg",
+      "gallery": [
+        "media/iphone-17-pro/01.jpeg",
+        "media/iphone-17-pro/02.jpeg",
+        "media/iphone-17-pro/03.jpeg",
+        "media/iphone-17-pro/04.jpeg",
+        "media/iphone-17-pro/05.jpeg",
+        "media/iphone-17-pro/06.jpeg",
+        "media/iphone-17-pro/07.jpeg",
+        "media/iphone-17-pro/08.jpeg"
+      ],
       "title": {
         "pt": "Lançamento iPhone 17 Pro — Design & Motion",
         "en": "iPhone 17 Pro Launch — Design & Motion",
