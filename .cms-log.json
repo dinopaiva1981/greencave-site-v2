@@ -78,5 +78,13 @@
     "schemaVersion": "1.0.0",
     "backupPath": "backups/content-2026-07-24T04-27-21-416Z.json",
     "warnings": 0
+  },
+  {
+    "at": "2026-07-24T04:28:34.508Z",
+    "sha": "48beafc6f3b4f713f87d029f62df292e2589377c",
+    "cmsVersion": "2.0.0",
+    "schemaVersion": "1.0.0",
+    "backupPath": "backups/content-2026-07-24T04-28-31-517Z.json",
+    "warnings": 0
   }
 ]
