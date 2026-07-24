@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T13:31:35.427Z",
+  "generatedAt": "2026-07-24T14:37:16.419Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -579,11 +579,11 @@
             "no": "*Prosessen*"
           },
           "body": {
-            "pt": "",
-            "en": "Replace this text with process highlights: references, styleframes, camera direction and sound.",
-            "es": "Reemplaza este texto por los aspectos destacados del proceso: referencias, styleframes, dirección de cámara y sonido.",
-            "zh": "请替换为流程亮点：参考资料、风格帧、镜头与声音调度。",
-            "no": "Erstatt denne teksten med prosesshøydepunkter: referanser, styleframes, kamera- og lydregi."
+            "pt": "testes",
+            "en": "tests",
+            "es": "pruebas",
+            "zh": "测试",
+            "no": "tester"
           }
         },
         {
