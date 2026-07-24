@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T21:18:32.522Z",
+  "generatedAt": "2026-07-24T21:31:41.410Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -358,9 +358,9 @@
     }
   },
   "clients": [
-    "Disney",
     "Warner",
     "Estadão",
+    "Disney",
     "achē",
     "Globo",
     "ESPN",
