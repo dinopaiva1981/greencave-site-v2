@@ -168,7 +168,7 @@ body.ready #hero .cap{width:1.5em}
 #hero .geo-ring{top:12vh;right:clamp(-20px,3vw,90px);width:clamp(120px,13vw,200px);z-index:1}
 
 /* --- hero atmosphere slider --- */
-#hslider{position:relative;z-index:1;margin:clamp(-58px,-3.4vw,-16px) calc(var(--pad)*-1 + 10px) 0;height:clamp(380px,58vh,620px);border:1.5px solid var(--ink);border-radius:16px;overflow:hidden;background:var(--bone);touch-action:pan-y;cursor:grab;user-select:none}
+#hslider{position:relative;z-index:1;margin:0 calc(var(--pad)*-1 + 10px);height:clamp(380px,58vh,620px);border:1.5px solid var(--ink);border-radius:16px;overflow:hidden;background:var(--bone);touch-action:pan-y;cursor:grab;user-select:none}
 #hslider:active{cursor:grabbing}
 #hslider .slide{position:absolute;inset:0;visibility:hidden}
 #hslider .slide.on{visibility:visible}
@@ -317,8 +317,7 @@ body.ready #hero .cap{width:1.5em}
 #lab{content-visibility:auto;contain-intrinsic-size:auto 900px}
 
 /* ---------- craft grid ---------- */
-#craft .grid{margin-top:clamp(44px,6vh,80px);column-count:3;column-gap:clamp(16px,2.2vw,30px)}
-#craft .grid .ccard{break-inside:avoid;margin-bottom:clamp(16px,2.2vw,30px)}
+#craft .grid{margin-top:clamp(44px,6vh,80px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.2vw,30px)}
 .ccard{cursor:pointer}
 .ccard .media{position:relative;border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--bone);aspect-ratio:16/9}
 .ccard .media>svg,.ccard .media>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
@@ -613,18 +612,6 @@ footer .base{font-size:13px}
         <a class="btn mag" href="#contact" data-cur="mini"><span data-ui="hero_cta2"></span></a>
       </div>
     </div>
-    <div id="hslider" data-cur="view" aria-roledescription="carousel">
-      <div class="veil"></div>
-      <div id="hhint">‹ <span data-ui="ui_drag"></span> ›</div>
-      <div id="rec"><i></i>REC <b id="tc">00:00:00:00</b></div>
-      <div id="hcap"><span class="cl"></span><h3><span></span></h3></div>
-      <div id="hctrl">
-        <span class="idx"><b id="hnow">01</b> / <span id="htot">06</span></span>
-        <button id="hprev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
-        <button id="hnext" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-      </div>
-      <div id="hprog"><i></i></div>
-    </div>
   </section>
 
   <div class="smpte" aria-hidden="true"></div>
@@ -657,6 +644,21 @@ footer .base{font-size:13px}
 
   <div id="crawlband"><div class="big" id="crawltrack"></div></div>
   <div id="stats"><div class="grid" id="statgrid"></div></div>
+
+  <section id="hslide">
+    <div id="hslider" data-cur="view" aria-roledescription="carousel">
+      <div class="veil"></div>
+      <div id="hhint">‹ <span data-ui="ui_drag"></span> ›</div>
+      <div id="rec"><i></i>REC <b id="tc">00:00:00:00</b></div>
+      <div id="hcap"><span class="cl"></span><h3><span></span></h3></div>
+      <div id="hctrl">
+        <span class="idx"><b id="hnow">01</b> / <span id="htot">06</span></span>
+        <button id="hprev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <button id="hnext" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <div id="hprog"><i></i></div>
+    </div>
+  </section>
 
   <section id="works">
     <div class="sec-head">
