@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T22:29:25.060Z",
+  "generatedAt": "2026-07-24T22:39:06.289Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -1212,6 +1212,18 @@
           "no": "3D Ops"
         },
         "id": "team_vo6e4l9q"
+      },
+      {
+        "id": "team_fz4vdyqj",
+        "name": "Adrian",
+        "photo": "",
+        "role": {
+          "pt": "CTO",
+          "en": "CTO",
+          "es": "CTO",
+          "zh": "首席技术官",
+          "no": "CTO"
+        }
       }
     ]
   },
