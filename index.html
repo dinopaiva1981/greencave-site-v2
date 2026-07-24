@@ -123,7 +123,7 @@ nav a.nl:hover i{transform:translateY(-100%)}
 
 /* ---------- shared ---------- */
 section{position:relative;padding:clamp(88px,12vh,160px) var(--pad)}
-.eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--teal);display:flex;align-items:center;gap:14px;margin-bottom:30px}
+.eyebrow{font-size:13px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--teal);display:flex;align-items:center;gap:14px;margin-bottom:30px}
 .eyebrow::before{content:"";width:10px;height:10px;background:var(--green);border-radius:2px}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
 .sec-title{font-family:var(--disp);font-stretch:125%;font-weight:780;font-size:clamp(38px,6vw,86px);line-height:.95;letter-spacing:-.01em;text-transform:uppercase;max-width:15ch}
@@ -132,7 +132,7 @@ section{position:relative;padding:clamp(88px,12vh,160px) var(--pad)}
 .reveal{opacity:0;transform:translateY(46px) rotate(.5deg);transform-origin:left top;transition:opacity .9s var(--ease),transform .9s var(--ease)}
 .reveal.in{opacity:1;transform:none}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
-.btn{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:17px 28px;border-radius:99px;border:1.5px solid var(--ink);position:relative;overflow:hidden;transition:color .35s var(--ease);will-change:transform}
+.btn{display:inline-flex;align-items:center;gap:12px;font-size:13.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:17px 28px;border-radius:99px;border:1.5px solid var(--ink);position:relative;overflow:hidden;transition:color .35s var(--ease);will-change:transform}
 .btn span{position:relative;z-index:1}
 .btn::before{content:"";position:absolute;inset:-2px;background:var(--ink);border-radius:99px;transform:translateY(101%);transition:transform .45s var(--ease)}
 .btn:hover::before{transform:none}
@@ -176,8 +176,7 @@ body.ready #hero .cap{width:1.5em}
 #hslider .slide.on>svg,#hslider .slide.on>img{animation:kb 7s var(--ease) forwards}
 @keyframes kb{from{transform:scale(1.001)}to{transform:scale(1.07)}}
 #hslider .veil{position:absolute;inset:0;z-index:2;background:linear-gradient(200deg,transparent 55%,rgba(15,21,22,.38));pointer-events:none}
-#hcap{position:absolute;left:clamp(18px,3vw,40px);bottom:clamp(18px,3vw,38px);z-index:3;color:#fff;max-width:70%}
-#hcap{text-shadow:0 1px 22px rgba(15,21,22,.45)}
+#hcap{position:absolute;left:clamp(18px,3vw,40px);bottom:clamp(18px,3vw,38px);z-index:3;color:#fff;max-width:70%;text-shadow:0 1px 22px rgba(15,21,22,.45)}
 #hcap .cl{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:8px;will-change:transform,opacity}
 #hcap h3{font-family:var(--disp);font-weight:770;text-transform:uppercase;font-size:clamp(20px,3vw,42px);line-height:.98;overflow:hidden;padding:.18em 0 .2em;margin:-.11em 0 -.13em}
 #hcap h3 span{display:block;will-change:transform}
@@ -246,7 +245,7 @@ body.ready #hero .cap{width:1.5em}
 #svcprev.show{opacity:1}
 #svcprev svg,#svcprev img{width:100%;height:100%;display:block;object-fit:cover}
 @media(hover:none),(pointer:coarse),(max-width:900px){#svcprev{display:none}}
-.svc{display:grid;grid-template-columns:90px 1fr 1.05fr auto;gap:clamp(16px,2.6vw,48px);align-items:center;padding:clamp(26px,4vh,42px) clamp(8px,1vw,18px);border-bottom:1.5px solid var(--ink);position:relative;overflow:hidden}
+.svc{display:grid;grid-template-columns:70px 1.1fr 1fr auto;gap:clamp(16px,2.6vw,48px);align-items:center;padding:clamp(26px,4vh,42px) clamp(8px,1vw,18px);border-bottom:1.5px solid var(--ink);position:relative;overflow:hidden}
 .svc>*{position:relative;z-index:1}
 .svc::before{content:"";position:absolute;inset:0;background:var(--green);transform:translateY(101%);transition:transform .5s var(--ease)}
 .svc:hover::before{transform:none}
@@ -276,7 +275,7 @@ body.ready #hero .cap{width:1.5em}
 /* ---------- works rail (slider horizontal) ---------- */
 #works{padding-left:0;padding-right:0}
 #works .sec-head{padding:0 var(--pad)}
-#wrail{margin-top:clamp(44px,6vh,80px);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;display:flex;align-items:flex-start;gap:clamp(18px,2.6vw,36px);padding:6px var(--pad) 26px}
+#wrail{margin-top:clamp(44px,6vh,80px);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;display:flex;align-items:flex-start;gap:clamp(18px,2.6vw,36px);padding:6px var(--pad) 26px;perspective:1200px}
 #wrail::-webkit-scrollbar{display:none}
 #wrail.drag{cursor:grabbing;scroll-snap-type:none}
 .wcard{flex:0 0 auto;width:clamp(300px,66vw,860px);scroll-snap-align:center;cursor:pointer}
@@ -491,7 +490,6 @@ body::after{content:"";position:fixed;inset:0;z-index:95;pointer-events:none;opa
 #about .manif p .w.on{opacity:1}
 
 /* ===== Tilt 3D nos cards ===== */
-#wrail{perspective:1200px}
 .wcard .media{transform-style:preserve-3d;will-change:transform;transition:box-shadow .4s}
 .wcard:hover .media{box-shadow:0 24px 50px -22px rgba(15,21,22,.45)}
 
@@ -527,8 +525,6 @@ body.langswap main,body.langswap footer{opacity:0}
 
 /* ===== Reequilíbrio do grid de texto ===== */
 #hero .lede p{max-width:52ch;font-size:clamp(18.5px,1.6vw,23px);line-height:1.6}
-.eyebrow{font-size:13px}
-.svc{grid-template-columns:70px 1.1fr 1fr auto}
 .svc p{max-width:none;font-size:clamp(17.5px,1.4vw,20px);line-height:1.6}
 .wcard .tags{font-size:13px}
 .wcard .meta{padding-top:18px}
@@ -544,7 +540,6 @@ footer .grid{font-size:15px}
 footer .grid h4{font-size:12px}
 footer .base{font-size:13px}
 #wfoot .hint{font-size:12px}
-.btn{font-size:13.5px}
 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}
@@ -582,10 +577,10 @@ footer .base{font-size:13px}
   </a>
   <button id="burger" aria-label="Menu"><i></i><i></i></button>
   <nav id="nav">
+    <a class="nl" href="#services" data-nl="nav_services"></a>
     <a class="nl" href="#works" data-nl="nav_works"></a>
     <a class="nl" href="#craft" data-nl="nav_craft"></a>
     <a class="nl" href="#lab" data-nl="nav_lab"></a>
-    <a class="nl" href="#services" data-nl="nav_services"></a>
     <a class="nl" href="#about" data-nl="nav_about"></a>
     <a class="nl" href="#contact" data-nl="nav_contact"></a>
     <div class="lang" id="langbox"></div>
@@ -651,20 +646,11 @@ footer .base{font-size:13px}
     </div>
   </section>
 
-  <section id="quem">
-    <div class="sec-head">
-      <div><p class="eyebrow reveal" data-ui="quem_eyebrow"></p>
-      <h2 class="sec-title reveal d1" data-ui-html="quem_title"></h2></div>
-      <span class="sec-idx reveal d2">CH·01</span>
-    </div>
-    <div class="grid" id="quemgrid"></div>
-  </section>
-
   <section id="services">
     <div class="sec-head">
       <div><p class="eyebrow reveal" data-ui="services_eyebrow"></p>
       <h2 class="sec-title reveal d1" data-ui-html="services_title"></h2></div>
-      <span class="sec-idx reveal d2">CH·02</span>
+      <span class="sec-idx reveal d2">CH·01</span>
     </div>
     <div class="list" id="svclist"><div id="svcprev"></div></div>
   </section>
@@ -676,7 +662,7 @@ footer .base{font-size:13px}
     <div class="sec-head">
       <div><p class="eyebrow reveal" data-ui="works_eyebrow"></p>
       <h2 class="sec-title reveal d1" data-ui-html="works_title"></h2></div>
-      <span class="sec-idx reveal d2">CH·03</span>
+      <span class="sec-idx reveal d2">CH·02</span>
     </div>
     <div id="wrail" data-cur="drag"></div>
     <div id="wfoot">
@@ -692,9 +678,18 @@ footer .base{font-size:13px}
   <section id="craft">
     <div class="sec-head">
       <div><h2 class="sec-title reveal d1" data-ui-html="craft_title"></h2></div>
-      <span class="sec-idx reveal d2">CH·04</span>
+      <span class="sec-idx reveal d2">CH·03</span>
     </div>
     <div class="grid" id="craftgrid"></div>
+  </section>
+
+  <section id="quem">
+    <div class="sec-head">
+      <div><p class="eyebrow reveal" data-ui="quem_eyebrow"></p>
+      <h2 class="sec-title reveal d1" data-ui-html="quem_title"></h2></div>
+      <span class="sec-idx reveal d2">CH·04</span>
+    </div>
+    <div class="grid" id="quemgrid"></div>
   </section>
 
   <section id="lab">
