@@ -319,20 +319,27 @@ h1,h2,h3,.card h2{color:var(--ink)}
 #wrap{grid-template-columns:252px 1fr;max-width:1560px;gap:26px;padding:24px 26px 90px}
 #wrap.gc-collapsed{grid-template-columns:74px 1fr}
 
-/* ── sidebar ──────────────────────────────────────────────── */
+/* ── sidebar ──────────────────────────────────────────────────────
+   IMPORTANTE: o motor já gerencia o indicador deslizante (.side-ind) —
+   move ele para cobrir o botão ativo como fundo. Aqui só ajustamos cores
+   de texto e espaçamento; nunca conflitamos com o background do .side-ind
+   nem com o z-index dele (z-index:0 no motor, botão fica em z-index:1). */
 #side{background:var(--sb);border:1px solid var(--line);border-radius:var(--r-md);padding:12px 10px;top:82px;box-shadow:var(--sh-sm);gap:1px}
 .gc-sgroup{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute2);padding:16px 12px 7px}
 .gc-sgroup:first-of-type{padding-top:4px}
 #side button{color:var(--mute);padding:9px 11px;border-radius:9px;font-size:13.5px;font-weight:520;gap:10px}
 #side button:not(.on):hover{background:#1F242C;color:#fff}
-#side button.on{color:#06231A;font-weight:650}
-#side button.on .gc-ico{color:#06231A}
+/* botão ativo: texto e ícone legíveis sobre o fundo verde do .side-ind */
+#side button.on{color:#fff;font-weight:650}
+#side button.on .gc-ico{color:rgba(255,255,255,.85)}
 #side .gc-ico{width:17px;height:17px;flex:none;color:var(--mute2);transition:color .2s}
 #side button:hover .gc-ico{color:var(--green)}
 #side .sic{display:none}
 #side .cnt{background:#262C36;color:var(--mute);font-family:var(--mono);font-size:10px;font-weight:600}
-#side button.on .cnt{background:rgba(6,35,26,.22);color:#06231A}
-.side-ind{background:linear-gradient(180deg,var(--green-h),var(--green));border-radius:9px;box-shadow:0 6px 16px -8px rgba(52,211,153,.8)}
+#side button.on .cnt{background:rgba(255,255,255,.2);color:#fff}
+/* .side-ind: só redefine visual (gradiente, sombra) — posição e z-index
+   são controlados pelo JS do motor, não tocamos nisso */
+.side-ind{background:linear-gradient(180deg,rgba(52,211,153,.9),rgba(40,180,120,.9));border-radius:9px;box-shadow:0 4px 18px -6px rgba(52,211,153,.6)}
 #side .sidehint{color:var(--mute2);font-size:10.5px;font-family:var(--mono);border-top:1px solid var(--line);margin-top:12px;padding-top:12px}
 #gc-collapse{display:flex;align-items:center;gap:9px;width:100%;color:var(--mute2);font-size:11.5px;padding:9px 11px;border-radius:9px;margin-top:6px}
 #gc-collapse:hover{background:#1F242C;color:var(--txt)}
@@ -3301,7 +3308,7 @@ function injectMediaPickers(root){
 /* ── 8k. selo de build visível ──────────────────────────────────
    Pra nunca mais precisar abrir o código-fonte pra saber se o navegador
    está com a versão certa em cache: um selo discreto no rodapé da sidebar. */
-const GC_BUILD='V3.5 · 2026-07-24-1908';
+const GC_BUILD='V4.1 · 2026-07-24-2115';
 function buildBadge(){
   const s=document.getElementById('side'); if(!s||document.getElementById('gc-build'))return;
   s.appendChild(mk(`<div id="gc-build" title="Versão do painel carregada agora — se isso não bater com o que eu te mandei, é cache do navegador (Cmd+Shift+R resolve)">${esc(GC_BUILD)}</div>`));
@@ -3472,35 +3479,36 @@ async function createWorkFromExtraction(ex, sourceUrl){
     _importedFrom: sourceUrl||''
   };
 
-  /* espelhar as imagens para o repositório — o pedido do Dino: não depender
-     do CDN de origem. Só faz sentido se houver token (senão não dá pra subir
-     nada); e é opcional, porque o usuário pode preferir revisar antes. */
+  /* espelhar as imagens para o repositório — roda AUTOMATICAMENTE sempre
+     que há token e repositório configurados. Sem confirm: o usuário pediu
+     exatamente isso ("já sobe as imagens"). Se não houver token, cria o
+     projeto com as URLs de origem e avisa. */
   const allImgs=ex.images.slice(0,9);
   if(allImgs.length && GHS.token && !GHS.repo.includes('SEU-')){
-    const wantMirror=confirm(`Encontrei ${allImgs.length} imagem(ns). Quer que eu baixe e suba todas para o SEU repositório agora (media/projetos/${slug(clientName)}/), pra não depender do site de origem?\n\nOK = subir para o meu GitHub (recomendado)\nCancelar = manter os links originais por enquanto`);
-    if(wantMirror){
-      const panel=uploadPanel();
-      const list=panel.querySelector('.gc-uplist'), bar=panel.querySelector('.gc-upbar i'), txt=panel.querySelector('.gc-uptext');
-      panel.classList.remove('gc-hidden');
-      list.innerHTML=''; allImgs.forEach((u,i)=>list.appendChild(mk(`<li data-i="${i}"><span class="gc-upicn">⏳</span><span class="gc-upname">imagem ${i+1}</span><span class="gc-upstage">na fila…</span></li>`)));
-      const {map,ok,total}=await mirrorImages(allImgs, slug(clientName), (done,tot,cur)=>{
-        bar.style.width=Math.round(done/tot*100)+'%';
-        txt.textContent=cur?`Baixando e subindo ${done+1} de ${tot}…`:`Concluído: ${done} de ${tot}.`;
-        const li=list.querySelector(`li[data-i="${done}"]`);
-        list.querySelectorAll('li').forEach((el,idx)=>{
-          const st=el.querySelector('.gc-upstage'), ic=el.querySelector('.gc-upicn');
-          if(idx<done){ st.textContent='no repositório ✓'; ic.textContent='✓'; el.className='ok'; }
-          else if(idx===done && cur){ st.textContent='baixando + subindo…'; }
-        });
+    const panel=uploadPanel();
+    const list=panel.querySelector('.gc-uplist'), bar=panel.querySelector('.gc-upbar i'), txt=panel.querySelector('.gc-uptext');
+    panel.classList.remove('gc-hidden');
+    txt.textContent=`Baixando e subindo ${allImgs.length} imagem(ns) para o seu GitHub…`;
+    bar.style.width='0%';
+    list.innerHTML='';
+    allImgs.forEach((u,i)=>list.appendChild(mk(`<li data-i="${i}"><span class="gc-upicn">⏳</span><span class="gc-upname">imagem ${i+1}</span><span class="gc-upstage">na fila…</span></li>`)));
+    const {map,ok,total}=await mirrorImages(allImgs, slug(clientName), (done,tot,cur)=>{
+      bar.style.width=tot?Math.round(done/tot*100)+'%':'0%';
+      txt.textContent=cur?`Imagem ${done+1} de ${tot}…`:`Concluído: ${done} de ${tot}.`;
+      list.querySelectorAll('li').forEach((el,idx)=>{
+        const st=el.querySelector('.gc-upstage'), ic=el.querySelector('.gc-upicn');
+        if(idx<done){ st.textContent='no repositório ✓'; ic.textContent='✓'; el.className='ok'; }
+        else if(idx===done && cur){ st.textContent='baixando + subindo…'; ic.textContent='⏳'; }
       });
-      /* trocar as URLs originais pelas do repositório */
-      w.image = map[w.image]||w.image;
-      w.gallery = w.gallery.map(u=>map[u]||u);
-      txt.textContent=`${ok} de ${total} imagens agora no seu repositório.`;
-      bar.style.width='100%';
-      setTimeout(()=>panel.classList.add('gc-hidden'), 2600);
-      toast(`${ok}/${total} imagens copiadas para o seu GitHub em media/projetos/${slug(clientName)}/.`, ok>0);
-    }
+    });
+    w.image = map[w.image]||w.image;
+    w.gallery = w.gallery.map(u=>map[u]||u);
+    bar.style.width='100%';
+    txt.textContent=`${ok}/${total} imagens agora no seu repositório.`;
+    setTimeout(()=>panel.classList.add('gc-hidden'), 3200);
+    toast(`${ok}/${total} imagens copiadas para media/projetos/${slug(clientName)}/.`, ok>0);
+  } else if(allImgs.length && !GHS.token){
+    toast('Sem token configurado — projeto criado com links de origem. Configure o token em Publicação e reimporte para subir as imagens.', false);
   }
 
   DATA.works.unshift(w);
