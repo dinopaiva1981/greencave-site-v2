@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-26T05:51:10.996Z",
+  "generatedAt": "2026-07-26T05:56:16.362Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -660,11 +660,6 @@
           }
         },
         {
-          "type": "duo",
-          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif",
-          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif"
-        },
-        {
           "type": "text",
           "title": {
             "pt": "*Confiança estratégica, não só execução*",
@@ -706,6 +701,17 @@
           ]
         },
         {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
           "type": "text",
           "title": {
             "pt": "*Workflow*",
@@ -724,7 +730,18 @@
         },
         {
           "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif",
           "caption": {
             "pt": "",
             "en": "",
