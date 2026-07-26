@@ -1,0 +1,1697 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-26T03:07:00.477Z",
+  "meta": {
+    "title": {
+      "pt": "Greencave — Operação criativa para todas as telas",
+      "en": "Greencave — Creative operations for every screen",
+      "es": "Greencave — Operación creativa para todas las pantallas",
+      "zh": "Greencave — 覆盖所有屏幕的创意运营",
+      "no": "Greencave — Kreativ drift for alle skjermer"
+    },
+    "desc": {
+      "pt": "Operação criativa para agências, marcas, canais e eventos. Design, motion, 3D e branded content — desde 2017, em São Paulo.",
+      "en": "Creative operations for agencies, brands, channels and events. Design, motion, 3D and branded content — since 2017, based in São Paulo.",
+      "es": "Operación creativa para agencias, marcas, canales y eventos. Design, motion, 3D y branded content — desde 2017, en São Paulo.",
+      "zh": "服务代理机构、品牌、频道与活动的创意运营。设计、动态、3D 与品牌内容 —— 自 2017 年起，总部圣保罗。",
+      "no": "Kreativ drift for byråer, merkevarer, kanaler og eventer. Design, motion, 3D og branded content — siden 2017, fra São Paulo."
+    }
+  },
+  "ui": {
+    "nav_works": {
+      "pt": "Cases",
+      "en": "Cases",
+      "es": "Cases",
+      "zh": "案例",
+      "no": "Cases"
+    },
+    "nav_services": {
+      "pt": "Serviços",
+      "en": "Services",
+      "es": "Servicios",
+      "zh": "服务",
+      "no": "Tjenester"
+    },
+    "nav_about": {
+      "pt": "Estúdio",
+      "en": "Studio",
+      "es": "Estudio",
+      "zh": "工作室",
+      "no": "Studio"
+    },
+    "nav_contact": {
+      "pt": "Contato",
+      "en": "Contact",
+      "es": "Contacto",
+      "zh": "联系",
+      "no": "Kontakt"
+    },
+    "hero_eyebrow": {
+      "pt": "Hub criativo — São Paulo, Brasil",
+      "en": "Creative hub — São Paulo, Brazil",
+      "es": "Hub creativo — São Paulo, Brasil",
+      "zh": "创意枢纽 — 巴西圣保罗",
+      "no": "Kreativt hub — São Paulo, Brasil"
+    },
+    "hero_sub": {
+      "pt": "A gente entra quando a demanda aperta. Trabalhamos plugados em times de marca, canais, agências e produtoras, cuidando de design, motion e conteúdo com o mesmo padrão de quem está lá dentro — e, de vez em quando, ajudando a inventar o produto inteiro. Desde 2017.",
+      "en": "We step in when the workload gets heavy. We work plugged into brand teams, channels, agencies and production companies, handling design, motion and content at an in-house standard — and, every now and then, helping invent the whole product. Since 2017.",
+      "es": "Entramos cuando la demanda aprieta. Trabajamos conectados a equipos de marca, canales, agencias y productoras, cuidando design, motion y contenido con el mismo estándar de quien está adentro — y, de vez en cuando, ayudando a inventar el producto entero. Desde 2017.",
+      "zh": "需求吃紧时我们就位。我们嵌入品牌团队、频道、代理机构与制作公司，以内部团队的标准打理设计、动态与内容 —— 偶尔，还帮忙从零发明整个产品。自 2017 年起。",
+      "no": "Vi trår til når arbeidsmengden strammer til. Vi jobber koblet til merkevareteam, kanaler, byråer og produksjonsselskaper, og tar hånd om design, motion og innhold med samme standard som et internt team — og av og til hjelper vi med å finne opp hele produktet. Siden 2017."
+    },
+    "hero_cta1": {
+      "pt": "Ver trabalhos",
+      "en": "See our work",
+      "es": "Ver trabajos",
+      "zh": "查看作品",
+      "no": "Se arbeid"
+    },
+    "hero_cta2": {
+      "pt": "Falar com a gente",
+      "en": "Talk to us",
+      "es": "Hablar con nosotros",
+      "zh": "与我们聊聊",
+      "no": "Snakk med oss"
+    },
+    "clients_label": {
+      "pt": "Confiança de quem faz mídia todos os dias",
+      "en": "Trusted by people who make media every day",
+      "es": "Confianza de quien hace medios todos los días",
+      "zh": "每日媒体工作者的信赖",
+      "no": "Tillit fra dem som lager media hver dag"
+    },
+    "services_eyebrow": {
+      "pt": "Serviços",
+      "en": "Services",
+      "es": "Servicios",
+      "zh": "服务",
+      "no": "Tjenester"
+    },
+    "services_title": {
+      "pt": "O que *fazemos*",
+      "en": "What we *do*",
+      "es": "Lo que *hacemos*",
+      "zh": "我们*做*的事",
+      "no": "Det vi *gjør*"
+    },
+    "works_eyebrow": {
+      "pt": "Estrutura & escala",
+      "en": "Structure & scale",
+      "es": "Estructura y escala",
+      "zh": "结构与规模",
+      "no": "Struktur & skala"
+    },
+    "works_title": {
+      "pt": "Cases que sustentam *operações*",
+      "en": "Cases that sustain *operations*",
+      "es": "Cases que sostienen *operaciones*",
+      "zh": "支撑*运营*的案例",
+      "no": "Cases som bærer *drift*"
+    },
+    "about_eyebrow": {
+      "pt": "Estúdio",
+      "en": "Studio",
+      "es": "Estudio",
+      "zh": "工作室",
+      "no": "Studio"
+    },
+    "about_title": {
+      "pt": "Somos um *ecossistema* criativo",
+      "en": "We are a creative *ecosystem*",
+      "es": "Somos un *ecosistema* creativo",
+      "zh": "我们是一个创意*生态系统*",
+      "no": "Vi er et kreativt *økosystem*"
+    },
+    "about_manifesto": {
+      "pt": "Depois de quase 10 anos rodando operação criativa para marca, agência e canal, aprendemos uma coisa: o que funciona é virar time, não fornecedor. Isso não se explica em briefing — se prova no segundo projeto, no terceiro, no décimo. É isso que fazemos aqui: entramos na rotina, entendemos o contexto e entregamos no ritmo que o negócio precisa.",
+      "en": "After almost 10 years running creative operations for brands, agencies and channels, we learned one thing: what works is becoming a team, not a supplier. This is not explained in a briefing — it is proven in the second project, the third, the tenth. That's what we do here: we get into the routine, understand the context and deliver at the pace the business needs.",
+      "es": "Después de casi 10 años dirigiendo operaciones creativas para marcas, agencias y canales, aprendimos una cosa: lo que funciona es convertirse en un equipo, no en un proveedor. Esto no se explica en un informe, se demuestra en el segundo proyecto, el tercero, el décimo. Eso es lo que hacemos aquí: nos adentramos en la rutina, entendemos el contexto y entregamos al ritmo que el negocio necesita.",
+      "zh": "在为品牌、代理机构和渠道进行创意运营近 10 年之后，我们学到了一件事：有效的是成为一个团队，而不是供应商。这在简报中没有得到解释——它在第二个、第三个、第十个项目中得到了证明。这就是我们在这里所做的：我们进入日常工作，了解背景并按照业务需要的速度交付。",
+      "no": "Etter nesten 10 år med kreativ virksomhet for merkevarer, byråer og kanaler, lærte vi én ting: det som fungerer er å bli et team, ikke en leverandør. Dette er ikke forklart i en orientering - det er bevist i det andre prosjektet, det tredje, det tiende. Det er det vi gjør her: vi kommer inn i rutinen, forstår konteksten og leverer i det tempoet virksomheten trenger."
+    },
+    "contact_eyebrow": {
+      "pt": "Contato",
+      "en": "Contact",
+      "es": "Contacto",
+      "zh": "联系",
+      "no": "Kontakt"
+    },
+    "contact_title": {
+      "pt": "Vamos criar *juntos*?",
+      "en": "Let's create *together*?",
+      "es": "¿Creamos *juntos*?",
+      "zh": "一起*创造*吧？",
+      "no": "Skal vi skape *sammen*?"
+    },
+    "ui_view": {
+      "pt": "Ver case",
+      "en": "View case",
+      "es": "Ver caso",
+      "zh": "查看案例",
+      "no": "Se case"
+    },
+    "ui_close": {
+      "pt": "Fechar",
+      "en": "Close",
+      "es": "Cerrar",
+      "zh": "关闭",
+      "no": "Lukk"
+    },
+    "ui_client": {
+      "pt": "Cliente",
+      "en": "Client",
+      "es": "Cliente",
+      "zh": "客户",
+      "no": "Kunde"
+    },
+    "ui_year": {
+      "pt": "Ano",
+      "en": "Year",
+      "es": "Año",
+      "zh": "年份",
+      "no": "År"
+    },
+    "ui_services": {
+      "pt": "Serviços",
+      "en": "Services",
+      "es": "Servicios",
+      "zh": "服务",
+      "no": "Tjenester"
+    },
+    "f_studio": {
+      "pt": "Estúdio",
+      "en": "Studio",
+      "es": "Estudio",
+      "zh": "工作室",
+      "no": "Studio"
+    },
+    "f_social": {
+      "pt": "Redes",
+      "en": "Social",
+      "es": "Redes",
+      "zh": "社交媒体",
+      "no": "Sosiale medier"
+    },
+    "f_nav": {
+      "pt": "Navegar",
+      "en": "Explore",
+      "es": "Navegar",
+      "zh": "浏览",
+      "no": "Naviger"
+    },
+    "f_rights": {
+      "pt": "Todos os direitos reservados",
+      "en": "All rights reserved",
+      "es": "Todos los derechos reservados",
+      "zh": "版权所有",
+      "no": "Med enerett"
+    },
+    "f_admin": {
+      "pt": "Área do time",
+      "en": "Team area",
+      "es": "Área del equipo",
+      "zh": "团队专区",
+      "no": "Teamområde"
+    },
+    "ui_drag": {
+      "pt": "Arraste",
+      "en": "Drag",
+      "es": "Arrastra",
+      "zh": "拖动",
+      "no": "Dra"
+    },
+    "nav_home": {
+      "pt": "Início",
+      "en": "Home",
+      "es": "Inicio",
+      "zh": "首页",
+      "no": "Hjem"
+    },
+    "ui_next": {
+      "pt": "Próximo case",
+      "en": "Next case",
+      "es": "Próximo caso",
+      "zh": "下一个案例",
+      "no": "Neste case"
+    },
+    "f_status": {
+      "pt": "Disponível para novos projetos",
+      "en": "Available for new projects",
+      "es": "Disponible para nuevos proyectos",
+      "zh": "可承接新项目",
+      "no": "Tilgjengelig for nye prosjekter"
+    },
+    "tab_away": {
+      "pt": "● Greencave — de volta ao ar quando você voltar",
+      "en": "● Greencave — back on air when you return",
+      "es": "● Greencave — de vuelta al aire cuando regreses",
+      "zh": "● Greencave — 你回来时继续播出",
+      "no": "● Greencave — tilbake på lufta når du kommer tilbake"
+    },
+    "hero_meta": {
+      "pt": "Est. 2017 · São Paulo — Brasil",
+      "en": "Est. 2017 · São Paulo — Brazil",
+      "es": "Est. 2017 · São Paulo — Brasil",
+      "zh": "成立于 2017 年 · 巴西圣保罗",
+      "no": "Etablert 2017 · São Paulo — Brasil"
+    },
+    "loader_hint": {
+      "pt": "Mova o cursor · toque para entrar",
+      "en": "Move your cursor · tap to enter",
+      "es": "Mueve el cursor · toca para entrar",
+      "zh": "移动光标 · 点按进入",
+      "no": "Beveg markøren · trykk for å gå inn"
+    },
+    "quem_eyebrow": {
+      "pt": "Para quem",
+      "en": "Who it's for",
+      "es": "Para quién",
+      "zh": "服务对象",
+      "no": "For hvem"
+    },
+    "quem_title": {
+      "pt": "Onde a Greencave *entra*",
+      "en": "Where Greencave *comes in*",
+      "es": "Dónde *entra* Greencave",
+      "zh": "Greencave 从哪里*切入*",
+      "no": "Hvor Greencave *kommer inn*"
+    },
+    "reel_eyebrow": {
+      "pt": "Showreel",
+      "en": "Showreel",
+      "es": "Showreel",
+      "zh": "作品集锦",
+      "no": "Showreel"
+    },
+    "reel_title": {
+      "pt": "Aperte o *play*.",
+      "en": "Press *play*.",
+      "es": "Dale *play*.",
+      "zh": "按下*播放*。",
+      "no": "Trykk *play*."
+    },
+    "reel_cta": {
+      "pt": "Assistir",
+      "en": "Watch",
+      "es": "Ver",
+      "zh": "观看",
+      "no": "Se"
+    },
+    "nav_craft": {
+      "pt": "Trabalhos",
+      "en": "Work",
+      "es": "Trabajos",
+      "zh": "作品",
+      "no": "Arbeid"
+    },
+    "craft_title": {
+      "pt": "Últimos *projetos*",
+      "en": "Latest *projects*",
+      "es": "Últimos *proyectos*",
+      "zh": "最新*项目*",
+      "no": "Siste *prosjekter*"
+    },
+    "f_whats": {
+      "pt": "Chamar no WhatsApp",
+      "en": "Chat on WhatsApp",
+      "es": "Hablar por WhatsApp",
+      "zh": "WhatsApp 联系",
+      "no": "Chat på WhatsApp"
+    },
+    "lab_eyebrow": {
+      "pt": "A parte que pouca gente conhece",
+      "en": "The part few people know",
+      "es": "La parte que pocos conocen",
+      "zh": "少有人知道的部分",
+      "no": "Delen få kjenner til"
+    },
+    "lab_title": {
+      "pt": "Do conceito ao *produto*",
+      "en": "From concept to *product*",
+      "es": "Del concepto al *producto*",
+      "zh": "从概念到*产品*",
+      "no": "Fra konsept til *produkt*"
+    },
+    "lab_intro": {
+      "pt": "Nem tudo que a gente faz cabe em entregável. Há quase uma década, parceiros — de gigantes de mídia a fundadores — nos chamam pra tirar produto e formato do papel: conceito, design de serviço e MVP. Essa via não tem vitrine. Tem histórico.",
+      "en": "Not everything we do fits into deliverables. For almost a decade, partners — from media giants to founders — have called on us to get the product and format off the ground: concept, service design and MVP. This road does not have a storefront. It has a history.",
+      "es": "No todo lo que hacemos encaja en los resultados. Durante casi una década, los socios, desde gigantes de los medios hasta fundadores, nos han pedido que hagamos despegar el producto y el formato: concepto, diseño de servicio y MVP. Esta vía no tiene escaparate. Tiene una historia.",
+      "zh": "并非我们所做的一切都适合交付成果。近十年来，合作伙伴（从媒体巨头到创始人）一直呼吁我们推出产品和格式：概念、服务设计和 MVP。这条路没有店面。它有一个历史。",
+      "no": "Ikke alt vi gjør passer inn i leveranser. I nesten et tiår har partnere – fra mediegiganter til grunnleggere – bedt oss om å få produktet og formatet i gang: konsept, tjenestedesign og MVP. Denne veien har ikke butikkfront. Den har en historie."
+    },
+    "nav_lab": {
+      "pt": "Lab",
+      "en": "Lab",
+      "es": "Lab",
+      "zh": "实验室",
+      "no": "Lab"
+    }
+  },
+  "hero": {
+    "h1": {
+      "pt": "Operação\n*criativa*\npara todas as telas.",
+      "en": "Creative\n*operations*\nfor every screen.",
+      "es": "Operación\n*creativa*\npara cada pantalla.",
+      "zh": "面向每一块屏幕\n*的创意*\n运营。",
+      "no": "Kreativ\n*drift*\nfor alle skjermer."
+    }
+  },
+  "clients": [
+    "Warner",
+    "Estadão",
+    "Disney",
+    "achē",
+    "Globo",
+    "ESPN",
+    "Shellbox",
+    "Elanco",
+    "Suzano",
+    "Huggies",
+    "TV TEM",
+    "Stone",
+    "VMLY&R",
+    "GNT",
+    "Fremantle"
+  ],
+  "services": [
+    {
+      "title": {
+        "pt": "Operação Criativa Contínua",
+        "en": "Continuous Creative Operations",
+        "es": "Operación Creativa Continua",
+        "zh": "持续创意运营",
+        "no": "Kontinuerlig kreativ drift"
+      },
+      "desc": {
+        "pt": "Um time plugado na sua rotina, com gestão, curadoria e entrega constante — sem aumentar sua folha de pagamento.",
+        "en": "A team plugged into your routine, with dedicated management, curation and steady delivery — without growing your payroll.",
+        "es": "Un equipo conectado a tu rutina, con gestión, curaduría y entrega constante — sin aumentar tu nómina.",
+        "zh": "融入你日常运营的团队，配专属管理、内容把关与稳定交付 —— 无需扩编。",
+        "no": "Et team koblet til rutinen din, med ledelse, kuratering og jevn levering — uten å øke lønnslisten."
+      },
+      "id": "svc_oylp4tmo"
+    },
+    {
+      "title": {
+        "pt": "Design & Motion",
+        "en": "Design & Motion",
+        "es": "Design & Motion",
+        "zh": "设计与动态",
+        "no": "Design & motion"
+      },
+      "desc": {
+        "pt": "Identidade viva e animação com acabamento de agência grande, do conceito até a entrega técnica final.",
+        "en": "Living identity and animation with big-agency finish, from concept through final technical delivery.",
+        "es": "Identidad viva y animación con acabado de agencia grande, del concepto a la entrega técnica final.",
+        "zh": "具有大型代理机构完成度的鲜活识别与动画，从概念到最终技术交付。",
+        "no": "Levende identitet og animasjon med stort byrås finish, fra konsept til endelig teknisk leveranse."
+      },
+      "id": "svc_2p97ys17"
+    },
+    {
+      "title": {
+        "pt": "3D & Ilustração",
+        "en": "3D & Illustration",
+        "es": "3D e Ilustración",
+        "zh": "3D 与插画",
+        "no": "3D & illustrasjon"
+      },
+      "desc": {
+        "pt": "Peças em 2D e 3D para campanha, produto e plataforma, no padrão que marca grande exige.",
+        "en": "2D and 3D pieces for campaigns, products and platforms, at the standard a major brand expects.",
+        "es": "Piezas en 2D y 3D para campaña, producto y plataforma, con el estándar que exige una marca grande.",
+        "zh": "面向campaign、产品与平台的 2D/3D 制作，达到大品牌要求的标准。",
+        "no": "2D- og 3D-elementer for kampanje, produkt og plattform, på nivået en stor merkevare krever."
+      },
+      "id": "svc_9kf5vora"
+    },
+    {
+      "title": {
+        "pt": "Branded Content & Entretenimento",
+        "en": "Branded Content & Entertainment",
+        "es": "Branded Content y Entretenimiento",
+        "zh": "品牌内容与娱乐",
+        "no": "Branded content & underholdning"
+      },
+      "desc": {
+        "pt": "Formatos com propósito de marca, do roteiro à produção. Conteúdo que fica no ar, não só campanha que passa.",
+        "en": "Brand-purpose formats, from script to production. Content that stays on air, not just a campaign that passes.",
+        "es": "Formatos con propósito de marca, del guion a la producción. Contenido que permanece, no solo una campaña que pasa.",
+        "zh": "有品牌目的的内容形式，从剧本到制作完成——让内容留下来，而不只是路过的campaign。",
+        "no": "Formater med merkevareformål, fra manus til produksjon. Innhold som blir værende, ikke bare en kampanje som passerer."
+      },
+      "id": "svc_65k9mfgt"
+    },
+    {
+      "title": {
+        "pt": "Broadcast & Grandes Eventos",
+        "en": "Broadcast & Live Events",
+        "es": "Broadcast y Grandes Eventos",
+        "zh": "广电与大型活动",
+        "no": "Broadcast & store eventer"
+      },
+      "desc": {
+        "pt": "Identidade e conteúdo para TV, streaming, palco e ativação, no ritmo de quem não pode atrasar.",
+        "en": "Identity and content for TV, streaming, stage and activations, at the pace of someone who can't be late.",
+        "es": "Identidad y contenido para TV, streaming, escenario y activaciones, al ritmo de quien no puede atrasarse.",
+        "zh": "面向电视、流媒体、舞台与线下活动的识别与内容，紧跟不容延误的节奏。",
+        "no": "Identitet og innhold for TV, streaming, scene og aktiveringer, i tempoet til noen som ikke kan komme for sent."
+      },
+      "id": "svc_9re0usjo"
+    },
+    {
+      "title": {
+        "pt": "IA Aplicada à Marca",
+        "en": "Applied AI for Brands",
+        "es": "IA Aplicada a la Marca",
+        "zh": "品牌 AI 应用",
+        "no": "Anvendt KI for merkevarer"
+      },
+      "desc": {
+        "pt": "Testamos e aplicamos IA generativa onde faz sentido pra sua operação, sempre com segurança de marca.",
+        "en": "We test and apply generative AI where it makes sense for your operation, always with brand safety in mind.",
+        "es": "Probamos y aplicamos IA generativa donde tiene sentido para tu operación, siempre con seguridad de marca.",
+        "zh": "在符合运营需求之处测试并落地生成式 AI，始终兼顾品牌安全。",
+        "no": "Vi tester og bruker generativ KI der det gir mening for driften din, alltid med merkevaresikkerhet."
+      },
+      "id": "svc_xlr5v2or"
+    }
+  ],
+  "crawl": {
+    "pt": "Operação criativa para todas as telas — *desde 2017*",
+    "en": "Creative operations for every screen — *since 2017*",
+    "es": "Operación creativa para todas las pantallas — *desde 2017*",
+    "zh": "覆盖所有屏幕的创意运营 — *自 2017 年起*",
+    "no": "Kreativ drift for alle skjermer — *siden 2017*"
+  },
+  "stats": [
+    {
+      "value": 3000,
+      "suffix": "+",
+      "label": {
+        "pt": "entregáveis produzidos",
+        "en": "deliverables produced",
+        "es": "entregables producidos",
+        "zh": "个交付成果",
+        "no": "leveranser produsert"
+      }
+    },
+    {
+      "value": 50,
+      "suffix": "+",
+      "label": {
+        "pt": "squads operacionais executados",
+        "en": "operational squads executed",
+        "es": "escuadrones operativos ejecutados",
+        "zh": "执行行动小队",
+        "no": "operative troppene henrettet"
+      }
+    },
+    {
+      "value": 30,
+      "suffix": "+",
+      "label": {
+        "pt": "marcas, agências e canais",
+        "en": "brands, agencies & channels",
+        "es": "marcas, agencias y canales",
+        "zh": "个品牌、代理与频道",
+        "no": "merkevarer, byråer og kanaler"
+      }
+    },
+    {
+      "value": 9,
+      "suffix": "",
+      "label": {
+        "pt": "anos de operação contínua",
+        "en": "years of continuous operation",
+        "es": "años de operación continua",
+        "zh": "年持续运营",
+        "no": "år med kontinuerlig drift"
+      }
+    }
+  ],
+  "works": [
+    {
+      "client": "iPhone 17 Pro",
+      "year": "2025",
+      "art": "scan",
+      "image": "media/iphone-17-pro/03.jpeg",
+      "gallery": [
+        "media/iphone-17-pro/01.jpeg",
+        "media/iphone-17-pro/02.jpeg",
+        "media/iphone-17-pro/03.jpeg",
+        "media/iphone-17-pro/04.jpeg",
+        "media/iphone-17-pro/05.jpeg",
+        "media/iphone-17-pro/06.jpeg",
+        "media/iphone-17-pro/07.jpeg",
+        "media/iphone-17-pro/08.jpeg"
+      ],
+      "title": {
+        "pt": "iPhone 17 Pro — Design & Motion",
+        "en": "iPhone 17 Pro — Design & Motion",
+        "es": "iPhone 17 Pro: diseño y movimiento",
+        "zh": "iPhone 17 Pro — 设计与动作",
+        "no": "iPhone 17 Pro — Design og bevegelse"
+      },
+      "tags": {
+        "pt": "Direção Criativa · Design · Motion ",
+        "en": "Creative Direction · Design · Motion",
+        "es": "Dirección Creativa · Diseño · Motion",
+        "zh": "创意方向·设计·动作",
+        "no": "Kreativ retning · Design · Bevegelse"
+      },
+      "body": {
+        "pt": "Promo concept de design e motion para o iPhone 17 Pro: direção de arte, animação e finalização.\nProjeto completo em https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+        "en": "Design and motion promo concept for the iPhone 17 Pro: art direction, animation and finalization.\nComplete project at https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+        "es": "Diseño y concepto de promoción en movimiento para el iPhone 17 Pro: dirección de arte, animación y finalización.\nProyecto completo en https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+        "zh": "iPhone 17 Pro 的设计和动作宣传概念：艺术指导、动画和定稿。\n完整项目位于 https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+        "no": "Design og bevegelseskampanjekonsept for iPhone 17 Pro: kunstretning, animasjon og ferdigstillelse.\nFullfør prosjektet på https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "title": {
+            "pt": "O *processo*",
+            "en": "The *process*",
+            "es": "El *proceso*",
+            "zh": "*流程*",
+            "no": "*Prosessen*"
+          },
+          "body": {
+            "pt": "",
+            "en": "tests",
+            "es": "pruebas",
+            "zh": "测试",
+            "no": "tester"
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://vimeo.com/1189089039?fl=pl&fe=sh",
+          "caption": {
+            "pt": "",
+            "en": "Main film — paste the video URL here",
+            "es": "Video principal — pega aquí la URL (YouTube/Vimeo/MP4)",
+            "zh": "主视频 — 在此粘贴视频链接（YouTube/Vimeo/MP4）",
+            "no": "Hovedvideo — lim inn video-URL her (YouTube/Vimeo/MP4)"
+          }
+        }
+      ],
+      "kind": "craft",
+      "id": "work_zahtq32w"
+    },
+    {
+      "id": "work_jvssafo1",
+      "kind": "case",
+      "client": "Aché Laboratórios",
+      "year": "2023",
+      "art": "orbit",
+      "image": "media/projetos/ache-laboratorios/ache_styleframe_1.jpg",
+      "gallery": [],
+      "title": {
+        "pt": "Cuidados Pela Vida",
+        "en": "Cuidados Pela Vida",
+        "es": "Cuidados Pela Vida",
+        "zh": "Cuidados Pela Vida",
+        "no": "Cuidados Pela Vida"
+      },
+      "tags": {
+        "pt": "Estratégia · Motion · Brand Film · Produção Digital · Conteúdo · Ativação — 2023",
+        "en": "Strategy · Motion · Brand Film · Digital Production · Content · Activation — 2023",
+        "es": "Estrategia · Motion · Brand Film · Producción Digital · Contenido · Activación — 2023",
+        "zh": "策略 · 动态 · 品牌影片 · 数字制作 · 内容 · 活动 — 2023",
+        "no": "Strategi · Motion · Brand Film · Digital produksjon · Innhold · Aktivering — 2023"
+      },
+      "body": {
+        "pt": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
+        "en": "For over 2 years Greencave has been embedded in the operation of Cuidados Pela Vida, Aché Laboratórios' official platform connecting patients, pharmacies and doctors in an ongoing care program. What began as punctual support during implementation became a full-time creative house: today a squad of 12+ professionals is immersed in the brand's day-to-day, working as a direct extension of Aché's internal team.",
+        "es": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
+        "zh": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
+        "no": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "O que já entregamos",
+            "en": "What we've already delivered",
+            "es": "O que já entregamos",
+            "zh": "O que já entregamos",
+            "no": "O que já entregamos"
+          },
+          "body": {
+            "pt": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
+            "en": "Script, concept, styleframes, motion, AI-generated films, digital production for web and social media across multiple formats, plus content for internal events and sales-force training — covering the entire journey of patients, doctors, pharmacies and partners. From the institutional PDV positivação video to the brand positioning campaign, Greencave sits on the creative line end to end.",
+            "es": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
+            "zh": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
+            "no": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta."
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif"
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "Confiança estratégica, não só execução",
+            "en": "Strategic trust, not just execution",
+            "es": "Confiança estratégica, não só execução",
+            "zh": "Confiança estratégica, não só execução",
+            "no": "Confiança estratégica, não só execução"
+          },
+          "body": {
+            "pt": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa.",
+            "en": "The relationship has grown beyond piece delivery: Aché shares with Greencave the strategic rationale behind CPV itself — from the brand repositioning (from \"discount shelf\" to \"continuous care platform\") to the tagline \"Life always changes. Care always stays.\" and the manifesto that sustains the communication year-round. It's the kind of closeness that only exists when the client no longer treats the supplier as a third party, but as part of how the brand thinks.",
+            "es": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa.",
+            "zh": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa.",
+            "no": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa."
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bef0bd186627903.6578ce2ea13da.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/33f385186627903.6578fb9d40363.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c33ee186627903.6578ce30abd19.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/32d3ff186627903.6578ce2e3851e.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/789f81186627903.6578fcbb3c210.gif",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/6f84e2186627903.6578fb9d41274.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e0c339186627903.6578ce3050b1a.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif"
+          ]
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "Workflow",
+            "en": "Workflow",
+            "es": "Flujo de trabajo",
+            "zh": "工作流程",
+            "no": "Arbeidsflyt"
+          },
+          "body": {
+            "pt": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema.",
+            "en": "Behind every delivery there's a structured production process — from reference and script to style frame, approval and multi-format export for each channel (YouTube, CTV, social media, internal materials). That workflow discipline is what lets Greencave operate with the consistency of an in-house team, within the ecosystem of agencies and suppliers that already make up Aché's operation — without promising an exclusivity that doesn't exist, but with the depth to become increasingly relevant within that ecosystem.",
+            "es": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema.",
+            "zh": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema.",
+            "no": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema."
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "Isso é só uma pequena parte do nosso potencial",
+            "en": "This is just a small part of our potential",
+            "es": "Isso é só uma pequena parte do nosso potencial",
+            "zh": "Isso é só uma pequena parte do nosso potencial",
+            "no": "Isso é só uma pequena parte do nosso potencial"
+          },
+          "body": {
+            "pt": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
+            "en": "What you've seen so far is just the tip of an operation that already knows how to do much more. We have the structure, team and maturity to go beyond punctual content: original format creation for the CPV ecosystem, end-to-end digital production (from script to multi-channel delivery), strategic brand positioning advisory, digital product development and activations that leave the screen and land at the point of sale. Aché has already tested Greencave as a piece supplier. The natural next step is to test Greencave as an operating partner — the squad that thinks, produces and sustains the brand at scale, all year round.",
+            "es": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
+            "zh": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
+            "no": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro."
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=Z4ysCdbF3p8",
+          "caption": {
+            "pt": "Campanha Awareness — Cuidados Pela Vida 2024",
+            "en": "Campanha Awareness — Cuidados Pela Vida 2024",
+            "es": "Campanha Awareness — Cuidados Pela Vida 2024",
+            "zh": "Campanha Awareness — Cuidados Pela Vida 2024",
+            "no": "Campanha Awareness — Cuidados Pela Vida 2024"
+          }
+        }
+      ],
+      "ai": true
+    },
+    {
+      "id": "work_n7lorw8r",
+      "kind": "case",
+      "client": "Globoplay · Formata",
+      "year": "2025",
+      "art": "bloom",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/34f52b241939343.6962c1100dad2.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-credito-pai.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-no-proximo-apresentador.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-no-proximo-episodio.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_cartela.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_01.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_02.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_03.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp"
+      ],
+      "title": {
+        "pt": "My Mum, Your Dad — Brasil",
+        "en": "My Mum, Your Dad — Brazil",
+        "es": "My Mum, Your Dad — Brasil",
+        "zh": "My Mum, Your Dad — Brasil",
+        "no": "My Mum, Your Dad — Brasil"
+      },
+      "tags": {
+        "pt": "Branded Content · Motion · Reality — 2025",
+        "en": "Branded Content · Motion · Reality — 2025",
+        "es": "Branded Content · Motion · Reality — 2025",
+        "zh": "Branded Content · Motion · Reality — 2025",
+        "no": "Branded Content · Motion · Reality — 2025"
+      },
+      "body": {
+        "pt": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+        "en": "The Brazilian version of the dating reality format already running in markets like the UK, Poland and Canada — produced by Formata for Globoplay. Branded content and motion to bring the format's arrival in Brazil to life.",
+        "es": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+        "zh": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+        "no": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país."
+      },
+      "blocks": [
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/766ab7241939343.6962b4a51b2ec.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/476a43241939343.6962bd9929ae6.png",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8d5e7e241939343.6962bd9a74a5d.png"
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/17d90d241939343.6962bd9a75937.png",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/176c04241939343.6962bd9a75189.png",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/06c0fb241939343.6962bd9881fad.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/b07867241939343.6962b4a51b813.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/88ee3e241939343.6962bd9e2a491.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/b897b1241939343.6962bd9cc3e72.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/ad8002241939343.6962bd9c3d7b4.jpg",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8836a9241939343.6962bd9c3ddaf.jpg"
+          ]
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/502e79241939343.6962c113dda5d.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "work_ixoec4v9",
+      "kind": "craft",
+      "client": "Sadia",
+      "year": "2021",
+      "art": "scan",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/60df1d0a2a8866a9af0f86ba_1.jpeg",
+      "title": {
+        "pt": "Fome de NBA - ESPN",
+        "en": "NBA Hunger - ESPN",
+        "es": "Hambre en la NBA - ESPN",
+        "zh": "NBA 饥饿 - ESPN",
+        "no": "NBA Hunger - ESPN"
+      },
+      "tags": {
+        "pt": "Operação Criativa - Branded Content - Motion Graphics",
+        "en": "Creative Operation - Branded Content - Motion Graphics",
+        "es": "Operación creativa - Branded Content - Motion Graphics",
+        "zh": "创意运营-品牌内容-动态图形",
+        "no": "Kreativ drift - Merkevareinnhold - Motion Graphics"
+      },
+      "body": {
+        "pt": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "en": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "es": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "zh": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "no": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021."
+      },
+      "gallery": [
+        "https://cdn.prod.website-files.com/60216155481f533e472c5158/66297bfaf2afed85c8586504_Asset%204.svg",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612c31a4062f71b2127ba943_disney%402x.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0b8d0e3247f23fba52_2.jpeg",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0a2a8866a9af0f86ba_1.jpeg",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0ffb94832e34d12d41_4.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d10c790bf40479604b9_5.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612cfa3135f43778c39c412c_a.jpg",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612cfa2484da1e07373d1727_b.png"
+      ],
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/572242718",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "_importedFrom": ""
+    },
+    {
+      "id": "work_m8c86flf",
+      "kind": "case",
+      "client": "Café Pilão - ESPN",
+      "year": "2022",
+      "art": "wave",
+      "image": "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e618ba04ab341be5429e5c_2.png",
+      "title": {
+        "pt": "O Café Forte do Brasil",
+        "en": "Brazilian Forte Coffee",
+        "es": "Café fuerte brasileño",
+        "zh": "巴西福尔特咖啡",
+        "no": "Brasiliansk Forte-kaffe"
+      },
+      "tags": {
+        "pt": "Criação - Direção - Produção",
+        "en": "Creation - Direction - Production",
+        "es": "Creación - Dirección - Producción",
+        "zh": "创作-指导-制作",
+        "no": "Skapelse - Regi - Produksjon"
+      },
+      "body": {
+        "pt": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+        "en": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+        "es": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+        "zh": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+        "no": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!"
+      },
+      "gallery": [
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e618fdb66bdb8d1cde6f35_3.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e6190a93e77b370fcdee4a_11.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e61651b80464ce6c374074_10.png",
+        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e61c20aeaee8c7ca457c97_6.png"
+      ],
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/779367526",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "_importedFrom": "https://greencave.webflow.io/projetos/pilao-cafe-forte-do-brasil"
+    },
+    {
+      "id": "work_z0fyh22c",
+      "kind": "craft",
+      "client": "Polônia",
+      "year": "2023",
+      "art": "wave",
+      "image": "media/projetos/polonia/pol-oo1.png",
+      "gallery": [
+        "https://vimeo.com/1189092887?fl=pl&fe=sh"
+      ],
+      "title": {
+        "pt": "Abertura para Documentário Polonês",
+        "en": "Opening for Polish Documentary",
+        "es": "Inauguración del documental polaco",
+        "zh": "波兰纪录片开幕",
+        "no": "Åpning for polsk dokumentar"
+      },
+      "tags": {
+        "pt": "Motion · Cinema · Style Frame — 2023",
+        "en": "Motion · Cinema · Style Frame — 2023",
+        "es": "Motion · Cinema · Style Frame — 2023",
+        "zh": "Motion · Cinema · Style Frame — 2023",
+        "no": "Motion · Cinema · Style Frame — 2023"
+      },
+      "body": {
+        "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
+        "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
+      },
+      "blocks": [],
+      "ai": true
+    },
+    {
+      "id": "work_f0i6pxqm",
+      "kind": "craft",
+      "client": "Disney ESPN",
+      "year": "2024",
+      "art": "rings",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/03bdb7225202777.6841d90f1e26e-2.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/81e9a4225202777.6841da39a0550-2.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/b5f33d225202777.6841db3ed9917.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/aa0d5c225202777.6841da701a9d7.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/01d606225202777.6841db414562a.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/112836225202777.6841db3ed9208.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/399d99225202777.6841db459a9c1.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/6c276a225202777.6841db459b1ef.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/47a47f225202777.6841da931ef61.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/0f24ec225202777.6841da701aecd.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/34c2fd225202777.6841db459be96.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f14a5f225202777.6841db459b74a.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f01166225202777.6841fece7098e.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/c19718225202777.6841da931f567.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/d7c762225202777.6841da35edafd.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/fc84b7225202777.6841da35ed66c.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/db32be225202777.6841db4145ad5.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/ed2de1225202777.6841da6dced4a.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png"
+      ],
+      "title": {
+        "pt": "Bola de Prata 2024",
+        "en": "Bola de Prata 2024",
+        "es": "Bola de Prata 2024",
+        "zh": "Bola de Prata 2024",
+        "no": "Bola de Prata 2024"
+      },
+      "tags": {
+        "pt": "Motion · 2D/3D · Broadcast — 2024",
+        "en": "Motion · 2D/3D · Broadcast — 2024",
+        "es": "Motion · 2D/3D · Broadcast — 2024",
+        "zh": "Motion · 2D/3D · Broadcast — 2024",
+        "no": "Motion · 2D/3D · Broadcast — 2024"
+      },
+      "body": {
+        "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
+        "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/1090883760",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "craft",
+      "client": "Huggies · Disney",
+      "year": "2021",
+      "art": "bloom",
+      "image": "media/huggies-disney/huggies-01.png",
+      "gallery": [
+        "media/huggies-disney/huggies-02.png",
+        "media/huggies-disney/huggies-03.png",
+        "media/huggies-disney/huggies-04.png",
+        "media/huggies-disney/huggies-05.png",
+        "media/huggies-disney/huggies-06.png"
+      ],
+      "title": {
+        "pt": "Para o seu bebê se desenvolver melhor",
+        "en": "Para o seu bebê se desenvolver melhor",
+        "es": "Para que tu bebé se desarrolle mejor",
+        "zh": "让宝宝发育得更好",
+        "no": "For at babyen din skal utvikle seg bedre"
+      },
+      "tags": {
+        "pt": "Design · DA · Ilustração · Animação",
+        "en": "Design · DA · Ilustração · Animação",
+        "es": "Design · DA · Ilustración · Animación",
+        "zh": "设计 · 艺术指导 · 插画 · 动画",
+        "no": "Design · DA · Illustrasjon · Animasjon"
+      },
+      "body": {
+        "pt": "Cocriado com a Disney Company Brasil: assumimos o design e a operação criativa in-company do canal Disney Jr. pra dar corpo ao branded content do lançamento da linha Huggies Supreme Care.",
+        "en": "Co-created with The Walt Disney Company Brazil: we ran design and in-company creative operations for the Disney Jr. channel to bring the branded content for the Huggies Supreme Care launch to life.",
+        "es": "Cocreado con The Walt Disney Company Brasil: asumimos el diseño y la operación creativa in-company del canal Disney Jr. para dar vida al branded content del lanzamiento de la línea Huggies Supreme Care.",
+        "zh": "与迪士尼巴西联合创作：为 Disney Jr. 频道负责设计与内企创意运营，打造 Huggies Supreme Care 系列上线的品牌内容。",
+        "no": "Samskapt med The Walt Disney Company Brasil: vi sto for design og in-company kreativ drift for Disney Jr.-kanalen for å realisere branded content-lanseringen av Huggies Supreme Care."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/644450305",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://vimeo.com/644455631",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "id": "work_ccb7qbfm"
+    },
+    {
+      "kind": "craft",
+      "client": "Budweiser · Disney ESPN",
+      "year": "2020",
+      "art": "rings",
+      "image": "media/budweiser-disney-espn/crown-01.jpg",
+      "gallery": [
+        "media/budweiser-disney-espn/crown-02.jpg",
+        "media/budweiser-disney-espn/crown-03.jpg",
+        "media/budweiser-disney-espn/crown-04.jpg"
+      ],
+      "title": {
+        "pt": "Behind The Crown",
+        "en": "Behind The Crown",
+        "es": "Behind The Crown",
+        "zh": "Behind The Crown",
+        "no": "Behind The Crown"
+      },
+      "tags": {
+        "pt": "Design · DA · Motion · Gestão Operacional",
+        "en": "Design · DA · Motion · Gestão Operacional",
+        "es": "Design · DA · Motion · Gestión Operativa",
+        "zh": "设计 · 艺术指导 · 动态 · 运营管理",
+        "no": "Design · DA · Motion · Operativ ledelse"
+      },
+      "body": {
+        "pt": "Fomos convidados pela Disney ESPN pra cocriar com a Budweiser um projeto sobre nomes do esporte americano que construíram sua história à base de luta e persistência. Um dos que mais nos orgulha.",
+        "en": "Disney ESPN invited us to co-create with Budweiser a project about American sports figures who built their legacy through struggle and persistence. One we're especially proud of.",
+        "es": "Disney ESPN nos invitó a cocrear con Budweiser un proyecto sobre figuras del deporte estadounidense que construyeron su legado a través de la lucha y la persistencia. Uno de los que más nos enorgullece.",
+        "zh": "Disney ESPN 邀请我们与百威联合创作，讲述那些靠拼搏与坚持成就传奇的美国体育人物。这是我们最引以为豪的项目之一。",
+        "no": "Disney ESPN inviterte oss til å samskape med Budweiser et prosjekt om amerikanske idrettsfigurer som bygget sin arv gjennom kamp og utholdenhet. Et vi er spesielt stolte av."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/466237063",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "id": "work_xpp28h08"
+    },
+    {
+      "kind": "craft",
+      "client": "Weasyplan",
+      "year": "2023",
+      "art": "grid",
+      "image": "media/weasyplan/weasyplan-01.png",
+      "gallery": [
+        "media/weasyplan/weasyplan-02.png",
+        "media/weasyplan/weasyplan-03.png",
+        "media/weasyplan/weasyplan-04.png"
+      ],
+      "title": {
+        "pt": "Weasyplan — do naming à papelaria",
+        "en": "Weasyplan — from naming to stationery",
+        "es": "Weasyplan: desde el nombre hasta el material de oficina",
+        "zh": "Weasyplan——从命名到文具",
+        "no": "Weasyplan — fra navngivning til skrivesaker"
+      },
+      "tags": {
+        "pt": "Naming · Criação & Conceito · DA · Design",
+        "en": "Naming · Criação & Conceito · DA · Design",
+        "es": "Naming · Creación y Concepto · DA · Design",
+        "zh": "命名 · 创意与概念 · 艺术指导 · 设计",
+        "no": "Naming · Kreasjon & konsept · DA · Design"
+      },
+      "body": {
+        "pt": "\"A sua empresa fora do Brasil.\" Do naming à papelaria: construímos a identidade da Weasyplan, plataforma que ajuda empresas brasileiras a se internacionalizarem — o símbolo da bandeira carrega essa travessia.",
+        "en": "\"Your company outside Brazil.\" From naming to stationery: we built the identity for Weasyplan, a platform that helps Brazilian companies go international — the flag symbol carries that journey.",
+        "es": "\"Tu empresa fuera de Brasil.\" Del naming a la papelería: construimos la identidad de Weasyplan, una plataforma que ayuda a empresas brasileñas a internacionalizarse — el símbolo de la bandera representa ese viaje.",
+        "zh": "\"让你的企业走出巴西。\"从命名到全套物料：我们为 Weasyplan 打造品牌识别 —— 这是一个帮助巴西企业出海的平台，旗帜符号承载着这段征程。",
+        "no": "\"Bedriften din utenfor Brasil.\" Fra naming til trykksaker: vi bygget identiteten til Weasyplan, en plattform som hjelper brasilianske selskaper med internasjonalisering — flaggsymbolet bærer den reisen."
+      },
+      "blocks": [],
+      "id": "work_xs7gsz4c"
+    },
+    {
+      "id": "work_ohvqklqq",
+      "kind": "case",
+      "client": "Suzano",
+      "year": "2021",
+      "art": "scan",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/34a724131011115.618c29a5055c0.jpg",
+      "gallery": [
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/13b423131011115.618c194b6482c.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/6e2ea8131011115.618c29e5caf42.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/34a724131011115.618c29a5055c0.jpg",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/ec9bd5131011115.618c29a4531c2.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/d0bcf7131011115.618c2f9e2db47.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/c73f8a131011115.618c29a25abf9.png"
+      ],
+      "title": {
+        "pt": "Nunca é sorte, sempre é atenção!",
+        "en": "It's never luck, it's always attention!",
+        "es": "Nunca é sorte, sempre é atenção!",
+        "zh": "Nunca é sorte, sempre é atenção!",
+        "no": "Nunca é sorte, sempre é atenção!"
+      },
+      "tags": {
+        "pt": "Design · DA · Ilustração · Operação Criativa — 2021",
+        "en": "Design · DA · Illustration · Creative Ops — 2021",
+        "es": "Design · DA · Ilustração · Operação Criativa — 2021",
+        "zh": "Design · DA · Ilustração · Operação Criativa — 2021",
+        "no": "Design · DA · Ilustração · Operação Criativa — 2021"
+      },
+      "body": {
+        "pt": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+        "en": "Co-created with Suzano Brazil's communications team, the campaign reinforces the importance of paying attention at work to avoid errors and accidents — art, illustration and motion serving a serious theme without losing warmth.",
+        "es": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+        "zh": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+        "no": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/644500277",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "work_cel48cmk",
+      "kind": "case",
+      "client": "Stone & Linx",
+      "year": "2021",
+      "art": "scan",
+      "image": "media/stone-linx/stone-01.jpg",
+      "gallery": [
+        "media/stone-linx/stone-02.jpg",
+        "media/stone-linx/stone-03.jpg",
+        "media/stone-linx/stone-04.png"
+      ],
+      "title": {
+        "pt": "Um sonho ainda maior",
+        "en": "Um sonho ainda maior",
+        "es": "Un sueño aún más grande",
+        "zh": "更大的梦想",
+        "no": "En enda større drøm"
+      },
+      "tags": {
+        "pt": "Criação · Design · Gestão Operacional",
+        "en": "Criação · Design · Gestão Operacional",
+        "es": "Creación · Design · Gestión Operativa",
+        "zh": "创意 · 设计 · 运营管理",
+        "no": "Kreasjon · Design · Operativ ledelse"
+      },
+      "body": {
+        "pt": "Cocriamos com o time de experiência da Stone.co pra registrar um dos momentos mais importantes da união entre Stone e Linx — do key visual ao motion, com a operação inteira sob nossa gestão.",
+        "en": "We co-created with Stone.co's experience team to capture one of the most important moments in the Stone and Linx merger — from key visual to motion, with the full operation under our management.",
+        "es": "Cocreamos con el equipo de experiencia de Stone.co para registrar uno de los momentos más importantes de la unión entre Stone y Linx — del key visual al motion, con toda la operación bajo nuestra gestión.",
+        "zh": "与 Stone.co 体验团队联合创作，记录 Stone 与 Linx 合并历程中最重要的时刻之一 —— 从主视觉到动态制作，整个流程由我们统筹管理。",
+        "no": "Vi samskapte med Stone.co sitt opplevelsesteam for å fange et av de viktigste øyeblikkene i sammenslåingen mellom Stone og Linx — fra key visual til motion, med hele operasjonen under vår ledelse."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/574614587",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ]
+    }
+  ],
+  "about": {
+    "values": [
+      {
+        "word": {
+          "pt": "Ritmo",
+          "en": "Pace",
+          "es": "Ritmo",
+          "zh": "节奏",
+          "no": "Rytme"
+        },
+        "line": {
+          "pt": "Entrega no dia combinado. Sem novela.",
+          "en": "We deliver on the day we agreed. No drama.",
+          "es": "Entrega en el día acordado. Sin novela.",
+          "zh": "按约定日期交付。不拖泥带水。",
+          "no": "Levering på avtalt dag. Ingen drama."
+        },
+        "id": "value_jolb6jfu"
+      },
+      {
+        "word": {
+          "pt": "Bastidor",
+          "en": "Backstage",
+          "es": "Backstage",
+          "zh": "幕后",
+          "no": "Bak kulissene"
+        },
+        "line": {
+          "pt": "A verdade mora na parceria do dia a dia.",
+          "en": "The truth lives in everyday partnership.",
+          "es": "La verdad vive en la colaboración cotidiana.",
+          "zh": "真理存在于日常伙伴关系中。",
+          "no": "Sannheten lever i hverdagslig partnerskap."
+        },
+        "id": "value_uuyiulyw"
+      },
+      {
+        "word": {
+          "pt": "Craft",
+          "en": "Craft",
+          "es": "Craft",
+          "zh": "匠心",
+          "no": "Håndverk"
+        },
+        "line": {
+          "pt": "O detalhe que só quem já rodou agência, TV e evento enxerga.",
+          "en": "The kind of detail only someone who's worked agency, TV and live events can see.",
+          "es": "El detalle que solo quien ya trabajó en agencia, TV y eventos nota.",
+          "zh": "只有做过代理机构、电视台和活动的人才能看出的细节。",
+          "no": "Detaljen bare noen som har jobbet med byrå, TV og eventer legger merke til."
+        },
+        "id": "value_a1bvg7v9"
+      },
+      {
+        "word": {
+          "pt": "Confiança",
+          "en": "Trust",
+          "es": "Confianza",
+          "zh": "信任",
+          "no": "Tillit"
+        },
+        "line": {
+          "pt": "Cliente de anos, não de projeto único.",
+          "en": "Clients of years, not single projects.",
+          "es": "Cliente de años, no de un solo proyecto.",
+          "zh": "多年客户，而非单次项目。",
+          "no": "Klienter i årevis, ikke enkeltprosjekter."
+        },
+        "id": "value_qtnn90s6"
+      }
+    ],
+    "team": [
+      {
+        "name": "Dino Paiva",
+        "photo": "media/team/dino.png",
+        "role": {
+          "pt": "Fundador & Diretor Criativo",
+          "en": "Founder & Creative Director",
+          "es": "Fundador y Director Creativo",
+          "zh": "创始人兼创意总监",
+          "no": "Grunnlegger & kreativ leder"
+        },
+        "id": "team_lx197vy1"
+      },
+      {
+        "name": "Iasmille",
+        "photo": "media/team/Ias.png",
+        "role": {
+          "pt": "Co-fundadora & Head de Operações",
+          "en": "Co-founder & Head of Operations",
+          "es": "Co-fundadora y Head de Operaciones",
+          "zh": "联合创始人兼运营负责人",
+          "no": "Medgründer & driftsleder"
+        },
+        "id": "team_2pc3xntk"
+      },
+      {
+        "name": "Machado",
+        "photo": "media/team/machado.png",
+        "role": {
+          "pt": "3D Ops",
+          "en": "3D Ops",
+          "es": "Operaciones 3D",
+          "zh": "3D 行动",
+          "no": "3D Ops"
+        },
+        "id": "team_vo6e4l9q"
+      },
+      {
+        "id": "team_fz4vdyqj",
+        "name": "Adrian",
+        "photo": "media/team/adrian.webp",
+        "role": {
+          "pt": "CTO",
+          "en": "CTO",
+          "es": "CTO",
+          "zh": "首席技术官",
+          "no": "CTO"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "email": "hello@greencave.co",
+    "phone": "+55 11 9 7180 2898",
+    "city": "São Paulo — Brasil",
+    "socials": [
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com/greencave.co"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/company/greencave"
+      },
+      {
+        "name": "Behance",
+        "url": "https://behance.net/greencave"
+      },
+      {
+        "name": "Vimeo",
+        "url": "https://vimeo.com/greencave"
+      }
+    ],
+    "whatsapp": "5511971802898"
+  },
+  "awards": [
+    {
+      "label": {
+        "pt": "Aceleração & mentoria",
+        "en": "Acceleration & mentorship",
+        "es": "Aceleración y mentoría",
+        "zh": "加速与导师计划",
+        "no": "Akselerasjon & mentorskap"
+      },
+      "items": [
+        {
+          "name": "49 Startup University",
+          "img": "data:image/webp;base64,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",
+          "url": "",
+          "id": "award_fiswvmo2"
+        },
+        {
+          "name": "Sebrae",
+          "img": "data:image/webp;base64,UklGRnYXAABXRUJQVlA4WAoAAAAQAAAAwwAAcgAAQUxQSIYIAAABgEHbttgofPnz53A5HA6Hw+FwORwul8vhcrhcLkdmrSb/vvf++zOjEQFBkuS2Dc6JCvbu4SIA+gGVIKg0AgpJB0uFCDlJFMRbR1+PtbIAyoUIKkAogESOOfGA5ELCmxwMQGHg5g0VJfLW+xKqzI5hgar3WF/eugf8jNMVr8E/fcn76iyfjZfLvSyo+C28/zadOMXSPDzL8NGyeCMXPjg8h/ePl0wVfHkbAEI3NXpEOI3+x21ccSbjwttBvzBqupr9Ru/Lm6jTnJaQyV9Wv9HCGEMo7xRgUTkEhTzzrl15c41CYZWQdW62/Yvf9zs8eMMn5CtClgLs4DcmN94l1haY/MbglKQKrS8Xx1c68TbGHq3JUNtRQ93cxhasvM22i1wvQibn8Hvn1YW3RcPI7HeF1HMeJKCCAg8+8PBrSOmgWN4VDFYKJVfIaxuZSEBNwpc3DIaPzOYHMwkdIOTlbXA8jtTbvjBOX7kej39fd8aQSgomBcQR9bBrCrkegot7FFMd7MGfty7MQNZ/FtCuxXLIyNu1R80F1e/zgwy8862W+us2+BbLMJBD7rnNrsxyiuWrK+9MU54DRAGFZu/NO1s1l8XG4Nr/evMuymbwcex/y7JZ+OFz739JyP79i76e/W8RvKEtK2jJxEoh2Z8p7G73Gq+GVzQ5eCsQ6dWpQAbXtuM3kSgOLvKroni/QzFQiyYh2DUczMkhh6AwEjbTRKhPEgNoLVYrBSmiS30hr6sjCIcoI41fOgplhJhIHZgubWyNEprx/kkD1tzFBE6jXvS5xeqq6kfmFjCUP6/rRSTfvL9Yz6CeHQf0dFiF+eq8F9G++jPN8Uc71qAu+Jfa1g0MwkfY+GxQSFHPVrZY+rrmpkyAsGxr3AzqWU9vMqRVUN7CAuuTIpr0bAV9CdMwWVZiV0OKb2zqqX/00lVQ10h0xfFh6xWU42qpCGGp2mdDcxhtu1KToWWIbOhBj/p3NKYl8WDRz8vWlbwN4wa9s/Uk58Y8/Q7AK3deQGEUpqqh6nof8nl/DgADtYw5HIpYBZ0ztPNyXzc6Hkh446UzUIh96cH0/Tkzfl2DOumOPE5/5cbHommXEvitMCmCtff0mfmMc6ZAAK3n3M+KEVBeZL+DtNiYCPveipxGCmqLzIFFeOFARM12j9Ws8BzFwx1hRAAQjTBbCpkKl8DMJZ7GRMyvoZO6yB3rg8A7QZEgMqNtkjmTXQnPFDazvzpVxc7ivHlHAck8MPNqggCSh+aRV13CPuxD3kyr6WxvEK3lGU42yDxnijTxJu6hCDwADFUfxPMF2zLUvEhbGC9ecYHnlOUo1lrqaKguInmwCRrEAPaMYFlH0ZdOEttDMjXj29SSDKEu0npT/7tE6gY/c/uVbqEHK5JooYudt4TtlKlz5pe7KquOMYlxahYGfp8xmNL7zxLEVHgHN/jE9FZh8EjK3wXhUiX7EEwLJr16We7TncmozebVpoHozWO2sNwFy4wNhr8jTqVgbVf1aPQFwNqfIpC9Vp4Fq12lWAn9MHYt464sCg22+AgVbIXmYK6VWykTLjzoWqxuD8amJQ43ndlXb71DHMNgaZjMZxJuLHRK9rfYVo9X6DdtaMkpzvaTT8TnWyUdcrzv/r3uBN8Jg2Aci2FdMUjze95Wm2nLc1yzguXMdXtt2/q8dxW0D6d9dMCJ1U0Yg6XWXoVZEeyhoZX00Hb9TGegPqiaVocbgcJSZRHmae+09GAvv9NX9rLxKPht1CCY+oMYWi5f0It5L6G1dSnCj/oScKLZmllDI6NX8PtQjHLCp19QddZDPJoSHeb1PSiOMd3Y2wItlkGgisVdd0YTmX4unazYH1p0h824L8WT2vtE9qwgiTe0X7bLAS+MLBHGwOqW89JTPMsX4J2hAxBiT0sA6gZJquVxxnrO6gGKco1cQqWvnXn9MQwLDeKjLkXu+/7Z58gsdl+W2+2xC65E1X/Q45VnCBn2aVvKMpUDweNSqX+wtNvBsKT1ijBuy/DaUcw7mImW+rZtEqFliMlAer1XXg0qsCwHraZ48I7VIL/yzpTZKWPdwH/V3RDv9b8k7JbDlnoSs2k56MJVNSR5g41dmex7Xga91OMZDdGx27UFlW1Jy2AZW8t7iE+UUxYL/J3AnbpObZkx4Yugx1p+8jlG68Z9CG/ty8YoRb+DHZTV3l1YeY+UtME9RtqoqLYRMK4p/em0yGcctypqvrwffZI46k3uMxbVRqDAm/rEoh9PCrWovS1QqL+CxJ91rw7coBZ5Bk/JXoekKN5WpLAg0lFxOdDnyDu3JcGmrRCOuukkMUUQQzyuBETJHwgxgeXBuzL5krPEbf+IkgDZ948F0b7EYu/Ny6pe/yP+Hz6KOYNnsG9YObz9jseLEcRADt5zazdxuB6AvGVTAIwBuBAJRZw0cnPIgs7gjX6jsWaFnAEbBaT6h99AmXWDlxp3v8ODTj6EQo3d7/vjd9xGDl3ZCnEK0HmfB0ZG3pWWty3QK5BBW7973sSmZY3svNXoM3tCHCaLjOPpfScZxuEkfT/0X2lhqcn+U8l8Bs4Tqh4RCuMtIYbsBxpEGWzfChXKvwK1zpGNRB49Q40N6UbJ6Vzg+YoASQAkaGoJEFQkvE4xe4vv7fJj0blI6TtFZtalQk7eXnYBK2oQYK63aefgDRimGF7xRofn4n6bdqYgkCM4OMvkN+oS3wGqbl0e0SN6uY0nMvLOo5Gq8rs9tpj+FxI953ttFSG/9P4XmRwfv6CdGTz732LXtLL+C7kDkW//Gwr7f3Tqwgf6kkig8HQbq0pdLrzhkgNyQy2MxL/ZrejTgH46DBjgQMIKFcXfXouCSZTAW+3nFkQGKj5QXUj8R08g33I3i3fIRgJGEjmm0kQiaxAtGeqfcK+thEJnKwoSWsoGEmbe/4VUVlA4IMoOAADwQACdASrEAHMAPmEskkakIqGhJnVbQIAMCWIRQF5g1cvx30AfxX+09bAJ3uYT5n2f2cetecDXv8bv+MpeUDzZ+dvaX/Zf+n7APMD/V7zwPUx+1/qK/nn+K/cz3fv8N6qfQT/nfUeeg50vX9q/7PpZZp9/RPQ/30/e/yf9A/Ed6mlpt7ODH+u8zv9F4F/CL/G9QL2J5pvu3bAal/fP9b6gXcX/YeF9qR+yX3n2AP5R/QP+T61f1Dwb/oX+u9gL+O/2j/p/378wPpd/k//B/rvPL+Yf5P/3+4R/Mv7P+w/tqewj90/Yb/Xj/7NM4dSe6oPubq2MDoYXakYb6Cc6nU4j33GfmUlK10jgdzM1jHSChK8iZVS6IjrdRp3frnHsK2mKeGb/tIUrTNdCIUuI5OQm7k6nL1Xz01DDq0nnjw7IouEdnsTDEwR/2nn1c9fFKU7A1WZiaSMLKqgihre39h7qgKSx5P6ZfoebMF4WPc5EXKIEtSzt3IfaO4WN0z4M3L6p1CKPqGE5zmX/lAslIkW+G6+TqD0SamgL7MMjQwpnceByM4+p/m0MBJPFhBVamE+9J1HoA+6KbXf9zESXCslzFUKb0ZbC3bulyOmDkafmQBCj7i6B0gNFeF0Egdltq9w3Td12Mk6kNTeTRrQyjzKFgF6h8c7TvTK5RyEzMXsA05zu5SsrOZzOfg1xTsHM5ggA/v25wAIMSOqmYN8xSnVw++fLNae96JSYbI7he1wMPdROFDQGT/5C+RhtZBJ4CYqpgJZOopVmv6mpts6qIAkhacT2KaDvnNl/K/wZ7Rrw9T/JMR1tOEie8IajXUb6+5N7OMm+n0Nwwz3b3wKO8im5NFzTmoco3ZWquNuysgA07Bc92NLr2fggTwuCpQaqeT7f69QSgy+T5YbWjLCOl2BKV9mWFuoy1np5iiOzwp9Wu3KdRD5pNOxoOkITn6Bciz46pO20TZlaZWKNXaLCtDsiU+CFc9k0TBfKaSWRIDO+C/7f09qmzhW9eXFTWNDUVoO73ZZmdZMtvHgxxYmWSLgPfnR6S77/ye8kgoTMT8FOaGdyg9qfeuILtzF4zYaANLHxfejx3H/gbAa1shNPNjlKsdaa8O+2ypIj5q5UjfrIlE9Fb41dVF6DoSE0TYikvT7R3e7SK8kCs9/PeO6nuRX8HjnoE5o2WG3f1JCyvXmILowOZItb5rR5hXwtVNo61LfCNVREpsHm9Hj8CaD/T4GSPN+QgbFTR0rq9OFc0qZZYcydhRLaTnkhdGbH63IYZleWO7kXJ1OsvEMdrHN+gGp7By1lcOhdk6BCqoBNcPOxG8CiSPJj7MkYqBr98DPdOR5+Lg7T9fjaa1mR56ANefThbyFIf9I7rdFQZw9WRqWJ18UTNcLotim2Y2HyPp1fGUpwuYbMFncCjrRSO4YGusPQ0Cv6DZA/dMG6bixO0HAtHiczMHWZmrfu+CNIWWfz3muwqlRzdI4wlGjCud3FsDW/kXuC7/mQo//3aNiP/DdM6B+2s8Dqh/hmZghnTH+T+TRgPxngD8UZ6Zo/3ChzWQabmO6XSyi0BYuehDkC64o8Aufd/dCs0UN2/EjNsy1qI2MVirNAbHOkeKKbhFpTBLAxEHy+CnU+SnyB6MCgPCXVECrf3BCpq8aEujTbE+AL4dNfa7FVmhnyIZ7YG0N2ritdXjgwr1fHvce4UzTVmQIXJefpMRMjYfSz9QkH6MktiEqispcoaLwrXOpStQn8AkgtD+HUWkR8c9Rbn79AwdTLSSlRcRKN8jSu4uE5KZ6tJWfpQpPpjXreTvqt8VZhf+pEs8Q5njDUWFOg3XieW9SR0tstXx+h3SKcvjGp7Z+UogPxa/0PCLNJ/JJN4cU6BdI1aej2hl6h4bui7m39nJzRHAmery1zy5bd9r6S01R30fJQoOGmeY4UwrDa5XVKsDQIIOSqRcKpDobwPwZb1EEKM6/BgAlF2zP0st5twl7yyPH5VcJJ4jVLl87CAI9bYDADfkKofW73eDKDfzatOpvzY9qmrIrSEw90iupWYKI+RA4ZW6BHBKNUYw75GfnOxFuOfuif/t8VG5CvbOT+NBp2WhrKKTfi5OOZ+58bfS3gQA4IynBNpc1sC/u5GqmGv4cAQzlnsI1h3VGfl8XpZXb00qw+0GHz2FJ178Xixz+nBqTFBozI2jhLx4gc3NoL0z7igETSrxuJ5oOG0Tz/fQusSMzlxg6LH2PiNCVHiBD8ARjghh8QiUVmyAkWQlsnYmn/1fR4vofrVB6yRRCPAgSQRHW1Q1DFKrsy3VfBGVqiIn/FFHDioM3XTHwbamVQhLpp9fUZJaI4eZXfQqCBCNtJmWMuHWvUSpaKu05HgwuT5I14EDuLlupY85w99lWS/lMwfYjzvKfAQ2Rc039/j8RXJEdgzZAsRDnBaFg4vhC0afT1gtOd3ri8tgUpA3NB1f7RnjuNp4uTNWKAg/OIpQhr+ZJSlGT/1L2GxZ0JNTUg/TL/jYuUPBcEizi2JTFCt78gRaNm3YSmG6Yo2vKFtZ7UV/nGTFgOHElU5XOLVQgwQHR4qtefZWq/JoCXVJpg6Cabyj97jYbh5FNV+7SI199tgV2u+O359/pHje5VQ3P+8MajqXjAq5TVg0GBz/0ZOGNIrufTMTkNnMXuUCdHeesKI9lQj0gFKZsr9eg32uD9EyWkRDdN3j7/THh9a6p6NPH8EIVzyLcJWJXvQGyCYS7WdosvXmMLQb/HOJQeBi8o9upOlYLnji4fSFSEf23/gEb1JTWHMIh4euyqAuav+oIIlB90Lgxno+YzwYZfgcQeLTjX8/7foVcfvl/Zm/0rxmkkCHr/tbA0C8MkXUIALEi+YHsrbqJWzahbDrunZik56iqYD9QBs8hKou4Kjq0ATP5ke2l6k5B1Xg7Eq8UFzWEnRPDLltoVuXcDaOUk07HIipuRRed1YZSZMqSY0yEWBt3M6twdXFBxlnrVVZGAyBfEh93PqO2GxYE5k1LO/GR7ruAp1DHaHRpshhGYW2CXrjxtGluzde8Chn21f4ctPZRECRFiPlHQmIPI8DtHVSOcJ0TwudGbNxqOl2mtk/r+fNmG6XyqEKN0LWgUMRJ7vQ6VDJYmKYXjEEuYpPsSKsej0bAAxfJ6wCvnxjGCXvU5o3N0X7COdVbAvICa98njVmamkLklmQePf9/frGPuvO7WW5gjC9Nr8ZQOl791dJFyym0TTsm4vwFJWfbASq0JxHQzQ8HtSsRU8SlvXIZ7nrS40l5CYzlzTh62/ESCSyht8m/fvW8Pyre2uNtDQQJgfDG24+Ub1ai1oravZuZGSy9/SYE0C3F/Oe7m/ZIVIC6rmccBL1Sn1af/tzXkxFAM8Dt6fYBbMKo2tYizaT2mJXG2rEFA0iYAVunyE1SB/pjM+L0NF95ul1yzr5xqOdPcPOwPu8OUZrrAZo2WnCb2Pp2sijAyJXGfFtwsiYzefjDX9BUit+Q0S0JtrT+38V2TXRN6HlenPB2YwaSIt+2QTjlHNXV1GaaSnf3a78IRQM2g155eHqJ3wwQ+N/p/p+EEOjuIUHk1XVG+XX9V/2ZnNok8VgUOAZJenvZt59fSJyN8+/1bNssYrdjfa9jQ6rruArSrNki0+X65cO+JNb6sL4LT1ztSSogAlh/F8wl5uB0b820ywWPQ9+WpL8nSgSHtLBe9fR4vfkxvI2TY6HvmUalGadnYt2xlJv/Lxxkk5ASibE3uHDFQPO52mYK0EwNmkIV6TY0QpKw+l0Ce4wyMRqO9ieYwFQpsK8ejloHhSKAPODfyIwAKP6A6NvunFzfc3crWGhUtqJS/0Ef7xsZbI1Yzp4uWggVNLZNzI2eL1mBWcuvlUmbi+0zZBRljGf3zC4IDNsy27UFe/rYbTs+3juBjGTaYV/m7X4ryJA6brk2zzV8ce/YVC4d4zKvqaxdwFaF8xlzkg9USGqUAp/A23WXui2YxOvb5jWeEBj5BCR6gQhzjO8nBWn2S9u/SV4MM4OZyMTnv+7Ea8Dy1yWVQQpYIte65KHmqBZfydN5c5m4GmNaEHUfp7Qd6U4VKE+p3HdqZyE7xFpHgCv4ksl0Q3ZrvPFV/DiA1L292OhUoqAY+SjzabfY0oiW4ijNCLU4x4ujsFTWbdLNn1kLqV9XJFfBsXaTWuzQc5ztk4ynTBZ75nF4F4v6w0Lo3JAGXF8wWFhxEzMErEkVS4U8WbF3p8ZU1dR3QUc69fWNGLqlTlUMO3vCZ33bszAzAG4zDHv5YDJyc4dER4DvU7b/g8sp5lkH6/Do2/uwJNOVTzRR+YAPReDXj6v7GbMKGZ8vt8LY08t7jPT50uXHrsNsJ+N+6tFtKGKctzF0ZOwaycYnX0KcEVArIfM4YA8TPaFlEyXK042W9DCxMDS2F2hcRhzvPj9fi0T4VOUG3fU4sQRChB6t1skEYKCEAADealphbgQIQtCntexC2T9eDmObTO3Zyru6N6Uimjud9xrJcCs5sDJ+PTqPtN5MqboHKdDDbWAjpas90mBQmBO6BGumuWGDECgvIV37cPdM3PyskzDtPpM0jBXJyPh5lvawwg9+NUBs13iGyUlEmvqP79dWBVVVfLzgs5p/xo6sqUWpdwWc0/0A9Mo/W583aN/3zHx4QjBb3SnjQRy3CXwdMrQ7F+6bD8v8GV72i5OR6qPQnbcz6f4IVW7BWPkV71jjokRDUez5dYBPizlmUUGCLJGVPBGt+NAkHHJQCFWVnpY+ioAAABI7F26eI9PQ/PvnqFfpcXfZ7q+5HTjAkMUOKzFTPUq933eHUemPp68QFQ2n51dH7kQVho9wLcg8aOuun0jrkbvyPAvW8JRn+164qg/VwZfGReBd2kyDHHnokTzfHuyu7tlxqNrfQlcEwHPt0rEr64gWRKP17S9+dfhknNBsQapTca4NF15rKynFGfyTBQ2jPHhOk/mwi8suswYVbmL/9bQJn83YSpkFK/OvRAvIpKcPSk/+0A/CEhpZS2Q/w2UkeeL5Uogm18oCLiamoHYLsXOEVsVTD3BiieAAAAAAAAAA=",
+          "url": "",
+          "id": "award_zxk74us5"
+        },
+        {
+          "name": "Delta Capital",
+          "img": "data:image/webp;base64,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",
+          "url": "",
+          "id": "award_kqi0jhl1"
+        },
+        {
+          "name": "Ventiur",
+          "img": "data:image/webp;base64,UklGRioUAABXRUJQVlA4WAoAAAAQAAAA5wAARgAAQUxQSOYGAAAB16CgbRumZ58/6EGIiMT9E5LcSHIkKT1LdbUcLer/L+3OdPeI6lnsMaL/DiRJipTCwMBjo3s4dkBfUFRBsQsC4uALRo6JJ/KdaQKgwmAaglZtSzV0B0xk+y6ZvoWilB4i6hI6KteEX57R925jGc8iteC5fCNbakRmiiJ78CO0XDyx7z0GQoHulAwvsKXDMfGHfOd3KSKKdjHx13wnSoYZsv368HlN7CB1Z6EIL747+95P+x5G8K/WjXtrur405TJwnShjq+fW6znevHJqpY6timM3dLjS6/Exq+vl5pdLfdCJ7JTj0so4cB+HVue5NkybKpe5IjTTKlMopI1EzlfDsrmlKvHU2Uq14GeLlK9CRbZchC00zL2WteHdcnBEYFiBhopzJbw1nGwG1Rk35u3K2WLFCGj5YLbawrvg0sTr1+5uvxwIv8UcXmMSvJM1yOCqeN+PDfY74olkA3zWlTjgbJNDSSG3Qkv0AX2ZlfDOxHywgZGDUgLsUaU3EOAjcHFrsFWtBQkNpRSi2r3R+jj2XBshX76LwX+8EM49LJrHzt6ayQltI+9r33duUWC8XI4+r949XEanWSpEt/eTawhMQ2i2GZoyfny15ZeFtSufo6oggfERctNi36vf1n0ZMhc0Fq8Df4YjVYkw2GaB0DtaK3J649Iv02Kpe3fzD/fDb63e3wytQbbBpzCqD+IXCnuHIpKLjVsicNn2paQCK3iRLdNJ3bqvhEOT57llClXb/DwVmRuRqpU2MPrpFNK2OVe+2hxjbAcG4kCSc982XrjmjP0bj+jMbg2NJptTkG2KVyzX37EhpkIG/OmN52AVQRBjI3rJHjPta0kXwuinAtfQThnfzDZrfzwURStIPJHCqwt8xrs6lzc/P6n0di68QSxy55PK3BIA+GQPAOPl7AaOFBT8Jjx7+RjsLUfsI0Q+pcyh6tFIv9DIonTiWXEEZ5KoDzuMLUvwQlDwfHe3C+Fev4iMrhSxPh1S972iAXcJA7oZVqFLrdQHb9ylHu0G9NeYb6O6OMOi8pwAcPmqfawCzU9jnebjDYGppquCV7+R+bWFsPSdcFHLFb7j5zX2iJqz9o8ZFKQ1YNImTMYB0FFPiZPJOeNI9tsMS8J+0KHMJgh8xGmUD5671mFxVjjMKyk367jGPJ2yojKhVxTcTldjskMvmWzSuS+rhjuqKauVNb9Ql9BNBC/MVOWeM3YWLikN2I22RDDip7YC7wkvnTlL2ZWCjxRKjNVnMWM20Z1LnCo6f2dKzQE2sXzyagft07h1e2+0Xr/Eobi43ZZzFmQtGUxg75NgUPAS2ZxZb1fGhd21Ey6MPat+wO/WYDE/O7wkzfYxsflVKPHfr1AGC1xNBpejd5ebs74B/fTKVkj3IsNPy+dABlt0+P52B3b9oJm50iNdeJ3tzlH4ru+d48IHO5Z3uoAviI6Oz81xDzK5uha5kgg9U2RILZaJEjahtSlPgUVrqNC+U0xgl9/lkS31X2giWS32NIE/5Rt7+IAhKcNEplQ8oW9vimcoMmKWZyI268suvhEJ1dMW/P3592Q2/4EmsG9/REc6m8fYwwRK4C/Gef/BS/MNf+pCi4UnVYpMMQHn3u37NpwjEKrsINK9iVKMJs38polq/dKHLfWjOyqXm7N3nWX+LmL9xdgfr6hk7KzG1fw4aLs5h5K3qsbLzTxjNDk2OSkXfTbS9lX9SIdWieqmXyOfvnV5sejpRzS93P3LSrh/QDuU/c2ggGt+SVtd1HYUbNd8MrYjg9pBqZm4USCOmbjNydgRHEReDHG4MjEG7+A5tuOVYR+NDfTLoweX0xUFit92phOUB3EeKwBY5F7VKV9HM25UJ7w2WhRHEnLQsXXhn4A/oN6NHdkPGQ26KrIChVegEBN8A7zKCt+CY2Pqp/vV2KrQT8iUJyX7wHiEZa3DRFcKlyoefHoLTtbRIBRN2JWUZewrhRWzc0rzEjmLmFnzbPzIdjKOvfrIGaxtJfb5K3/ZmGmV/ahsAFapmMkLI+GAAb9yi46emVb6f26hj9zNGufQFCtIb8IEem6Nd+he2IbIVajGtfkeF/Ot+3o2fEzGeLgaYVq7VQzi/gOs4sYyWus3PgwtePhuf3umHFo9Gdca5vEhdR6FvfF8XQeuZJzvZRJKlmVeJp4LTQ9tXC3mqd4VD6CG5np3OQl5w3o8TkY8zpdFDvm72DpPsGKGZ9p/OP8Kb0osISjwbfmKkBoT/P192j/E9785bv87BVFJsMSgVWSJQ8CaIZWYMJw+oW8pUq4/riBlPmPJ+ismIkH8dxzh4slM/KesEzvcY5FsYk/fe5kQUwm2FTQS3aWKTz8heh8T/vGWkOqYSAhiAVZQOCAeDQAA8DoAnQEq6ABHAD5hLJBGpCKhoSdUvGiADAlpDbAFs4dG/6155u6H7N/Xf2B/qXkQ+f/uH5L/kf0pekPFb9ufx/5d+tP+Y8J/iT/ZeoX64/0u8d6h/l/QI9aPoX+4/uX5D+iT/h+gv5n/c/YA/jP8w/3HlZeEl9q/0/sAfyr+w/87/E+63/Nf93/Jf5D9svab+X/5D/w+4R/LP6n/0P8H/k+5l+0fsXfsaatBwGGyX75PRXx3scdu+JP63xR4Ro8UOaIClfuwgYVo84Yfv4j0NF1SAEcuxdY23728QYe3cUew0ddDd38FPpNJ19Clgtivtg2LKTWVM2rnbdM8Q/OITTDkqLmqX/Y6/hKj2JQUNz+AMCUsjoxqUYPK0g3RGlXA1CRtgj81mLOj28wG99SbBhBBKLe4LmQD1SfyjRZVNjhy5hMjJuVtra64ZGyMNB+YgZ6kPAgfjpZjZUJmwFBuqCBlReiItSGk668C7rDiza+YabaG7Q4JN8/b/0yyTumv/bBu6kMLH5BJ5673nyMJimRVLaz5a4pcRfKpvDAcGzYGkFvid2wmm5HclGyIfaZ/HXMiq9jNd4GKl1oTOOl5wfaI3ZpRyfCTI8CpmQ5T7wphHmLl7Ee4xqBbSqD6ydoAAP7dyMutYhhPKYUbharBRXsiZjFNVXwvDnzEZohsDQsUIqDP9z9fbDjNYKF8ayTvmTaCrcyjZ5Bj2FVsBLnVG+YSapDKMebFeiQSEsmGb/IOcF3ZS15VGovfbt6boiGp7gW0snMj+r1kYhMLy2rImnCFQFP6dDSjpCEB+f334X5uStezRNztMX1NiWAX0GUo6tXuh6tQJnli0izWkXa+F4vZ+bBXxvY2RLPSf3+p5kgzQFbS83ex7lKPCab20hznNXvzRDnG9huJWP1ZImY1RSWL7hhPC9N8u84hpOMaQdNKnV9C44WXHYHeCH1XwPtsQLxjGnLWOTeB7M4JxeNoQBifgGKVewA+hnThzLUK85WKdryekNZ6iwmwvByfeLY9K3hfCFE/mNNyytX/B1XN4/+p9s+nz0Z2iq9gk5ppNIcY4JBI6F4AcouEjVM+9S7bjXmrvE7y8RLKNH9SWlZV8A782+YE/nhFS9uDuA7/ax6Z+VPgg53xwPP9Uvx/jGsNlcqY5wYst5U80Lbz2G5O5RO2Z3jNCDvmXb7185Fuzmb/3b0v4bUmvBdo96YfQ+iapkWp817uJVPl8p+cz6+QTZ/kgxCrIk1ZJOP3zI4L+rkgVKejFGxL+YEI3Hm/pG9Ck9vzplR+E46Pq11rJ0Huc0fp5zVvviF09aVyaw5Yl5n/AJ6PKanQRr2OI299LS+cvLesKdxLIAm6GLM1RJEIVwIUKLqLI8l+ahqNhzRqkq/X0L00nQYEZpYCa86v8LEqeZYKNPC0m21Xt7OCu23Jetw7h56esUpopmk4Doa7pDUFlRdkVLZ+nnxidANbdE7NufnywiTLXF1xCNhxZA+3dZc7kHBPgGqdd5ZrLYm4z5GxLkx+RX33kFYvQBgofOL9ON+8ilqnsy2gdVii3GJA9Qh98Ldh76izx+9XpL9bS19XQ4pbN2OQbv4J1fx88P1+S7FeYgOWWkkQPeaSPnFomQfIKGTLZU0kY1a5fQH4Ekii6cMWzIxaTLFkxHofmi44/xEAId3LBZZjaNgYQUoNe2nzndeyXTrHGD6RBj0FPD4NgnfxaF4zm1W/lNiEIFOXloDVN1C369GMGy5yKWl2cRqUT3taNPxYUpMOP45JDAw+CUpAQyIt8sDA1AN4/20HfoNO+rLtjGKPvrew3tFAtgj6uwRUP0pRnCsGdkB//Nv6sIjkLJcqqFbrPY2DTPV4ETJL8RZgWrVQlblD2NJj6hAWZRIGaW3k30YrN4b7ZwKp48WeI5/qAGY1whUqXqQuMkOPGj2QUXHtMmQosjf1e8wpuRAhaL64pdtv1rdmKkPHRO7jv4E5Jc1Jc7/9xBm1xBK4GZM7yJ/sFukitzD2gS1mLKxT3pWKAlHI8bhqQ/FQni7SYpOJzH3f/915x0Ha70kq3hJD1O+sooyRGrGp7AQD7nsMpSCKQfmtrXfAQpok72Hw2+gaAC+U+SEH+t/v/WQIdGpXfCljQVAGtEirOIGUTkMrbY484PDoRbzzpe5C0DMkifxsJIpbg5wIZSCJM9uUMxJNm4BjZnsqw9ooOK/NlVz1UwodWdhsoNB1AGj48kD6HQrn2xqmZUPVM+kkohgwyBer7JRgqBzTkfEjiixAk3WwoXw9331hxovswK63n3xXkRaugsUN3v3wHaNeTfJon82hMayWXlob4k7iB/qo7991BzSkJxYI0ctLBty63n9HL+iJuCUfd9i5ky8+HRhJPlQ2IQz+cZgf1Do+OzgfZt224UsJyqGpithmxQvqefUTNQqgpSqhL44ux3ziw9yY4UmdSkeGouFH+nEwhaZKNuhQoCQd+ScYIkgHJ6wPH2ssaav0OLe6GhPBPJTtvucZRY0Nbjtr+iax1VcEEmChw3ddmsEc38q/y2AmnI2iUjaUby8wTvfP+3WFqddhOSm2fvIjfQa/H77zuQwcXJ2rKx/LHTnEl2/WyLFJddd/GWHVbLDIkYQtK8IVDA0gSvnblyBx5m6TsQr1Wg3v9jT+pjOHdUnA8BwnxFWXsoTUNRsOaWeN1vTn3SWjt+kxvBbio+U+CqhAjX9daU1D3EZ2r4q/uQQD605FjbQVJUdVM5duazc+xYsfKvW9Faum5DBdTLXfIo1Rg39CpRVlKMKyJjW/W5fa+3o2AfI9PGzVKqlBvIrxiD1bOjsdbXZtbyetEpyvgBfMl7kQKFzQV1gCrx7YQSUxUAoMg2/Wv/LjJ6q9KBKZ3t4OGkY36BKO6dQ1NCrwpb05KhRMVh+5M2P76iKR+aRpIkrhogNG8FRPOqiqZGx3dC7jdbyvHTHZu770nzL3wsw7ibZXMeT+BUyf8gwFmxckZTvKuWcjsyGmkn6JmKWLr+VaiFD8e7cqVz+6m9zuncga35CDRBoooVokTuQGHz9VolQka/O3feO9ayikbtT33A91T2LdXFT7/Y8j85eSMzRMyfER/qndc0QRZjI5vcw0stfUW+yttwqnuu/m+45imRQLWZM7h0c7vUpzSTn0YADjknZ3aNSibuKBzb5x3TJKEFH5Z15osmLYt7otjSSfVVKVqQpx9NqdicR/QA57PUmHV84JMdW3LR1yAlXvsJ5+kl7RWsYiYAasNh1J2YvcmThZqPtW9DNQ1tGJTCSOgr4ReF87byoepBWODyFy4aNOcGuIAZ9N6iuSHo1bolRFe+jM5EPSbJzUL2tyktMfKjEz17d89gLJCT7QXm0e7JytUD1i9PHct+CxOFhKnSWifQn6ZDjvoELt6aJ7VL7A7EI2yFLNePn70uQ8bqb6qFK3ByOhu153fjahTZeI4KOiFz43KZFUmPYkwIl31G1Te//54Et6iYteQVT71HsPzCsfgPR8m/EtRHXrPqMvUM/eUzouoYzxdVAGBSGXEJV8f+hapm0/WDZRIfaEjWdoTM+k6vSXTwLc/AtJLwl2qabBpj6rgTcHwK+4NvFkE6nuoanQrdU8ySkulq4iwZorCI/xXsh6zvAGp5Pyf5utgplQlNr/4NepLlzIw4jpmrkmcRqHruYi6MeK4SQzzkAEQBPtkvLQ2gfTASAZfLldLsnKst857/Il+ZHVG2awB+Ry9cZ7stItUZkACiOPdccqy2mcY7vmn++UAMP3U9XAhZoGgZQ4oTLzOnrZkaZ/raJRab89o/+1s3vJ8CIn1UzNvddnZP8DCkPiV9FHSLDPB3Ca21EL/eOSlLeznRu+UckpfkvpTJwZaZq3q/LyFovaBIk0StJ1Bb9amXUUp/qZWhAur4CPA4SbQu498IeNiugE4aFHt4yXVnHdMkoLUn0PQ+bzlq0tqJ7G5S/9Tivq4RzGBVz+0VA7vcr8qnU9ZPzOpjICZAq9IOhDIBzDgnr3WbKUFICxbwBtbHckSKfIpxMhA8B7eXl8+QpVwV77cDbqCfM3naFWiIN24emqlO/INgPMhOoLRpEMppClIZD7MRpe+Qb/Mpo5iPWi5qkUthEz0zwLWXr+kNqNWZM7T/JQBkaw27FnEdIYmdcQNEkN+/jD+pw4QAt992gztLH5r/V2hjLk9Iaj4OScrLrcB4nHj4GWqefnB97yKuHgIbFPYkPlrx2M87b19PQqwNT/epIjrOwRBOzpPAuPwwIAR+3abe5nl3fMXKrCK00Gfn9xItvT/MLyWnes3ptyCVU23RNmyYypQRbiigpYZ1L5lYtlWY8c0c1dnxJGys+GH6qBt4kcKbgHesjPdHfiwRWzaONFburULNOq6Ro3maZzhy6bHcBhf8jy5G2Gg/7KSjh80+HlOe2TJlN3s59U+s2igTWJUdc8SKVMfFLSBmEdDAQqwv3ISl2jELwDa+GNvIye8gAAAAATLgAAAA==",
+          "url": "",
+          "id": "award_kbme67mj"
+        }
+      ],
+      "id": "awardgrp_8bmu3a1z"
+    },
+    {
+      "label": {
+        "pt": "Finalista — Programa de Inovação",
+        "en": "Finalist — Innovation Program",
+        "es": "Finalista — Programa de Innovación",
+        "zh": "创新计划决赛入围",
+        "no": "Finalist — Innovasjonsprogram"
+      },
+      "items": [
+        {
+          "name": "Hotmilk · PUCPR",
+          "img": "data:image/webp;base64,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",
+          "url": "",
+          "id": "award_iex49mfk"
+        }
+      ],
+      "id": "awardgrp_srlrp6g2"
+    },
+    {
+      "label": {
+        "pt": "Finalista — Prêmio Brasil Criativo",
+        "en": "Finalist — Brasil Criativo Award",
+        "es": "Finalista — Premio Brasil Criativo",
+        "zh": "巴西创意奖决赛入围",
+        "no": "Finalist — Brasil Criativo-prisen"
+      },
+      "items": [
+        {
+          "name": "World Creative Organization",
+          "img": "data:image/webp;base64,UklGRjIfAABXRUJQVlA4WAoAAAAQAAAAiwAAiwAAQUxQSLwSAAAB70c2aZO0/39eOkdE4nr9lmDYtm0kxf3Puf0H7uGdIKL/EwDEbYBS7tU3JpLuhT5Y3cedyMw43XTDtkNObJcLIRAg2RcOgATZnltEghObxJtjH97jIh7+pdV6rxRa7feAVusjeOP/T3UT//+er5k5J940pUKdhUVb1u3D+tvW7e3u7u7u7u6y7u4Ci73hDWWxAi1sDZp6G0/OOTOvC5W0gfCxKxExAfh/rkQnOi4hSTjhCy4VYkZ01dn1TRUnJjM00LU36YBKgmBw9hs+8ZqgJj4xgUgnurdvhaGFI8aKK65abuUZJ3JpU/eFAqCFQvjC9nDaYcIJnRm+1gtXgheGUd8eyxlBOPEbRy09TS4IIdYsPEEoi4KdqjqxAAxtDKN8koakeRNIgwnllMjLejQ/hsYSCuW3j8V8MCa6wGWHZRLzSrwlK1F+2a6emAei3QdtU4YgFjNEUSL7GIPLkfHLOBVD2L43yCjHrBtSWhT1R5dQnk0oNwQu5k4/lylhKg8zzQ1YzijXumoximQVLV8Qq4sgVEZN+UJtEYCyUMYDRRkuZ1SUReWseINyTsVxOVNFlXfnpIJOKk5ubXEyYfhkwj2pIPxvNgFgwXx8cUkxzY15LmQcAnKWsui4skpJ2oY9TTOQEbaiOYAZgLBsg+NalpCp8ls06GFGLrRd8TIwzQYhTEi1pzrkcVUoFQ5Lr5paw52HJWlAZc+OEM6t1CAYJjA4HAjEeFAwDLOBOD6K5/lhKzC0ZilRfqLlUCpXW5nuT1w2VFO1MiiDrr3Yhq0qY/mAKAQa94TDTU1nN/vhB1yXjjdF8wLigN1pq9rWnZduuiq8c1G763bpWFVXptaL7I6cYUK7M+fQGGTBYNnyPQfRVpUnQSh5Lmr+yXDGStRtP/Oi7f46rVff3mbZVTLu36HP8jovVBGTiFTayQ6rTiRaa0OBijqD49AuyuP5YSbhkIgYN7j8V5e1DuZyr44BqXw+TksSdWYoljpj992f6PONVtQNN/tyYX+iRXsulRwVRZhXcl1hRS2V7vxg0l1SOBKOjNbvkbTG14tq1Zk7Z1fcFzJxx9jB0G6ltvTuGOBhKRgl7xQ132wPFi6JT6pocPcy16kyYxTqtbjV1yOilMrXpI6E5EE7V3Cs1R1NoWxUqrYp21DplazTENwz7j+/4bnGWB4xuLkaAHA6A1HfsfQpk/CkY3KDF57uu360IRppbuDTK+iEpSjAXSvo2eRp9a6k3OCyVm2SQdt70Yv5hp2mBHRlY3bxWl9NJJBqWhZqiOQq4XgEgOl4UjQXolmYeZkZLLDfRHLODfkhya0J2wed7W21j2ZktCHl4cLPejUgg0UFv5846jpGEwkRdD0xjZhhBEAwwhCXiOa5uPkcAawJ0Wo5AX8wmYg4qbp4H+JPrPAJouFj6/ShYDBe3cADieikQVAfyK9igoznH73vjn/86rc3Px0czOao0T7W4MuIfARTsj6RNhEqDcbspFujFgB2SQZ96RemRChUt7wh4lacTcbVMIWRF4PKJIS1b/NouHrSc3JMBccbIQ5i4ryeY2NDR7p7h/p81qLYmtB4TBzd2LbGn1KLhl7sNopLYs76jM4/V2iAAG56y0vG9yW9llN/OalcBpHlLXq/f2wLpM2w+g8vWV4IaS/v5oZlMq8yvncWHv3Olz/50S98bf3FGDvQGH/EpsaXLl5+7H5lmzdVVUqUOhN2/gKzX/rhay4cG+qd+E4Cs1/4nhu7RvIAg6ymv/4u7Ann6zc8WWGUq9asfxQz21+87IzhyPZvAZfccUH+gW8BGKivkm6eS4tc2GQ7YACCN7zm8t+slEOpMBGTBBNrxnlbsrsA0sFL9/y6FwDuuSM8EhZi9a9+AUgAZNHXz32+LmiRr5BOp3TAdoURdvPUmEFpsw3DzFAxT45Biue6OBu2DDMbF9OFcl7+6KDtDwSprrvXdqXhux9Z120ieuCbQgGx2hhgOxfaFVlmcHXF4VilYGbh9NqYX14AEAAQ335pNvi5v7ORe/WYB4BQeX0oOrX+EJP07nwVCWlOzT8hDHuQ+hdPor/z0vVCFfC+7nz8n9ej+vV5WwGAP+SgQgAwls55NC9qIWZkNAcc+fu1hywvTZFKxSA0/klNIvOJe6Xwvvx1D0au2PcX1njjY1PQMCIR3ALBltad2/uyd65sH0vmCYCGZwkXAJPWhOP0Lh3X2+pI82JpW5Ihsap/4uHt+mcgG59zAeO3O8jCG7wwqHZTZv1jB64nCbo7M7H7kc26fbx7zDAA4pRLAgCZvEU8L14JvO/u735vJZSpvjatAUDh5dm+noL+FJSkH6RoIr9i9I8M+oi+EBauyO58ou/nsAXkDW/6jdYTz2way4MAaJ3WrAGAmDG/VAIzE922dIdLDEj815HOVPKdi0kKPBEvUE3VH3ZJF//wnoRCrGfw3sHDjRCSAFx+3T3nXWADAMNzCzAzHM+2tHyWoIpD3sq8QwAB4YpYJSAUXj+ydcqqwSgpfqOnB1qh8B13a0fh6GUK5LMIsL8oLoAmAEyEheYSmJkSH36DWFmYaboUwOV699+H/XUTB1gj4TmFy6GoWXc9st/VfzzdB0Ao/PYLUT+mFzAXnsZEXIS1cPTAxvXPPXc6hHXvO6NRTSAIPyQJrNsynHziroqo/+vPCI3uY0cy/wwTKnTP09sODupjuzdcFZAgcctji8w0GzwTk1TSAIS8lDwns3C4O/H008MDVxltPd7X7hIsvHH85RCCXpnWfY/cfE4hs4HACAT8gagAyXcM7OvXOjPQnx5PfRAWnOd8eprArCph/I5HdmRoqAFz1wtH29xjwxnvNYAnOmzJULgkmb0WUmLNXXrsUKTtmU4YwsxEhIcHMxt/sk8f6NP6Q7AMvIRgzNmrXxUACj63/cVsEVQCvSFp8PVfCUjs6j9SD4mm7kzuIlgC8kOTR3+gb4QAVMAAZDKw8SftXY3ajycnR58OSSGb3hdXmJGNVC5w02XaOC4p34/3HhJ6TsULmgPNABCDGGThev1C32IINPYkR3NvA1mAxPn6dFhoeKrVCCD10e02Plo4uFQBAAFQ+iUrwNNMWrAAGP/5EWYMGku5AmYBrLm4EJZSYAAQDJzZn3/kaB0EFve88IDOfB8gErhu0yKfj77sJh2GXHL+XxUwth2AAAACbvw8N1YxBOVSSxZHjEWaGaRAnmLHHKunnJw/x8zCFqHgZjF77LWH9YE/DzRAoLVv6+MbhvWfzxAgNAUBVOrO8aDr6RW1ASHQMfz5syMAQFj6gZtXjtWEbeQwXnBrhMaMxgHgl20j4d5QAPPPmF0o57Q3+wx4miX26OEXevR4mCx8SO/fPHzzXU/91JZoG//jm97xnp9t/5O8oqLbt+FfAn48qDN6xwoICHx3145HI0tue5A+tWjy3tzqS9+JQr31Paq6Uui1r+i4Zfvrr72grSDnbY7k2geW/QNz3PtQR1/qU+dIwF7el9812I7pVP+BpNZavxz2G9s9CpogAngq/VS/fpXwE4DKK/8gxLceFD8gKPZn/gRgFFj6T6DjR88N4xOnfCOyVC0cDMZ3AwARTCCoNv5tQJ8HoDoINB4+1r9WCrG4XgAvnYw/MHw9PJ+RZt3T+4mw5ND+be4VmDmfsy2f5NFq76KN+nX/eHbFKR8CV2X1Y2/WQDB7+LE/+C1X0EKRC2bMyvKxZ4f/YUnfl/qevZ5wix5ZBuvLPQPf9St5x9htY1cQez5TYf4NFQQ9NLxd//iGj7QQXv6Vmy5N5wIaPkd85Von78/FnGcR+Goh8DftO++mtff+XR0aqdV+Py9QkcSZpcNfAL4Y2q3306rbdfxUVHVrrV/6DPZAAgyOSNtsp/ZbQvi0Hsl8IFVzzeP44WkJe9QnwPLokcQ6auvtNNui4rtm6m+CmhM6r7deN36fG4ujtAmRTGP/VW1bH0wVxlLesf4V8P26c9+zy5XdAsMAwAF1l4Vv6euwqnv0D5HkSw1gMtuDbrsBROcD+jrgg9q9mbDKVDwIull37OjTtZ3xqbzF00QJ+aC9dpN44ehoqnDkyf7lAEJ+AK968xEwAZQK1P4IsYP6o8Bt+p6qTJQAIZKRHBFY7PrLwLO1OL/QuQdL5GBUkdWf3bZvc9KPvlFPoMQor0Dbgu2PPf78ZOGO3/WsAEko0f7HJcnRABggR8gCKjszXwF9MPlEdEgxABG2LMkg3XPnen02avQgxLXmtrNbQD/XG+7t0GlUVvd6i4YZcEsGSMbG8fx//vSfwVyHM3J/30pE178VYnVd6ECdowjgQNtdYXGsqS4qCRsT3Y5LAGCUYAAcf2CDvgC4r570WaYw9WYg/IJOeBunRHuVzxAAUOmo/pqffdX9+zO33nJj6DXeC92rRfNE4sPAmq9+XktXCSo0T/wZcABAir9o1+dnAQAMkCDqv/3urvukBMTy+t46fvM6qMhHfvFqADephEl4hHlUNAemuYlE6r3J5/CYRQDu8waXorpL6zei8OXVF/1WkzFkHZnChb9+/qFnnwZunJhkZQwYAMEzQM99D91xNAzA3GGeOn3Uv7ESM7/tQ+M54xEALsrj2djWejYCoCaS/966dwtwyrU/SR8bvaBmxcDenek/3Lyrc4o4VEvj+nfh2rZ0Ip2On99c/8fXdLCq0wpONp+PnardrrufuW/wrc2NJkLDddVHD47cee1aQuTS8741OmAI01VRc2XL8RGIp2kPAOkLq/DogzVvXY79A+d31McvOHhg2X/hTueyJvTmXttcW/nat75sixDe4ofGE25+auTT1VieU372vrDcjUgprPgXacypDXTngoVE8oLa8bt6z3g9+ndaNNNCSldmJVwSgNCebbOQYTXVWifGBzK5YJhyBcNGWHWx6inPyox5ZrgqhjhYyewBO5lanz92iqsGDozXRPu9Edk55aUxUOcYmewKNyV9Vp5VZaPdmyId0oYdAuAtgB9TsVPHRNCzpQZClNLK76bzKugLTOUW5eTokVXVI4klsTEhqocnrOywF6gKBupzFZR13FWBTLwhOSXDVW0NPicrOOQUHF0bSB1dptyadM6Ro34jfUoL5QyNAAwAtAA531lJPjPds2ZqqG1sfMo6CxitiS+anFp5dBEfxiKqIMFjVUeWqcmhM93d65J7rzVTsXjbltaWgeau3PKaxmQlAOxpqe84a6zCBlJdtc1j6SUH4mJoLbJh6GxkONGSP+dxV2B+aQ7stHT98Cfd8VckczvPXL+uSvv+vSw22KA2XuwEjx7b+l5pjVTazwU6ri3kKurth1d0Uu3upROWK7vPGu+r4+F9dnh19khbzBXZHa9/+NJWPbizWXh5aWpSkxvf82Tt2d4W37n/8l6TCinMty1mIZKO/9W2c/BtGf9uhfqaw4GhhsSBC9W+c0y4MDW8ShzNtOZfrHBjqYrxcF1PXVT4qQUpdUEclhtFqnatjjdWjK5ZJfU56WVayIGllKU1jqgQ3ec5VnV7esdpkRFLuuM0by7P4ig6GD7Hi8WCPcEWN5+VlQyNcCalxykpw/WatYWCUcqfz0c9Do2Or6wJjS6Ovogat5njVK+zXDVUk3vehKMxLBODTjucaLxKHjaFyrXWFW5BiIL0j2SqpgpivsxszBgsUFS6lM1Y0nICdiovbEVp5VSEAkkm12HJWvqinJIFG32HsmMbpvw9/V6lAEh65CLkZFSGLWmklrBcv4lmpZPjdKAq4pFXMCS0njCooPmaIzEsx7HI8cmkURJSmhxZOdsTyhdWOc8l8qCYghYKnmeokKmknC+WzFuSAaEgCloCko1gMMjTQlIgbZMHV/kUSHsEdoJTxlYoRSZiEGslmAEmIyDYaMWGBQggMBCCMTkBkIEghieJAYABIgagBWE6aQECgwnEzAABAAli5pKYlZgJcyUGiDFXYsyVGMUSY4GZ8D+f1kmFe1JxcssnFRadTGguZ1ZRjHLuFvW/o3RSIamcmaI0yrkugjExIcpYvAiQk6DypfcVA3ShbIvUaHHbdLnSwa2T4GL6DvtNeRKFrUZi7iyyDwNcjox//z4yRQBccSUTlR9RWH0BE4omPmuZU4aMusJizKORF4dM2SF3zSqm+SBUt3rlhow4BYR5JdRGTJmBrBfzBUYVUTlhVrU+g3knwBVlRLhZiQUkxuCwEobLAbNyxxzQAoAJ7up6HxvQCc7AfuKv54AIC8yOF6gOGkMnNj/3vSUMIiw4YTDF1REPYD4REYHI3b9+F0AoRcEYOvLiJY1WQADE0wgM4pmIpxETs+CZiKcRwCAuhhjEMxEDYKeQ2vXveA4SpSoZWQCRIKBcAksibSxvBrY0A2x5yni2NgSAFWsCW0a4UrhUhHJJuTSD8gC4aQcABEqYiQDGCZqmcSnNTCcmxv9VB1ZQOCBQDAAAsDYAnQEqjACMAD5hKJFFpCIiFMyuGEAGBLUAaGUaP6rt2wMeH/IDpiOyu8fK2F37Os/foa8wD9WukT5gP10/aD3a/9V+xnuU/tv+F9gD+Zf4X1pP9n7E37eewB+wHpl/s/8F/7dft38CH7I///OTv6B2r/4jwX8Q/sf3A9UbH3QD/b+Sf/D8HfhpqBeqN1ZsZ6BHrd9b78HVi7x+wB+oH/K9XP8R4Xnm/sBfy/+uf9v/Ae6v/Wf+r/M+gD8z/xP/p9wX+Uf0z/m/3f20vZP+1Xsd/sAdYfMAp+2R4+f72jZ31O0JE6Te1YHTDpp0m8mlwma+BQ6se944J+MpiJVOOW3U4GHXeJfwilE8K03XJCCHJBEPIXe2xr001nE843aOuHIbpgjpF90bfp5u77Ix+HDjJmloWM/5iUFTydazWrjPC8Lh1O3d1XUi5RbpFd2KW4nm5viBug2yBCVuK7dfFQ/kZyzpVLqPdd/zaRSJHaJClsB9uKVcW0kol+9XvLVr8GKgYhTCWIZ74vT4+2nHLftNyW+BL+IH44rXKYAiWtatmgIS2M6cPwKSs7yX/R8b9GiH/aNKPD0zGvOpNAAA/ue3v7sz7rl0K+PgW1j46XC01hV3UsS2Q0UQSzZ+O3+75yFWoVKy/QdoTVwuJEb5UgEUb1d8vjl4ZaVZsfJGQmQxUpKH4YQsszzzBx/S4nCalwUUimrpcOThPGQ1jONVBObJJHoIi930TfqWn//2MeBVR/QPT7pYWAF4orwwJhmpJY2/h1erG45vx03adAIgmm2oP7T7o9qq52tY/tnzJwz51TkI1wWgNHDY8xXw3E6wKd2Kge3c09K8i3lpe1/9o/LmNuyN8i4ooywlBt/qz3ku3+AAEB65xZHG6ZR4ez8SMTRVo41xy8qWdSsBoHNqhWoclY58oR0fK4Kx+c6ye0U0bwTryKp15WO1snaW8BbG5yVWQ5MOi+V1Wc5aPCWYHQuIJl0nt3Ukw+gUABkQrrC9MPMO1QFs8V6Ln+fruXCrnQCudFBwLa2FcuGQvyG1wGoE8ILplQgWNzIlIjlvH87hpf33QHWWJtuMe0F2bSoSB+tOoPfQOE2kQjbvBJhZeDYkGYA8Iuuu4Pxj1ybLJVfkv6Br2VYczGlhgqA+aLYvXs2hrWuDnMdiyKfgCeSEPJIb8JUXzs0uLlTJWGO7/xIpav9ygp7AY/YgOtqPvkkJAkEyeB5oJJ08hMxY/bWF7DdF8oKon0j9hv4j8mxvT/TarL2cUvCpIMtsMkEAoK8JxgVVnkw2JL9Qc6aACObg38RHOkgCXe7ibQYCKNsclEyqvXi4oI2xnhBy90aHl6svS0/e4cnWU0tyPLLArQsP8y1vEgQJR551udFnm0c1+ojH+aWxo4+3nYKBqiiN3h6Dqxr+AOg/ZDwLUXqh35UV4tvEbRGktbefZuaVl/xEQk6nbElr6jGiOffCW43UN8JQ04arxN72db3BvZ7EM3B7djXyfMtxy1dv9nTih/6DTi6aQscCBM3uR2aqOZeQIRcugU2M7VYluS3YRZB+JnocBOipq1/5QoPXvULAM9JVhs0gPkUnaCKiEtxH56EiDhZuIXVtGlwgE4XBc7dMHzTYlbwI5JpAGtzux2iIeCcPEunLZgf8Zt6EUOh2d0MOwvLHW5e+ufnq8UBbt6+h/Xxry9pSPpgZgQWIOMGmwaMRpA6gdEQm+OyPPGWALCkuF0FlkSWgQc2452njb42p55qBs6Pv1yWbKQWxKHj5X4a/h9g03266X0wPg1jcm5dvznTNBfesWOg5W54PhWTmL5tXywJ6klyYrV/lT3hjCPpG9BuxA5EJ0gKmyVEFJqw9h6xPSZdOgNfCAxDoYkh/qSADRM0S0tmfyRYQC1JHmJ0HBl7Yk+tLWPvsXWajHDv3KbnQlaNVNJk45lBqTZ6XLJaW88UYtFY2wncXBVhvfyrIxV6FpuARestXobQ1/5IOKuvIlXB3HCrkhqQYFE0Wb5bywX/Got4WnuLEdsxuWUBjOv2BfPZSZ7vb9IwMUNCAB4uzF/ll1sk2F2pt/6zMRr/aDJl/g+xBIWxWAQq3Bfvpl2G9YX6xgvTiO41diMkaPkj/+fRryOTbdmc0Ll8yPo/ok+Pw7aIy2SLND2l8jjIzwfTA3X3Ok0pXY9VXV9GWOU9r0q+oDj0P4ceeAJ18dc7jrZiV+6N2b0HMzqkSyhcwlqht4GOqYM5wXKjKB0wK8COaPmDLd048otMle6cSNQ76AaHtG+ysJvZpvIdaoiCp265VOQMeN8pQVQZmDMWIbpVHJa2ilg+ymJY0xIsriGD+42za3Md6+7YXlOBGjzo78lIgaQc41v25wSIzyApY1ixVxFpq7gTWJhlA23nGkq+jAUH/1bXrcm/vyHBQqb9Jt8R8P09eOIFoUtDBIvH4vQdieZzOL2teivqYSSmLCnjA3hSW+ub8Xpka04c6bV4Xkev+qOsJv+wcMw0NuPCWEmLwem8bYMy5VaViGfFja507+jE2qPzT0iNjavNA4fab8QYu+T9x0/6u5tj1abiKX898ZIX5a5lU0iunHFOROIZKHEgSXzjBqFiOsRUhHpipVXftRe9HRm2iXLNlOzg4l4kFdN56l/dP9Oxo1IsyMFk0CdZoMBjDOxbBlaUbdJnc53Cd1EoU4yAigAT9LepkTfprCKXHAjXU34tefvg+lop/tqPv4Ihxc9yOnnYm9XGXpMlA+js7JHnd0gVTkDfhiAhHnnTLN/SaHQf2srQx7CvWqCi1InlteONKXwbuXWajvMVsNQNfmd3H793jSK1+uZd8w1neWWk81ihZVEhI/tkceH+0NOrIGGopWkX7RzpiFFJP88LoI4J+fDkhTiBY749QY/k/vC4miEjGViw48/UkP/Q8OIDFcYageT6RUGlOskUFehNz+wsZb8p1mq0VnC4RsqbFbWzaf5hz6Kt7kKQCJvB8HPn/1uePDQqH1FUGtZDNY3fzxfOK9dfyJMefomSsxGZe+cI0YJGv5QPqnnN8NN54UrAszHeDsF2FrO68oVdtIK/I9WOoKKMV4Eim2Z/0edyeXtLaUUQCKk1Hmgc8PzMBIj8m117Ey2IF2ljCoOgb1HKmv/e9u5cCjKCUniKHAWMNnFqc9/j4V25f6Si74vnbQ1GsTN/N/2VVGB+/dH4rj9xAYTnQMZe3NpFIA2h++9fug1+iixc7RCSceWS4Q4pG6ZZptk8tjx9Npu2ptRzYh2GShFw8/eYEojHtiG+3NhzwMS/at1UaaKHDlbLP9Y+blElZD/i4i7/F5W/yFhbNJeVQfiGh/1w2RDKL0seLUkKw198XU0y/CuHiXH6NyQTkheoS5xerJBIuTJ29qaNJyMbxj85ACSpxUturORSodsZgG82+RDriEhl+hI83hROzPJR6br0jixrocQSSLtW97AZTmzMMhs7+d6TmAtJcM7lOVdenroG8T7S2uBTVgk9542YZRpVXVS1AMPNIBasvdL/yy7HpmoVan/kYhehfT1Ho9IXjJ3Useo2VvUhlloLNTxWeN1VvTFVhxhumOBdBXJPzStKFPsbNPS1V3tC4zn0iJVHRtnvIva3IMqWW2H4cxKFavtsM/vnmq2k8Z2+4gaZCruVPc2ph2V7FC7NT8+2TupQOnKi6nEy2+eD6HQcmITp+taM7YbNAbhp0jRwwVbmmGEOBZvo+5lv02DEjrW2+M2BIJ8wuTWZdCc8iXx8V2hjyWcic9M5k8jbsJ5Wmw7aQQwvrNjAQIx2Q2dIHKlT5v1SK+TZ6qw3Ae7d0yqrL9cL9fJGWTMh83AAAGnfY91fq3hTSQ2c7ooMAE2MTj2NXvflyudKauHG/yO9+9FXfwFbQc0sYFxYfCSRO03RRNsgtUCenr1BAWAxPac23ZwwNqTjj9VoZ//92z//tMP/7PJ//7Qb+jici3J/NutZBl3YqBzjaF4HaKdUjREg21E43q/iTCK2zr5UWVRJz/P4DMxrKYsrq2/5FgPcgb+fced1bOHMKh9Lczv9SJxBLqtvsB2GmRtkrrO5P8nu5ATfRiPGe6KBVm/qWQB8B0hsvizje90r/8JPhIo/dSwIgLgYDDyDPKCGSlNRQRmY3uGcehbXVHqs9jcn6Lslw6E/gFedjFotjPPAHY74BAs2HwdzJpCKv1wC2OdZZN+vcxDGtXFlH4baww/u/WzwlAAA=",
+          "url": "",
+          "id": "award_b8tl76ue"
+        }
+      ],
+      "id": "awardgrp_om3ozfuz"
+    }
+  ],
+  "quem": [
+    {
+      "aud": {
+        "pt": "Times internos para médias e grandes empresas",
+        "en": "Internal teams for medium and large companies",
+        "es": "Equipos internos para medianas y grandes empresas",
+        "zh": "大中型企业内部团队",
+        "no": "Interne team for mellomstore og store bedrifter"
+      },
+      "pain": {
+        "pt": "A rotina, o time interno dá conta. O pico é outra conversa.",
+        "en": "The routine, an in-house team handles. The spike is another story.",
+        "es": "La rutina, el equipo interno la resuelve. El pico es otra historia.",
+        "zh": "日常运营，内部团队能搞定，但需求高峰是另一回事。",
+        "no": "Rutinen takler det interne teamet. Toppene er en annen sak."
+      },
+      "text": {
+        "pt": "Quando a demanda estoura, a gente vira reforço no seu time — sem processo de contratação no meio do caminho.",
+        "en": "When demand spikes, we become reinforcement for your team — no hiring process in the middle.",
+        "es": "Cuando la demanda se dispara, nos convertimos en refuerzo de tu equipo — sin proceso de contratación de por medio.",
+        "zh": "需求爆发时，我们成为你团队的增援 —— 中间没有招聘流程。",
+        "no": "Når etterspørselen eksploderer, blir vi en forsterkning for teamet ditt — uten ansettelsesprosess i mellom."
+      },
+      "id": "quem_rjnkp5np"
+    },
+    {
+      "aud": {
+        "pt": "Canais, streaming & conteúdo",
+        "en": "Channels, streaming & content",
+        "es": "Canales, streaming y contenido",
+        "zh": "频道、流媒体与内容",
+        "no": "Kanaler, streaming & innhold"
+      },
+      "pain": {
+        "pt": "O ar não espera ninguém.",
+        "en": "Airtime waits for no one.",
+        "es": "El aire no espera a nadie.",
+        "zh": "播出不等任何人。",
+        "no": "Sendetiden venter ikke på noen."
+      },
+      "text": {
+        "pt": "Entendemos o ritmo de quem trabalha com grade: identidade, chamadas, promos e pacotes gráficos.",
+        "en": "We understand the rhythm of those who work with grids: identity, calls, promos and graphic packages.",
+        "es": "Entendemos el ritmo de quienes trabajan con grids: identidad, convocatorias, promos y paquetes gráficos.",
+        "zh": "我们了解那些使用网格的人的节奏：身份、电话、促销和图形包。",
+        "no": "Vi forstår rytmen til de som jobber med grids: identitet, samtaler, kampanjer og grafiske pakker."
+      },
+      "id": "quem_7ugem8tj"
+    },
+    {
+      "aud": {
+        "pt": "Agências & houses",
+        "en": "Agencies & houses",
+        "es": "Agencias y houses",
+        "zh": "代理机构与制作公司",
+        "no": "Byråer & houses"
+      },
+      "pain": {
+        "pt": "Pico de demanda não avisa.",
+        "en": "Demand spikes don't warn you.",
+        "es": "El pico de demanda no avisa.",
+        "zh": "需求高峰从不打招呼。",
+        "no": "Etterspørselstopper varsler ikke."
+      },
+      "text": {
+        "pt": "Quando o job aperta, entramos no seu fluxo, entendemos o cliente e ajudamos a dar conta — sem processo de contratação no meio do caminho.",
+        "en": "When the job gets tight, we join your workflow, get up to speed on the client and help you deliver — no hiring process in the middle.",
+        "es": "Cuando el trabajo aprieta, entramos en tu flujo, entendemos al cliente y ayudamos a dar abasto — sin proceso de contratación de por medio.",
+        "zh": "当项目吃紧时，我们融入你的流程，理解客户需求，帮你搞定 —— 中间没有招聘流程。",
+        "no": "Når jobben strammer til, går vi inn i flyten din, forstår kunden og hjelper til med å levere — uten ansettelsesprosess i mellom."
+      },
+      "id": "quem_scm3x96l"
+    },
+    {
+      "aud": {
+        "pt": "Eventos & ativações",
+        "en": "Events & activations",
+        "es": "Eventos y activaciones",
+        "zh": "活动与品牌体验",
+        "no": "Eventer & aktiveringer"
+      },
+      "pain": {
+        "pt": "O prazo não perdoa.",
+        "en": "The deadline doesn't forgive.",
+        "es": "El plazo no perdona.",
+        "zh": "截止日期不容有失。",
+        "no": "Fristen tilgir ikke."
+      },
+      "text": {
+        "pt": "Já vivemos a pressão de estreia grande. Craft com acabamento de agência, no prazo de quem trabalha com evento.",
+        "en": "We've lived through the pressure of a big premiere. Agency-level craft, on the timeline events actually run on.",
+        "es": "Ya vivimos la presión de un gran estreno. Craft con acabado de agencia, en el plazo de quien trabaja con eventos.",
+        "zh": "我们经历过大型首播的压力，代理级工艺，遵循活动行业的交期。",
+        "no": "Vi har levd med presset fra en stor premiere. Håndverk med byrå-finish, på fristen til noen som jobber med eventer."
+      },
+      "id": "quem_469pdwyd"
+    }
+  ],
+  "reel": {
+    "url": "https://www.youtube.com/watch?v=cS60YgV5AMY"
+  },
+  "lab": {
+    "items": [
+      {
+        "name": "SkillBank",
+        "partner": "Globo",
+        "what": {
+          "pt": "Produto digital próprio, do zero ao piloto com a maior mídia do país",
+          "en": "Our own digital product, from zero to a pilot with the country's biggest media group",
+          "es": "Producto digital propio, de cero al piloto con el mayor medio del país",
+          "zh": "自有数字产品，从零到与全国最大媒体的试点合作",
+          "no": "Eget digitalt produkt, fra null til pilot med landets største mediehus"
+        },
+        "id": "lab_2a507kus"
+      },
+      {
+        "name": "Reality de confeitaria",
+        "partner": "Netflix · Formata",
+        "what": {
+          "pt": "Assessoria conceitual, apresentação e desenvolvimento de padrão criativo de design e motion focado nos participantes do reality ",
+          "en": "Conceptual advice, presentation and development of creative design and motion patterns focused on reality participants",
+          "es": "Asesoramiento conceptual, presentación y desarrollo de diseño creativo y patrones de movimiento enfocados a la realidad de los participantes.",
+          "zh": "针对现实参与者的创意设计和运动模式的概念建议、演示和开发",
+          "no": "Konseptuell rådgivning, presentasjon og utvikling av kreativt design og bevegelsesmønstre fokusert på realitydeltakere"
+        },
+        "id": "lab_kknh3vwx"
+      },
+      {
+        "name": "WarnerBox",
+        "partner": "WarnerMedia",
+        "what": {
+          "pt": "Ideação e desenvolvimento criativo para piloto de digital reality",
+          "en": "Ideation and creative development for digital reality pilot",
+          "es": "Ideación y desarrollo creativo para piloto de realidad digital.",
+          "zh": "数字现实试点的构思和创意开发",
+          "no": "Ideer og kreativ utvikling for digital reality pilot"
+        },
+        "id": "lab_7pwkyk15"
+      },
+      {
+        "name": "MoveFloor",
+        "partner": "Startup",
+        "what": {
+          "pt": "Design de serviço, desenvolvimento de negócio e MVP no ar",
+          "en": "Service design, business development and a live MVP",
+          "es": "Diseño de servicio, desarrollo de negocio y MVP en el aire",
+          "zh": "服务设计、业务开发与已上线的 MVP",
+          "no": "Tjenestedesign, forretningsutvikling og en levende MVP"
+        },
+        "id": "lab_jqqqb5y1"
+      },
+      {
+        "name": "Motion Master",
+        "partner": "Edtech",
+        "what": {
+          "pt": "Estratégia e assessoria de crescimento",
+          "en": "Growth strategy and advisory",
+          "es": "Estrategia y asesoría de crecimiento",
+          "zh": "增长战略与顾问服务",
+          "no": "Vekststrategi og rådgivning"
+        },
+        "id": "lab_tai8lytv"
+      },
+      {
+        "name": "Offy Ofertas",
+        "partner": "App",
+        "what": {
+          "pt": "Ponta a ponta: design de serviço, desenvolvimento, sistemas de pagamento, lançamento e gestão",
+          "en": "End-to-end: service design, development, payment systems, launch and management",
+          "es": "Extremo a extremo: diseño, desarrollo, sistemas de pago, lanzamiento y gestión de servicios.",
+          "zh": "端到端：服务设计、开发、支付系统、启动和管理",
+          "no": "End-to-end: tjenestedesign, utvikling, betalingssystemer, lansering og administrasjon"
+        },
+        "id": "lab_envyfmt1"
+      },
+      {
+        "name": "Risco das Bets",
+        "partner": "Estadão",
+        "what": {
+          "pt": "Criação, conceito e produção criativa  de peças gráficas para campanha de posicionamento contra as bets",
+          "en": "Creation, concept and creative production of graphic pieces for a positioning campaign against betting",
+          "es": "Creación, concepto y producción creativa de piezas gráficas para una campaña de posicionamiento frente a las apuestas.",
+          "zh": "针对博彩定位活动的图形作品的创作、概念和创意制作",
+          "no": "Oppretting, konsept og kreativ produksjon av grafiske stykker for en posisjoneringskampanje mot spill"
+        },
+        "id": "lab_1zrvasws"
+      }
+    ]
+  }
+}
