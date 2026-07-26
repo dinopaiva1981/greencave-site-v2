@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-26T05:48:01.044Z",
+  "generatedAt": "2026-07-26T05:51:10.996Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -624,11 +624,11 @@
         "no": "Strategi · Motion · Brand Film · Digital produksjon"
       },
       "body": {
-        "pt": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
-        "en": "For over 2 years Greencave has been embedded in the operation of Cuidados Pela Vida, Aché Laboratórios' official platform connecting patients, pharmacies and doctors in an ongoing care program. What began as punctual support during implementation became a full-time creative house: today a squad of 12+ professionals is immersed in the brand's day-to-day, working as a direct extension of Aché's internal team.",
-        "es": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
-        "zh": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
-        "no": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché."
+        "pt": "Há mais de *2 anos* a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como *extensão direta* do time interno da Aché.",
+        "en": "For more than *2 years*, Greencave has been part of the dados pela vida operation, the official Aché Laboratórios platform that connects patients, pharmacies and doctors in a continuous care program. What began as occasional support in implementation became a creative house: today a squad of more than 12 professionals is immersed in the brand's day-to-day operations, functioning as a *direct extension* of Aché's internal team.",
+        "es": "Desde hace más de *2 años*, Greencave forma parte de la operación dados pela vida, la plataforma oficial de Aché Laboratórios que conecta pacientes, farmacias y médicos en un programa de atención continua. Lo que comenzó como un apoyo ocasional en la implementación se convirtió en una casa creativa: hoy un equipo de más de 12 profesionales está inmerso en las operaciones diarias de la marca, funcionando como una *extensión directa* del equipo interno de Aché.",
+        "zh": "*两年多*以来，Greencave 一直是 dados pela vida 运营的一部分，这是 Aché Laboratorios 的官方平台，通过持续护理计划将患者、药房和医生联系起来。最初只是偶尔提供实施支持，如今已成为一个创意之家：如今，一支由超过 12 名专业人员组成的团队专注于品牌的日常运营，充当 Aché 内部团队的“直接延伸”。",
+        "no": "I mer enn *2 år* har Greencave vært en del av dados pela vida-operasjonen, den offisielle Aché Laboratórios-plattformen som forbinder pasienter, apotek og leger i et kontinuerlig pleieprogram. Det som begynte som sporadisk støtte i implementeringen ble et kreativt hus: i dag er en gruppe på mer enn 12 fagfolk fordypet i merkevarens daglige drift, og fungerer som en *direkte forlengelse* av Achés interne team."
       },
       "blocks": [
         {
@@ -645,11 +645,11 @@
         {
           "type": "text",
           "title": {
-            "pt": "O que já entregamos",
-            "en": "What we've already delivered",
-            "es": "O que já entregamos",
-            "zh": "O que já entregamos",
-            "no": "O que já entregamos"
+            "pt": "*O que já entregamos*",
+            "en": "*What we have already delivered*",
+            "es": "*Lo que ya hemos entregado*",
+            "zh": "*我们已经交付了什么*",
+            "no": "*Hva vi allerede har levert*"
           },
           "body": {
             "pt": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
@@ -667,11 +667,11 @@
         {
           "type": "text",
           "title": {
-            "pt": "Confiança estratégica, não só execução",
-            "en": "Strategic trust, not just execution",
-            "es": "Confiança estratégica, não só execução",
-            "zh": "Confiança estratégica, não só execução",
-            "no": "Confiança estratégica, não só execução"
+            "pt": "*Confiança estratégica, não só execução*",
+            "en": "*Strategic confidence, not just execution*",
+            "es": "*Confianza estratégica, no sólo ejecución*",
+            "zh": "*战略信心，而不仅仅是执行力*",
+            "no": "*Strategisk selvtillit, ikke bare utførelse*"
           },
           "body": {
             "pt": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa.",
@@ -708,11 +708,11 @@
         {
           "type": "text",
           "title": {
-            "pt": "Workflow",
-            "en": "Workflow",
-            "es": "Flujo de trabajo",
-            "zh": "工作流程",
-            "no": "Arbeidsflyt"
+            "pt": "*Workflow*",
+            "en": "*Workflow*",
+            "es": "*Flujo de trabajo*",
+            "zh": "*工作流程*",
+            "no": "*Arbeidsflyt*"
           },
           "body": {
             "pt": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema.",
@@ -736,11 +736,11 @@
         {
           "type": "text",
           "title": {
-            "pt": "Isso é só uma pequena parte do nosso potencial",
-            "en": "This is just a small part of our potential",
-            "es": "Isso é só uma pequena parte do nosso potencial",
-            "zh": "Isso é só uma pequena parte do nosso potencial",
-            "no": "Isso é só uma pequena parte do nosso potencial"
+            "pt": "*Isso é só uma pequena parte do nosso potencial*",
+            "en": "*This is just a small part of our potential*",
+            "es": "*Esto es sólo una pequeña parte de nuestro potencial*",
+            "zh": "*这只是我们潜力的一小部分*",
+            "no": "*Dette er bare en liten del av potensialet vårt*"
           },
           "body": {
             "pt": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
@@ -754,7 +754,7 @@
           "type": "video",
           "url": "https://www.youtube.com/watch?v=Z4ysCdbF3p8",
           "caption": {
-            "pt": "Campanha Awareness — Cuidados Pela Vida 2024",
+            "pt": "",
             "en": "Campanha Awareness — Cuidados Pela Vida 2024",
             "es": "Campanha Awareness — Cuidados Pela Vida 2024",
             "zh": "Campanha Awareness — Cuidados Pela Vida 2024",
