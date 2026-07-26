@@ -319,27 +319,20 @@ h1,h2,h3,.card h2{color:var(--ink)}
 #wrap{grid-template-columns:252px 1fr;max-width:1560px;gap:26px;padding:24px 26px 90px}
 #wrap.gc-collapsed{grid-template-columns:74px 1fr}
 
-/* ── sidebar ──────────────────────────────────────────────────────
-   IMPORTANTE: o motor já gerencia o indicador deslizante (.side-ind) —
-   move ele para cobrir o botão ativo como fundo. Aqui só ajustamos cores
-   de texto e espaçamento; nunca conflitamos com o background do .side-ind
-   nem com o z-index dele (z-index:0 no motor, botão fica em z-index:1). */
+/* ── sidebar ──────────────────────────────────────────────── */
 #side{background:var(--sb);border:1px solid var(--line);border-radius:var(--r-md);padding:12px 10px;top:82px;box-shadow:var(--sh-sm);gap:1px}
 .gc-sgroup{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute2);padding:16px 12px 7px}
 .gc-sgroup:first-of-type{padding-top:4px}
 #side button{color:var(--mute);padding:9px 11px;border-radius:9px;font-size:13.5px;font-weight:520;gap:10px}
 #side button:not(.on):hover{background:#1F242C;color:#fff}
-/* botão ativo: texto e ícone legíveis sobre o fundo verde do .side-ind */
-#side button.on{color:#fff;font-weight:650}
-#side button.on .gc-ico{color:rgba(255,255,255,.85)}
+#side button.on{color:#06231A;font-weight:650}
+#side button.on .gc-ico{color:#06231A}
 #side .gc-ico{width:17px;height:17px;flex:none;color:var(--mute2);transition:color .2s}
 #side button:hover .gc-ico{color:var(--green)}
 #side .sic{display:none}
 #side .cnt{background:#262C36;color:var(--mute);font-family:var(--mono);font-size:10px;font-weight:600}
-#side button.on .cnt{background:rgba(255,255,255,.2);color:#fff}
-/* .side-ind: só redefine visual (gradiente, sombra) — posição e z-index
-   são controlados pelo JS do motor, não tocamos nisso */
-.side-ind{background:linear-gradient(180deg,rgba(52,211,153,.9),rgba(40,180,120,.9));border-radius:9px;box-shadow:0 4px 18px -6px rgba(52,211,153,.6)}
+#side button.on .cnt{background:rgba(6,35,26,.22);color:#06231A}
+.side-ind{background:linear-gradient(180deg,var(--green-h),var(--green));border-radius:9px;box-shadow:0 6px 16px -8px rgba(52,211,153,.8)}
 #side .sidehint{color:var(--mute2);font-size:10.5px;font-family:var(--mono);border-top:1px solid var(--line);margin-top:12px;padding-top:12px}
 #gc-collapse{display:flex;align-items:center;gap:9px;width:100%;color:var(--mute2);font-size:11.5px;padding:9px 11px;border-radius:9px;margin-top:6px}
 #gc-collapse:hover{background:#1F242C;color:var(--txt)}
@@ -823,34 +816,6 @@ body:has(#gate){overflow:hidden}
 .pcard .badge.ai-badge{
   top:9px;left:auto;right:9px;background:rgba(52,211,153,.16);border-color:rgba(52,211,153,.5);color:var(--green);
 }
-
-/* ── importar projeto de uma URL ────────────────────────────────── */
-.gc-importbox{
-  background:linear-gradient(180deg,#1D2129,#1A1F27);border:1px dashed #3C4553;border-radius:13px;
-  padding:16px 18px;margin-bottom:18px;
-}
-.gc-importrow{display:flex;gap:10px}
-.gc-importrow input{
-  flex:1;background:#141821;border:1px solid var(--line);color:var(--txt);border-radius:9px;padding:10px 13px;font-size:13px;
-}
-.gc-importrow input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(52,211,153,.16);outline:none}
-.gc-importrow .tbtn{flex:none;white-space:nowrap}
-.gc-importbox .hint{margin-top:8px;font-size:11.5px}
-
-/* ── modo manual da importação (colar HTML) ────────────────────── */
-.gc-importbox .gc-manual{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
-.gc-importbox.manual-open .gc-manual{display:block}
-.gc-manual-steps{font-size:12px;color:var(--mute);line-height:1.6;margin-bottom:12px}
-.gc-manual-steps b{color:var(--txt)}
-.gc-manual-steps ol{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:5px}
-.gc-manual-steps code{background:#141821;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-family:var(--mono);font-size:11px;color:var(--green)}
-.gc-manual textarea{
-  width:100%;min-height:120px;resize:vertical;background:#141821;border:1px solid var(--line);
-  color:var(--txt);border-radius:9px;padding:11px 13px;font-family:var(--mono);font-size:11.5px;line-height:1.5;margin-bottom:10px;
-}
-.gc-manual textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(52,211,153,.16);outline:none}
-.gc-importbox .hint a{color:var(--green);font-weight:600;text-decoration:none}
-.gc-importbox .hint a:hover{text-decoration:underline}
 
 </style>
 </head>
@@ -2358,7 +2323,6 @@ function cardsView(sec){
   host.insertBefore(grid,addBtnEl||null);
   host.appendChild(bay);
   paint();
-  if(sec==='works') injectImportBox(host, addBtnEl);
   syncLiveEdit(sec,items);   /* realinha um modal já aberto com o nó recém-criado */
 }
 
@@ -3308,7 +3272,7 @@ function injectMediaPickers(root){
 /* ── 8k. selo de build visível ──────────────────────────────────
    Pra nunca mais precisar abrir o código-fonte pra saber se o navegador
    está com a versão certa em cache: um selo discreto no rodapé da sidebar. */
-const GC_BUILD='V4.1 · 2026-07-24-2115';
+const GC_BUILD='V3.5 · 2026-07-24-1908';
 function buildBadge(){
   const s=document.getElementById('side'); if(!s||document.getElementById('gc-build'))return;
   s.appendChild(mk(`<div id="gc-build" title="Versão do painel carregada agora — se isso não bater com o que eu te mandei, é cache do navegador (Cmd+Shift+R resolve)">${esc(GC_BUILD)}</div>`));
@@ -3333,309 +3297,6 @@ function injectAIToggle(root){
   wrap.querySelector('input').addEventListener('change',e=>{ w.ai=e.target.checked; });
   if(anchorEl&&anchorEl.parentElement) anchorEl.parentElement.insertBefore(wrap,anchorEl.nextSibling);
   else root.insertBefore(wrap,root.firstChild);
-}
-
-/* ── 8m. Importar projeto de uma URL ────────────────────────────
-   Busca a página via um proxy CORS público (o navegador não deixa ler
-   outro domínio direto — o site é 100% estático, sem servidor próprio, então
-   essa é a única saída viável). Extrai título, descrição, texto, imagens e
-   vídeo (YouTube/Vimeo) e pré-preenche um novo projeto pra você refinar.
-   Aviso honesto: depende de um serviço de terceiro (allorigins.win) que eu
-   não controlo — se ele sair do ar, a extração para até trocarmos de proxy. */
-/* Um proxy CORS público sozinho é frágil por natureza (allorigins.win, por
-   exemplo, falha de forma intermitente — é documentado, não foi só azar).
-   Por isso tenta uma pequena lista, em sequência, e só desiste se todos
-   falharem — muito mais resistente do que apostar num único serviço. */
-const CORS_PROXIES=[
-  u=>'https://api.allorigins.win/raw?url='+encodeURIComponent(u),
-  u=>'https://corsproxy.io/?url='+encodeURIComponent(u),
-  u=>'https://api.codetabs.com/v1/proxy?quest='+encodeURIComponent(u),
-  u=>'https://thingproxy.freeboard.io/fetch/'+u,
-];
-const ICON_BLOCKLIST=/logo|icon|favicon|instagram|behance|linkedin|whatsapp|facebook|twitter|tiktok|youtube-icon|arrow|seta|chevron|bullet/i;
-
-async function fetchViaProxy(url, onTry){
-  const fails=[];
-  for(let i=0;i<CORS_PROXIES.length;i++){
-    const proxyUrl=CORS_PROXIES[i](url);
-    const host=new URL(proxyUrl.replace(url,'')||proxyUrl).hostname;
-    try{
-      if(onTry) onTry(i+1, CORS_PROXIES.length);
-      const ctrl=new AbortController();
-      const t=setTimeout(()=>ctrl.abort(),12000);
-      const r=await fetch(proxyUrl,{signal:ctrl.signal});
-      clearTimeout(t);
-      if(!r.ok){ fails.push(`proxy ${i+1}: HTTP ${r.status}`); continue; }
-      const text=await r.text();
-      if(!text||text.length<200){ fails.push(`proxy ${i+1}: resposta vazia`); continue; }
-      return text;
-    }catch(e){ fails.push(`proxy ${i+1}: ${e.name==='AbortError'?'demorou demais':'sem resposta'}`); }
-  }
-  throw new Error('Nenhum dos '+CORS_PROXIES.length+' proxies respondeu ('+fails.join('; ')+'). Tente de novo em instantes — são serviços públicos de terceiro, instáveis por natureza.');
-}
-
-function extractFromHtml(html, baseUrl){
-  const doc=new DOMParser().parseFromString(html,'text/html');
-  const meta=(prop)=>doc.querySelector(`meta[property="${prop}"]`)?.content
-    ||doc.querySelector(`meta[name="${prop}"]`)?.content||'';
-  const title=meta('og:title')||doc.title||'';
-  const desc=meta('og:description')||meta('description')||'';
-  const ogImage=meta('og:image')||'';
-
-  /* corpo: o(s) parágrafo(s) mais longo(s) da página, evitando menu/rodapé */
-  const paras=[...doc.querySelectorAll('main p, article p, body p')]
-    .map(p=>p.textContent.trim()).filter(t=>t.length>40);
-  const body=paras.sort((a,b)=>b.length-a.length).slice(0,3).join('\n\n');
-
-  /* imagens: todas as <img>, descartando ícones/logos por nome de arquivo,
-     e as óbvias de navegação (dentro de header/nav/footer) */
-  const seen=new Set(); const images=[];
-  const addImg=(src, el)=>{
-    if(!src)return;
-    src=src.split(' ')[0].trim();   /* srcset pode ter "url 800w" — pega só a URL */
-    if(!src||src.startsWith('data:')||seen.has(src))return;
-    if(el&&el.closest&&el.closest('header,nav,footer'))return;
-    if(ICON_BLOCKLIST.test(src))return;
-    try{ const abs=new URL(src,baseUrl).href; seen.add(src); images.push(abs); }catch(_){}
-  };
-  /* <img>: src, data-src (lazy) e o maior do srcset */
-  doc.querySelectorAll('img').forEach(img=>{
-    const ss=img.getAttribute('srcset')||img.getAttribute('data-srcset');
-    if(ss){ const parts=ss.split(',').map(s=>s.trim()); addImg(parts[parts.length-1], img); }
-    const realSrc=img.getAttribute('src');
-    const lazySrc=img.getAttribute('data-src')||img.getAttribute('data-lazy-src');
-    addImg((!realSrc||realSrc.startsWith('data:')) ? (lazySrc||realSrc) : realSrc, img);
-  });
-  /* <source srcset> dentro de <picture> */
-  doc.querySelectorAll('picture source[srcset]').forEach(s=>{
-    const parts=(s.getAttribute('srcset')||'').split(',').map(x=>x.trim());
-    addImg(parts[parts.length-1], s);
-  });
-  /* background-image inline (comum em SPAs / galerias) */
-  doc.querySelectorAll('[style*="background"]').forEach(el=>{
-    const m=(el.getAttribute('style')||'').match(/url\((['"]?)(.*?)\1\)/);
-    if(m) addImg(m[2], el);
-  });
-  /* a imagem que o próprio site escolheu como capa (og:image) vem sempre
-     primeiro — é a melhor aposta de "capa pretendida" pelo autor original */
-  if(ogImage){ const i=images.indexOf(ogImage); if(i>0) images.splice(i,1); if(!images.includes(ogImage)) images.unshift(ogImage); }
-
-  /* vídeo: link direto ou embutido via embedly/iframe */
-  let video='';
-  const vidPatterns=[
-    /vimeo\.com\/(?:video\/)?(\d+)/i,
-    /player\.vimeo\.com%2Fvideo%2F(\d+)/i,
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{6,})/i
-  ];
-  for(const re of vidPatterns){
-    const m=html.match(re);
-    if(m){ video = re.source.includes('vimeo') ? `https://vimeo.com/${m[1]}` : `https://www.youtube.com/watch?v=${m[1]}`; break; }
-  }
-
-  /* tags: linhas curtas (sem link, sem pontuação de frase) logo antes do
-     parágrafo principal — heurística best-effort; se não achar, fica em branco */
-  let tags='';
-  if(paras.length){
-    const mainP=[...doc.querySelectorAll('p')].find(p=>p.textContent.trim()===paras[0]);
-    if(mainP){
-      const shortBits=(el)=>{
-        /* elemento curto e "solto" (chip/tag), não frase */
-        const t=el.textContent.trim();
-        return t && t.length<28 && !/[.!?]$/.test(t) && !el.querySelector('a,img');
-      };
-      const candidates=[];
-      let el=mainP.previousElementSibling, hops=0;
-      while(el&&hops<6&&candidates.length<10){
-        const kids=[...el.children];
-        if(kids.length>=2 && kids.every(shortBits)){
-          /* contêiner de vários chips (ex.: <div><span>tag1</span><span>tag2</span></div>) */
-          candidates.unshift(...kids.map(k=>k.textContent.trim()));
-        } else if(shortBits(el)){
-          candidates.unshift(el.textContent.trim());
-        }
-        el=el.previousElementSibling; hops++;
-      }
-      tags=[...new Set(candidates)].join(' · ');
-    }
-  }
-
-  return {title, desc, body: body||desc, images: images.slice(0,20), video, tags};
-}
-
-async function createWorkFromExtraction(ex, sourceUrl){
-  if(!ex.title&&!ex.images.length) throw new Error('Não encontrei conteúdo reconhecível — confira se colou a página certa.');
-  const clientName=(ex.title||'').split(/[—-]/)[0].trim().slice(0,40) || 'Cliente';
-  const w={
-    id:genId('work'), kind:'case',
-    client: clientName,
-    year: new Date().getFullYear(),
-    art:'wave',
-    image: ex.images[0]||'',
-    title: ml5(ex.title||'Novo projeto'),
-    tags: ml5(ex.tags||''),
-    body: ml5(ex.body||''),
-    gallery: ex.images.slice(1,9),
-    blocks: ex.video ? [{type:'video', url:ex.video, caption:ml5('')}] : [],
-    _importedFrom: sourceUrl||''
-  };
-
-  /* espelhar as imagens para o repositório — roda AUTOMATICAMENTE sempre
-     que há token e repositório configurados. Sem confirm: o usuário pediu
-     exatamente isso ("já sobe as imagens"). Se não houver token, cria o
-     projeto com as URLs de origem e avisa. */
-  const allImgs=ex.images.slice(0,9);
-  if(allImgs.length && GHS.token && !GHS.repo.includes('SEU-')){
-    const panel=uploadPanel();
-    const list=panel.querySelector('.gc-uplist'), bar=panel.querySelector('.gc-upbar i'), txt=panel.querySelector('.gc-uptext');
-    panel.classList.remove('gc-hidden');
-    txt.textContent=`Baixando e subindo ${allImgs.length} imagem(ns) para o seu GitHub…`;
-    bar.style.width='0%';
-    list.innerHTML='';
-    allImgs.forEach((u,i)=>list.appendChild(mk(`<li data-i="${i}"><span class="gc-upicn">⏳</span><span class="gc-upname">imagem ${i+1}</span><span class="gc-upstage">na fila…</span></li>`)));
-    const {map,ok,total}=await mirrorImages(allImgs, slug(clientName), (done,tot,cur)=>{
-      bar.style.width=tot?Math.round(done/tot*100)+'%':'0%';
-      txt.textContent=cur?`Imagem ${done+1} de ${tot}…`:`Concluído: ${done} de ${tot}.`;
-      list.querySelectorAll('li').forEach((el,idx)=>{
-        const st=el.querySelector('.gc-upstage'), ic=el.querySelector('.gc-upicn');
-        if(idx<done){ st.textContent='no repositório ✓'; ic.textContent='✓'; el.className='ok'; }
-        else if(idx===done && cur){ st.textContent='baixando + subindo…'; ic.textContent='⏳'; }
-      });
-    });
-    w.image = map[w.image]||w.image;
-    w.gallery = w.gallery.map(u=>map[u]||u);
-    bar.style.width='100%';
-    txt.textContent=`${ok}/${total} imagens agora no seu repositório.`;
-    setTimeout(()=>panel.classList.add('gc-hidden'), 3200);
-    toast(`${ok}/${total} imagens copiadas para media/projetos/${slug(clientName)}/.`, ok>0);
-  } else if(allImgs.length && !GHS.token){
-    toast('Sem token configurado — projeto criado com links de origem. Configure o token em Publicação e reimporte para subir as imagens.', false);
-  }
-
-  DATA.works.unshift(w);
-  renderSec();
-  if(!allImgs.length || !GHS.token) toast(`Importado: ${ex.images.length} imagem(ns)${ex.video?', 1 vídeo':''}, texto e tags — revise antes de publicar.`, true);
-  setTimeout(()=>{ const firstEd=document.querySelector('#main .pcard .ed'); if(firstEd) firstEd.click(); },250);
-}
-
-/* ── espelhar imagens externas para o repositório ─────────────────
-   O objetivo do Dino: não depender do CDN de origem (Webflow etc.). Cada
-   imagem importada é baixada (via o mesmo proxy CORS do HTML — o navegador
-   não deixa baixar de outro domínio direto) e reenviada para
-   media/projetos/{slug}/ no próprio repositório. As URLs do projeto passam
-   a apontar para o seu GitHub, não mais para o site de origem. */
-async function fetchImageAsBase64(srcUrl){
-  let lastErr='';
-  for(const build of CORS_PROXIES){
-    try{
-      const ctrl=new AbortController();
-      const t=setTimeout(()=>ctrl.abort(),15000);
-      const r=await fetch(build(srcUrl),{signal:ctrl.signal});
-      clearTimeout(t);
-      if(!r.ok){ lastErr='HTTP '+r.status; continue; }
-      const blob=await r.blob();
-      if(!blob.size){ lastErr='vazio'; continue; }
-      const b64=await new Promise((res,rej)=>{ const fr=new FileReader(); fr.onload=()=>res(fr.result.split(',')[1]); fr.onerror=rej; fr.readAsDataURL(blob); });
-      return { b64, type: blob.type||'image/jpeg' };
-    }catch(e){ lastErr=e.name==='AbortError'?'demorou demais':'sem resposta'; }
-  }
-  throw new Error(lastErr||'falhou');
-}
-function extFromType(t){
-  if(/png/.test(t))return'png'; if(/webp/.test(t))return'webp'; if(/gif/.test(t))return'gif';
-  if(/svg/.test(t))return'svg'; return'jpg';
-}
-async function githubPutImage(path, b64){
-  const api=`https://api.github.com/repos/${GHS.repo}/contents/${path}`;
-  const h=ghHeaders();
-  let sha=null;
-  const g=await fetch(`${api}?ref=${GHS.branch}`,{headers:h});
-  if(g.ok) sha=(await g.json()).sha;
-  const r=await fetch(api,{method:'PUT',headers:h,body:JSON.stringify({
-    message:'media: importado via painel — '+path, content:b64, branch:GHS.branch, ...(sha?{sha}:{})})});
-  if(!r.ok){ const e=await r.json().catch(()=>({})); throw new Error('HTTP '+r.status+(e.message?' — '+e.message:'')); }
-  return `https://raw.githubusercontent.com/${GHS.repo}/${GHS.branch}/${path}`;
-}
-/* espelha uma lista de URLs; devolve mapa {urlOriginal: urlNova}. Mostra
-   progresso num painel reaproveitável. Falhas individuais não abortam o
-   lote — a imagem que não vier fica com a URL original (melhor que nada). */
-async function mirrorImages(urls, slug, onProgress){
-  const folder='projetos/'+slug;
-  const map={}; let done=0, ok=0;
-  for(let i=0;i<urls.length;i++){
-    const src=urls[i];
-    if(onProgress) onProgress(done, urls.length, src);
-    try{
-      const {b64,type}=await fetchImageAsBase64(src);
-      const name=slug+'-'+String(i+1).padStart(2,'0')+'.'+extFromType(type);
-      const newUrl=await githubPutImage(`media/${folder}/${name}`, b64);
-      map[src]=newUrl; ok++;
-    }catch(e){ map[src]=src; /* mantém a original se falhar */ }
-    done++;
-  }
-  if(onProgress) onProgress(done, urls.length, null);
-  return {map, ok, total:urls.length};
-}
-
-async function importFromUrl(url, btn){
-  const orig=btn.textContent;
-  btn.disabled=true; btn.textContent='Buscando…';
-  try{
-    const html=await fetchViaProxy(url, (n,total)=>{ btn.textContent=total>1?`Buscando… (tentativa ${n}/${total})`:'Buscando…'; });
-    btn.textContent='Lendo conteúdo…';
-    await createWorkFromExtraction(extractFromHtml(html, url), url);
-  }catch(e){
-    toast('Não consegui buscar automaticamente: '+e.message, false);
-    /* abre o caminho manual, que sempre funciona (não depende de proxy) */
-    const box=document.getElementById('gc-import');
-    if(box){ box.classList.add('manual-open'); const ta=box.querySelector('textarea'); if(ta){ ta.focus(); ta.scrollIntoView({behavior:'smooth',block:'center'}); } }
-  }finally{
-    btn.disabled=false; btn.textContent=orig;
-  }
-}
-
-async function importFromPastedHtml(html, urlHint, btn){
-  const orig=btn.textContent;
-  btn.disabled=true; btn.textContent='Lendo…';
-  try{
-    let base=urlHint||'';
-    if(!base){ const m=html.match(/<meta[^>]+property=["']og:url["'][^>]+content=["']([^"']+)/i); if(m) base=m[1]; }
-    await createWorkFromExtraction(extractFromHtml(html, base||'https://exemplo.com'), base);
-  }catch(e){
-    toast('Não consegui ler esse HTML: '+e.message, false);
-  }finally{
-    btn.disabled=false; btn.textContent=orig;
-  }
-}
-
-function injectImportBox(host, addBtnEl){
-  if(document.getElementById('gc-import'))return;
-  const box=mk(`<div id="gc-import" class="gc-importbox">
-    <div class="gc-importrow">
-      <input type="url" placeholder="Cole o link do projeto (Webflow, Wix, site próprio…)">
-      <button class="tbtn" data-go>✨ Extrair e criar projeto</button>
-    </div>
-    <div class="hint">Tenta buscar a página sozinho. Alguns sites (Behance, Instagram) bloqueiam robôs — nesse caso, use o modo manual abaixo, que <b>sempre funciona</b>. <a href="#" data-toggle>colar HTML manualmente ↴</a></div>
-    <div class="gc-manual">
-      <div class="gc-manual-steps">
-        <b>Modo manual (à prova de bloqueio):</b>
-        <ol>
-          <li>Abra a página do projeto no navegador.</li>
-          <li>Clique com o botão direito → <b>Inspecionar</b>. No painel que abre, clique com o direito na primeira linha (<code>&lt;html&gt;</code>) → <b>Copy</b> → <b>Copy outerHTML</b>.</li>
-          <li>Cole aqui embaixo e clique em Extrair.</li>
-        </ol>
-      </div>
-      <textarea placeholder="Cole aqui o HTML da página (Copy outerHTML)…"></textarea>
-      <button class="tbtn" data-paste>Extrair do HTML colado</button>
-    </div>
-  </div>`);
-  const input=box.querySelector('input'), go=box.querySelector('[data-go]');
-  const ta=box.querySelector('textarea'), pasteBtn=box.querySelector('[data-paste]');
-  const run=()=>{ const url=input.value.trim(); if(!url){toast('Cole uma URL primeiro.',false);return;} importFromUrl(url, go); };
-  go.addEventListener('click',run);
-  input.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); run(); } });
-  box.querySelector('[data-toggle]').addEventListener('click',e=>{ e.preventDefault(); box.classList.toggle('manual-open'); if(box.classList.contains('manual-open')) ta.focus(); });
-  pasteBtn.addEventListener('click',()=>{ const html=ta.value.trim(); if(html.length<100){toast('Cole o HTML da página primeiro.',false);return;} importFromPastedHtml(html, input.value.trim(), pasteBtn); });
-  host.insertBefore(box, addBtnEl||null);
 }
 
 /* ── 9. render ─────────────────────────────────────────────── */

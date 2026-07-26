@@ -39,7 +39,6 @@ html[data-lang="zh"] em{font-family:var(--zh);font-style:italic}
 #cur.big span{opacity:1}
 #cur.mini{width:46px;height:46px;background:rgba(15,21,22,.12);margin:-23px 0 0 -23px}
 @media(hover:none),(pointer:coarse){#cur{display:none}}
-@media(max-width:900px){#cur{display:none}}
 
 /* ---------- geometrias ---------- */
 .geo{position:absolute;pointer-events:none}
@@ -95,7 +94,7 @@ nav a.nl:hover i{transform:translateY(-100%)}
 #burger{display:none;flex-direction:column;gap:6px;padding:8px;z-index:102}
 #burger i{display:block;width:26px;height:2px;background:var(--ink);transition:.35s var(--ease)}
 @media(max-width:1080px){
-  nav{position:fixed;inset:0;z-index:101;background:var(--ink);color:var(--bone);display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:clamp(4px,1.6vh,10px);padding:clamp(84px,11vh,104px) var(--pad) clamp(24px,6vh,44px);transform:translateY(-102%);visibility:hidden;transition:transform .6s var(--ease),visibility 0s .6s;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  nav{position:fixed;inset:0;z-index:101;background:var(--ink);color:var(--bone);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:clamp(4px,1.6vh,10px);padding:clamp(88px,13vh,120px) var(--pad) clamp(24px,6vh,44px);transform:translateY(-102%);visibility:hidden;transition:transform .6s var(--ease),visibility 0s .6s;overflow-y:auto;-webkit-overflow-scrolling:touch}
   body.menu-open nav{transform:none;visibility:visible;transition:transform .6s var(--ease)}
   nav a.nl{font-family:var(--disp);font-stretch:125%;font-size:clamp(22px,6.6vw,40px);height:1.14em;text-transform:uppercase;font-weight:760;letter-spacing:0;flex:none}
   nav a.nl i+i{color:var(--green)}
@@ -280,8 +279,6 @@ body.ready #hero .cap{width:1.5em}
 #wrail::-webkit-scrollbar{display:none}
 #wrail.drag{cursor:grabbing;scroll-snap-type:none}
 .wcard{flex:0 0 auto;width:clamp(300px,66vw,860px);scroll-snap-align:center;cursor:pointer}
-@media(max-width:1080px){#wrail{gap:32px}.wcard{width:78vw}.wcard .meta{flex-direction:column;align-items:flex-start;gap:6px;padding-top:14px}.wcard .tags{white-space:normal}}
-@media(max-width:640px){#wrail{gap:26px}.wcard{width:84vw}}
 .wcard .media{position:relative;border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--bone);aspect-ratio:16/9}
 .wcard .media>svg,.wcard .media>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
 .wcard:hover .media>svg,.wcard:hover .media>img{transform:scale(1.04)}
@@ -447,7 +444,7 @@ footer .grid h4{font-size:11px;font-weight:600;letter-spacing:.26em;text-transfo
 .albl{font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px;text-align:center}
 .albl::before,.albl::after{content:"";width:22px;height:1px;background:var(--line)}
 .aitems{display:grid;grid-auto-flow:column;align-items:center;justify-content:center;gap:clamp(20px,3vw,44px)}
-@media(max-width:640px){.aitems{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));justify-items:center;align-items:center;row-gap:20px}}
+@media(max-width:640px){.aitems{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){
   #reel{height:auto;min-height:70vh}
   #reel .inner{flex-direction:column;align-items:flex-start;gap:22px;padding-top:52vh}
@@ -1632,82 +1629,13 @@ footer .base{font-size:13px}
     "no": "Branded Content · Motion · Saúde"
    },
    "body": {
-    "pt": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
-    "en": "For over 2 years Greencave has been embedded in the operation of Cuidados Pela Vida, Aché Laboratórios' official platform connecting patients, pharmacies and doctors in an ongoing care program. What began as punctual support during implementation became a full-time creative house: today a squad of 12+ professionals is immersed in the brand's day-to-day, working as a direct extension of Aché's internal team.",
-    "es": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
-    "zh": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
-    "no": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché."
+    "pt": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+    "en": "Branded content for Aché Laboratórios' wellness and benefits platform, connecting patients to discounts and quality care — a health topic that called for clarity without losing human warmth.",
+    "es": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+    "zh": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano.",
+    "no": "Conteúdo de marca para a plataforma de benefícios e bem-estar do Aché Laboratórios, que conecta pacientes a descontos e cuidado de qualidade — um tema de saúde que pedia clareza técnica sem perder o calor humano."
    },
-   "blocks": [
-    {
-     "type": "text",
-     "title": {
-      "pt": "O que já entregamos",
-      "en": "What we've already delivered",
-      "es": "O que já entregamos",
-      "zh": "O que já entregamos",
-      "no": "O que já entregamos"
-     },
-     "body": {
-      "pt": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
-      "en": "Script, concept, styleframes, motion, AI-generated films, digital production for web and social media across multiple formats, plus content for internal events and sales-force training — covering the entire journey of patients, doctors, pharmacies and partners. From the institutional PDV positivação video to the brand positioning campaign, Greencave sits on the creative line end to end.",
-      "es": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
-      "zh": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
-      "no": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta."
-     }
-    },
-    {
-     "type": "text",
-     "title": {
-      "pt": "Confiança estratégica, não só execução",
-      "en": "Strategic trust, not just execution",
-      "es": "Confiança estratégica, não só execução",
-      "zh": "Confiança estratégica, não só execução",
-      "no": "Confiança estratégica, não só execução"
-     },
-     "body": {
-      "pt": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa.",
-      "en": "The relationship has grown beyond piece delivery: Aché shares with Greencave the strategic rationale behind CPV itself — from the brand repositioning (from \"discount shelf\" to \"continuous care platform\") to the tagline \"Life always changes. Care always stays.\" and the manifesto that sustains the communication year-round. It's the kind of closeness that only exists when the client no longer treats the supplier as a third party, but as part of how the brand thinks.",
-      "es": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa.",
-      "zh": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa.",
-      "no": "A relação evoluiu além da entrega de peça: a Aché compartilha com a Greencave o próprio racional estratégico do CPV — do reposicionamento de marca (de \"prateleira de desconto\" para \"plataforma de cuidado contínuo\") à tagline \"A vida sempre muda. O cuidado sempre fica.\" e ao manifesto que sustenta a comunicação ao longo do ano. É o tipo de proximidade que só existe quando o cliente já não trata o fornecedor como terceirizado, mas como parte de como a marca pensa."
-     }
-    },
-    {
-     "type": "text",
-     "title": {
-      "pt": "Robustez de workflow",
-      "en": "Workflow depth",
-      "es": "Robustez de workflow",
-      "zh": "Robustez de workflow",
-      "no": "Robustez de workflow"
-     },
-     "body": {
-      "pt": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema.",
-      "en": "Behind every delivery there's a structured production process — from reference and script to style frame, approval and multi-format export for each channel (YouTube, CTV, social media, internal materials). That workflow discipline is what lets Greencave operate with the consistency of an in-house team, within the ecosystem of agencies and suppliers that already make up Aché's operation — without promising an exclusivity that doesn't exist, but with the depth to become increasingly relevant within that ecosystem.",
-      "es": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema.",
-      "zh": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema.",
-      "no": "Por trás de cada entrega existe um processo estruturado de produção — da referência e roteiro ao style frame, aprovação e exportação multi-formato para cada canal (YouTube, CTV, redes sociais, materiais internos). Essa disciplina de workflow é o que permite à Greencave operar com a consistência de um time interno, dentro do ecossistema de agências e fornecedores que já compõem a operação da Aché — sem prometer exclusividade que não existe, mas com a robustez pra ser cada vez mais relevante nesse ecossistema."
-     }
-    },
-    {
-     "type": "text",
-     "title": {
-      "pt": "Isso é só uma pequena parte do nosso potencial",
-      "en": "This is just a small part of our potential",
-      "es": "Isso é só uma pequena parte do nosso potencial",
-      "zh": "Isso é só uma pequena parte do nosso potencial",
-      "no": "Isso é só uma pequena parte do nosso potencial"
-     },
-     "body": {
-      "pt": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
-      "en": "What you've seen so far is just the tip of an operation that already knows how to do much more. We have the structure, team and maturity to go beyond punctual content: original format creation for the CPV ecosystem, end-to-end digital production (from script to multi-channel delivery), strategic brand positioning advisory, digital product development and activations that leave the screen and land at the point of sale. Aché has already tested Greencave as a piece supplier. The natural next step is to test Greencave as an operating partner — the squad that thinks, produces and sustains the brand at scale, all year round.",
-      "es": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
-      "zh": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
-      "no": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro."
-     }
-    }
-   ]
+   "blocks": []
   },
   {
    "kind": "case",
