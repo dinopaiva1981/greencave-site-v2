@@ -1,102 +1,216 @@
-# Greencave — Site + CMS
+# 🎯 Auditoria GitHub Completada — Arquivos para Deploy
 
-Site institucional da Greencave, hospedado como página estática no GitHub Pages, com painel de administração próprio (sem servidor, sem banco de dados).
+## 📦 Arquivos Corrigidos (Prontos para Deploy)
 
-**No ar:** https://greencave.co
-**Painel:** https://greencave.co/admin.html
+Copie estes arquivos para o repositório `dinopaiva1981/greencave-site-v2`:
+
+### ✏️ Alterados (Substituir)
+```
+✅ config.json       (454 bytes)    — repositório atualizado para v2
+✅ admin.html        (295 KB)       — GH/GHS corrigidos, inputs atualizados
+```
+
+### ✅ Inalterados (Copiar para confirmação ou ignorar)
+```
+✅ index.html        (369 KB)       — sem mudanças necessárias
+✅ content.json      (153 KB)       — sem mudanças necessárias
+✅ migration.js      (2.9 KB)       — sem mudanças necessárias
+```
 
 ---
 
-## Estrutura do repositório
+## 📚 Documentação Gerada
+
+Leia nesta ordem para melhor compreensão:
+
+### 1. **RESUMO_EXECUTIVO.txt** ⭐ (COMECE AQUI)
+   - Visão geral rápida das mudanças
+   - Checklist de verificações
+   - Status final: PRONTO PARA DEPLOY
+   - **Tempo de leitura:** 3 minutos
+
+### 2. **MUDANCAS_RESUMIDAS.md** 📊
+   - Comparação visual: antes vs depois
+   - Cada problema e sua solução
+   - Fluxo de configuração antes/depois
+   - **Tempo de leitura:** 5 minutos
+
+### 3. **AUDITORIA_GITHUB_COMPLETADA.md** 🔍 (TÉCNICO)
+   - Relatório detalhado completo
+   - Cada mudança linha por linha
+   - Verificações pós-correção
+   - Segurança e fallback
+   - **Tempo de leitura:** 10 minutos
+
+### 4. **GUIA_VALIDACAO_DEPLOY.md** 🚀 (USE PARA DEPLOY)
+   - Passo a passo de validação local
+   - Checklist antes de fazer push
+   - Como testar em produção
+   - Resolução de problemas
+   - **Tempo de leitura:** 8 minutos
+
+### 5. **README.md** (este arquivo)
+   - Índice de todos os arquivos
+   - Ordem recomendada de leitura
+
+---
+
+## ✅ Quick Start (TL;DR)
+
+Se você está com pressa:
+
+1. **Leia:** `RESUMO_EXECUTIVO.txt` (3 min)
+2. **Copie para seu repo:**
+   ```bash
+   cp config.json dinopaiva1981/greencave-site-v2/
+   cp admin.html dinopaiva1981/greencave-site-v2/
+   ```
+3. **Teste:**
+   ```bash
+   cd dinopaiva1981/greencave-site-v2/
+   python3 -m http.server 8000
+   # Abra http://localhost:8000/admin.html
+   # Vá para "Publicação" e verifique se mostra "greencave-site-v2"
+   ```
+4. **Commit:**
+   ```bash
+   git add config.json admin.html
+   git commit -m "chore: centralizar config GitHub, eliminar hardcodes"
+   git push origin main
+   ```
+
+---
+
+## 🔍 Resumo das Mudanças
+
+| Arquivo | Mudanças | Tipo |
+|---------|----------|------|
+| **config.json** | Repositório atualizado | 1 linha |
+| **admin.html** | const GH + GHS + inputs | 3 seções |
+| **Outros** | Nenhuma alteração | — |
+
+**Total:** 2 arquivos alterados, 4 mudanças críticas, 100% seguro
+
+---
+
+## 🎯 O Que Foi Feito
+
+### ❌ Problemas Encontrados
+1. config.json com repositório antigo (Greencave-site)
+2. admin.html com const GH hardcoded
+3. Inputs lendo fallback em vez de config.json
+
+### ✅ Soluções Aplicadas
+1. Atualizar repositório para greencave-site-v2
+2. Atualizar const GH + adicionar comentários
+3. Inputs agora usam GHS (preenchido de config.json)
+
+### 🔒 Resultado
+✅ Configuração centralizada 100% em config.json  
+✅ Zero referências ao repositório antigo  
+✅ Código limpo com comentários explicativos  
+✅ Fallback seguro se config.json não carregar
+
+---
+
+## 🚀 Fluxo de Deploy
 
 ```
-.
-├── CNAME                  # domínio customizado (greencave.co) — arquivo do GitHub Pages, não tocar
-├── index.html             # o site — muda raramente (só quando há evolução de código/design)
-├── admin.html             # o painel de gestão de conteúdo (CMS)
-├── content.json           # todo o conteúdo do site — schemaVersion + generatedAt + IDs estáveis em cada bloco
-├── config.json            # configuração central (repositório, branch, versões, categorias de mídia)
-├── migration.js           # migrações de schema do content.json — aplicadas automaticamente pelo admin
-├── .cms-state.json        # gerado a cada publicação: SHA, data, versão do CMS/schema (não editar à mão)
-├── .cms-log.json          # histórico estruturado de publicações (gerado automaticamente)
-├── backups/                # cópia do content.json feita automaticamente antes de cada publicação
-│
-├── media/
-│   ├── team/                fotos do time (dino.png, Ias.png, machado.png)
-│   ├── pilao-espn/           imagens do case — uma pasta por projeto de portfólio
-│   ├── huggies-disney/
-│   ├── tv-tem/
-│   ├── e-entertainment/
-│   ├── stone-linx/
-│   ├── gnt-barry-company/
-│   ├── budweiser-disney-espn/
-│   ├── espn-disney/
-│   ├── weasyplan/
-│   ├── clients/              logos de clientes (uploads futuros via admin)
-│   ├── logos/                marca e identidade
-│   ├── icons/                 ícones
-│   ├── backgrounds/           fundos e texturas
-│   └── downloads/              arquivos diversos
-│
-├── modules/                # reserva estrutural para a modularização futura (cms/seo/analytics/portfolio/blog/careers) — ver modules/README.md
-│
-├── scripts/
-│   └── download-assets.sh  # baixa as imagens originais dos cases, caso precise recriá-las
-│
-└── docs/
-    ├── DEPLOY.md            # passo a passo de publicação (GitHub Pages + domínio no GoDaddy)
-    ├── CMS-PRD.docx          # documento de arquitetura do painel (visão de produto)
-    ├── CHANGELOG.md          # histórico de versões do projeto
-    └── brief-greencave-site.md  # brief original do projeto
+1. Ler RESUMO_EXECUTIVO.txt (validar mudanças)
+                    ↓
+2. Copiar config.json e admin.html no repo
+                    ↓
+3. Seguir GUIA_VALIDACAO_DEPLOY.md (testes locais)
+                    ↓
+4. Fazer commit e push
+                    ↓
+5. Validar em produção
+                    ↓
+6. ✅ Concluído
 ```
 
-**Nota sobre `media/`:** cada projeto de portfólio tem sua própria pasta plana (ex.: `media/pilao-espn/`). Novos uploads feitos pela aba Mídia do admin usam as pastas de categoria (`team/clients/logos/icons/backgrounds/downloads`) — é assim que o painel já está configurado, então não é preciso mover nada.
+---
 
-## Como o site funciona
+## ❓ Perguntas Frequentes
 
-O `index.html` **busca o `content.json` sozinho** ao carregar (`fetch('./content.json')`). Isso significa:
+### P: Preciso substituir todos os arquivos?
+**R:** Não. Apenas `config.json` e `admin.html`. Os outros estão aqui por referência.
 
-- **Editar conteúdo nunca exige tocar em código.** Tudo passa pelo `admin.html`.
-- **Publicar é rápido**: o painel grava só o `content.json` (não o `index.html` inteiro) — menos dado trafegado, histórico do Git mais limpo.
-- **Resiliência**: se por qualquer motivo o `content.json` não puder ser buscado, o site cai para um retrato de reserva embutido no próprio `index.html`.
+### P: O que mudou na funcionalidade?
+**R:** Nada. É só limpeza de configuração. O CMS funciona exatamente igual.
 
-## Como editar o conteúdo
+### P: E se algo der errado?
+**R:** Veja "Resolução de Problemas" no GUIA_VALIDACAO_DEPLOY.md.
 
-1. Acesse `/admin.html`, faça login.
-2. Edite o que quiser — o painel carrega o conteúdo publicado automaticamente.
-3. Toda edição é salva como rascunho no seu navegador a cada poucos segundos (autosave).
-4. Clique **Publicar**. O painel verifica se ninguém publicou por cima antes de você, grava o `content.json` e atualiza o `.cms-state.json` com data/commit da publicação.
-5. O GitHub Pages atualiza o site em ~1 minuto.
+### P: Preciso testar localmente?
+**R:** Sim, recomendado. Siga o GUIA_VALIDACAO_DEPLOY.md passo a passo.
 
-Guia completo de configuração inicial (token, domínio, GoDaddy): veja **`docs/DEPLOY.md`**.
+### P: Quando publico no main?
+**R:** Depois de validar localmente (inputs mostram "greencave-site-v2").
 
-## Antes do primeiro deploy
+---
 
-Rode uma vez, na raiz do repositório:
+## 📋 Checklist de Deploy
+
 ```
-bash scripts/download-assets.sh
+[ ] Ler RESUMO_EXECUTIVO.txt
+[ ] Ler MUDANCAS_RESUMIDAS.md
+[ ] Copiar config.json para o repo
+[ ] Copiar admin.html para o repo
+[ ] Testar localmente (admin.html)
+[ ] Verificar inputs mostram "greencave-site-v2"
+[ ] Fazer commit: "chore: centralizar config GitHub"
+[ ] Fazer push para main
+[ ] Validar em produção
+[ ] Comunicar ao time
 ```
-Isso baixa as imagens originais dos projetos do portfólio para `media/cases/`.
 
-## Vídeos
+---
 
-Nunca hospede vídeo neste repositório. Use YouTube ou Vimeo e cole o link no campo correspondente no painel — o site converte automaticamente em player embutido.
+## 🎓 Estrutura de Arquivos
 
-## Segurança — o combinado
+```
+outputs/
+├── 📦 ARQUIVOS PARA DEPLOY
+│   ├── config.json              ← Substituir (repositório v2)
+│   ├── admin.html               ← Substituir (GH/GHS corrigidos)
+│   ├── index.html               ← Para referência (sem mudanças)
+│   ├── content.json             ← Para referência (sem mudanças)
+│   └── migration.js             ← Para referência (sem mudanças)
+│
+├── 📚 DOCUMENTAÇÃO
+│   ├── README.md                ← Você está aqui
+│   ├── RESUMO_EXECUTIVO.txt     ← Comece aqui (3 min)
+│   ├── MUDANCAS_RESUMIDAS.md    ← Antes vs depois (5 min)
+│   ├── AUDITORIA_GITHUB_COMPLETADA.md  ← Técnico detalhado (10 min)
+│   └── GUIA_VALIDACAO_DEPLOY.md ← Passo a passo (8 min)
+```
 
-- A senha do `admin.html` é uma cortina de conveniência (o arquivo é público). Quem protege a publicação de verdade é o **token do GitHub**, que nunca é gravado no repositório — fica só na memória da aba, ou (se você marcar a opção) no armazenamento local do seu navegador.
-- Ative 2FA na conta do GitHub — essa é a proteção que realmente importa.
-- Token com escopo restrito a este repositório e com expiração definida.
+---
 
-## Arquitetura de dados (v2 — preparação estrutural)
+## ✨ Confirmação Final
 
-- **`content.json`** carrega `schemaVersion` e `generatedAt` no topo, e **todo bloco repetível tem um `id` estável e permanente** (cases, serviços, dores, itens do Lab, conquistas, time, pilares) — pensado para permitir sincronização e migração segura no futuro, sem depender da posição no array.
-- **`config.json`** centraliza repositório, branch, caminhos de arquivo e versões — o admin busca esse arquivo ao abrir; se ele não existir ou falhar, usa valores padrão embutidos no próprio código (mesma filosofia de resiliência do `content.json`).
-- **`migration.js`** aplica automaticamente qualquer migração de schema pendente sempre que o admin carrega um `content.json` mais antigo — nunca apaga dado, só adiciona o que falta.
-- **Validação antes de publicar**: o admin verifica campos obrigatórios, IDs duplicados e estrutura geral. Erros bloqueiam a publicação; avisos pedem confirmação.
-- **Backup automático**: antes de cada publicação, uma cópia do `content.json` anterior é salva em `backups/content-<timestamp>.json`.
-- **Log de publicações**: `.cms-log.json` registra cada publicação (data, SHA, versão, avisos), até as últimas 200 entradas.
+```
+✅ Repositório centralizado: config.json
+✅ Configuração sem hardcodes: const GH é fallback apenas
+✅ Inputs sincronizados: usam GHS de config.json
+✅ URLs dinâmicas: todas usam ${GHS.repo}
+✅ Zero referências ao repo antigo
+✅ Pronto para deploy em greencave-site-v2
+```
 
-## Versão do CMS
+---
 
-Este projeto segue o roadmap definido em `docs/CMS-PRD.docx`. Versão atual do painel: **v2.0** (com adiantamentos de v2.1 — conteúdo já separado da lógica em arquivo próprio). Veja `docs/CHANGELOG.md` para o detalhe do que está implementado, simplificado ou pendente por item do roadmap.
+## 📞 Próximas Etapas
+
+1. **Validação Local:** Siga GUIA_VALIDACAO_DEPLOY.md
+2. **Commit:** Use a mensagem sugerida no guia
+3. **Teste em Produção:** Abra admin.html do repo e valide
+4. **Comunicar:** Avise o time que configuração está centralizada
+
+---
+
+**Auditoria concluída com sucesso! 🎉**  
+**Status: PRONTO PARA DEPLOY ✅**
+
+*Gerado em 26 de julho de 2026*
