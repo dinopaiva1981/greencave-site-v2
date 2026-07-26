@@ -1,17 +1,16 @@
-# Versão: v001
+# Versão: v002
 
 ## Alterações
-- Fix do menu mobile: item de navegação cortado no topo e espaço vazio excessivo (justify-content:center trocado por flex-start)
-- Logos Hotmilk/PUCPR desalinhadas no mobile: agora centralizadas na grade de 2 colunas
-- Cursor customizado ("VER CASE"): reforço para nunca aparecer em telas de toque/estreitas (<900px)
-- Cards de Cases/Trabalhos: título e tags empilham verticalmente abaixo de 1080px (antes ficavam lado a lado e quebravam palavra por palavra, parecendo sobrepor o card vizinho); respiro entre cards aumentado em telas médias e pequenas
-- Texto definitivo do case Aché — Cuidados Pela Vida, com 4 blocos: "O que já entregamos", "Confiança estratégica, não só execução", "Robustez de workflow" e "Isso é só uma pequena parte do nosso potencial". Esse modelo de 5 blocos (Contexto + os 4 acima) fica como padrão para os próximos cases.
+- **Correção de arquitetura**: o texto do case Aché — Cuidados Pela Vida (blocos "O que já entregamos", "Confiança estratégica, não só execução", "Robustez de workflow", "Isso é só uma pequena parte do nosso potencial") estava sendo editado por engano dentro do snapshot de fallback embutido no index.html (`<script id="gc-content">`), que só é lido se o content.json falhar. Por isso a mudança nunca aparecia no site publicado.
+- Agora o texto correto está no `content.json`, que é a fonte de verdade real lida pelo index.html em produção.
+- index.html e admin.html desta versão são idênticos ao v001 (fixes de responsividade mobile mantidos: menu, logos, cursor, cards de case). Nenhuma mudança de arquitetura ou de código foi feita além da correção do local do conteúdo.
 
 ## Arquivos alterados
-- index.html
-- admin.html
+- content.json (novo — conteúdo correto do case Aché)
+- index.html (sem mudança de código em relação ao v001, incluído para manter o pacote completo)
+- admin.html (sem mudança em relação ao v001, incluído para manter o pacote completo)
 
 ## Observações importantes
-- Este pacote parte da base de arquivos que o Dino confirmou estar funcionando (index.html reenviado em 25/07), com os fixes de responsividade e o texto do case reaplicados por cima — não da versão gerada anteriormente pelo Claude.
-- admin.html não teve alteração de conteúdo própria nesta versão (o texto do case é lido do mesmo JSON do index.html), mas está incluído para manter o par sempre sincronizado.
-- A partir desta entrega, o fluxo de versionamento passa a ser por pasta release_vXXX (substituindo o padrão anterior de sufixo _v001 no nome do arquivo).
+- **Ação necessária**: suba o content.json desta pasta na raiz do repositório (mesmo local do index.html), substituindo o content.json atual. Esse é o arquivo que realmente muda o que aparece no site.
+- Confirmado no código: o index.html sempre tenta `fetch('./content.json')` primeiro; só usa o snapshot embutido se esse fetch falhar. Ou seja, 100% das seções do site (hero, clients, services, stats, hslide, works/cases, craft, quem, lab, about, awards, footer, textos de UI) são hoje renderizadas a partir do content.json — nenhuma seção tem conteúdo real hardcoded no index.html.
+- admin.html continua sendo o editor/publicador correto do content.json (via GitHub). Qualquer alteração de texto futura deve passar por ele ou por este content.json — nunca pelo snapshot embutido do index.html.

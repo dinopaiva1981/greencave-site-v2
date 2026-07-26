@@ -909,30 +909,16 @@ body:has(#gate){overflow:hidden}
 const PASS = "greencave2026";
 
 /* ── Publicação no GitHub Pages ─────────────────────────
-   Configuração centralizada em config.json. O token NUNCA
-   é salvo aqui: você cola a cada sessão (guarde num gerenciador
+   Preencha uma vez com o seu repositório. O token NUNCA
+   é salvo: você cola a cada sessão (guarde num gerenciador
    de senhas). Crie um token fine-grained restrito a este
    repo com permissão Contents: Read and write em
    github.com/settings/personal-access-tokens             */
-
-// Fallback APENAS se config.json não possa ser lido (rede, arquivo ausente, etc.)
-// Em produção, todos esses valores vêm de config.json via loadConfig()
-const GH = { repo:"dinopaiva1981/greencave-site-v2", branch:"main", path:"index.html" };
-
+// Fallback caso config.json não possa ser lido (rede, arquivo ausente, etc.)
+const GH = { repo:"dinopaiva1981/Greencave-site", branch:"main", path:"index.html" };
 let REMEMBER=false, SAVED_TOK="";
 try{ SAVED_TOK=localStorage.getItem('gc_token')||""; REMEMBER=!!SAVED_TOK; }catch(e){}
-
-// GHS é a configuração runtime, sempre lida de config.json em loadConfig()
-// Não adicione hardcodes aqui — todos os valores vêm de config.json
-const GHS = { 
-  repo:GH.repo, branch:GH.branch, path:GH.path, 
-  token:SAVED_TOK, 
-  contentPath:"content.json", 
-  statePath:".cms-state.json", 
-  logPath:".cms-log.json", 
-  backupDir:"backups", 
-  maxBackups:20 
-};
+const GHS = { repo:GH.repo, branch:GH.branch, path:GH.path, token:SAVED_TOK, contentPath:"content.json", statePath:".cms-state.json", logPath:".cms-log.json", backupDir:"backups", maxBackups:20 };
 async function loadConfig(){
   try{
     const r=await fetch('config.json',{cache:'no-store'});
@@ -1972,10 +1958,9 @@ function renderSec(){
     let c=card("Publicar no GitHub Pages","Um clique aqui faz o commit do site atualizado no seu repositório; o GitHub Pages republica sozinho em cerca de 1 minuto.");
     const r=el('<div class="row3"></div>');
     const mk=(id,lb,val,hint)=>{const f=el(`<div class="field"><label>${lb}</label></div>`);const i=el(`<input id="${id}" type="text">`);i.value=val;f.appendChild(i);if(hint)f.appendChild(el(`<div class="hint">${hint}</div>`));return f;};
-    // Pré-preencher com valores de config.json (GHS) em vez do fallback (GH)
-    r.appendChild(mk("gh-repo","Repositório",GHS.repo,"usuario/repositorio"));
-    r.appendChild(mk("gh-branch","Branch",GHS.branch,""));
-    r.appendChild(mk("gh-path","Arquivo",GHS.path,""));
+    r.appendChild(mk("gh-repo","Repositório",GH.repo,"usuario/repositorio"));
+    r.appendChild(mk("gh-branch","Branch",GH.branch,""));
+    r.appendChild(mk("gh-path","Arquivo",GH.path,""));
     c.appendChild(r);
     const ft=el('<div class="field"><label>Token do GitHub</label></div>');
     const ti=el('<input id="gh-token" type="password" placeholder="github_pat_…" autocomplete="off">');
