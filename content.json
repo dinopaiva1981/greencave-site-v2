@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T23:38:45.604Z",
+  "generatedAt": "2026-07-26T03:07:00.477Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -659,17 +659,6 @@
           }
         },
         {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
           "type": "gallery",
           "urls": [
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/33f385186627903.6578fb9d40363.jpg",
@@ -681,6 +670,17 @@
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif",
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif"
           ]
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
         }
       ],
       "ai": true
