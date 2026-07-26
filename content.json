@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-26T03:07:00.477Z",
+  "generatedAt": "2026-07-26T04:11:53.069Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -358,10 +358,10 @@
     }
   },
   "clients": [
+    "achē",
     "Warner",
     "Estadão",
     "Disney",
-    "achē",
     "Globo",
     "ESPN",
     "Shellbox",
@@ -634,46 +634,6 @@
         {
           "type": "video",
           "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "duo",
-          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif",
-          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif"
-        },
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bef0bd186627903.6578ce2ea13da.jpg",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "urls": [
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/33f385186627903.6578fb9d40363.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c33ee186627903.6578ce30abd19.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/32d3ff186627903.6578ce2e3851e.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/789f81186627903.6578fcbb3c210.gif",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/6f84e2186627903.6578fb9d41274.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e0c339186627903.6578ce3050b1a.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif"
-          ]
-        },
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
           "caption": {
             "pt": "",
             "en": "",
