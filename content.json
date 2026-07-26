@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-26T05:39:40.312Z",
+  "generatedAt": "2026-07-26T05:42:55.777Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -605,7 +605,7 @@
       "id": "work_jvssafo1",
       "kind": "case",
       "client": "Aché Laboratórios",
-      "year": "2023",
+      "year": "2026",
       "art": "orbit",
       "image": "media/projetos/ache-laboratorios/ache_styleframe_1.jpg",
       "gallery": [],
@@ -617,11 +617,11 @@
         "no": "Cuidados Pela Vida"
       },
       "tags": {
-        "pt": "Estratégia · Motion · Brand Film · Produção Digital · Conteúdo · Ativação — 2023",
-        "en": "Strategy · Motion · Brand Film · Digital Production · Content · Activation — 2023",
-        "es": "Estrategia · Motion · Brand Film · Producción Digital · Contenido · Activación — 2023",
-        "zh": "策略 · 动态 · 品牌影片 · 数字制作 · 内容 · 活动 — 2023",
-        "no": "Strategi · Motion · Brand Film · Digital produksjon · Innhold · Aktivering — 2023"
+        "pt": "Estratégia · Motion · Brand Film · Produção Digital — 2023 a 2026",
+        "en": "Strategy · Motion · Brand Film · Digital Production — 2023 to 2026",
+        "es": "Estrategia · Motion · Brand Film · Producción digital — 2023 a 2026",
+        "zh": "策略·动作·品牌电影·数字化制作——2023年至2026年",
+        "no": "Strategi · Bevegelse · Merkevarefilm · Digital produksjon — 2023 til 2026"
       },
       "body": {
         "pt": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
@@ -762,7 +762,7 @@
           }
         }
       ],
-      "ai": true
+      "ai": false
     },
     {
       "id": "work_n7lorw8r",
