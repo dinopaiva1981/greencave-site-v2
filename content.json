@@ -1,6 +1,6 @@
 {
  "schemaVersion": "1.0.0",
- "generatedAt": "2026-07-23T16:26:37.574591Z",
+ "generatedAt": "2026-07-26T03:07:00.477Z",
  "meta": {
   "title": {
    "pt": "Greencave — Operação criativa para todas as telas",
@@ -358,23 +358,20 @@
   }
  },
  "clients": [
+  "Warner",
+  "Estadão",
   "Disney",
-  "WarnerMedia",
+  "achē",
   "Globo",
   "ESPN",
-  "Shell",
-  "Suzano",
-  "Estadão",
-  "achē",
-  "Stone",
-  "VMLY&R",
-  "Casas Bahia",
-  "GNT",
-  "Cacau Show",
-  "Petlove",
+  "Shellbox",
   "Elanco",
+  "Suzano",
   "Huggies",
   "TV TEM",
+  "Stone",
+  "VMLY&R",
+  "GNT",
   "Fremantle"
  ],
  "services": [
@@ -539,28 +536,37 @@
    "client": "iPhone 17 Pro",
    "year": "2025",
    "art": "scan",
-   "image": "",
-   "gallery": [],
+   "image": "media/iphone-17-pro/03.jpeg",
+   "gallery": [
+    "media/iphone-17-pro/01.jpeg",
+    "media/iphone-17-pro/02.jpeg",
+    "media/iphone-17-pro/03.jpeg",
+    "media/iphone-17-pro/04.jpeg",
+    "media/iphone-17-pro/05.jpeg",
+    "media/iphone-17-pro/06.jpeg",
+    "media/iphone-17-pro/07.jpeg",
+    "media/iphone-17-pro/08.jpeg"
+   ],
    "title": {
     "pt": "iPhone 17 Pro — Design & Motion",
     "en": "iPhone 17 Pro — Design & Motion",
-    "es": "iPhone 17 Pro — Design & Motion",
-    "zh": "iPhone 17 Pro — 设计与动态",
-    "no": "iPhone 17 Pro — Design & Motion"
+    "es": "iPhone 17 Pro: diseño y movimiento",
+    "zh": "iPhone 17 Pro — 设计与动作",
+    "no": "iPhone 17 Pro — Design og bevegelse"
    },
    "tags": {
-    "pt": "Design · Motion · CGI",
-    "en": "Design · Motion · CGI",
-    "es": "Design · Motion · CGI",
-    "zh": "设计 · 动态 · CGI",
-    "no": "Design · Motion · CGI"
+    "pt": "Direção Criativa · Design · Motion ",
+    "en": "Creative Direction · Design · Motion",
+    "es": "Dirección Creativa · Diseño · Motion",
+    "zh": "创意方向·设计·动作",
+    "no": "Kreativ retning · Design · Bevegelse"
    },
    "body": {
-    "pt": "Promo concept de design e motion para o iPhone 17 Pro: direção de arte, animação e finalização em ritmo de filme de lançamento, explorando materiais, luz e tipografia do produto.\nProjeto completo em https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
-    "en": "A design and motion promo concept for the iPhone 17 Pro: art direction, animation and finishing at launch-film pace, exploring the product's materials, light and typography.\nFull project at https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
-    "es": "Concepto promo de design y motion para el iPhone 17 Pro: dirección de arte, animación y finalización al ritmo de un tráiler de lanzamiento, explorando materiales, luz y tipografía del producto.\nProyecto completo en https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
-    "zh": "为 iPhone 17 Pro 打造的宣传概念：art direction、动画与后期制作，节奏如同发布影片，探索产品的材质、光线与字体。\n完整项目见 https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
-    "no": "Promokonsept med design og motion for iPhone 17 Pro: art direction, animasjon og ferdigstillelse i tempoet til en lanseringsfilm, med utforsking av produktets materialer, lys og typografi.\nHele prosjektet på https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion"
+    "pt": "Promo concept de design e motion para o iPhone 17 Pro: direção de arte, animação e finalização.\nProjeto completo em https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+    "en": "Design and motion promo concept for the iPhone 17 Pro: art direction, animation and finalization.\nComplete project at https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+    "es": "Diseño y concepto de promoción en movimiento para el iPhone 17 Pro: dirección de arte, animación y finalización.\nProyecto completo en https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+    "zh": "iPhone 17 Pro 的设计和动作宣传概念：艺术指导、动画和定稿。\n完整项目位于 https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion",
+    "no": "Design og bevegelseskampanjekonsept for iPhone 17 Pro: kunstretning, animasjon og ferdigstillelse.\nFullfør prosjektet på https://www.behance.net/gallery/244661767/Iphone-17-Pro-Design-Motion"
    },
    "blocks": [
     {
@@ -573,287 +579,35 @@
       "no": "*Prosessen*"
      },
      "body": {
-      "pt": "Substitua este texto pelos destaques do processo: referências, styleframes, direção de câmera e som.",
-      "en": "Replace this text with process highlights: references, styleframes, camera direction and sound.",
-      "es": "Reemplaza este texto por los aspectos destacados del proceso: referencias, styleframes, dirección de cámara y sonido.",
-      "zh": "请替换为流程亮点：参考资料、风格帧、镜头与声音调度。",
-      "no": "Erstatt denne teksten med prosesshøydepunkter: referanser, styleframes, kamera- og lydregi."
+      "pt": "",
+      "en": "tests",
+      "es": "pruebas",
+      "zh": "测试",
+      "no": "tester"
      }
     },
     {
      "type": "video",
-     "url": "",
+     "url": "https://vimeo.com/1189089039?fl=pl&fe=sh",
      "caption": {
-      "pt": "Filme principal — cole aqui a URL do vídeo (YouTube/Vimeo/MP4)",
+      "pt": "",
       "en": "Main film — paste the video URL here",
       "es": "Video principal — pega aquí la URL (YouTube/Vimeo/MP4)",
       "zh": "主视频 — 在此粘贴视频链接（YouTube/Vimeo/MP4）",
       "no": "Hovedvideo — lim inn video-URL her (YouTube/Vimeo/MP4)"
      }
-    },
-    {
-     "type": "gallery",
-     "urls": []
     }
    ],
    "kind": "craft",
    "id": "work_zahtq32w"
   },
   {
-   "id": "work_z0fyh22c",
-   "kind": "craft",
-   "client": "Documentário Internacional",
-   "year": "2023",
-   "art": "wave",
-   "image": "",
-   "gallery": [],
-   "title": {
-    "pt": "Abertura para documentário internacional",
-    "en": "Opening for an international documentary",
-    "es": "Abertura para documentário internacional",
-    "zh": "Abertura para documentário internacional",
-    "no": "Abertura para documentário internacional"
-   },
-   "tags": {
-    "pt": "Motion · Cinema · Style Frame — 2023",
-    "en": "Motion · Cinema · Style Frame — 2023",
-    "es": "Motion · Cinema · Style Frame — 2023",
-    "zh": "Motion · Cinema · Style Frame — 2023",
-    "no": "Motion · Cinema · Style Frame — 2023"
-   },
-   "body": {
-    "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-    "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
-    "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-    "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-    "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
-   },
-   "blocks": []
-  },
-  {
-   "id": "work_f0i6pxqm",
-   "kind": "craft",
-   "client": "Disney ESPN",
-   "year": "2024",
-   "art": "rings",
-   "image": "",
-   "gallery": [],
-   "title": {
-    "pt": "Bola de Prata 2024",
-    "en": "Bola de Prata 2024",
-    "es": "Bola de Prata 2024",
-    "zh": "Bola de Prata 2024",
-    "no": "Bola de Prata 2024"
-   },
-   "tags": {
-    "pt": "Motion · 2D/3D · Broadcast — 2024",
-    "en": "Motion · 2D/3D · Broadcast — 2024",
-    "es": "Motion · 2D/3D · Broadcast — 2024",
-    "zh": "Motion · 2D/3D · Broadcast — 2024",
-    "no": "Motion · 2D/3D · Broadcast — 2024"
-   },
-   "body": {
-    "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-    "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
-    "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-    "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-    "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
-   },
-   "blocks": []
-  },
-  {
-   "kind": "craft",
-   "client": "Huggies · Disney",
-   "year": "2021",
-   "art": "bloom",
-   "image": "media/huggies-disney/huggies-01.png",
-   "gallery": [
-    "media/huggies-disney/huggies-02.png",
-    "media/huggies-disney/huggies-03.png",
-    "media/huggies-disney/huggies-04.png",
-    "media/huggies-disney/huggies-05.png",
-    "media/huggies-disney/huggies-06.png"
-   ],
-   "title": {
-    "pt": "Para o seu bebê se desenvolver melhor",
-    "en": "Para o seu bebê se desenvolver melhor",
-    "es": "Para que tu bebé se desarrolle mejor",
-    "zh": "让宝宝发育得更好",
-    "no": "For at babyen din skal utvikle seg bedre"
-   },
-   "tags": {
-    "pt": "Design · DA · Ilustração · Animação",
-    "en": "Design · DA · Ilustração · Animação",
-    "es": "Design · DA · Ilustración · Animación",
-    "zh": "设计 · 艺术指导 · 插画 · 动画",
-    "no": "Design · DA · Illustrasjon · Animasjon"
-   },
-   "body": {
-    "pt": "Cocriado com a Disney Company Brasil: assumimos o design e a operação criativa in-company do canal Disney Jr. pra dar corpo ao branded content do lançamento da linha Huggies Supreme Care.",
-    "en": "Co-created with The Walt Disney Company Brazil: we ran design and in-company creative operations for the Disney Jr. channel to bring the branded content for the Huggies Supreme Care launch to life.",
-    "es": "Cocreado con The Walt Disney Company Brasil: asumimos el diseño y la operación creativa in-company del canal Disney Jr. para dar vida al branded content del lanzamiento de la línea Huggies Supreme Care.",
-    "zh": "与迪士尼巴西联合创作：为 Disney Jr. 频道负责设计与内企创意运营，打造 Huggies Supreme Care 系列上线的品牌内容。",
-    "no": "Samskapt med The Walt Disney Company Brasil: vi sto for design og in-company kreativ drift for Disney Jr.-kanalen for å realisere branded content-lanseringen av Huggies Supreme Care."
-   },
-   "blocks": [
-    {
-     "type": "video",
-     "url": "https://vimeo.com/644450305",
-     "caption": {
-      "pt": "",
-      "en": "",
-      "es": "",
-      "zh": "",
-      "no": ""
-     }
-    },
-    {
-     "type": "video",
-     "url": "https://vimeo.com/644455631",
-     "caption": {
-      "pt": "",
-      "en": "",
-      "es": "",
-      "zh": "",
-      "no": ""
-     }
-    }
-   ],
-   "id": "work_ccb7qbfm"
-  },
-  {
-   "id": "work_ohvqklqq",
-   "kind": "craft",
-   "client": "Suzano",
-   "year": "2021",
-   "art": "scan",
-   "image": "media/suzano/suzano-01.png",
-   "gallery": [
-    "media/suzano/suzano-02.png",
-    "media/suzano/suzano-03.jpg",
-    "media/suzano/suzano-04.jpg",
-    "media/suzano/suzano-05.png"
-   ],
-   "title": {
-    "pt": "Nunca é sorte, sempre é atenção!",
-    "en": "It's never luck, it's always attention!",
-    "es": "Nunca é sorte, sempre é atenção!",
-    "zh": "Nunca é sorte, sempre é atenção!",
-    "no": "Nunca é sorte, sempre é atenção!"
-   },
-   "tags": {
-    "pt": "Design · DA · Ilustração · Operação Criativa — 2021",
-    "en": "Design · DA · Illustration · Creative Ops — 2021",
-    "es": "Design · DA · Ilustração · Operação Criativa — 2021",
-    "zh": "Design · DA · Ilustração · Operação Criativa — 2021",
-    "no": "Design · DA · Ilustração · Operação Criativa — 2021"
-   },
-   "body": {
-    "pt": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-    "en": "Co-created with Suzano Brazil's communications team, the campaign reinforces the importance of paying attention at work to avoid errors and accidents — art, illustration and motion serving a serious theme without losing warmth.",
-    "es": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-    "zh": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-    "no": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza."
-   },
-   "blocks": [
-    {
-     "type": "video",
-     "url": "https://vimeo.com/644500277",
-     "caption": {
-      "pt": "",
-      "en": "",
-      "es": "",
-      "zh": "",
-      "no": ""
-     }
-    }
-   ]
-  },
-  {
-   "kind": "craft",
-   "client": "Budweiser · Disney ESPN",
-   "year": "2020",
-   "art": "rings",
-   "image": "media/budweiser-disney-espn/crown-01.jpg",
-   "gallery": [
-    "media/budweiser-disney-espn/crown-02.jpg",
-    "media/budweiser-disney-espn/crown-03.jpg",
-    "media/budweiser-disney-espn/crown-04.jpg"
-   ],
-   "title": {
-    "pt": "Behind The Crown",
-    "en": "Behind The Crown",
-    "es": "Behind The Crown",
-    "zh": "Behind The Crown",
-    "no": "Behind The Crown"
-   },
-   "tags": {
-    "pt": "Design · DA · Motion · Gestão Operacional",
-    "en": "Design · DA · Motion · Gestão Operacional",
-    "es": "Design · DA · Motion · Gestión Operativa",
-    "zh": "设计 · 艺术指导 · 动态 · 运营管理",
-    "no": "Design · DA · Motion · Operativ ledelse"
-   },
-   "body": {
-    "pt": "Fomos convidados pela Disney ESPN pra cocriar com a Budweiser um projeto sobre nomes do esporte americano que construíram sua história à base de luta e persistência. Um dos que mais nos orgulha.",
-    "en": "Disney ESPN invited us to co-create with Budweiser a project about American sports figures who built their legacy through struggle and persistence. One we're especially proud of.",
-    "es": "Disney ESPN nos invitó a cocrear con Budweiser un proyecto sobre figuras del deporte estadounidense que construyeron su legado a través de la lucha y la persistencia. Uno de los que más nos enorgullece.",
-    "zh": "Disney ESPN 邀请我们与百威联合创作，讲述那些靠拼搏与坚持成就传奇的美国体育人物。这是我们最引以为豪的项目之一。",
-    "no": "Disney ESPN inviterte oss til å samskape med Budweiser et prosjekt om amerikanske idrettsfigurer som bygget sin arv gjennom kamp og utholdenhet. Et vi er spesielt stolte av."
-   },
-   "blocks": [
-    {
-     "type": "video",
-     "url": "https://vimeo.com/466237063",
-     "caption": {
-      "pt": "",
-      "en": "",
-      "es": "",
-      "zh": "",
-      "no": ""
-     }
-    }
-   ],
-   "id": "work_xpp28h08"
-  },
-  {
-   "id": "work_n7lorw8r",
-   "kind": "case",
-   "client": "Globoplay · Formata",
-   "year": "2025",
-   "art": "bloom",
-   "image": "",
-   "gallery": [],
-   "title": {
-    "pt": "My Mum, Your Dad — Brasil",
-    "en": "My Mum, Your Dad — Brazil",
-    "es": "My Mum, Your Dad — Brasil",
-    "zh": "My Mum, Your Dad — Brasil",
-    "no": "My Mum, Your Dad — Brasil"
-   },
-   "tags": {
-    "pt": "Branded Content · Motion · Reality — 2025",
-    "en": "Branded Content · Motion · Reality — 2025",
-    "es": "Branded Content · Motion · Reality — 2025",
-    "zh": "Branded Content · Motion · Reality — 2025",
-    "no": "Branded Content · Motion · Reality — 2025"
-   },
-   "body": {
-    "pt": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-    "en": "The Brazilian version of the dating reality format already running in markets like the UK, Poland and Canada — produced by Formata for Globoplay. Branded content and motion to bring the format's arrival in Brazil to life.",
-    "es": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-    "zh": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-    "no": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país."
-   },
-   "blocks": []
-  },
-  {
    "id": "work_jvssafo1",
    "kind": "case",
    "client": "Aché Laboratórios",
-   "year": "2023",
+   "year": "2026",
    "art": "orbit",
-   "image": "",
+   "image": "media/projetos/ache-laboratorios/ache_styleframe_1.jpg",
    "gallery": [],
    "title": {
     "pt": "Cuidados Pela Vida",
@@ -863,11 +617,11 @@
     "no": "Cuidados Pela Vida"
    },
    "tags": {
-    "pt": "Branded Content · Motion · Saúde",
-    "en": "Branded Content · Motion · Health",
-    "es": "Branded Content · Motion · Saúde",
-    "zh": "Branded Content · Motion · Saúde",
-    "no": "Branded Content · Motion · Saúde"
+    "pt": "Branded Content · Campanha · Saúde",
+    "en": "Branded Content · Campaign · Health",
+    "es": "Branded Content · Campaña · Salud",
+    "zh": "品牌内容·活动·健康",
+    "no": "Merkevareinnhold · Kampanje · Helse"
    },
    "body": {
     "pt": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché.",
@@ -877,6 +631,57 @@
     "no": "Há mais de 2 anos a Greencave está dentro da operação do Cuidados Pela Vida, a plataforma oficial da Aché Laboratórios que conecta pacientes, farmácias e médicos em um programa de cuidado contínuo. O que começou como apoio pontual na implementação virou uma house criativa full-time: hoje um squad de mais de 12 profissionais está imerso no dia a dia da marca, funcionando como extensão direta do time interno da Aché."
    },
    "blocks": [
+    {
+     "type": "video",
+     "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    },
+    {
+     "type": "duo",
+     "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif",
+     "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif"
+    },
+    {
+     "type": "image",
+     "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bef0bd186627903.6578ce2ea13da.jpg",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    },
+    {
+     "type": "gallery",
+     "urls": [
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/33f385186627903.6578fb9d40363.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c33ee186627903.6578ce30abd19.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/32d3ff186627903.6578ce2e3851e.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/789f81186627903.6578fcbb3c210.gif",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/6f84e2186627903.6578fb9d41274.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e0c339186627903.6578ce3050b1a.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif"
+     ]
+    },
+    {
+     "type": "image",
+     "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    },
     {
      "type": "text",
      "title": {
@@ -945,10 +750,399 @@
       "no": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro."
      }
     }
+   ],
+   "ai": true
+  },
+  {
+   "id": "work_n7lorw8r",
+   "kind": "case",
+   "client": "Globoplay · Formata",
+   "year": "2025",
+   "art": "bloom",
+   "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp",
+   "gallery": [
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/34f52b241939343.6962c1100dad2.jpg",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-credito-pai.jpg",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-no-proximo-apresentador.jpg",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/gc-no-proximo-episodio.jpg",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_cartela.webp",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_01.webp",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_02.webp",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_03.webp",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp"
+   ],
+   "title": {
+    "pt": "My Mum, Your Dad — Brasil",
+    "en": "My Mum, Your Dad — Brazil",
+    "es": "My Mum, Your Dad — Brasil",
+    "zh": "My Mum, Your Dad — Brasil",
+    "no": "My Mum, Your Dad — Brasil"
+   },
+   "tags": {
+    "pt": "Branded Content · Motion · Reality — 2025",
+    "en": "Branded Content · Motion · Reality — 2025",
+    "es": "Branded Content · Motion · Reality — 2025",
+    "zh": "Branded Content · Motion · Reality — 2025",
+    "no": "Branded Content · Motion · Reality — 2025"
+   },
+   "body": {
+    "pt": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+    "en": "The Brazilian version of the dating reality format already running in markets like the UK, Poland and Canada — produced by Formata for Globoplay. Branded content and motion to bring the format's arrival in Brazil to life.",
+    "es": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+    "zh": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
+    "no": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país."
+   },
+   "blocks": [
+    {
+     "type": "image",
+     "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/766ab7241939343.6962b4a51b2ec.jpg",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    },
+    {
+     "type": "duo",
+     "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/476a43241939343.6962bd9929ae6.png",
+     "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8d5e7e241939343.6962bd9a74a5d.png"
+    },
+    {
+     "type": "gallery",
+     "urls": [
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/17d90d241939343.6962bd9a75937.png",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/176c04241939343.6962bd9a75189.png",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/06c0fb241939343.6962bd9881fad.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/b07867241939343.6962b4a51b813.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/88ee3e241939343.6962bd9e2a491.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/b897b1241939343.6962bd9cc3e72.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/ad8002241939343.6962bd9c3d7b4.jpg",
+      "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8836a9241939343.6962bd9c3ddaf.jpg"
+     ]
+    },
+    {
+     "type": "image",
+     "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/502e79241939343.6962c113dda5d.jpg",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    }
    ]
   },
   {
+   "id": "work_ixoec4v9",
+   "kind": "craft",
+   "client": "Sadia",
+   "year": "2021",
+   "art": "scan",
+   "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/60df1d0a2a8866a9af0f86ba_1.jpeg",
+   "title": {
+    "pt": "Fome de NBA - ESPN",
+    "en": "NBA Hunger - ESPN",
+    "es": "Hambre en la NBA - ESPN",
+    "zh": "NBA 饥饿 - ESPN",
+    "no": "NBA Hunger - ESPN"
+   },
+   "tags": {
+    "pt": "Operação Criativa - Branded Content - Motion Graphics",
+    "en": "Creative Operation - Branded Content - Motion Graphics",
+    "es": "Operación creativa - Branded Content - Motion Graphics",
+    "zh": "创意运营-品牌内容-动态图形",
+    "no": "Kreativ drift - Merkevareinnhold - Motion Graphics"
+   },
+   "body": {
+    "pt": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+    "en": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+    "es": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+    "zh": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+    "no": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021."
+   },
+   "gallery": [
+    "https://cdn.prod.website-files.com/60216155481f533e472c5158/66297bfaf2afed85c8586504_Asset%204.svg",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612c31a4062f71b2127ba943_disney%402x.png",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0b8d0e3247f23fba52_2.jpeg",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0a2a8866a9af0f86ba_1.jpeg",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0ffb94832e34d12d41_4.png",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d10c790bf40479604b9_5.png",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612cfa3135f43778c39c412c_a.jpg",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612cfa2484da1e07373d1727_b.png"
+   ],
+   "blocks": [
+    {
+     "type": "video",
+     "url": "https://vimeo.com/572242718",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    }
+   ],
+   "_importedFrom": ""
+  },
+  {
+   "id": "work_m8c86flf",
    "kind": "case",
+   "client": "Café Pilão - ESPN",
+   "year": "2022",
+   "art": "wave",
+   "image": "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e618ba04ab341be5429e5c_2.png",
+   "title": {
+    "pt": "O Café Forte do Brasil",
+    "en": "Brazilian Forte Coffee",
+    "es": "Café fuerte brasileño",
+    "zh": "巴西福尔特咖啡",
+    "no": "Brasiliansk Forte-kaffe"
+   },
+   "tags": {
+    "pt": "Criação - Direção - Produção",
+    "en": "Creation - Direction - Production",
+    "es": "Creación - Dirección - Producción",
+    "zh": "创作-指导-制作",
+    "no": "Skapelse - Regi - Produksjon"
+   },
+   "body": {
+    "pt": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+    "en": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+    "es": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+    "zh": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+    "no": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!"
+   },
+   "gallery": [
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e618fdb66bdb8d1cde6f35_3.png",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e6190a93e77b370fcdee4a_11.png",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e61651b80464ce6c374074_10.png",
+    "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e61c20aeaee8c7ca457c97_6.png"
+   ],
+   "blocks": [
+    {
+     "type": "video",
+     "url": "https://vimeo.com/779367526",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    }
+   ],
+   "_importedFrom": "https://greencave.webflow.io/projetos/pilao-cafe-forte-do-brasil"
+  },
+  {
+   "id": "work_z0fyh22c",
+   "kind": "craft",
+   "client": "Polônia",
+   "year": "2023",
+   "art": "wave",
+   "image": "media/projetos/polonia/pol-oo1.png",
+   "gallery": [
+    "https://vimeo.com/1189092887?fl=pl&fe=sh"
+   ],
+   "title": {
+    "pt": "Abertura para Documentário Polonês",
+    "en": "Opening for Polish Documentary",
+    "es": "Inauguración del documental polaco",
+    "zh": "波兰纪录片开幕",
+    "no": "Åpning for polsk dokumentar"
+   },
+   "tags": {
+    "pt": "Motion · Cinema · Style Frame — 2023",
+    "en": "Motion · Cinema · Style Frame — 2023",
+    "es": "Motion · Cinema · Style Frame — 2023",
+    "zh": "Motion · Cinema · Style Frame — 2023",
+    "no": "Motion · Cinema · Style Frame — 2023"
+   },
+   "body": {
+    "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+    "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
+    "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+    "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+    "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
+   },
+   "blocks": [],
+   "ai": true
+  },
+  {
+   "id": "work_f0i6pxqm",
+   "kind": "craft",
+   "client": "Disney ESPN",
+   "year": "2024",
+   "art": "rings",
+   "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png",
+   "gallery": [
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/03bdb7225202777.6841d90f1e26e-2.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/81e9a4225202777.6841da39a0550-2.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/b5f33d225202777.6841db3ed9917.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/aa0d5c225202777.6841da701a9d7.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/01d606225202777.6841db414562a.gif",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/112836225202777.6841db3ed9208.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/399d99225202777.6841db459a9c1.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/6c276a225202777.6841db459b1ef.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/47a47f225202777.6841da931ef61.gif",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/0f24ec225202777.6841da701aecd.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/34c2fd225202777.6841db459be96.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f14a5f225202777.6841db459b74a.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f01166225202777.6841fece7098e.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/c19718225202777.6841da931f567.gif",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/d7c762225202777.6841da35edafd.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/fc84b7225202777.6841da35ed66c.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/db32be225202777.6841db4145ad5.gif",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/ed2de1225202777.6841da6dced4a.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png"
+   ],
+   "title": {
+    "pt": "Bola de Prata 2024",
+    "en": "Bola de Prata 2024",
+    "es": "Bola de Prata 2024",
+    "zh": "Bola de Prata 2024",
+    "no": "Bola de Prata 2024"
+   },
+   "tags": {
+    "pt": "Motion · 2D/3D · Broadcast — 2024",
+    "en": "Motion · 2D/3D · Broadcast — 2024",
+    "es": "Motion · 2D/3D · Broadcast — 2024",
+    "zh": "Motion · 2D/3D · Broadcast — 2024",
+    "no": "Motion · 2D/3D · Broadcast — 2024"
+   },
+   "body": {
+    "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+    "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
+    "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+    "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+    "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
+   },
+   "blocks": [
+    {
+     "type": "video",
+     "url": "https://vimeo.com/1090883760",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    }
+   ]
+  },
+  {
+   "kind": "craft",
+   "client": "Huggies · Disney",
+   "year": "2021",
+   "art": "bloom",
+   "image": "media/huggies-disney/huggies-01.png",
+   "gallery": [
+    "media/huggies-disney/huggies-02.png",
+    "media/huggies-disney/huggies-03.png",
+    "media/huggies-disney/huggies-04.png",
+    "media/huggies-disney/huggies-05.png",
+    "media/huggies-disney/huggies-06.png"
+   ],
+   "title": {
+    "pt": "Para o seu bebê se desenvolver melhor",
+    "en": "Para o seu bebê se desenvolver melhor",
+    "es": "Para que tu bebé se desarrolle mejor",
+    "zh": "让宝宝发育得更好",
+    "no": "For at babyen din skal utvikle seg bedre"
+   },
+   "tags": {
+    "pt": "Design · DA · Ilustração · Animação",
+    "en": "Design · DA · Ilustração · Animação",
+    "es": "Design · DA · Ilustración · Animación",
+    "zh": "设计 · 艺术指导 · 插画 · 动画",
+    "no": "Design · DA · Illustrasjon · Animasjon"
+   },
+   "body": {
+    "pt": "Cocriado com a Disney Company Brasil: assumimos o design e a operação criativa in-company do canal Disney Jr. pra dar corpo ao branded content do lançamento da linha Huggies Supreme Care.",
+    "en": "Co-created with The Walt Disney Company Brazil: we ran design and in-company creative operations for the Disney Jr. channel to bring the branded content for the Huggies Supreme Care launch to life.",
+    "es": "Cocreado con The Walt Disney Company Brasil: asumimos el diseño y la operación creativa in-company del canal Disney Jr. para dar vida al branded content del lanzamiento de la línea Huggies Supreme Care.",
+    "zh": "与迪士尼巴西联合创作：为 Disney Jr. 频道负责设计与内企创意运营，打造 Huggies Supreme Care 系列上线的品牌内容。",
+    "no": "Samskapt med The Walt Disney Company Brasil: vi sto for design og in-company kreativ drift for Disney Jr.-kanalen for å realisere branded content-lanseringen av Huggies Supreme Care."
+   },
+   "blocks": [
+    {
+     "type": "video",
+     "url": "https://vimeo.com/644450305",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    },
+    {
+     "type": "video",
+     "url": "https://vimeo.com/644455631",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    }
+   ],
+   "id": "work_ccb7qbfm"
+  },
+  {
+   "kind": "craft",
+   "client": "Budweiser · Disney ESPN",
+   "year": "2020",
+   "art": "rings",
+   "image": "media/budweiser-disney-espn/crown-01.jpg",
+   "gallery": [
+    "media/budweiser-disney-espn/crown-02.jpg",
+    "media/budweiser-disney-espn/crown-03.jpg",
+    "media/budweiser-disney-espn/crown-04.jpg"
+   ],
+   "title": {
+    "pt": "Behind The Crown",
+    "en": "Behind The Crown",
+    "es": "Behind The Crown",
+    "zh": "Behind The Crown",
+    "no": "Behind The Crown"
+   },
+   "tags": {
+    "pt": "Design · DA · Motion · Gestão Operacional",
+    "en": "Design · DA · Motion · Gestão Operacional",
+    "es": "Design · DA · Motion · Gestión Operativa",
+    "zh": "设计 · 艺术指导 · 动态 · 运营管理",
+    "no": "Design · DA · Motion · Operativ ledelse"
+   },
+   "body": {
+    "pt": "Fomos convidados pela Disney ESPN pra cocriar com a Budweiser um projeto sobre nomes do esporte americano que construíram sua história à base de luta e persistência. Um dos que mais nos orgulha.",
+    "en": "Disney ESPN invited us to co-create with Budweiser a project about American sports figures who built their legacy through struggle and persistence. One we're especially proud of.",
+    "es": "Disney ESPN nos invitó a cocrear con Budweiser un proyecto sobre figuras del deporte estadounidense que construyeron su legado a través de la lucha y la persistencia. Uno de los que más nos enorgullece.",
+    "zh": "Disney ESPN 邀请我们与百威联合创作，讲述那些靠拼搏与坚持成就传奇的美国体育人物。这是我们最引以为豪的项目之一。",
+    "no": "Disney ESPN inviterte oss til å samskape med Budweiser et prosjekt om amerikanske idrettsfigurer som bygget sin arv gjennom kamp og utholdenhet. Et vi er spesielt stolte av."
+   },
+   "blocks": [
+    {
+     "type": "video",
+     "url": "https://vimeo.com/466237063",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    }
+   ],
+   "id": "work_xpp28h08"
+  },
+  {
+   "kind": "craft",
    "client": "Weasyplan",
    "year": "2023",
    "art": "grid",
@@ -959,11 +1153,11 @@
     "media/weasyplan/weasyplan-04.png"
    ],
    "title": {
-    "pt": "Weasyplan — naming ao naming à papelaria",
-    "en": "Weasyplan — naming ao naming à papelaria",
-    "es": "Weasyplan — del naming a la papelería",
-    "zh": "Weasyplan — 从命名到全套物料",
-    "no": "Weasyplan — fra naming til trykksaker"
+    "pt": "Weasyplan — do naming à papelaria",
+    "en": "Weasyplan — from naming to stationery",
+    "es": "Weasyplan: desde el nombre hasta el material de oficina",
+    "zh": "Weasyplan——从命名到文具",
+    "no": "Weasyplan — fra navngivning til skrivesaker"
    },
    "tags": {
     "pt": "Naming · Criação & Conceito · DA · Design",
@@ -981,6 +1175,56 @@
    },
    "blocks": [],
    "id": "work_xs7gsz4c"
+  },
+  {
+   "id": "work_ohvqklqq",
+   "kind": "case",
+   "client": "Suzano",
+   "year": "2021",
+   "art": "scan",
+   "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/34a724131011115.618c29a5055c0.jpg",
+   "gallery": [
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/13b423131011115.618c194b6482c.gif",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/6e2ea8131011115.618c29e5caf42.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/34a724131011115.618c29a5055c0.jpg",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/ec9bd5131011115.618c29a4531c2.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/d0bcf7131011115.618c2f9e2db47.png",
+    "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/c73f8a131011115.618c29a25abf9.png"
+   ],
+   "title": {
+    "pt": "Nunca é sorte, sempre é atenção!",
+    "en": "It's never luck, it's always attention!",
+    "es": "Nunca é sorte, sempre é atenção!",
+    "zh": "Nunca é sorte, sempre é atenção!",
+    "no": "Nunca é sorte, sempre é atenção!"
+   },
+   "tags": {
+    "pt": "Design · DA · Ilustração · Operação Criativa — 2021",
+    "en": "Design · DA · Illustration · Creative Ops — 2021",
+    "es": "Design · DA · Ilustração · Operação Criativa — 2021",
+    "zh": "Design · DA · Ilustração · Operação Criativa — 2021",
+    "no": "Design · DA · Ilustração · Operação Criativa — 2021"
+   },
+   "body": {
+    "pt": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+    "en": "Co-created with Suzano Brazil's communications team, the campaign reinforces the importance of paying attention at work to avoid errors and accidents — art, illustration and motion serving a serious theme without losing warmth.",
+    "es": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+    "zh": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
+    "no": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza."
+   },
+   "blocks": [
+    {
+     "type": "video",
+     "url": "https://vimeo.com/644500277",
+     "caption": {
+      "pt": "",
+      "en": "",
+      "es": "",
+      "zh": "",
+      "no": ""
+     }
+    }
+   ]
   },
   {
    "id": "work_cel48cmk",
@@ -1137,6 +1381,18 @@
      "no": "3D Ops"
     },
     "id": "team_vo6e4l9q"
+   },
+   {
+    "id": "team_fz4vdyqj",
+    "name": "Adrian",
+    "photo": "media/team/adrian.webp",
+    "role": {
+     "pt": "CTO",
+     "en": "CTO",
+     "es": "CTO",
+     "zh": "首席技术官",
+     "no": "CTO"
+    }
    }
   ]
  },
@@ -1412,18 +1668,6 @@
      "no": "End-to-end: tjenestedesign, utvikling, betalingssystemer, lansering og administrasjon"
     },
     "id": "lab_envyfmt1"
-   },
-   {
-    "name": "CaveSchool",
-    "partner": "Greencave",
-    "what": {
-     "pt": "Plataforma própria de educação para autodidatas e home schooling",
-     "en": "Own education platform for self-students and home schooling",
-     "es": "Plataforma educativa propia para autoestudiantes y educación en casa.",
-     "zh": "自学和在家自学的自有教育平台",
-     "no": "Egen utdanningsplattform for selvelever og hjemmeundervisning"
-    },
-    "id": "lab_0cmmxtg0"
    },
    {
     "name": "Risco das Bets",

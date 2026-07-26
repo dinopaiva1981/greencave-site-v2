@@ -1,16 +1,17 @@
-# Versão: v002
+# Versão: v003
 
 ## Alterações
-- **Correção de arquitetura**: o texto do case Aché — Cuidados Pela Vida (blocos "O que já entregamos", "Confiança estratégica, não só execução", "Robustez de workflow", "Isso é só uma pequena parte do nosso potencial") estava sendo editado por engano dentro do snapshot de fallback embutido no index.html (`<script id="gc-content">`), que só é lido se o content.json falhar. Por isso a mudança nunca aparecia no site publicado.
-- Agora o texto correto está no `content.json`, que é a fonte de verdade real lida pelo index.html em produção.
-- index.html e admin.html desta versão são idênticos ao v001 (fixes de responsividade mobile mantidos: menu, logos, cursor, cards de case). Nenhuma mudança de arquitetura ou de código foi feita além da correção do local do conteúdo.
+- **Correção crítica**: a v002 tinha sobrescrito o `content.json` a partir de um snapshot antigo que eu mesmo havia gerado — isso apagou conteúdo real que o Dino já tinha atualizado via admin.html (ex: 12 works em vez de menos, blocos de mídia reais do case Aché: vídeo Vimeo, GIFs "duo", imagem, galeria de 8 imagens do Behance).
+- Nesta versão, o `content.json` enviado pelo Dino (backup real, pós-atualizações no admin) foi usado como base **intocada**. A única mudança: no case Aché — Cuidados Pela Vida, o campo `body` foi atualizado com o texto novo, e 4 blocos do tipo "text" (O que já entregamos / Confiança estratégica, não só execução / Robustez de workflow / Isso é só uma pequena parte do nosso potencial) foram ACRESCENTADOS ao final da lista de blocos — sem remover nenhum dos 5 blocos de mídia originais (vídeo, duo, imagem, galeria, imagem).
+- index.html, admin.html e config.json desta versão são exatamente os arquivos que o Dino reenviou — nenhuma edição de código foi feita neles.
 
 ## Arquivos alterados
-- content.json (novo — conteúdo correto do case Aché)
-- index.html (sem mudança de código em relação ao v001, incluído para manter o pacote completo)
-- admin.html (sem mudança em relação ao v001, incluído para manter o pacote completo)
+- content.json (único arquivo com mudança de conteúdo)
+- index.html (reenviado pelo Dino, sem alteração)
+- admin.html (reenviado pelo Dino, sem alteração)
+- config.json (reenviado pelo Dino, sem alteração — incluído só para manter o pacote completo)
 
 ## Observações importantes
-- **Ação necessária**: suba o content.json desta pasta na raiz do repositório (mesmo local do index.html), substituindo o content.json atual. Esse é o arquivo que realmente muda o que aparece no site.
-- Confirmado no código: o index.html sempre tenta `fetch('./content.json')` primeiro; só usa o snapshot embutido se esse fetch falhar. Ou seja, 100% das seções do site (hero, clients, services, stats, hslide, works/cases, craft, quem, lab, about, awards, footer, textos de UI) são hoje renderizadas a partir do content.json — nenhuma seção tem conteúdo real hardcoded no index.html.
-- admin.html continua sendo o editor/publicador correto do content.json (via GitHub). Qualquer alteração de texto futura deve passar por ele ou por este content.json — nunca pelo snapshot embutido do index.html.
+- QA rodado e confirmado: os outros 11 "works" do content.json são idênticos byte-a-byte ao backup do Dino. Todas as demais seções (hero, clients, services, stats, about, contact, awards, quem, reel, lab, ui, meta) permanecem intocadas.
+- Os 5 blocos de mídia originais do case Aché (vídeo, duo de GIFs, imagem, galeria de 8 peças, imagem final) foram preservados na íntegra, na mesma ordem.
+- **Lição interna**: daqui pra frente, qualquer atualização de conteúdo parte sempre do último content.json que o Dino confirmar como "no ar" — nunca de um snapshot gerado por mim em sessão anterior.
