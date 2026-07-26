@@ -39,6 +39,7 @@ html[data-lang="zh"] em{font-family:var(--zh);font-style:italic}
 #cur.big span{opacity:1}
 #cur.mini{width:46px;height:46px;background:rgba(15,21,22,.12);margin:-23px 0 0 -23px}
 @media(hover:none),(pointer:coarse){#cur{display:none}}
+@media(max-width:900px){#cur{display:none}}
 
 /* ---------- geometrias ---------- */
 .geo{position:absolute;pointer-events:none}
@@ -94,7 +95,7 @@ nav a.nl:hover i{transform:translateY(-100%)}
 #burger{display:none;flex-direction:column;gap:6px;padding:8px;z-index:102}
 #burger i{display:block;width:26px;height:2px;background:var(--ink);transition:.35s var(--ease)}
 @media(max-width:1080px){
-  nav{position:fixed;inset:0;z-index:101;background:var(--ink);color:var(--bone);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:clamp(4px,1.6vh,10px);padding:clamp(88px,13vh,120px) var(--pad) clamp(24px,6vh,44px);transform:translateY(-102%);visibility:hidden;transition:transform .6s var(--ease),visibility 0s .6s;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  nav{position:fixed;inset:0;z-index:101;background:var(--ink);color:var(--bone);display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:clamp(4px,1.6vh,10px);padding:clamp(84px,11vh,104px) var(--pad) clamp(24px,6vh,44px);transform:translateY(-102%);visibility:hidden;transition:transform .6s var(--ease),visibility 0s .6s;overflow-y:auto;-webkit-overflow-scrolling:touch}
   body.menu-open nav{transform:none;visibility:visible;transition:transform .6s var(--ease)}
   nav a.nl{font-family:var(--disp);font-stretch:125%;font-size:clamp(22px,6.6vw,40px);height:1.14em;text-transform:uppercase;font-weight:760;letter-spacing:0;flex:none}
   nav a.nl i+i{color:var(--green)}
@@ -279,6 +280,8 @@ body.ready #hero .cap{width:1.5em}
 #wrail::-webkit-scrollbar{display:none}
 #wrail.drag{cursor:grabbing;scroll-snap-type:none}
 .wcard{flex:0 0 auto;width:clamp(300px,66vw,860px);scroll-snap-align:center;cursor:pointer}
+@media(max-width:1080px){#wrail{gap:32px}.wcard{width:78vw}.wcard .meta{flex-direction:column;align-items:flex-start;gap:6px;padding-top:14px}.wcard .tags{white-space:normal}}
+@media(max-width:640px){#wrail{gap:26px}.wcard{width:84vw}}
 .wcard .media{position:relative;border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--bone);aspect-ratio:16/9}
 .wcard .media>svg,.wcard .media>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
 .wcard:hover .media>svg,.wcard:hover .media>img{transform:scale(1.04)}
@@ -453,7 +456,7 @@ footer .grid h4{font-size:11px;font-weight:600;letter-spacing:.26em;text-transfo
 .albl{font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px;text-align:center}
 .albl::before,.albl::after{content:"";width:22px;height:1px;background:var(--line)}
 .aitems{display:grid;grid-auto-flow:column;align-items:center;justify-content:center;gap:clamp(20px,3vw,44px)}
-@media(max-width:640px){.aitems{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.aitems{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));justify-items:center;align-items:center;row-gap:20px}}
 @media(max-width:700px){
   #reel{height:auto;min-height:min(68vh,500px);padding:0}
   #reel .inner{flex-direction:column;align-items:flex-start;gap:22px;padding:0 var(--pad) clamp(28px,5vh,48px);padding-top:44vh}

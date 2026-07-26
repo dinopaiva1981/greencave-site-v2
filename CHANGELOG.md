@@ -1,17 +1,18 @@
-# Versão: v003
+# Versão: v004
 
 ## Alterações
-- **Correção crítica**: a v002 tinha sobrescrito o `content.json` a partir de um snapshot antigo que eu mesmo havia gerado — isso apagou conteúdo real que o Dino já tinha atualizado via admin.html (ex: 12 works em vez de menos, blocos de mídia reais do case Aché: vídeo Vimeo, GIFs "duo", imagem, galeria de 8 imagens do Behance).
-- Nesta versão, o `content.json` enviado pelo Dino (backup real, pós-atualizações no admin) foi usado como base **intocada**. A única mudança: no case Aché — Cuidados Pela Vida, o campo `body` foi atualizado com o texto novo, e 4 blocos do tipo "text" (O que já entregamos / Confiança estratégica, não só execução / Robustez de workflow / Isso é só uma pequena parte do nosso potencial) foram ACRESCENTADOS ao final da lista de blocos — sem remover nenhum dos 5 blocos de mídia originais (vídeo, duo, imagem, galeria, imagem).
-- index.html, admin.html e config.json desta versão são exatamente os arquivos que o Dino reenviou — nenhuma edição de código foi feita neles.
+- **Reconciliação de conteúdo**: comparado o `index-2.html` (build de 24/07, V4.1·2026-07-24-2115) com o `content.json` mais recente. Confirmado que todo item do dia 24/07 já existe na versão mais nova, com o mesmo ID interno e mais completo — nada tinha sido perdido, ao contrário do que parecia.
+- Adicionado ao case Aché o vídeo do YouTube (campanha Awareness) que existia no build de 24/07 e não estava na versão mais recente. Nenhum outro conteúdo foi alterado ou removido.
+- **Reaplicados os 4 fixes de responsividade mobile** (menu cortado no topo, logos desalinhadas, cursor customizado vazando em telas de toque, título/tags dos cards de case colidindo) — não estavam presentes na base de arquivos mais recente enviada, então foram reincorporados para manter a entrega cumulativa.
+- Arquitetura mantida 100% a atual: `admin.html` com repositório `dinopaiva1981/greencave-site-v2` centralizado via `config.json`, feature "IA aplicada" (checkbox + selo no site) intacta.
 
 ## Arquivos alterados
-- content.json (único arquivo com mudança de conteúdo)
-- index.html (reenviado pelo Dino, sem alteração)
-- admin.html (reenviado pelo Dino, sem alteração)
-- config.json (reenviado pelo Dino, sem alteração — incluído só para manter o pacote completo)
+- content.json (vídeo do YouTube acrescentado ao case Aché)
+- index.html (4 fixes de responsividade mobile reaplicados)
+- admin.html (sem alteração — já estava na arquitetura correta)
+- config.json (sem alteração)
 
 ## Observações importantes
-- QA rodado e confirmado: os outros 11 "works" do content.json são idênticos byte-a-byte ao backup do Dino. Todas as demais seções (hero, clients, services, stats, about, contact, awards, quem, reel, lab, ui, meta) permanecem intocadas.
-- Os 5 blocos de mídia originais do case Aché (vídeo, duo de GIFs, imagem, galeria de 8 peças, imagem final) foram preservados na íntegra, na mesma ordem.
-- **Lição interna**: daqui pra frente, qualquer atualização de conteúdo parte sempre do último content.json que o Dino confirmar como "no ar" — nunca de um snapshot gerado por mim em sessão anterior.
+- **12 trabalhos confirmados no content.json**, incluindo os que tinham sumido da vista no `index-2.html` de 24/07 (Sadia, Café Pilão - ESPN, Polônia) — na real nunca sumiram, só foram editados/renomeados depois (ex: "Documentário Internacional" virou "Polônia" com o mesmo ID interno).
+- Case Aché agora com 10 blocos: 2 vídeos (Vimeo + YouTube), 1 dupla de GIFs, 1 imagem, 1 galeria de 8 peças, 1 imagem final, e os 4 blocos de texto (O que já entregamos / Confiança estratégica / Robustez de workflow / Potencial).
+- QA rodado cobrindo: arquitetura (repo, config centralizado, feature IA), os 4 fixes mobile, e integridade de conteúdo (12 works, blocos do Ache intactos, schema válido para o loader do site).
