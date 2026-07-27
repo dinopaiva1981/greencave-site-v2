@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-26T05:56:16.362Z",
+  "generatedAt": "2026-07-27T02:25:23.346Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -124,11 +124,11 @@
       "no": "Vi er et kreativt *økosystem*"
     },
     "about_manifesto": {
-      "pt": "Depois de quase 10 anos rodando operação criativa para marca, agência e canal, aprendemos uma coisa: o que funciona é virar time, não fornecedor. Isso não se explica em briefing — se prova no segundo projeto, no terceiro, no décimo. É isso que fazemos aqui: entramos na rotina, entendemos o contexto e entregamos no ritmo que o negócio precisa.",
-      "en": "After almost 10 years running creative operations for brands, agencies and channels, we learned one thing: what works is becoming a team, not a supplier. This is not explained in a briefing — it is proven in the second project, the third, the tenth. That's what we do here: we get into the routine, understand the context and deliver at the pace the business needs.",
-      "es": "Después de casi 10 años dirigiendo operaciones creativas para marcas, agencias y canales, aprendimos una cosa: lo que funciona es convertirse en un equipo, no en un proveedor. Esto no se explica en un informe, se demuestra en el segundo proyecto, el tercero, el décimo. Eso es lo que hacemos aquí: nos adentramos en la rutina, entendemos el contexto y entregamos al ritmo que el negocio necesita.",
-      "zh": "在为品牌、代理机构和渠道进行创意运营近 10 年之后，我们学到了一件事：有效的是成为一个团队，而不是供应商。这在简报中没有得到解释——它在第二个、第三个、第十个项目中得到了证明。这就是我们在这里所做的：我们进入日常工作，了解背景并按照业务需要的速度交付。",
-      "no": "Etter nesten 10 år med kreativ virksomhet for merkevarer, byråer og kanaler, lærte vi én ting: det som fungerer er å bli et team, ikke en leverandør. Dette er ikke forklart i en orientering - det er bevist i det andre prosjektet, det tredje, det tiende. Det er det vi gjør her: vi kommer inn i rutinen, forstår konteksten og leverer i det tempoet virksomheten trenger."
+      "pt": "Depois de quase 10 anos rodando operação criativa para marca, agência e canal, aprendemos uma coisa: o que funciona é virar time, não só fornecedor. Isso não se explica em briefing — se prova no segundo projeto, no terceiro, no décimo. É isso que fazemos aqui: entramos na rotina, entendemos o contexto e entregamos no ritmo que o negócio precisa.",
+      "en": "After almost 10 years running a creative operation for brand, agency and channel, we learned one thing: what works is becoming a team, not just a supplier. This is not explained in a briefing — it is proven in the second project, the third, the tenth. That's what we do here: we get into the routine, understand the context and deliver at the pace the business needs.",
+      "es": "Después de casi 10 años dirigiendo una operación creativa para marca, agencia y canal, aprendimos una cosa: lo que funciona es convertirse en un equipo, no solo en un proveedor. Esto no se explica en un informe, se demuestra en el segundo proyecto, el tercero, el décimo. Eso es lo que hacemos aquí: nos adentramos en la rutina, entendemos el contexto y entregamos al ritmo que el negocio necesita.",
+      "zh": "经过近 10 年的品牌、代理和渠道创意运营，我们学到了一件事：有效的方法是成为一个团队，而不仅仅是一个供应商。这在简报中没有得到解释——它在第二个、第三个、第十个项目中得到了证明。这就是我们在这里所做的：我们进入日常工作，了解背景并按照业务需要的速度交付。",
+      "no": "Etter nesten 10 år å ha drevet en kreativ virksomhet for merkevare, byrå og kanal, lærte vi én ting: det som fungerer er å bli et team, ikke bare en leverandør. Dette er ikke forklart i en orientering - det er bevist i det andre prosjektet, det tredje, det tiende. Det er det vi gjør her: vi kommer inn i rutinen, forstår konteksten og leverer i det tempoet virksomheten trenger."
     },
     "contact_eyebrow": {
       "pt": "Contato",
@@ -1556,11 +1556,11 @@
         "no": "Kanaler, streaming & innhold"
       },
       "pain": {
-        "pt": "O ar não espera ninguém.",
-        "en": "Airtime waits for no one.",
-        "es": "El aire no espera a nadie.",
-        "zh": "播出不等任何人。",
-        "no": "Sendetiden venter ikke på noen."
+        "pt": "O On-Air não espera ninguém.",
+        "en": "On-Air doesn't wait for anyone.",
+        "es": "On-Air no espera a nadie.",
+        "zh": "On-Air 不等待任何人。",
+        "no": "On-Air venter ikke på noen."
       },
       "text": {
         "pt": "Entendemos o ritmo de quem trabalha com grade: identidade, chamadas, promos e pacotes gráficos.",
@@ -1611,11 +1611,11 @@
         "no": "Fristen tilgir ikke."
       },
       "text": {
-        "pt": "Já vivemos a pressão de estreia grande. Craft com acabamento de agência, no prazo de quem trabalha com evento.",
-        "en": "We've lived through the pressure of a big premiere. Agency-level craft, on the timeline events actually run on.",
-        "es": "Ya vivimos la presión de un gran estreno. Craft con acabado de agencia, en el plazo de quien trabaja con eventos.",
-        "zh": "我们经历过大型首播的压力，代理级工艺，遵循活动行业的交期。",
-        "no": "Vi har levd med presset fra en stor premiere. Håndverk med byrå-finish, på fristen til noen som jobber med eventer."
+        "pt": "Já vivemos a pressão de grandes eventos, mas não abrimos mão da melhor entrega.",
+        "en": "We have already experienced the pressure of major events, but we do not give up on the best delivery.",
+        "es": "Ya hemos experimentado la presión de los grandes acontecimientos, pero no renunciamos a la mejor entrega.",
+        "zh": "我们已经经历过重大事件的压力，但我们不会放弃最好的交付。",
+        "no": "Vi har allerede opplevd presset fra store arrangementer, men vi gir ikke opp på den beste leveransen."
       },
       "id": "quem_469pdwyd"
     }
