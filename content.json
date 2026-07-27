@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-27T22:09:19.586Z",
+  "generatedAt": "2026-07-27T22:12:38.645Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -864,6 +864,138 @@
       ]
     },
     {
+      "id": "work_z0fyh22c",
+      "kind": "craft",
+      "client": "Polônia",
+      "year": "2023",
+      "art": "wave",
+      "image": "media/projetos/polonia/pol-oo1.png",
+      "gallery": [
+        "https://vimeo.com/1189092887?fl=pl&fe=sh"
+      ],
+      "title": {
+        "pt": "Abertura para Documentário Polonês",
+        "en": "Opening for Polish Documentary",
+        "es": "Inauguración del documental polaco",
+        "zh": "波兰纪录片开幕",
+        "no": "Åpning for polsk dokumentar"
+      },
+      "tags": {
+        "pt": "Motion · Cinema · Style Frame — 2023",
+        "en": "Motion · Cinema · Style Frame — 2023",
+        "es": "Motion · Cinema · Style Frame — 2023",
+        "zh": "Motion · Cinema · Style Frame — 2023",
+        "no": "Motion · Cinema · Style Frame — 2023"
+      },
+      "body": {
+        "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
+        "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
+        "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
+      },
+      "blocks": [],
+      "ai": true
+    },
+    {
+      "id": "work_f0i6pxqm",
+      "kind": "craft",
+      "client": "Disney ESPN",
+      "year": "2024",
+      "art": "rings",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/03bdb7225202777.6841d90f1e26e-2.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/81e9a4225202777.6841da39a0550-2.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/b5f33d225202777.6841db3ed9917.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/aa0d5c225202777.6841da701a9d7.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/01d606225202777.6841db414562a.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/112836225202777.6841db3ed9208.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/399d99225202777.6841db459a9c1.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/6c276a225202777.6841db459b1ef.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/47a47f225202777.6841da931ef61.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/0f24ec225202777.6841da701aecd.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/34c2fd225202777.6841db459be96.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f14a5f225202777.6841db459b74a.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f01166225202777.6841fece7098e.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/c19718225202777.6841da931f567.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/d7c762225202777.6841da35edafd.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/fc84b7225202777.6841da35ed66c.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/db32be225202777.6841db4145ad5.gif",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/ed2de1225202777.6841da6dced4a.png",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png"
+      ],
+      "title": {
+        "pt": "Bola de Prata 2024",
+        "en": "Bola de Prata 2024",
+        "es": "Bola de Prata 2024",
+        "zh": "Bola de Prata 2024",
+        "no": "Bola de Prata 2024"
+      },
+      "tags": {
+        "pt": "Motion · 2D/3D · Broadcast — 2024",
+        "en": "Motion · 2D/3D · Broadcast — 2024",
+        "es": "Motion · 2D/3D · Broadcast — 2024",
+        "zh": "Motion · 2D/3D · Broadcast — 2024",
+        "no": "Motion · 2D/3D · Broadcast — 2024"
+      },
+      "body": {
+        "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
+        "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
+        "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/1090883760",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "craft",
+      "client": "Weasyplan",
+      "year": "2023",
+      "art": "grid",
+      "image": "media/weasyplan/weasyplan-01.png",
+      "gallery": [
+        "media/weasyplan/weasyplan-02.png",
+        "media/weasyplan/weasyplan-03.png",
+        "media/weasyplan/weasyplan-04.png"
+      ],
+      "title": {
+        "pt": "Weasyplan — do naming à papelaria",
+        "en": "Weasyplan — from naming to stationery",
+        "es": "Weasyplan: desde el nombre hasta el material de oficina",
+        "zh": "Weasyplan——从命名到文具",
+        "no": "Weasyplan — fra navngivning til skrivesaker"
+      },
+      "tags": {
+        "pt": "Naming · Criação & Conceito · DA · Design",
+        "en": "Naming · Criação & Conceito · DA · Design",
+        "es": "Naming · Creación y Concepto · DA · Design",
+        "zh": "命名 · 创意与概念 · 艺术指导 · 设计",
+        "no": "Naming · Kreasjon & konsept · DA · Design"
+      },
+      "body": {
+        "pt": "\"A sua empresa fora do Brasil.\" Do naming à papelaria: construímos a identidade da Weasyplan, plataforma que ajuda empresas brasileiras a se internacionalizarem — o símbolo da bandeira carrega essa travessia.",
+        "en": "\"Your company outside Brazil.\" From naming to stationery: we built the identity for Weasyplan, a platform that helps Brazilian companies go international — the flag symbol carries that journey.",
+        "es": "\"Tu empresa fuera de Brasil.\" Del naming a la papelería: construimos la identidad de Weasyplan, una plataforma que ayuda a empresas brasileñas a internacionalizarse — el símbolo de la bandera representa ese viaje.",
+        "zh": "\"让你的企业走出巴西。\"从命名到全套物料：我们为 Weasyplan 打造品牌识别 —— 这是一个帮助巴西企业出海的平台，旗帜符号承载着这段征程。",
+        "no": "\"Bedriften din utenfor Brasil.\" Fra naming til trykksaker: vi bygget identiteten til Weasyplan, en plattform som hjelper brasilianske selskaper med internasjonalisering — flaggsymbolet bærer den reisen."
+      },
+      "blocks": [],
+      "id": "work_xs7gsz4c"
+    },
+    {
       "id": "work_ixoec4v9",
       "kind": "craft",
       "client": "Sadia",
@@ -963,103 +1095,6 @@
         }
       ],
       "_importedFrom": "https://greencave.webflow.io/projetos/pilao-cafe-forte-do-brasil"
-    },
-    {
-      "id": "work_z0fyh22c",
-      "kind": "craft",
-      "client": "Polônia",
-      "year": "2023",
-      "art": "wave",
-      "image": "media/projetos/polonia/pol-oo1.png",
-      "gallery": [
-        "https://vimeo.com/1189092887?fl=pl&fe=sh"
-      ],
-      "title": {
-        "pt": "Abertura para Documentário Polonês",
-        "en": "Opening for Polish Documentary",
-        "es": "Inauguración del documental polaco",
-        "zh": "波兰纪录片开幕",
-        "no": "Åpning for polsk dokumentar"
-      },
-      "tags": {
-        "pt": "Motion · Cinema · Style Frame — 2023",
-        "en": "Motion · Cinema · Style Frame — 2023",
-        "es": "Motion · Cinema · Style Frame — 2023",
-        "zh": "Motion · Cinema · Style Frame — 2023",
-        "no": "Motion · Cinema · Style Frame — 2023"
-      },
-      "body": {
-        "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
-        "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
-      },
-      "blocks": [],
-      "ai": true
-    },
-    {
-      "id": "work_f0i6pxqm",
-      "kind": "craft",
-      "client": "Disney ESPN",
-      "year": "2024",
-      "art": "rings",
-      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png",
-      "gallery": [
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/03bdb7225202777.6841d90f1e26e-2.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/81e9a4225202777.6841da39a0550-2.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/b5f33d225202777.6841db3ed9917.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/aa0d5c225202777.6841da701a9d7.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/01d606225202777.6841db414562a.gif",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/112836225202777.6841db3ed9208.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/399d99225202777.6841db459a9c1.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/6c276a225202777.6841db459b1ef.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/47a47f225202777.6841da931ef61.gif",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/0f24ec225202777.6841da701aecd.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/34c2fd225202777.6841db459be96.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f14a5f225202777.6841db459b74a.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/f01166225202777.6841fece7098e.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/c19718225202777.6841da931f567.gif",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/d7c762225202777.6841da35edafd.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/fc84b7225202777.6841da35ed66c.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/db32be225202777.6841db4145ad5.gif",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/ed2de1225202777.6841da6dced4a.png",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png"
-      ],
-      "title": {
-        "pt": "Bola de Prata 2024",
-        "en": "Bola de Prata 2024",
-        "es": "Bola de Prata 2024",
-        "zh": "Bola de Prata 2024",
-        "no": "Bola de Prata 2024"
-      },
-      "tags": {
-        "pt": "Motion · 2D/3D · Broadcast — 2024",
-        "en": "Motion · 2D/3D · Broadcast — 2024",
-        "es": "Motion · 2D/3D · Broadcast — 2024",
-        "zh": "Motion · 2D/3D · Broadcast — 2024",
-        "no": "Motion · 2D/3D · Broadcast — 2024"
-      },
-      "body": {
-        "pt": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "en": "Art direction and 2D/3D motion for the annual award recognizing the best players and coaches in the Brazilian Championship since 1970 — bringing athletes to life on the ceremony's main screens, in partnership with Disney ESPN.",
-        "es": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "zh": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN.",
-        "no": "Direção de arte e motion 2D/3D para a premiação anual que reconhece os melhores jogadores e técnicos do Campeonato Brasileiro desde 1970 — trazendo os atletas à vida nas telas principais da cerimônia, em parceria com a Disney ESPN."
-      },
-      "blocks": [
-        {
-          "type": "video",
-          "url": "https://vimeo.com/1090883760",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        }
-      ]
     },
     {
       "kind": "craft",
@@ -1167,41 +1202,6 @@
         }
       ],
       "id": "work_xpp28h08"
-    },
-    {
-      "kind": "craft",
-      "client": "Weasyplan",
-      "year": "2023",
-      "art": "grid",
-      "image": "media/weasyplan/weasyplan-01.png",
-      "gallery": [
-        "media/weasyplan/weasyplan-02.png",
-        "media/weasyplan/weasyplan-03.png",
-        "media/weasyplan/weasyplan-04.png"
-      ],
-      "title": {
-        "pt": "Weasyplan — do naming à papelaria",
-        "en": "Weasyplan — from naming to stationery",
-        "es": "Weasyplan: desde el nombre hasta el material de oficina",
-        "zh": "Weasyplan——从命名到文具",
-        "no": "Weasyplan — fra navngivning til skrivesaker"
-      },
-      "tags": {
-        "pt": "Naming · Criação & Conceito · DA · Design",
-        "en": "Naming · Criação & Conceito · DA · Design",
-        "es": "Naming · Creación y Concepto · DA · Design",
-        "zh": "命名 · 创意与概念 · 艺术指导 · 设计",
-        "no": "Naming · Kreasjon & konsept · DA · Design"
-      },
-      "body": {
-        "pt": "\"A sua empresa fora do Brasil.\" Do naming à papelaria: construímos a identidade da Weasyplan, plataforma que ajuda empresas brasileiras a se internacionalizarem — o símbolo da bandeira carrega essa travessia.",
-        "en": "\"Your company outside Brazil.\" From naming to stationery: we built the identity for Weasyplan, a platform that helps Brazilian companies go international — the flag symbol carries that journey.",
-        "es": "\"Tu empresa fuera de Brasil.\" Del naming a la papelería: construimos la identidad de Weasyplan, una plataforma que ayuda a empresas brasileñas a internacionalizarse — el símbolo de la bandera representa ese viaje.",
-        "zh": "\"让你的企业走出巴西。\"从命名到全套物料：我们为 Weasyplan 打造品牌识别 —— 这是一个帮助巴西企业出海的平台，旗帜符号承载着这段征程。",
-        "no": "\"Bedriften din utenfor Brasil.\" Fra naming til trykksaker: vi bygget identiteten til Weasyplan, en plattform som hjelper brasilianske selskaper med internasjonalisering — flaggsymbolet bærer den reisen."
-      },
-      "blocks": [],
-      "id": "work_xs7gsz4c"
     },
     {
       "id": "work_ohvqklqq",
