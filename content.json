@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-27T02:25:23.346Z",
+  "generatedAt": "2026-07-27T02:28:41.289Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -401,11 +401,11 @@
         "no": "Design & motion"
       },
       "desc": {
-        "pt": "Identidade viva e animação com acabamento de agência grande, do conceito até a entrega técnica final.",
-        "en": "Living identity and animation with big-agency finish, from concept through final technical delivery.",
-        "es": "Identidad viva y animación con acabado de agencia grande, del concepto a la entrega técnica final.",
-        "zh": "具有大型代理机构完成度的鲜活识别与动画，从概念到最终技术交付。",
-        "no": "Levende identitet og animasjon med stort byrås finish, fra konsept til endelig teknisk leveranse."
+        "pt": "Identidade viva e animação com o padrão Greencave, do conceito até a entrega final.",
+        "en": "Living identity and animation with the Greencave standard, from concept to final delivery.",
+        "es": "Identidad viva y animación con el estándar Greencave, desde el concepto hasta la entrega final.",
+        "zh": "从概念到最终交付，符合 Greencave 标准的生动形象和动画。",
+        "no": "Levende identitet og animasjon med Greencave-standarden, fra konsept til endelig levering."
       },
       "id": "svc_2p97ys17"
     },
@@ -418,11 +418,11 @@
         "no": "3D & illustrasjon"
       },
       "desc": {
-        "pt": "Peças em 2D e 3D para campanha, produto e plataforma, no padrão que marca grande exige.",
-        "en": "2D and 3D pieces for campaigns, products and platforms, at the standard a major brand expects.",
-        "es": "Piezas en 2D y 3D para campaña, producto y plataforma, con el estándar que exige una marca grande.",
-        "zh": "面向campaign、产品与平台的 2D/3D 制作，达到大品牌要求的标准。",
-        "no": "2D- og 3D-elementer for kampanje, produkt og plattform, på nivået en stor merkevare krever."
+        "pt": "Peças em 2D e 3D para campanha, produto e plataforma, no padrão que o cliente precisa.",
+        "en": "2D and 3D pieces for campaigns, products and platforms, in the standard the client needs.",
+        "es": "Piezas 2D y 3D para campañas, productos y plataformas, en el estándar que el cliente necesita.",
+        "zh": "活动、产品和平台的 2D 和 3D 作品，符合客户需求的标准。",
+        "no": "2D og 3D brikker for kampanjer, produkter og plattformer, i standarden kunden trenger."
       },
       "id": "svc_9kf5vora"
     },
@@ -435,11 +435,11 @@
         "no": "Branded content & underholdning"
       },
       "desc": {
-        "pt": "Formatos com propósito de marca, do roteiro à produção. Conteúdo que fica no ar, não só campanha que passa.",
-        "en": "Brand-purpose formats, from script to production. Content that stays on air, not just a campaign that passes.",
-        "es": "Formatos con propósito de marca, del guion a la producción. Contenido que permanece, no solo una campaña que pasa.",
-        "zh": "有品牌目的的内容形式，从剧本到制作完成——让内容留下来，而不只是路过的campaign。",
-        "no": "Formater med merkevareformål, fra manus til produksjon. Innhold som blir værende, ikke bare en kampanje som passerer."
+        "pt": "Formatos com propósito de marca, do roteiro à produção. ",
+        "en": "Formats with brand purpose, from script to production.",
+        "es": "Formatos con propósito de marca, desde el guión hasta la producción.",
+        "zh": "从剧本到制作，具有品牌目的的格式。",
+        "no": "Formater med merkeformål, fra manus til produksjon."
       },
       "id": "svc_65k9mfgt"
     },
@@ -452,11 +452,11 @@
         "no": "Broadcast & store eventer"
       },
       "desc": {
-        "pt": "Identidade e conteúdo para TV, streaming, palco e ativação, no ritmo de quem não pode atrasar.",
-        "en": "Identity and content for TV, streaming, stage and activations, at the pace of someone who can't be late.",
-        "es": "Identidad y contenido para TV, streaming, escenario y activaciones, al ritmo de quien no puede atrasarse.",
-        "zh": "面向电视、流媒体、舞台与线下活动的识别与内容，紧跟不容延误的节奏。",
-        "no": "Identitet og innhold for TV, streaming, scene og aktiveringer, i tempoet til noen som ikke kan komme for sent."
+        "pt": "Identidade e conteúdo para TV, streaming, palco e ativação.",
+        "en": "Identity and content for TV, streaming, stage and activation.",
+        "es": "Identidad y contenidos para TV, streaming, escenario y activación.",
+        "zh": "电视、流媒体、舞台和激活的身份和内容。",
+        "no": "Identitet og innhold for TV, streaming, scene og aktivering."
       },
       "id": "svc_9re0usjo"
     },
@@ -469,11 +469,11 @@
         "no": "Anvendt KI for merkevarer"
       },
       "desc": {
-        "pt": "Testamos e aplicamos IA generativa onde faz sentido pra sua operação, sempre com segurança de marca.",
-        "en": "We test and apply generative AI where it makes sense for your operation, always with brand safety in mind.",
-        "es": "Probamos y aplicamos IA generativa donde tiene sentido para tu operación, siempre con seguridad de marca.",
-        "zh": "在符合运营需求之处测试并落地生成式 AI，始终兼顾品牌安全。",
-        "no": "Vi tester og bruker generativ KI der det gir mening for driften din, alltid med merkevaresikkerhet."
+        "pt": "Testamos e aplicamos IA generativa onde faz sentido pra sua operação, sempre com segurança e responsabilidade.",
+        "en": "We test and apply generative AI where it makes sense for your operation, always safely and responsibly.",
+        "es": "Probamos y aplicamos IA generativa donde tiene sentido para su operación, siempre de forma segura y responsable.",
+        "zh": "我们在对您的运营有意义的情况下测试和应用生成式人工智能，始终安全且负责任。",
+        "no": "Vi tester og bruker generativ AI der det gir mening for driften din, alltid trygt og ansvarlig."
       },
       "id": "svc_xlr5v2or"
     }
