@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T21:02:06.594Z",
+  "generatedAt": "2026-07-29T21:09:40.378Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -1640,11 +1640,7 @@
       "year": "2020",
       "art": "rings",
       "image": "media/budweiser-disney-espn/crown-01.jpg",
-      "gallery": [
-        "media/budweiser-disney-espn/crown-02.jpg",
-        "media/budweiser-disney-espn/crown-03.jpg",
-        "media/budweiser-disney-espn/crown-04.jpg"
-      ],
+      "gallery": [],
       "title": {
         "pt": "Behind The Crown",
         "en": "Behind The Crown",
@@ -1668,6 +1664,16 @@
       },
       "blocks": [
         {
+          "type": "quote",
+          "text": {
+            "pt": "“ 9 vídeos, 9 super atletas em 3 modalidades ”",
+            "en": "“9 videos, 9 super athletes in 3 disciplines”",
+            "es": "“9 vídeos, 9 súper deportistas en 3 disciplinas”",
+            "zh": "“9个视频，3个学科的9位超级运动员”",
+            "no": "\"9 videoer, 9 superidrettsutøvere i 3 disipliner\""
+          }
+        },
+        {
           "type": "video",
           "url": "https://vimeo.com/466237063",
           "caption": {
@@ -1677,6 +1683,117 @@
             "zh": "",
             "no": ""
           }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud01.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "*Behind The Crown*",
+            "en": "*Behind The Crown*",
+            "es": "*Detrás de la corona*",
+            "zh": "*皇冠背后*",
+            "no": "*Bak kronen*"
+          },
+          "body": {
+            "pt": "é um projeto cocriado com a Disney ESPN Brasil e Greencave.Co a partir do desdobramento da campanha \"King of Beers\" de #Budweiser.",
+            "en": "is a project co-created with Disney ESPN Brasil and Greencave.Co based on the unfolding of #Budweiser's \"King of Beers\" campaign.",
+            "es": "es un proyecto co-creado con Disney ESPN Brasil y Greencave.Co basado en el desarrollo de la campaña \"Rey de las Cervezas\" de #Budweiser.",
+            "zh": "是与 Disney ESPN Brasil 和 Greencave.Co 共同创建的项目，以 #Budweiser 的“啤酒之王”活动为基础。",
+            "no": "er et prosjekt laget i samarbeid med Disney ESPN Brasil og Greencave.Co basert på utfoldelsen av #Budweisers \"King of Beers\"-kampanje."
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud02.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          },
+          "body": {
+            "pt": "\"King Of Beers\" traduz os valores, liberdade e ambição da marca de cerveja mais valiosa do mundo. O conceito traz um paralelo nos segmentos em que a marca está sempre presente: na música e no esporte.\n\nPortanto, \"Behind The Crown\" trouxe histórias de atletas que venceram grandes obstáculos na vida das mais variadas questões sociais que possamos imaginar. Sem dúvida, tem nosso respeito.",
+            "en": "\"King Of Beers\" translates the values, freedom and ambition of the world's most valuable beer brand. The concept brings a parallel in the segments in which the brand is always present: in music and sport.\n\nTherefore, \"Behind The Crown\" brought stories of athletes who overcame great obstacles in life regarding the most varied social issues we can imagine. Without a doubt, he has our respect.",
+            "es": "\"King Of Beers\" traduce los valores, la libertad y la ambición de la marca de cerveza más valiosa del mundo. El concepto establece un paralelo en los segmentos en los que la marca siempre está presente: la música y el deporte.\n\nPor eso, “Behind The Crown” trajo historias de deportistas que superaron grandes obstáculos en la vida respecto a los más variados temas sociales que podamos imaginar. Sin duda, tiene nuestro respeto.",
+            "zh": "“啤酒之王”体现了世界上最有价值的啤酒品牌的价值观、自由和雄心。这一概念与该品牌始终存在的领域（音乐和体育）产生了相似之处。\n\n因此，《王冠背后》讲述了运动员克服生活中巨大障碍的故事，涉及我们可以想象的各种各样的社会问题。毫无疑问，他受到我们的尊重。",
+            "no": "«King Of Beers» oversetter verdiene, friheten og ambisjonene til verdens mest verdifulle ølmerke. Konseptet gir en parallell i segmentene der merkevaren alltid er til stede: innen musikk og sport.\n\nDerfor brakte «Behind The Crown» historier om idrettsutøvere som overvant store hindringer i livet angående de mest varierte sosiale spørsmålene vi kan tenke oss. Uten tvil har han vår respekt."
+          }
+        },
+        {
+          "type": "quote",
+          "text": {
+            "pt": "\"Ser King é chegar lá fazendo seu próprio caminho.\"",
+            "en": "\"Being King means getting there by making your own path.\"",
+            "es": "\"Ser Rey significa llegar allí haciendo tu propio camino.\"",
+            "zh": "“成为国王意味着通过开辟自己的道路来实现这一目标。”",
+            "no": "\"Å være konge betyr å komme dit ved å lage din egen vei.\""
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud03.webp",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud04.webp"
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud05.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud06.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud07.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud08.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/budweiser-disney-espn/bud09.webp"
+          ]
         }
       ],
       "id": "work_xpp28h08"
