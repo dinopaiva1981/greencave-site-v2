@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T19:09:41.795Z",
+  "generatedAt": "2026-07-29T20:26:28.955Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -569,23 +569,6 @@
         "no": "Design og bevegelseskampanjekonsept for iPhone 17 Pro: kunstretning, animasjon og ferdigstillelse."
       },
       "blocks": [
-        {
-          "type": "text",
-          "title": {
-            "pt": "O *processo*",
-            "en": "The *process*",
-            "es": "El *proceso*",
-            "zh": "*流程*",
-            "no": "*Prosessen*"
-          },
-          "body": {
-            "pt": "",
-            "en": "tests",
-            "es": "pruebas",
-            "zh": "测试",
-            "no": "tester"
-          }
-        },
         {
           "type": "video",
           "url": "https://vimeo.com/1189089039?fl=pl&fe=sh",
