@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T03:48:00.687Z",
+  "generatedAt": "2026-07-29T14:22:09.381Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -103,11 +103,11 @@
       "no": "Struktur & skala"
     },
     "works_title": {
-      "pt": "Cases que sustentam *operações*",
-      "en": "Cases that sustain *operations*",
-      "es": "Cases que sostienen *operaciones*",
-      "zh": "支撑*运营*的案例",
-      "no": "Cases som bærer *drift*"
+      "pt": "Cases qu sustentam *operações*",
+      "en": "Cases that support *operations*",
+      "es": "Casos que apoyan *operaciones*",
+      "zh": "支持*运营*的案例",
+      "no": "Saker som støtter *drift*"
     },
     "about_eyebrow": {
       "pt": "Estúdio",
