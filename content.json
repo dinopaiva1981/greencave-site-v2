@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T03:36:24.484Z",
+  "generatedAt": "2026-07-29T03:39:55.112Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -138,11 +138,11 @@
       "no": "Kontakt"
     },
     "contact_title": {
-      "pt": "Vamos criar *juntos*?",
-      "en": "Let's create *together*?",
-      "es": "¿Creamos *juntos*?",
-      "zh": "一起*创造*吧？",
-      "no": "Skal vi skape *sammen*?"
+      "pt": "Vamos *conversar*?",
+      "en": "Let's talk*?",
+      "es": "¿Hablemos*?",
+      "zh": "我们来谈谈*？",
+      "no": "La oss snakke*?"
     },
     "ui_view": {
       "pt": "Ver case",
@@ -1426,11 +1426,11 @@
       "on": true,
       "url": "https://green-cave-ops.base44.app/talent-register",
       "eyebrow": {
-        "pt": "Bunker de *talentos*",
-        "en": "*Talent Bunker*",
-        "es": "*Búnker de talentos*",
-        "zh": "*人才掩体*",
-        "no": "*Talentbunker*"
+        "pt": "Bunker Criativo",
+        "en": "Creative Bunker",
+        "es": "Búnker Creativo",
+        "zh": "创意地堡",
+        "no": "Kreativ Bunker"
       },
       "title": {
         "pt": "Quer criar<br><em>com a gente?</em>",
@@ -1440,18 +1440,18 @@
         "no": "Vil du skape<br><em>sammen med oss?</em>"
       },
       "note": {
-        "pt": "Queremos conhecer você e os seus melhores trabalhos. Quando aparecer um projeto com a sua cara, a gente chama, blz? 🤓",
-        "en": "We want to get to know you and your best work. When a project comes up that suits you, we'll call you, ok? 🤓",
-        "es": "Queremos conocerte a ti y a tu mejor trabajo. Cuando surja un proyecto que te convenga te llamaremos, ¿vale? 🤓",
-        "zh": "我们想了解您和您最好的作品。当有适合您的项目出现时，我们会打电话给您，好吗？ 🤓",
-        "no": "Vi ønsker å bli kjent med deg og ditt beste arbeid. Når et prosjekt dukker opp som passer deg, ringer vi deg, ok? 🤓"
+        "pt": "Deixe seu portfólio em nosso bunker. Quando aparecer um projeto com a sua cara, a gente chama, blz? 🤓",
+        "en": "Leave your portfolio in our bunker. When a project comes up that suits you, we'll call you, ok? 🤓",
+        "es": "Deja tu cartera en nuestro búnker. Cuando surja un proyecto que te convenga te llamaremos, ¿vale? 🤓",
+        "zh": "将您的投资组合留在我们的地堡中。当有适合您的项目出现时，我们会打电话给您，好吗？ 🤓",
+        "no": "Legg igjen porteføljen din i bunkeren vår. Når et prosjekt dukker opp som passer deg, ringer vi deg, ok? 🤓"
       },
       "cta": {
-        "pt": "Entrar no bunker de talentos",
-        "en": "Enter the talent bank",
-        "es": "Entra en el banco de talentos",
-        "zh": "进入人才库",
-        "no": "Gå inn i talentbanken"
+        "pt": "Entrar no <br><em>bunker criativo</em>",
+        "en": "Enter <br><em>creative bunker</em>",
+        "es": "Entra en el <br><em>búnker creativo</em>",
+        "zh": "进入<br><em>创意掩体</em>",
+        "no": "Gå inn i <br><em>kreativ bunker</em>"
       }
     }
   },
