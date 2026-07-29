@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T20:46:09.133Z",
+  "generatedAt": "2026-07-29T20:50:12.015Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -777,7 +777,8 @@
         "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_01.webp",
         "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_02.webp",
         "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_03.webp",
-        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp"
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/tela_assina.webp",
+        "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/502e79241939343.6962c113dda5d.jpg"
       ],
       "title": {
         "pt": "My Mum, Your Dad — Brasil",
@@ -829,17 +830,6 @@
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/ad8002241939343.6962bd9c3d7b4.jpg",
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8836a9241939343.6962bd9c3ddaf.jpg"
           ]
-        },
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/502e79241939343.6962c113dda5d.jpg",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
         }
       ]
     },
