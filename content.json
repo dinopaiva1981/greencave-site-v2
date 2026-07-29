@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T17:55:38.917Z",
+  "generatedAt": "2026-07-29T18:26:44.639Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -885,13 +885,35 @@
         "no": "Motion · Cinema · Style Frame — 2023"
       },
       "body": {
-        "pt": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "en": "Invited by Tiago Castro to create the style-frame opening for an international documentary — motion and cinematography working side by side, testing our craft outside the brand and broadcast world.",
-        "es": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "zh": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast.",
-        "no": "Convidados por Tiago Castro para assinar a abertura estilística de um documentário internacional — motion e cinematografia lado a lado, testando nosso craft fora do universo de marca e broadcast."
+        "pt": "Abertura para um documentário Polonês — motion e cinematografia lado a lado que ajudou a contar como parte das lutas pela liberdade.\n\nAlgumas ilustras e animações tiveram apoio de inteligência artificial pra produção de assets. Toda a criação, design, composição e finalização foi dirigida pelo nosso time criativo de diretores de arte e animação!",
+        "en": "Opening for a Polish documentary — motion and cinematography side by side that helped tell the story as part of the struggles for freedom.\n\nSome illustrations and animations were supported by artificial intelligence to produce assets. All creation, design, composition and finalization was directed by our creative team of art and animation directors!",
+        "es": "Apertura de un documental polaco: movimiento y cinematografía uno al lado del otro que ayudó a contar la historia como parte de las luchas por la libertad.\n\nAlgunas ilustraciones y animaciones fueron respaldadas por inteligencia artificial para producir activos. ¡Toda la creación, diseño, composición y finalización fue dirigida por nuestro equipo creativo de directores de arte y animación!",
+        "zh": "一部波兰纪录片的开场——动作和摄影并重，帮助讲述了争取自由斗争的一部分的故事。\n\n一些插图和动画是由人工智能支持来制作资产的。所有创作、设计、构图和定稿均由我们的艺术和动画导演创意团队指导！",
+        "no": "Åpning for en polsk dokumentar - bevegelse og kinematografi side om side som bidro til å fortelle historien som en del av kampen for frihet.\n\nNoen illustrasjoner og animasjoner ble støttet av kunstig intelligens for å produsere eiendeler. All kreasjon, design, komposisjon og ferdigstillelse ble regissert av vårt kreative team av kunst- og animasjonsdirektører!"
       },
-      "blocks": [],
+      "blocks": [
+        {
+          "type": "quote",
+          "text": {
+            "pt": "and I think we are at a point in history where that cycle could finally break.",
+            "en": "and I think we are at a point in history where that cycle could finally break.",
+            "es": "y creo que estamos en un punto de la historia en el que ese ciclo finalmente podría romperse.",
+            "zh": "我认为我们正处于历史的一个阶段，这个循环最终可能会被打破。",
+            "no": "og jeg tror vi er på et punkt i historien hvor den syklusen endelig kan bryte."
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/p004.png",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
       "ai": true
     },
     {
