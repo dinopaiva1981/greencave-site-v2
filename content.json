@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T03:31:56.603Z",
+  "generatedAt": "2026-07-29T03:33:22.617Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -138,11 +138,11 @@
       "no": "Kontakt"
     },
     "contact_title": {
-      "pt": "Vamos criar *juntos*?",
-      "en": "Let's create *together*?",
-      "es": "¿Creamos *juntos*?",
-      "zh": "一起*创造*吧？",
-      "no": "Skal vi skape *sammen*?"
+      "pt": "Vamos *conversar*?",
+      "en": "Let's talk*?",
+      "es": "¿Hablemos*?",
+      "zh": "我们来谈谈*？",
+      "no": "La oss snakke*?"
     },
     "ui_view": {
       "pt": "Ver case",
