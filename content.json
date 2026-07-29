@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T03:43:48.174Z",
+  "generatedAt": "2026-07-29T03:48:00.687Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -138,10 +138,10 @@
       "no": "Kontakt"
     },
     "contact_title": {
-      "pt": "Vamos *conversar*?",
-      "en": "Let's talk*?",
+      "pt": "Vamos *conversar* ?",
+      "en": "Let's talk* ?",
       "es": "¿Hablemos*?",
-      "zh": "我们来谈谈*？",
+      "zh": "我们来谈谈* ?",
       "no": "La oss snakke*?"
     },
     "ui_view": {
