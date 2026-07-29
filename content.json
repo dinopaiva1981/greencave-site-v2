@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T18:26:44.639Z",
+  "generatedAt": "2026-07-29T19:00:19.107Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -867,9 +867,7 @@
       "year": "2023",
       "art": "wave",
       "image": "media/projetos/polonia/pol-oo1.png",
-      "gallery": [
-        "https://vimeo.com/1189092887?fl=pl&fe=sh"
-      ],
+      "gallery": [],
       "title": {
         "pt": "Abertura para Documentário Polonês",
         "en": "Opening for Polish Documentary",
@@ -893,13 +891,14 @@
       },
       "blocks": [
         {
-          "type": "quote",
-          "text": {
-            "pt": "and I think we are at a point in history where that cycle could finally break.",
-            "en": "and I think we are at a point in history where that cycle could finally break.",
-            "es": "y creo que estamos en un punto de la historia en el que ese ciclo finalmente podría romperse.",
-            "zh": "我认为我们正处于历史的一个阶段，这个循环最终可能会被打破。",
-            "no": "og jeg tror vi er på et punkt i historien hvor den syklusen endelig kan bryte."
+          "type": "video",
+          "url": "https://vimeo.com/1189092887?fl=pl&fe=sh",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
           }
         },
         {
@@ -912,6 +911,98 @@
             "zh": "",
             "no": ""
           }
+        },
+        {
+          "type": "quote",
+          "text": {
+            "pt": "and I think we are at a point in history where that cycle could finally break.",
+            "en": "and I think we are at a point in history where that cycle could finally break.",
+            "es": "y creo que estamos en un punto de la historia en el que ese ciclo finalmente podría romperse.",
+            "zh": "我认为我们正处于历史的一个阶段，这个循环最终可能会被打破。",
+            "no": "og jeg tror vi er på et punkt i historien hvor den syklusen endelig kan bryte."
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/p001.png",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/p002.png",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/p003.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/pgif2.gif",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/pgif3.gif",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/pgif4.gif",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/p005.png",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/p006.png",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/p007.png"
         }
       ],
       "ai": true
