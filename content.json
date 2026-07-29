@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T14:22:09.381Z",
+  "generatedAt": "2026-07-29T14:29:10.016Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -90,10 +90,10 @@
     },
     "services_title": {
       "pt": "O que *fazemos*",
-      "en": "What we *do*",
-      "es": "Lo que *hacemos*",
-      "zh": "我们*做*的事",
-      "no": "Det vi *gjør*"
+      "en": "What *we* do",
+      "es": "¿Qué *nosotros* hacemos?",
+      "zh": "*我们*做什么",
+      "no": "Hva *vi* gjør"
     },
     "works_eyebrow": {
       "pt": "Estrutura & escala",
@@ -103,7 +103,7 @@
       "no": "Struktur & skala"
     },
     "works_title": {
-      "pt": "Cases qu sustentam *operações*",
+      "pt": "Cases que sustentam *operações*",
       "en": "Cases that support *operations*",
       "es": "Casos que apoyan *operaciones*",
       "zh": "支持*运营*的案例",
@@ -779,7 +779,7 @@
           }
         }
       ],
-      "ai": false
+      "ai": true
     },
     {
       "id": "work_n7lorw8r",
