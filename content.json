@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T20:55:33.513Z",
+  "generatedAt": "2026-07-29T21:02:06.594Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -1394,25 +1394,126 @@
         "no": "Kreativ drift - Merkevareinnhold - Motion Graphics"
       },
       "body": {
-        "pt": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
-        "en": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
-        "es": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
-        "zh": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
-        "no": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.\n\nCocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021."
+        "pt": "Cocriado com a Disney company BR, este projeto é um desdobramento da campanha \"FomedeNBA\" para branded content que foram veiculados nos canais ESPN durante a cobertura da NBA 2021.",
+        "en": "Co-created with Disney company BR, this project is an offshoot of the \"FomedeNBA\" campaign for branded content that was broadcast on ESPN channels during NBA 2021 coverage.",
+        "es": "Co-creado con la empresa BR de Disney, este proyecto es una rama de la campaña \"FomedeNBA\" de contenido de marca que se transmitió en los canales de ESPN durante la cobertura de la NBA 2021.",
+        "zh": "该项目与迪士尼公司 BR 共同创建，是品牌内容“FomedeNBA”活动的一个分支，该活动在 NBA 2021 报道期间在 ESPN 频道上播出。",
+        "no": "Dette prosjektet ble laget i samarbeid med Disney-selskapet BR, og er en utløper av \"FomedeNBA\"-kampanjen for merkevareinnhold som ble sendt på ESPN-kanaler under NBA 2021-dekningen."
       },
-      "gallery": [
-        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612c31a4062f71b2127ba943_disney%402x.png",
-        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0b8d0e3247f23fba52_2.jpeg",
-        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0a2a8866a9af0f86ba_1.jpeg",
-        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d0ffb94832e34d12d41_4.png",
-        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/60df1d10c790bf40479604b9_5.png",
-        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612cfa3135f43778c39c412c_a.jpg",
-        "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/612cfa2484da1e07373d1727_b.png"
-      ],
+      "gallery": [],
       "blocks": [
+        {
+          "type": "text",
+          "title": {
+            "pt": "*A gente explica e você vira fã*",
+            "en": "*We explain and you become a fan*",
+            "es": "*Te explicamos y te haces fan*",
+            "zh": "*我们解释你就会成为粉丝*",
+            "no": "*Vi forklarer og du blir en fan*"
+          },
+          "body": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s02.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
         {
           "type": "video",
           "url": "https://vimeo.com/572242718",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "quote",
+          "text": {
+            "pt": "\"8 vídeos que traz 8 curiosidades sobre o mundo do basquete.\"",
+            "en": "\"8 videos that bring 8 interesting facts about the world of basketball.\"",
+            "es": "\"8 vídeos que aportan 8 datos interesantes sobre el mundo del baloncesto.\"",
+            "zh": "“8 个视频带来了有关篮球世界的 8 个有趣事实。”",
+            "no": "\"8 videoer som bringer 8 interessante fakta om basketballens verden.\""
+          }
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/ss12.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s09.gif",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s08.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s07.webp"
+          ]
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s010.gif",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s011.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s013.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s014.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s015.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s016.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s017.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s018.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s019.webp"
+          ]
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s023.webp",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s06.webp"
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s09.gif",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/ss12.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/sadia/s019.webp",
           "caption": {
             "pt": "",
             "en": "",
