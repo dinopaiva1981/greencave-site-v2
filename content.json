@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T14:29:10.016Z",
+  "generatedAt": "2026-07-29T17:55:38.917Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -635,11 +635,11 @@
           "type": "video",
           "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
           "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
+            "pt": "Motion Brand para ativação de comunicação",
+            "en": "Motion Brand for communication activation",
+            "es": "Motion Brand para activación de comunicación",
+            "zh": "用于激活沟通的 Motion Brand",
+            "no": "Motion Brand for kommunikasjonsaktivering"
           }
         },
         {
@@ -678,7 +678,7 @@
         },
         {
           "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bef0bd186627903.6578ce2ea13da.jpg",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/90fa4b186627903.6578ce2dadb7e.jpg",
           "caption": {
             "pt": "",
             "en": "",
@@ -688,21 +688,19 @@
           }
         },
         {
-          "type": "gallery",
-          "urls": [
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/33f385186627903.6578fb9d40363.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c33ee186627903.6578ce30abd19.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/32d3ff186627903.6578ce2e3851e.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/789f81186627903.6578fcbb3c210.gif",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/6f84e2186627903.6578fb9d41274.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e0c339186627903.6578ce3050b1a.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif"
-          ]
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/850eed186627903.6578ce2daec25.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
         },
         {
           "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c5bba186627903.6578ce2f1c8ec.jpg",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif",
           "caption": {
             "pt": "",
             "en": "",
@@ -729,25 +727,13 @@
           }
         },
         {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/e1f766186627903.6578fb9c25276.gif",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/bfe995186627903.6578fb9c24778.gif",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
+          "type": "quote",
+          "text": {
+            "pt": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais.",
+            "en": "What you've seen so far is the tip of an operation that already knows how to do much more.",
+            "es": "Lo que has visto hasta ahora es la punta de una operación que ya sabe hacer mucho más.",
+            "zh": "到目前为止，您所看到的只是一个操作的提示，该操作已经知道如何执行更多操作。",
+            "no": "Det du har sett så langt er spissen av en operasjon som allerede vet hvordan du kan gjøre mye mer."
           }
         },
         {
@@ -760,11 +746,22 @@
             "no": "*Dette er bare en liten del av potensialet vårt*"
           },
           "body": {
-            "pt": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
-            "en": "What you've seen so far is just the tip of an operation that already knows how to do much more. We have the structure, team and maturity to go beyond punctual content: original format creation for the CPV ecosystem, end-to-end digital production (from script to multi-channel delivery), strategic brand positioning advisory, digital product development and activations that leave the screen and land at the point of sale. Aché has already tested Greencave as a piece supplier. The natural next step is to test Greencave as an operating partner — the squad that thinks, produces and sustains the brand at scale, all year round.",
-            "es": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
-            "zh": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
-            "no": "O que você viu até aqui é a ponta de uma operação que já sabe fazer muito mais. Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro."
+            "pt": "Temos estrutura, time e maturidade pra ir além do conteúdo pontual: criação de formatos originais para o ecossistema CPV, produção digital ponta a ponta (do roteiro à entrega multi-canal), assessoria estratégica de posicionamento de marca, construção de produtos digitais e ativações que saem da tela e chegam no PDV. A Aché já testou a Greencave como fornecedora de peça. O próximo passo natural é testar a Greencave como sócia de operação — o squad que pensa, produz e sustenta a marca em escala, o ano inteiro.",
+            "en": "We have the structure, team and maturity to go beyond specific content: creation of original formats for the CPV ecosystem, end-to-end digital production (from script to multi-channel delivery), strategic brand positioning advice, construction of digital products and activations that leave the screen and arrive at the POS. Aché has already tested Greencave as a part supplier. The next natural step is to test Greencave as an operating partner — the squad that thinks, produces and sustains the brand at scale, year-round.",
+            "es": "Contamos con la estructura, el equipo y la madurez para ir más allá del contenido específico: creación de formatos originales para el ecosistema CPV, producción digital end-to-end (desde el guión hasta la entrega multicanal), asesoramiento estratégico en posicionamiento de marca, construcción de productos digitales y activaciones que salen de la pantalla y llegan al punto de venta. Aché ya ha probado a Greencave como proveedor de piezas. El siguiente paso natural es probar a Greencave como socio operativo: el equipo que piensa, produce y sostiene la marca a escala, durante todo el año.",
+            "zh": "我们拥有超越特定内容的结构、团队和成熟度：为 CPV 生态系统创建原始格式、端到端数字制作（从脚本到多渠道交付）、战略品牌定位建议、数字产品的构建以及离开屏幕并到达 POS 的激活。 Aché 已经将 Greencave 作为零件供应商进行了测试。下一步自然是测试 Greencave 作为运营合作伙伴的地位——该团队全年大规模思考、生产和维护该品牌。",
+            "no": "Vi har strukturen, teamet og modenheten til å gå utover spesifikt innhold: opprettelse av originale formater for CPV-økosystemet, ende-til-ende digital produksjon (fra script til multi-kanal levering), strategisk merkeposisjoneringsråd, konstruksjon av digitale produkter og aktiveringer som forlater skjermen og kommer til POS. Aché har allerede testet Greencave som delleverandør. Det neste naturlige steget er å teste Greencave som driftspartner – troppen som tenker, produserer og opprettholder merkevaren i stor skala, året rundt."
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/4c33ee186627903.6578ce30abd19.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
           }
         },
         {
