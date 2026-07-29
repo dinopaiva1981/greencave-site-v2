@@ -1890,6 +1890,24 @@ function renderSec(){
     });
     c.appendChild(addBtn("Adicionar pessoa",()=>{DATA.about.team.push({id:genId("team"),name:"Nome Sobrenome",photo:"",role:ml5("")});renderSec();}));
     m.appendChild(c);
+
+    /* banco de talentos — bloco que aparece logo depois do time no site */
+    if(!DATA.about.talent) DATA.about.talent={on:true,url:"",eyebrow:ml5(""),title:ml5(""),note:ml5(""),cta:ml5("")};
+    const TL=DATA.about.talent;
+    c=card("Banco de talentos","Bloco com botão que aparece logo depois do time, no site.");
+    const tgl=el(`<label class="gc-aitag">
+      <input type="checkbox" ${TL.on!==false?'checked':''}>
+      <span class="gc-aitag-box"></span>
+      <span class="gc-aitag-txt"><b>Mostrar o bloco no site</b>Desmarque para esconder sem apagar o que já está escrito.</span>
+    </label>`);
+    tgl.querySelector('input').addEventListener('change',e=>{TL.on=e.target.checked;});
+    c.appendChild(tgl);
+    c.appendChild(txtField("Link do cadastro (URL)",TL,"url",{type:"url",hint:"Cole aqui o link do formulário (Google Forms, Typeform, Notion...). Sem link preenchido, o bloco não aparece no site."}));
+    c.appendChild(mlField("Etiqueta",TL.eyebrow));
+    c.appendChild(mlField("Chamada",TL.title,{hint:"Aceita <br> para quebrar linha e <em>texto</em> para destacar em verde."}));
+    c.appendChild(mlField("Texto de apoio",TL.note,{area:true}));
+    c.appendChild(mlField("Texto do botão",TL.cta));
+    m.appendChild(c);
   }
 
   if(SEC==="contato"){

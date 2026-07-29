@@ -425,6 +425,34 @@ body.ready #hero .cap{width:1.5em}
 #about .val:hover p{color:#3A3835}
 #about .team{margin-top:clamp(56px,9vh,110px);display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:clamp(18px,2.4vw,30px)}
 @media(max-width:560px){#about .team{grid-template-columns:repeat(2,1fr);gap:14px}.member .ph{aspect-ratio:1/1}.member .ph .init{font-size:40px}}
+
+/* ---------- banco de talentos ---------- */
+#talent[hidden]{display:none!important}
+#talent{margin-top:clamp(48px,8vh,96px);background:var(--ink);color:var(--paper);
+  border-radius:clamp(16px,2vw,24px);padding:clamp(28px,4.4vw,58px);position:relative;overflow:hidden}
+#talent::before{content:"";position:absolute;right:-8%;top:-42%;width:46%;aspect-ratio:1;
+  border-radius:50%;border:1px solid rgba(239,234,228,.12);pointer-events:none}
+#talent::after{content:"";position:absolute;right:2%;top:-18%;width:22%;aspect-ratio:1;
+  border-radius:50%;border:1px solid rgba(239,234,228,.1);pointer-events:none}
+#talent .tin{position:relative;z-index:1;display:flex;justify-content:space-between;
+  align-items:flex-end;gap:clamp(22px,4vw,60px);flex-wrap:wrap}
+#talent .tl{max-width:640px;flex:1 1 340px}
+#talent .teyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;
+  color:var(--green);display:flex;align-items:center;gap:12px;margin-bottom:clamp(16px,2.4vh,24px)}
+#talent .teyebrow::before{content:"";width:9px;height:9px;background:var(--green);border-radius:2px}
+#talent .tt{font-family:var(--disp);font-size:clamp(27px,4.2vw,54px);line-height:1;
+  letter-spacing:-.03em;font-weight:700;margin-bottom:14px}
+#talent .tt em{font-style:normal;color:var(--green)}
+#talent .tn{font-size:clamp(14px,1.45vw,16.5px);line-height:1.6;color:rgba(239,234,228,.66);max-width:54ch}
+#talent .ta{flex:0 0 auto}
+#talent .btn{border-color:var(--green);background:var(--green);color:var(--ink)}
+#talent .btn::before{background:var(--paper)}
+#talent .btn:hover{color:var(--ink)}
+@media(max-width:700px){
+  #talent .tin{flex-direction:column;align-items:stretch}
+  #talent .ta{width:100%}
+  #talent .btn{width:100%;justify-content:center}
+}
 .member{transition:transform .45s var(--ease)}
 .member:hover{transform:translateY(-7px)}
 .member .ph{aspect-ratio:3/4;border-radius:12px;background:var(--bone);border:1.5px solid var(--ink);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;transition:border-color .4s,box-shadow .4s}
@@ -746,6 +774,16 @@ footer .base{font-size:13px}
     </div>
     <div class="values" id="values"></div>
     <div class="team" id="team"></div>
+    <div id="talent" class="reveal" hidden>
+      <div class="tin">
+        <div class="tl">
+          <p class="teyebrow" data-t="eyebrow"></p>
+          <h3 class="tt" data-t="title"></h3>
+          <p class="tn" data-t="note"></p>
+        </div>
+        <div class="ta"><a class="btn solid mag" id="talent_cta" href="#" target="_blank" rel="noopener noreferrer" data-cur="mini"><span data-t="cta"></span></a></div>
+      </div>
+    </div>
   </section>
 </main>
 
@@ -953,6 +991,19 @@ function render(){
       <div class="ph">${m.photo?`<img src="${esc(m.photo)}" alt="${esc(m.name)}" loading="lazy" decoding="async">`:`<span class="init">${esc(m.name.split(" ").map(w=>w[0]).slice(0,2).join(""))}</span>`}</div>
       <b>${esc(m.name)}</b><span>${esc(T(m.role))}</span>
     </div>`).join("");
+
+  /* banco de talentos — some sozinho se desligado, sem link, ou se o
+     content.json for anterior a este campo */
+  (function(){
+    const box=$('talent'); if(!box) return;
+    const t=(C.about&&C.about.talent)||null;
+    const url=t&&t.url?String(t.url).trim():"";
+    if(!t||t.on===false||!url){ box.hidden=true; return; }
+    box.hidden=false;
+    const set=(k,html)=>{const n=box.querySelector('[data-t="'+k+'"]');if(n){if(html)n.innerHTML=T(t[k]||"");else n.textContent=T(t[k]||"");}};
+    set('eyebrow'); set('title',true); set('note'); set('cta');
+    const a=$('talent_cta'); a.href=url;
+  })();
 
   const mail=$('mail'); mail.querySelector('span').textContent=C.contact.email; mail.href="mailto:"+C.contact.email;
   $('f_city').textContent=C.contact.city;
