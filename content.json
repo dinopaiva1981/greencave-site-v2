@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T20:34:34.525Z",
+  "generatedAt": "2026-07-29T20:46:09.133Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -1181,11 +1181,7 @@
       "year": "2023",
       "art": "grid",
       "image": "media/weasyplan/weasyplan-01.png",
-      "gallery": [
-        "media/weasyplan/weasyplan-02.png",
-        "media/weasyplan/weasyplan-03.png",
-        "media/weasyplan/weasyplan-04.png"
-      ],
+      "gallery": [],
       "title": {
         "pt": "Weasyplan — do naming à papelaria",
         "en": "Weasyplan — from naming to stationery",
@@ -1207,7 +1203,183 @@
         "zh": "\"让你的企业走出巴西。\"从命名到全套物料：我们为 Weasyplan 打造品牌识别 —— 这是一个帮助巴西企业出海的平台，旗帜符号承载着这段征程。",
         "no": "\"Bedriften din utenfor Brasil.\" Fra naming til trykksaker: vi bygget identiteten til Weasyplan, en plattform som hjelper brasilianske selskaper med internasjonalisering — flaggsymbolet bærer den reisen."
       },
-      "blocks": [],
+      "blocks": [
+        {
+          "type": "quote",
+          "text": {
+            "pt": "\"Encontramos na letra Y a oportunidade de crescimento para seguir novos caminhos.\"",
+            "en": "\"We found in the letter Y the opportunity for growth to follow new paths.\"",
+            "es": "\"Encontramos en la letra Y la oportunidad de crecer para seguir nuevos caminos.\"",
+            "zh": "“我们在字母 Y 中发现了走新道路的增长机会。”",
+            "no": "\"Vi fant i bokstaven Y muligheten for vekst til å følge nye veier.\""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w02.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w03.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w01.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w06.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w07.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w08.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w09.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w10.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w13.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w11.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w12.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w13.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w14.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w15.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/weasyplan/w16.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
       "id": "work_xs7gsz4c"
     },
     {
