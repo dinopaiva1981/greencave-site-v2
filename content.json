@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-29T21:38:49.354Z",
+  "generatedAt": "2026-07-30T02:58:23.547Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -1164,6 +1164,130 @@
           }
         }
       ]
+    },
+    {
+      "id": "work_5iwf8niy",
+      "client": "Formata - MultiShow",
+      "year": "2024",
+      "art": "rings",
+      "kind": "case",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/frame-no-corre.jpg",
+      "gallery": [],
+      "blocks": [
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/frame-no-corre.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.39.25.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=f4x0xUEmNOw",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.43.18.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.43.49.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.44.23.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.44.14.webp"
+          ]
+        },
+        {
+          "type": "video",
+          "url": "https://youtu.be/Tdt62dpg2kc",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc01.jpg",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc02.jpg"
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc03.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://youtu.be/aZUr6QrB3EE",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc03.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "title": {
+        "pt": "No Corre MultiShow - Temporada 2",
+        "en": "No Corre MultiShow - Season 2",
+        "es": "MultiShow No Corre - Temporada 2",
+        "zh": "没有 Corre MultiShow - 第 2 季",
+        "no": "No Corre MultiShow – sesong 2"
+      },
+      "tags": {
+        "pt": "Operação Criativa - Design - Pós Produção",
+        "en": "Creative Operation - Design - Post Production",
+        "es": "Operación Creativa - Diseño - Postproducción",
+        "zh": "创意运营-设计-后期制作",
+        "no": "Kreativ drift - Design - Etterproduksjon"
+      },
+      "body": {
+        "pt": "",
+        "en": "",
+        "es": "",
+        "zh": "",
+        "no": ""
+      },
+      "ai": true
     },
     {
       "kind": "craft",
