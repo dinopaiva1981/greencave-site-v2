@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-30T03:32:48.226Z",
+  "generatedAt": "2026-07-30T03:35:41.488Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -815,6 +815,11 @@
         },
         {
           "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/476a43241939343.6962bd9929ae6.png",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8d5e7e241939343.6962bd9a74a5d.png"
+        },
+        {
+          "type": "duo",
           "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/screenshot_20260422_175554_instagram.jpg",
           "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/screenshot_20260422_175600_instagram.jpg"
         },
@@ -827,9 +832,19 @@
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/b07867241939343.6962b4a51b813.jpg",
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/88ee3e241939343.6962bd9e2a491.jpg",
             "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/b897b1241939343.6962bd9cc3e72.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/ad8002241939343.6962bd9c3d7b4.jpg",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8836a9241939343.6962bd9c3ddaf.jpg"
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/ad8002241939343.6962bd9c3d7b4.jpg"
           ]
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8836a9241939343.6962bd9c3ddaf.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
         }
       ]
     },
