@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-30T20:54:28.312Z",
+  "generatedAt": "2026-07-30T21:27:07.355Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -2010,27 +2010,168 @@
         "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/c73f8a131011115.618c29a25abf9.png"
       ],
       "title": {
-        "pt": "Nunca é sorte, sempre é atenção!",
-        "en": "It's never luck, it's always attention!",
-        "es": "Nunca é sorte, sempre é atenção!",
-        "zh": "Nunca é sorte, sempre é atenção!",
-        "no": "Nunca é sorte, sempre é atenção!"
+        "pt": "Operação Criativa Dedicada",
+        "en": "Dedicated Creative Operation",
+        "es": "Operación creativa dedicada",
+        "zh": "专注创意运营",
+        "no": "Dedikert kreativ drift"
       },
       "tags": {
-        "pt": "Criação · Campanha · Operação Criativa",
-        "en": "Creation · Campaign · Creative Operation",
-        "es": "Creación · Campaña · Operación Creativa",
-        "zh": "创作·活动·创意运营",
-        "no": "Opprettelse · Kampanje · Kreativ drift"
+        "pt": "Criação · Campanha · Comunicação & Branding",
+        "en": "Creation · Campaign · Communication & Branding",
+        "es": "Creación · Campaña · Comunicación y Branding",
+        "zh": "创作·活动·传播与品牌",
+        "no": "Opprettelse · Kampanje · Kommunikasjon og merkevarebygging"
       },
       "body": {
-        "pt": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-        "en": "Co-created with Suzano Brazil's communications team, the campaign reinforces the importance of paying attention at work to avoid errors and accidents — art, illustration and motion serving a serious theme without losing warmth.",
-        "es": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-        "zh": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza.",
-        "no": "Cocriada com o time de comunicação da Suzano Brasil, a campanha reforça a importância da atenção no trabalho para evitar erros e acidentes — arte, ilustração e motion a serviço de um tema sério, sem perder leveza."
+        "pt": "Implementamos um dos nossos MiniLabs para atender gargalos críticos da Suzano em um momento estratégico da empresa. O desafio exigia rapidez na resposta, organização impecável, alto nível de execução e uma parceria baseada em confiança. Com uma operação dedicada e integrada à equipe do cliente, garantimos agilidade na produção, excelência nas entregas e total previsibilidade durante todo o processo. \n",
+        "en": "We implemented one of our MiniLabs to address critical bottlenecks at Suzano at a strategic moment for the company. The challenge required quick response, impeccable organization, a high level of execution and a partnership based on trust. With a dedicated operation integrated with the client's team, we guarantee agility in production, excellence in deliveries and total predictability throughout the process.",
+        "es": "Implementamos uno de nuestros MiniLabs para abordar cuellos de botella críticos en Suzano en un momento estratégico para la empresa. El desafío requería una respuesta rápida, una organización impecable, un alto nivel de ejecución y una asociación basada en la confianza. Con una operación dedicada e integrada con el equipo del cliente, garantizamos agilidad en la producción, excelencia en las entregas y total previsibilidad en todo el proceso.",
+        "zh": "我们在 Suzano 的战略时刻实施了一个迷你实验室，以解决该公司的关键瓶颈。这一挑战需要快速响应、无可挑剔的组织、高水平的执行力和基于信任的伙伴关系。通过与客户团队整合的专门运营，我们保证生产的敏捷性、卓越的交付以及整个过程的总体可预测性。",
+        "no": "Vi implementerte en av våre MiniLabs for å løse kritiske flaskehalser i Suzano på et strategisk tidspunkt for selskapet. Utfordringen krevde rask respons, upåklagelig organisering, høy gjennomføringsgrad og et samarbeid basert på tillit. Med en dedikert operasjon integrert med kundens team garanterer vi smidighet i produksjonen, fortreffelighet i leveranser og total forutsigbarhet gjennom hele prosessen."
       },
       "blocks": [
+        {
+          "type": "video",
+          "url": "https://vimeo.com/manage/videos/644487818",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "quote",
+          "text": {
+            "pt": "“Uma agenda dinâmica, com múltiplas frentes e desafios que exigiam agilidade, organização e excelência em cada entrega.”",
+            "en": "“A dynamic agenda, with multiple fronts and challenges that required agility, organization and excellence in each delivery.”",
+            "es": "“Una agenda dinámica, con múltiples frentes y desafíos que requirieron agilidad, organización y excelencia en cada entrega”.",
+            "zh": "“一个充满活力的议程，涉及多个前沿和挑战，要求每次交付都具有敏捷性、组织性和卓越性。”",
+            "no": "\"En dynamisk agenda, med flere fronter og utfordringer som krevde smidighet, organisering og fortreffelighet i hver leveranse.\""
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://vimeo.com/699515668",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio01.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio02.gif",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio03.gif",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "*Da criação de Campanha ao Desdobramento de Rebranding*",
+            "en": "*From Campaign Creation to Rebranding Deployment*",
+            "es": "*Desde la creación de la campaña hasta la implementación del cambio de marca*",
+            "zh": "*从营销活动创建到品牌重塑部署*",
+            "no": "*Fra kampanjeoppretting til rebranding-implementering*"
+          },
+          "body": {
+            "pt": "Enquanto um rebranding global era desdobrado para clientes, fornecedores e parceiros em três idiomas, outra equipe desenvolvia uma campanha institucional de segurança para fortalecer a cultura de uso de EPIs. Paralelamente, uma nova tecnologia ganhava vida por meio de estratégia, roteiro, design, produção 3D e acabamento de altíssimo nível.\n",
+            "en": "While a global rebranding was rolled out to customers, suppliers and partners in three languages, another team developed an institutional safety campaign to strengthen the culture of using PPE. At the same time, a new technology came to life through strategy, script, design, 3D production and high-level finishing.",
+            "es": "Mientras se implementaba un cambio de marca global para clientes, proveedores y socios en tres idiomas, otro equipo desarrolló una campaña de seguridad institucional para fortalecer la cultura del uso de EPP. Al mismo tiempo, una nueva tecnología cobró vida a través de estrategia, guión, diseño, producción 3D y acabados de alto nivel.",
+            "zh": "在以三种语言向客户、供应商和合作伙伴推出全球品牌重塑的同时，另一个团队开展了机构安全活动，以加强使用个人防护装备的文化。与此同时，一项新技术通过策略、脚本、设计、3D 制作和高水平的后期处理而变得栩栩如生。",
+            "no": "Mens en global rebranding ble rullet ut til kunder, leverandører og partnere på tre språk, utviklet et annet team en institusjonell sikkerhetskampanje for å styrke kulturen for bruk av PPE. Samtidig kom en ny teknologi til live gjennom strategi, manus, design, 3D-produksjon og etterbehandling på høyt nivå."
+          }
+        },
+        {
+          "type": "quote",
+          "text": {
+            "pt": "Múltiplos desafios. Equipes sincronizadas. Uma única operação.  Essa é a Greencave.",
+            "en": "Multiple challenges. Synchronized teams. A single operation.  This is the Greencave.",
+            "es": "Múltiples desafíos. Equipos sincronizados. Una sola operación.  Esta es la Cueva Verde.",
+            "zh": "多重挑战。同步团队。一次操作。  这就是绿洞。",
+            "no": "Flere utfordringer. Synkroniserte team. En enkelt operasjon.  Dette er Greencave."
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio04.webp",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio05.webp"
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio06.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio07.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio08.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio09.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
         {
           "type": "video",
           "url": "https://vimeo.com/644500277",
