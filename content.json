@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-30T20:34:58.478Z",
+  "generatedAt": "2026-07-30T20:54:28.312Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -932,11 +932,11 @@
         "no": "Grafikkpakke · Kreativ drift · Virkelighet · Dedikert minilab"
       },
       "body": {
-        "pt": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-        "en": "The Brazilian version of the dating reality format already running in markets like the UK, Poland and Canada — produced by Formata for Globoplay. Branded content and motion to bring the format's arrival in Brazil to life.",
-        "es": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-        "zh": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país.",
-        "no": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. Conteúdo de marca e motion para dar corpo à chegada do formato ao país."
+        "pt": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. ",
+        "en": "The Brazilian version of the dating reality show that already runs in markets such as the United Kingdom, Poland and Canada — produced by Formata for Globoplay.",
+        "es": "La versión brasileña del reality de citas que ya se presenta en mercados como Reino Unido, Polonia y Canadá, producido por Formata para Globoplay.",
+        "zh": "由 Formata 为 Globoplay 制作的巴西版约会真人秀节目已在英国、波兰和加拿大等市场播出。",
+        "no": "Den brasilianske versjonen av dating-reality-programmet som allerede kjører i markeder som Storbritannia, Polen og Canada – produsert av Formata for Globoplay."
       },
       "blocks": [
         {
@@ -951,9 +951,53 @@
           }
         },
         {
+          "type": "text",
+          "title": {
+            "pt": "*Conceito Criativo*",
+            "en": "*Creative Concept*",
+            "es": "*Concepto creativo*",
+            "zh": "*创意理念*",
+            "no": "*Kreativt konsept*"
+          },
+          "body": {
+            "pt": "Foram 3 meses dedicados a este projeto que marca a chegada do formato no Brasil. Um sucesso absoluto que impactou numa segunda temporada de forma imediata.",
+            "en": "3 months were dedicated to this project that marks the arrival of the format in Brazil. An absolute success that had an immediate impact on a second season.",
+            "es": "3 meses fueron dedicados a este proyecto que marca la llegada del formato a Brasil. Un éxito absoluto que repercutió inmediatamente en una segunda temporada.",
+            "zh": "这个项目花了 3 个月的时间，标志着该格式在巴西的到来。绝对的成功对第二季产生了直接影响。",
+            "no": "3 måneder ble dedikert til dette prosjektet som markerer ankomsten av formatet til Brasil. En absolutt suksess som hadde en umiddelbar innvirkning på en andre sesong."
+          }
+        },
+        {
           "type": "duo",
           "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/476a43241939343.6962bd9929ae6.png",
           "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/globoplay-formata/8d5e7e241939343.6962bd9a74a5d.png"
+        },
+        {
+          "type": "quote",
+          "text": {
+            "pt": "Do conceito ao Style Frame - Da abertura ao Lower Third, ",
+            "en": "From Concept to Style Frame - From Opening to Lower Third,",
+            "es": "Del concepto al marco de estilo: de la apertura al tercio inferior,",
+            "zh": "从概念到风格框架 - 从开口到下三分之一，",
+            "no": "Fra konsept til stilramme - fra åpning til nedre tredjedel,"
+          }
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "Operação Criativa Dedicada",
+            "en": "Dedicated Creative Operation",
+            "es": "Operación creativa dedicada",
+            "zh": "专注创意运营",
+            "no": "Dedikert kreativ drift"
+          },
+          "body": {
+            "pt": "Alocamos um dos nossos MiniLabs para conduzir toda a frente criativa e a produção gráfica do projeto. Em uma operação dessa escala, novas demandas surgem diariamente. Por isso, contar com uma parceria sólida, ágil e de confiança fez toda a diferença para manter o fluxo de trabalho leve, organizado e eficiente durante toda a temporada.\n\nNossa atuação contemplou todas as etapas do processo criativo: pesquisa, desenvolvimento e defesa dos conceitos visuais, estudos iniciais com apoio de Inteligência Artificial, criação de assets, style frames e ilustrações, além da animação da abertura, wipes, lower thirds, desafios, dinâmicas, conteúdos extras, gestão operacional e acompanhamento contínuo da produção.\nO resultado foi uma operação integrada, com entregas consistentes, aprovações ágeis e excelência criativa do início ao fim. O resultado você pode conferir no Globoplay.\n",
+            "en": "We allocated one of our MiniLabs to conduct the entire creative front and graphic production of the project. In an operation of this scale, new demands arise daily. Therefore, having a solid, agile and trustworthy partnership made all the difference in keeping the workflow light, organized and efficient throughout the season.\n\nOur work covered all stages of the creative process: research, development and defense of visual concepts, initial studies with Artificial Intelligence support, creation of assets, style frames and illustrations, in addition to opening animation, wipes, lower thirds, challenges, dynamics, extra content, operational management and continuous production monitoring.\nThe result was an integrated operation, with consistent deliveries, agile approvals and creative excellence from start to finish. You can check the result on Globoplay.",
+            "es": "Destinamos uno de nuestros MiniLabs para realizar todo el frente creativo y la producción gráfica del proyecto. En una operación de esta escala, diariamente surgen nuevas demandas. Por lo tanto, contar con una asociación sólida, ágil y confiable marcó la diferencia a la hora de mantener el flujo de trabajo ligero, organizado y eficiente durante toda la temporada.\n\nNuestro trabajo abarcó todas las etapas del proceso creativo: investigación, desarrollo y defensa de conceptos visuales, estudios iniciales con apoyo de Inteligencia Artificial, creación de activos, marcos de estilo e ilustraciones, además de animación de apertura, barridos, tercios inferiores, desafíos, dinámicas, contenidos extra, gestión operativa y seguimiento continuo de la producción.\nEl resultado fue una operación integrada, con entregas consistentes, aprobaciones ágiles y excelencia creativa de principio a fin. Puedes consultar el resultado en Globoplay.",
+            "zh": "我们分配了一个迷你实验室来进行该项目的整个创意前沿和图形制作。在如此规模的运营中，每天都会出现新的需求。因此，拥有牢固、敏捷和值得信赖的合作伙伴关系对于整个赛季保持工作流程轻松、有组织和高效来说非常重要。\n\n我们的工作涵盖了创作过程的所有阶段：视觉概念的研究、开发和防御、人工智能支持的初步研究、资产创建、风格框架和插图，以及开场动画、擦拭、下三分之一、挑战、动态、额外内容、运营管理和持续生产监控。\n其结果是实现了一体化运营，自始至终具有一致的交付、敏捷的审批和卓越的创意。您可以在 Globoplay 上查看结果。",
+            "no": "Vi tildelte en av våre MiniLabs til å utføre hele den kreative fronten og den grafiske produksjonen av prosjektet. I en operasjon av denne skalaen dukker det opp nye krav daglig. Derfor gjorde det å ha et solid, smidig og pålitelig partnerskap hele forskjellen i å holde arbeidsflyten lett, organisert og effektiv gjennom hele sesongen.\n\nArbeidet vårt dekket alle stadier av den kreative prosessen: forskning, utvikling og forsvar av visuelle konsepter, innledende studier med støtte for kunstig intelligens, opprettelse av eiendeler, stilrammer og illustrasjoner, i tillegg til åpningsanimasjon, wipes, nedre tredjedeler, utfordringer, dynamikk, ekstra innhold, operasjonell ledelse og kontinuerlig produksjonsovervåking.\nResultatet var en integrert operasjon, med konsekvente leveranser, smidige godkjenninger og kreativ fortreffelighet fra start til slutt. Du kan sjekke resultatet på Globoplay."
+          }
         },
         {
           "type": "duo",
