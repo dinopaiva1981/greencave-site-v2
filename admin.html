@@ -116,6 +116,8 @@ main{min-height:70vh}
 .item{border:1px solid var(--line2);border-radius:var(--r-sm);padding:17px 18px;margin-bottom:12px;background:#FCFAF8;transition:border-color .3s,box-shadow .3s,transform .2s var(--ez)}
 .item:hover{border-color:#D8D0C6;box-shadow:var(--sh-sm)}
 .item-head{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.draft-badge{margin-left:auto;font-size:10px;font-weight:700;letter-spacing:.08em;
+  padding:3px 9px;border-radius:99px;background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
 .item-head b{flex:1;font-size:13px;color:var(--mute)}
 .ic{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--mute);font-size:14px;display:grid;place-items:center;transition:color .15s,border-color .15s,transform .15s var(--ez)}
 .ic:active{transform:scale(.9)}
@@ -215,7 +217,8 @@ main{min-height:70vh}
 .dash-orbs span:nth-child(3){width:130px;height:130px;background:#4C6B66;top:10px;right:44%;opacity:.22;animation:orbfloat 9s ease-in-out infinite}
 @keyframes orbfloat{0%,100%{transform:translate(0,0)}50%{transform:translate(-18px,14px)}}
 
-.kic{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--bone);color:var(--green-d);font-size:14px;margin-bottom:10px}
+.gc-ico{width:17px;height:17px;flex:none;display:block}
+.kic{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:6.5px;border-radius:9px;background:var(--bone);color:var(--green-d);margin-bottom:10px;flex:none}
 .kpi-ic{position:relative}
 .kpis-3{grid-template-columns:repeat(3,1fr)}
 .livedot{display:inline-block;width:7px;height:7px;border-radius:99px;background:var(--warn);margin-right:5px;animation:pulse 1.6s ease-in-out infinite}
@@ -1088,7 +1091,7 @@ function confetti(){
 function normalizeData(D){
   if(Array.isArray(D.awards)&&D.awards.length&&!("items" in D.awards[0]))
     D.awards=[{label:ml5("Conquistas"),items:D.awards}];
-  (D.works||[]).forEach(w=>{w.kind=w.kind||"case";w.blocks=w.blocks||[];w.gallery=w.gallery||[];});
+  (D.works||[]).forEach(w=>{w.kind=w.kind||"case";w.blocks=w.blocks||[];w.gallery=w.gallery||[];w.status=w.status||"published";});
   D.about.values=(D.about.values||[]).map(v=>("word" in v)?v:{word:v,line:ml5("")});
   D.lab=D.lab||{items:[]};
   D.quem=D.quem||[]; D.reel=D.reel||{url:""};
@@ -1509,10 +1512,10 @@ function txtField(labelTxt,obj,key,{type="text",hint=""}={}){
 function itemControls(arr,i,rerender,name){
   const h=el(`<div class="item-head"><b>${name} ${String(i+1).padStart(2,"0")}</b></div>`);
   const mk=(t,g,fn,cls="")=>{const b=el(`<button class="ic ${cls}" title="${t}">${g}</button>`);b.addEventListener('click',fn);return b};
-  h.appendChild(mk("Subir","↑",()=>{if(i>0){[arr[i-1],arr[i]]=[arr[i],arr[i-1]];rerender();}}));
-  h.appendChild(mk("Descer","↓",()=>{if(i<arr.length-1){[arr[i+1],arr[i]]=[arr[i],arr[i+1]];rerender();}}));
-  h.appendChild(mk("Duplicar","⧉",()=>{arr.splice(i+1,0,deep(arr[i]));rerender();toast("Item duplicado.",true);},"dup"));
-  h.appendChild(mk("Excluir","✕",()=>{if(confirm("Excluir este item?")){arr.splice(i,1);rerender();}},"del"));
+  h.appendChild(mk("Subir",svg('up'),()=>{if(i>0){[arr[i-1],arr[i]]=[arr[i],arr[i-1]];rerender();}}));
+  h.appendChild(mk("Descer",svg('down'),()=>{if(i<arr.length-1){[arr[i+1],arr[i]]=[arr[i],arr[i+1]];rerender();}}));
+  h.appendChild(mk("Duplicar",svg('dup'),()=>{arr.splice(i+1,0,deep(arr[i]));rerender();toast("Item duplicado.",true);},"dup"));
+  h.appendChild(mk("Excluir",svg('trash'),()=>{if(confirm("Excluir este item?")){arr.splice(i,1);rerender();}},"del"));
   return h;
 }
 function addBtn(txt,fn){const b=el(`<button class="add">+ ${txt}</button>`);b.addEventListener('click',fn);return b;}
@@ -1528,18 +1531,18 @@ function renderLangs(){
   });
 }
 function SECS(){return [
-  ["dash","Dashboard","","◆"],
-  ["geral","Geral & Hero","","✦"],
-  ["ui","Textos da interface",Object.keys(DATA.ui).length,"✎"],
-  ["clientes","Clientes",DATA.clients.length,"◐"],
-  ["servicos","Serviços",DATA.services.length,"▤"],
-  ["numeros","Crawl & Números",DATA.stats.length,"#"],
-  ["works","Trabalhos (Cases)",DATA.works.length,"▦"],
-  ["estudio","Estúdio & Time",DATA.about.team.length,"◉"],
-  ["contato","Contato & Rodapé","","☏"],
-  ["fontes","Tipografia","","Aa"],
-  ["midia","Mídia (imagens)","","▧"],
-  ["pub","Publicação","","▲"]
+  ["dash","Dashboard","","dash"],
+  ["geral","Geral & Hero","","hero"],
+  ["ui","Textos da interface",Object.keys(DATA.ui).length,"text"],
+  ["clientes","Clientes",DATA.clients.length,"users"],
+  ["servicos","Serviços",DATA.services.length,"grid"],
+  ["numeros","Crawl & Números",DATA.stats.length,"hash"],
+  ["works","Trabalhos (Cases)",DATA.works.length,"work"],
+  ["estudio","Estúdio & Time",DATA.about.team.length,"team"],
+  ["contato","Contato & Rodapé","","mail"],
+  ["fontes","Tipografia","","type"],
+  ["midia","Mídia (imagens)","","img"],
+  ["pub","Publicação","","rocket"]
 ];}
 function renderSide(){
   const s=document.getElementById('side'); s.innerHTML="";
@@ -1548,7 +1551,7 @@ function renderSide(){
   s.appendChild(head);
   const ind=el('<div class="side-ind"></div>'); s.appendChild(ind);
   SECS().forEach(([k,n,c,ic])=>{
-    const b=el(`<button class="${k===SEC?'on':''}" data-k="${k}"><i class="sic">${ic||''}</i><span>${n}</span>${c!==""?`<span class="cnt">${c}</span>`:""}</button>`);
+    const b=el(`<button class="${k===SEC?'on':''}" data-k="${k}">${svg(ic)}<span>${n}</span>${c!==""?`<span class="cnt">${c}</span>`:""}</button>`);
     b.addEventListener('click',()=>{
       SEC=k;renderSide();renderSec();
       document.getElementById('wrap').classList.remove('drawer-open');
@@ -1614,26 +1617,41 @@ function dashboard(m){
       const st=JSON.parse(decodeURIComponent(escape(atob(j.content))));
       const when=new Date(st.publishedAt).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'});
       gbox.innerHTML=`<div class="kpis kpis-3">
-        <div class="kpi kpi-ic"><i class="kic">🕓</i><b>${when}</b><span>Última publicação</span></div>
-        <div class="kpi kpi-ic"><i class="kic">◆</i><b>${(st.lastPublishedSHA||"—").slice(0,7)}</b><span>Commit (SHA)</span></div>
-        <div class="kpi kpi-ic"><i class="kic">✦</i><b>v${st.cmsVersion||"—"}</b><span>Versão do CMS</span></div>
+        <div class="kpi kpi-ic">${svg('clock','gc-ico kic')}<b>${when}</b><span>Última publicação</span></div>
+        <div class="kpi kpi-ic">${svg('commit','gc-ico kic')}<b>${(st.lastPublishedSHA||"—").slice(0,7)}</b><span>Commit (SHA)</span></div>
+        <div class="kpi kpi-ic">${svg('rocket','gc-ico kic')}<b>v${st.cmsVersion||"—"}</b><span>Versão do CMS</span></div>
       </div>`;
     }catch(e){ gbox.innerHTML='<div class="hint"><span class="livedot"></span> '+e.message+'</div>'; }
   })();
 
   let c=card("Visão geral do conteúdo","O que o site publicado contém hoje.");
   const k=el(`<div class="kpis"></div>`);
-  const metrics=[["◧","Cases",D.works.length],["◐","Clientes",D.clients.length],["▤","Serviços",D.services.length],
-   ["◉","Pessoas no time",D.about.team.length],["◎","Idiomas",5],["#","Números na faixa",D.stats.length],
-   ["▦","Cases com imagem real",D.works.filter(w=>w.image).length,"/"+D.works.length],
-   ["▧","Fotos de galeria",D.works.reduce((a,w)=>a+(w.gallery||[]).length,0)],["▣","Blocos de conteúdo",D.works.reduce((a,w)=>a+(w.blocks||[]).length,0)]];
+  const drafts=D.works.filter(w=>w.status==="draft").length;
+  const metrics=[["work","Cases",D.works.length],["users","Clientes",D.clients.length],["grid","Serviços",D.services.length],
+   ["team","Pessoas no time",D.about.team.length],["globe","Idiomas",5],["hash","Números na faixa",D.stats.length],
+   ["img","Cases com imagem real",D.works.filter(w=>w.image).length,"/"+D.works.length],
+   ["gallery","Fotos de galeria",D.works.reduce((a,w)=>a+(w.gallery||[]).length,0)],["layers","Blocos de conteúdo",D.works.reduce((a,w)=>a+(w.blocks||[]).length,0)]];
+  if(drafts) metrics.push(["eyeoff","Rascunhos (ocultos no site)",drafts]);
   metrics.forEach(([ic,l,v,suf])=>{
-    const kp=el(`<div class="kpi kpi-ic"><i class="kic">${ic}</i><b>0</b><span>${l}</span></div>`);
+    const kp=el(`<div class="kpi kpi-ic">${svg(ic,'gc-ico kic')}<b>0</b><span>${l}</span></div>`);
     k.appendChild(kp);
     const bEl=kp.querySelector('b');
     requestAnimationFrame(()=>animateCount(bEl, typeof v==="number"?v:parseInt(v)||0, suf||""));
   });
+  /* métrica real de arquivos na biblioteca — consulta o GitHub ao vivo,
+     igual ao card de Status do Git logo acima. Antes, o painel só contava
+     URLs referenciadas no content.json (galeria/blocos), que é sempre menor
+     que o total real de arquivos enviados — por isso "não batia". */
+  const kFiles=el(`<div class="kpi kpi-ic kpi-async">${svg('folder','gc-ico kic')}<b>…</b><span>Arquivos na biblioteca</span></div>`);
+  k.appendChild(kFiles);
   c.appendChild(k); m.appendChild(c);
+  (async()=>{
+    try{
+      const items=await fetchAllMedia(true);
+      const bEl=kFiles.querySelector('b');
+      requestAnimationFrame(()=>animateCount(bEl, items.length, ""));
+    }catch(e){ kFiles.querySelector('b').textContent="—"; kFiles.querySelector('span').textContent="Arquivos (offline)"; }
+  })();
 
   c=card("Completude das traduções","Percentual de campos preenchidos por idioma.");
   const tot={}; LANGS.forEach(([l])=>tot[l]=[0,0]);
@@ -1802,6 +1820,17 @@ function renderSec(){
         sel.addEventListener('change',()=>w.kind=sel.value);
         f.appendChild(sel); it.appendChild(f);
       })();
+      (function(){
+        /* status: publicado x rascunho — permite tirar do ar sem apagar
+           o trabalho já feito (ex: cliente pediu pra esperar antes de publicar) */
+        const f=el('<div class="field"><label>Status</label><div class="hint" style="margin-bottom:8px">Rascunho fica salvo aqui, mas some do site — sem excluir nada.</div></div>');
+        const sel=el(`<select><option value="published" ${w.status!=="draft"?"selected":""}>🟢 Publicado — visível no site</option><option value="draft" ${w.status==="draft"?"selected":""}>◻ Rascunho — oculto no site</option></select>`);
+        sel.addEventListener('change',()=>{w.status=sel.value;renderSec();});
+        f.appendChild(sel); it.appendChild(f);
+      })();
+      if(w.status==="draft"){
+        it.querySelector('.item-head').appendChild(el('<span class="draft-badge">RASCUNHO</span>'));
+      }
       const r=el(`<div class="row3"></div>`);
       r.appendChild(txtField("Cliente",w,"client"));
       r.appendChild(txtField("Ano",w,"year"));
@@ -2091,7 +2120,18 @@ const I={
   chev:'<path d="M14 6l-6 6 6 6"/>',
   search:'<path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/>',
   plus:'<path d="M12 5v14M5 12h14"/>',
-  rocket:'<path d="M12 3c4 2 6 6 6 10l-3 3H9l-3-3c0-4 2-8 6-10zM12 11a1.5 1.5 0 100-3 1.5 1.5 0 000 3"/>'
+  rocket:'<path d="M12 3c4 2 6 6 6 10l-3 3H9l-3-3c0-4 2-8 6-10zM12 11a1.5 1.5 0 100-3 1.5 1.5 0 000 3"/>',
+  globe:'<path d="M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9z"/>',
+  layers:'<path d="M12 2l9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/>',
+  folder:'<path d="M3 6a1 1 0 011-1h5l2 2h9a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1z"/>',
+  eyeoff:'<path d="M2 2l20 20M9.9 9.9a3 3 0 004.2 4.2M6.1 6.5C4 8 2.7 10 2 12c1.5 3.9 5.5 7 10 7 1.7 0 3.3-.4 4.7-1.1M10.6 5.1A10.8 10.8 0 0112 5c4.5 0 8.5 3.1 10 7-.5 1.3-1.3 2.6-2.3 3.7"/>',
+  gallery:'<path d="M3 5h14v12H3zM3 15l4-4 3 3 5-5 2 2M7 8a1 1 0 11-2 0 1 1 0 012 0zM7 19h14V7"/>',
+  clock:'<path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3.5 2"/>',
+  commit:'<path d="M12 8a4 4 0 100 8 4 4 0 000-8zM2 12h6M16 12h6"/>',
+  up:'<path d="M12 19V5M5 12l7-7 7 7"/>',
+  down:'<path d="M12 5v14M5 12l7 7 7-7"/>',
+  dup:'<path d="M9 9h11v11H9zM5 15H4a1 1 0 01-1-1V4a1 1 0 011-1h10a1 1 0 011 1v1"/>',
+  trash:'<path d="M4 7h16M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M6 7l1 13a1 1 0 001 1h8a1 1 0 001-1l1-13"/>'
 };
 const svg=(k,cls='gc-ico')=>`<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${I[k]||I.grid}</svg>`;
 
@@ -2798,11 +2838,25 @@ document.addEventListener('click',e=>{
    própria subpasta em media/projetos/{slug-do-cliente}/, gerada a partir
    do que já está cadastrado em Projetos — na hora de enviar e na hora de
    listar. */
+/* FIX (bug de duplicação na biblioteca): antes, a pasta de mídia de cada
+   projeto era recalculada a cada chamada a partir de slug(w.client) — um
+   campo de texto editável. Qualquer edição no nome do cliente (acento,
+   maiúscula, espaço) gerava um slug novo, "mudando" a pasta em silêncio:
+   as imagens antigas ficavam órfãs numa pasta, e a próxima imagem enviada
+   ia para uma pasta nova com nome parecido — na Biblioteca isso aparecia
+   como o mesmo projeto duplicado. Agora a pasta é calculada UMA VEZ e
+   gravada em w.mediaFolder; depois disso, nunca muda, mesmo que o nome do
+   cliente seja editado. Compatível com o que já existe no repositório:
+   na primeira vez que roda após esta correção, o valor calculado é
+   idêntico ao nome de pasta que já estava em uso (mesmo algoritmo). */
 function projectFolders(){
-  return (DATA.works||[]).map(w=>({
-    key:'projetos/'+slug(w.client||w.id||'projeto'),
-    label:(w.client||'Projeto')+' — '+(ml(w.title)||''),
-  }));
+  return (DATA.works||[]).map(w=>{
+    if(!w.mediaFolder){
+      w.mediaFolder='projetos/'+slug(w.client||w.id||'projeto');
+      try{ if(typeof markDirty==='function') markDirty(); }catch(_){}
+    }
+    return {key:w.mediaFolder, label:(w.client||'Projeto')+' — '+(ml(w.title)||''), _w:w};
+  });
 }
 /* CORREÇÃO: a função original enviava os arquivos em silêncio total — nada
    na tela até o toast final. Em conexão lenta ou arquivo grande, parece que
