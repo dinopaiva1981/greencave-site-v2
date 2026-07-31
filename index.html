@@ -833,7 +833,15 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
 let lang = "pt";
 const $ = id => document.getElementById(id);
-const T = o => (o && (o[lang] ?? o.pt)) ?? "";
+/* FIX: antes só caía pro PT quando o campo era null/undefined — uma
+   string vazia "" (comum em texto recém-criado, ainda não traduzido)
+   passava direto, e o visitante via texto em branco em vez do PT.
+   Agora qualquer valor vazio/só espaço também cai pro português. */
+const T = o => {
+  if(!o) return "";
+  const v = o[lang];
+  return (v!=null && String(v).trim()!=="") ? v : (o.pt ?? "");
+};
 const EM = s => String(s).replace(/\*([^*]+)\*/g,'<em>$1</em>');
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const linky = s => esc(s).replace(/https?:\/\/[^\s<]+/g,u=>`<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\/(www\.)?/,"").split("/")[0]} ↗</a>`);

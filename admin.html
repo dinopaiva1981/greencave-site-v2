@@ -35,6 +35,12 @@ textarea{min-height:88px;resize:vertical}
 label{display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0 0 7px}
 .hint{font-size:12px;color:var(--mute);margin-top:5px}
 .miss{display:inline-block;width:7px;height:7px;border-radius:99px;background:var(--err);margin-left:6px;vertical-align:1px}
+.miss[hidden]{display:none}
+.tr-status{margin-left:8px;font-size:10.5px;font-weight:600;letter-spacing:.02em;vertical-align:1px}
+.tr-status[hidden]{display:none}
+.tr-status.busy{color:var(--mute)}
+.tr-status.ok{color:var(--green-d)}
+.tr-status.err{color:var(--err);cursor:help;text-decoration:underline dotted}
 
 #top{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,rgba(15,21,22,.97),rgba(13,18,19,.94));backdrop-filter:blur(14px) saturate(1.4);color:var(--bone);display:flex;align-items:center;gap:16px;padding:15px 24px;flex-wrap:wrap;box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 8px 28px rgba(0,0,0,.22);border-bottom:1px solid rgba(255,255,255,.06)}
 #top .logo{display:flex;align-items:center;gap:13px}
@@ -976,35 +982,59 @@ let RAW=null, DATA=null, L="pt", SEC="dash", pendingFonts={}, autoTr=true;
 let LOADED_SHA=null, CMS_VERSION="2.0.0", SCHEMA_VERSION="1.0.0";
 
 /* ── Tradução automática (PT → EN·ES·ZH·NO) ─────────────
-   Usa o endpoint público do Google Translate (sem chave).
-   Requer internet; revise sempre ZH e NO — tradução de
-   máquina é rascunho, não versão final.                  */
+   FIX: o endpoint antigo (translate.googleapis.com) NÃO envia cabeçalho
+   CORS quando chamado direto do navegador a partir de outro domínio — o
+   Google bloqueia a leitura da resposta silenciosamente. Toda chamada
+   falhava, caía no catch, e o único aviso era um toast genérico que
+   passava despercebido. Por isso "às vezes não traduz" — na real, nunca
+   traduzia, sempre falhava.
+   Agora: MyMemory (api.mymemory.translated.net) como motor principal —
+   documentado para funcionar via CORS direto do navegador, sem chave —
+   com o endpoint antigo do Google como reserva caso o MyMemory esteja
+   fora do ar. Erros ficam visíveis por idioma, não só um toast genérico. */
 const TL={en:"en",es:"es",zh:"zh-CN",no:"no"};
+async function mymemory(text,tl){
+  const u="https://api.mymemory.translated.net/get?q="+encodeURIComponent(text)+"&langpair=pt|"+tl;
+  const r=await fetch(u); if(!r.ok) throw new Error("HTTP "+r.status);
+  const j=await r.json();
+  const t=j?.responseData?.translatedText;
+  if(!t || /MYMEMORY WARNING|INVALID|QUERY LENGTH/i.test(t)) throw new Error("mymemory: "+(t||"resposta vazia"));
+  return t;
+}
 async function gtx(text,tl){
   const u="https://translate.googleapis.com/translate_a/single?client=gtx&sl=pt&tl="+tl+"&dt=t&q="+encodeURIComponent(text);
   const r=await fetch(u); if(!r.ok) throw new Error("HTTP "+r.status);
   const j=await r.json();
-  return (j[0]||[]).map(s=>s&&s[0]||"").join("");
+  const t=(j[0]||[]).map(s=>s&&s[0]||"").join("");
+  if(!t) throw new Error("gtx: resposta vazia");
+  return t;
 }
-async function translateObj(o){
+async function translateOne(text,tl){
+  try{ return await mymemory(text,tl); }
+  catch(e1){ try{ return await gtx(text,tl); } catch(e2){ throw new Error(tl+": "+e1.message+" / "+e2.message); } }
+}
+async function translateObj(o,onFieldError){
   const src=String(o.pt||"").trim(); if(!src) return false;
   const langs=Object.keys(TL);
-  const res=await Promise.all(langs.map(l=>gtx(src,TL[l]).catch(()=>null)));
+  const errs=[];
+  const res=await Promise.all(langs.map(l=>translateOne(src,TL[l]).catch(e=>{errs.push(l.toUpperCase()+": "+e.message);return null;})));
   let ok=false;
   langs.forEach((l,i)=>{ if(res[i]){ o[l]=res[i]; ok=true; } });
+  if(errs.length && typeof onFieldError==="function") onFieldError(errs);
   return ok;
 }
 async function translateAll(){
   const list=[]; walkML(DATA,o=>{ if(String(o.pt||"").trim()) list.push(o); });
-  let done=0, fail=0;
+  let done=0, fail=0; const failMsgs=[];
   toast(`Traduzindo ${list.length} campos do PT…`,true);
   const CONC=3;
   for(let i=0;i<list.length;i+=CONC){
-    await Promise.all(list.slice(i,i+CONC).map(o=>translateObj(o).then(ok=>{ok?done++:fail++;}).catch(()=>fail++)));
+    await Promise.all(list.slice(i,i+CONC).map(o=>translateObj(o,errs=>failMsgs.push(...errs)).then(ok=>{ok?done++:fail++;}).catch(()=>fail++)));
     if((i/CONC)%5===0) toast(`Traduzindo… ${Math.min(i+CONC,list.length)}/${list.length}`,true);
   }
   renderSec();
-  toast(fail?`Traduzidos ${done}; ${fail} falharam (tente de novo).`:`${done} campos traduzidos para 4 idiomas. Revise ZH e NO.`,!fail);
+  if(fail && failMsgs.length) console.warn("Falhas de tradução:",failMsgs);
+  toast(fail?`Traduzidos ${done}; ${fail} falharam (veja o console para detalhes).`:`${done} campos traduzidos para 4 idiomas. Revise ZH e NO.`,!fail);
 }
 
 /* gate */
@@ -1050,28 +1080,44 @@ function miniCave(){
   if(reducedA)return;
   const wrap=document.createElement('div');wrap.id='adload';
   const cv=document.createElement('canvas');wrap.appendChild(cv);document.body.appendChild(wrap);
-  const x=cv.getContext('2d'),D=Math.min(2,devicePixelRatio||1),W=innerWidth,H=innerHeight;
-  cv.width=W*D;cv.height=H*D;x.setTransform(D,0,0,D,0,0);
-  const P=["#0E3B22","#178A48","#1BD974","#6DD77D"],t0=performance.now();
-  (function f(n){const t=(n-t0)/1000,k=Math.min(1,t/1.3);
-    x.clearRect(0,0,W,H);
-    if(k>=1){wrap.remove();return;}
-    x.fillStyle="#0F1516";x.fillRect(0,0,W,H);
-    const base=Math.min(W,H),fade=Math.max(0,(k-.5)/.5);
-    for(let i=4;i>=0;i--){
-      const rr=base*(.05+i*.05)*(.3+.7*Math.min(1,t*1.8))*(1+Math.pow(fade,1.6)*3);
-      x.beginPath();
-      for(let j=0;j<=72;j++){const ang=j/72*Math.PI*2,w=.06*Math.sin(3*ang+t*3+i)+.04*Math.sin(6*ang-t*2),R=rr*(1+w);
-        j?x.lineTo(W/2+Math.cos(ang)*R,H/2+Math.sin(ang)*R):x.moveTo(W/2+Math.cos(ang)*R,H/2+Math.sin(ang)*R);}
-      x.closePath();
-      if(i===0){x.fillStyle=P[2];x.globalAlpha=1-fade;x.fill();}
-      else{x.strokeStyle=P[i%P.length];x.lineWidth=1.6;x.globalAlpha=(1-i*.12)*(1-fade);x.stroke();}
-      x.globalAlpha=1;}
-    if(k>.45){const hole=Math.pow((k-.45)/.55,1.5)*Math.hypot(W,H)*.72;
-      x.globalCompositeOperation='destination-out';x.beginPath();x.arc(W/2,H/2,hole,0,7);x.fill();
+  /* FIX (tela preta travada): tudo que segue é só uma transição visual.
+     Se o canvas falhar em qualquer ponto — contexto 2D indisponível
+     (extensão de privacidade bloqueando fingerprinting, navegador in-app
+     restrito, etc.) — a camada preta NUNCA pode ficar presa na tela.
+     1) qualquer exceção aqui remove a camada na hora, em vez de deixá-la
+        pintada e travada; 2) um cronômetro de segurança remove a camada
+        de qualquer forma em 2s, mesmo que o loop de animação trave por
+        outro motivo qualquer. */
+  const safety=setTimeout(()=>wrap.remove(), 2000);
+  try{
+    const x=cv.getContext('2d');
+    if(!x) throw new Error('contexto 2D indisponível');
+    const D=Math.min(2,devicePixelRatio||1),W=innerWidth,H=innerHeight;
+    cv.width=W*D;cv.height=H*D;x.setTransform(D,0,0,D,0,0);
+    const P=["#0E3B22","#178A48","#1BD974","#6DD77D"],t0=performance.now();
+    (function f(n){
+      try{
+        const t=(n-t0)/1000,k=Math.min(1,t/1.3);
+        x.clearRect(0,0,W,H);
+        if(k>=1){clearTimeout(safety);wrap.remove();return;}
+        x.fillStyle="#0F1516";x.fillRect(0,0,W,H);
+        const base=Math.min(W,H),fade=Math.max(0,(k-.5)/.5);
+        for(let i=4;i>=0;i--){
+          const rr=base*(.05+i*.05)*(.3+.7*Math.min(1,t*1.8))*(1+Math.pow(fade,1.6)*3);
+          x.beginPath();
+          for(let j=0;j<=72;j++){const ang=j/72*Math.PI*2,w=.06*Math.sin(3*ang+t*3+i)+.04*Math.sin(6*ang-t*2),R=rr*(1+w);
+            j?x.lineTo(W/2+Math.cos(ang)*R,H/2+Math.sin(ang)*R):x.moveTo(W/2+Math.cos(ang)*R,H/2+Math.sin(ang)*R);}
+          x.closePath();
+          if(i===0){x.fillStyle=P[2];x.globalAlpha=1-fade;x.fill();}
+          else{x.strokeStyle=P[i%P.length];x.lineWidth=1.6;x.globalAlpha=(1-i*.12)*(1-fade);x.stroke();}
+          x.globalAlpha=1;}
+        if(k>.45){const hole=Math.pow((k-.45)/.55,1.5)*Math.hypot(W,H)*.72;
+          x.globalCompositeOperation='destination-out';x.beginPath();x.arc(W/2,H/2,hole,0,7);x.fill();
       x.globalCompositeOperation='source-over';}
-    requestAnimationFrame(f);
-  })(t0);
+        requestAnimationFrame(f);
+      }catch(e){ clearTimeout(safety); wrap.remove(); console.warn('[Greencave] animação de entrada interrompida (removendo overlay):', e.message); }
+    })(t0);
+  }catch(e){ clearTimeout(safety); wrap.remove(); console.warn('[Greencave] transição de entrada indisponível (seguindo sem ela):', e.message); }
 }
 function confetti(){
   const wrap=document.createElement('div');wrap.id='adload';
@@ -1116,7 +1162,16 @@ addEventListener('keydown',e=>{
 });
 async function tryEnter(){
   if(pin.value===PASS){
-    gate.remove(); miniCave();
+    gate.remove();
+    /* FIX (tela preta travada): miniCave() é só uma transição visual —
+       se o canvas falhar por qualquer motivo (extensão de privacidade que
+       bloqueia canvas/fingerprinting, navegador in-app restrito, etc.),
+       a função quebrava ANTES de completar a animação, deixando a tela
+       presa no preenchimento preto do primeiro frame — e pior, como isso
+       acontecia antes de carregar o conteúdo, o painel nunca aparecia
+       atrás. Agora qualquer falha aqui é só ignorada: pior caso, a
+       transição bonita não roda, mas o conteúdo sempre carrega. */
+    try{ miniCave(); }catch(e){ console.warn('[Greencave] transição de entrada falhou (ignorando):', e.message); }
     await CONFIG_READY; // garante que config.json (repo/branch/caminhos) já carregou antes de buscar o conteúdo
     autoLoadPublished();
   }
@@ -1485,18 +1540,44 @@ function toast(msg,ok){
 function el(html){const d=document.createElement('div');d.innerHTML=html.trim();return d.firstChild;}
 const isML=o=>o&&typeof o==="object"&&!Array.isArray(o)&&"pt"in o&&"en"in o;
 function missing(o){return LANGS.some(([k])=>!String(o?.[k]??"").trim());}
-const ml5=(v="")=>({pt:v,en:v,es:v,zh:v,no:v});
+/* FIX: antes ml5(v) repetia o MESMO texto (geralmente um placeholder em
+   PT, tipo "Novo case") nos 5 idiomas de uma vez — então trocar de idioma
+   no site mostrava o texto certo, só que sempre em português, mascarando
+   a falta de tradução. Agora só o PT nasce preenchido; os outros ficam
+   vazios de verdade, o que: (1) marca visivelmente o campo como "falta
+   tradução", e (2) deixa a tradução automática em tempo real preencher
+   sozinha assim que a pessoa digitar o texto real em PT. */
+const ml5=(v="")=>({pt:v,en:"",es:"",zh:"",no:""});
 const deep=o=>JSON.parse(JSON.stringify(o));
 
 function mlField(labelTxt,obj,{area=false,hint=""}={}){
-  const f=el(`<div class="field"><label>${labelTxt}${missing(obj)?'<span class="miss" title="Falta tradução"></span>':''}</label></div>`);
+  const f=el(`<div class="field"><label>${labelTxt}<span class="miss" title="Falta tradução" ${missing(obj)?"":"hidden"}></span><span class="tr-status" hidden></span></label></div>`);
   const inp=el(area?`<textarea></textarea>`:`<input type="text">`);
   inp.value=obj[L]??""; inp.addEventListener('input',()=>{obj[L]=inp.value;});
-  if(L==="pt") inp.addEventListener('change',async()=>{
-    if(!autoTr||!inp.value.trim())return;
-    const ok=await translateObj(obj).catch(()=>false);
-    toast(ok?"Traduzido para EN · ES · ZH · NO":"Sem internet? Tradução falhou.",ok);
-  });
+  const missEl=f.querySelector('.miss');
+  const stEl=f.querySelector('.tr-status');
+  const setStatus=(mode,msg)=>{
+    stEl.hidden=!mode;
+    if(mode==="ok"){ stEl.className="tr-status ok"; stEl.textContent="✓ traduzido"; setTimeout(()=>stEl.hidden=true,2400); }
+    else if(mode==="busy"){ stEl.className="tr-status busy"; stEl.textContent="traduzindo…"; }
+    else if(mode==="err"){ stEl.className="tr-status err"; stEl.title=msg||""; stEl.textContent="⚠ falhou — passe o mouse"; }
+    missEl.hidden = !missing(obj);
+  };
+  if(L==="pt"){
+    let deb=null;
+    const run=async()=>{
+      if(!autoTr||!inp.value.trim())return;
+      setStatus("busy");
+      const errs=[];
+      const ok=await translateObj(obj,e=>errs.push(...e)).catch(e=>{errs.push(e.message);return false;});
+      setStatus(ok?"ok":"err", errs.join(" · "));
+    };
+    /* tempo real: dispara sozinho ~1.1s depois que a pessoa para de digitar,
+       sem precisar sair do campo — é o comportamento que faltava em
+       projetos/textos novos, onde ninguém lembra de clicar fora do campo */
+    inp.addEventListener('input',()=>{ clearTimeout(deb); deb=setTimeout(run,1100); });
+    inp.addEventListener('change',()=>{ clearTimeout(deb); run(); });
+  }
   f.appendChild(inp);
   if(hint)f.appendChild(el(`<div class="hint">${hint}</div>`));
   return f;
@@ -2095,14 +2176,6 @@ function renderSec(){
      4. sidebar V2                9. render
      5. cabeçalho + modal
    ══════════════════════════════════════════════════════════════ */
-(function(){
-"use strict";
-const EZ='cubic-bezier(.22,1,.36,1)';
-const $=(s,r=document)=>r.querySelector(s);
-const mk=h=>{const d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;};
-const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const ml=o=>{ if(o==null)return""; if(typeof o==='string')return o; return o[typeof L!=='undefined'?L:'pt']||o.pt||""; };
-
 /* ── 1. ícones ─────────────────────────────────────────────── */
 const I={
   dash:'<path d="M3 3h7v7H3zM14 3h7v4h-7zM14 10h7v11h-7zM3 13h7v8H3z"/>',
@@ -2134,6 +2207,16 @@ const I={
   trash:'<path d="M4 7h16M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M6 7l1 13a1 1 0 001 1h8a1 1 0 001-1l1-13"/>'
 };
 const svg=(k,cls='gc-ico')=>`<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${I[k]||I.grid}</svg>`;
+
+(function(){
+"use strict";
+const EZ='cubic-bezier(.22,1,.36,1)';
+const $=(s,r=document)=>r.querySelector(s);
+const mk=h=>{const d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ml=o=>{ if(o==null)return""; if(typeof o==='string')return o; return o[typeof L!=='undefined'?L:'pt']||o.pt||""; };
+
+
 
 /* ── 2. motor de arraste ───────────────────────────────────── */
 function flip(nodes,mutate){
@@ -2505,24 +2588,13 @@ const _dashboard=window.dashboard;
 window.dashboard=function(m){
   statusBar(m);
   syncCard(m);
-  const D=DATA;
-  const c=card('Visão geral do conteúdo','Números lidos direto do content.json carregado.');
-  const k=mk('<div class="kpis"></div>');
-  const badge=document.getElementById('dirtybadge');
-  const pend=badge&&!badge.hidden?'sim':'não';
-  [['◧','Projetos',D.works.length],['◐','Clientes',D.clients.length],['▤','Serviços',D.services.length],
-   ['◉','Equipe',D.about.team.length],['▦','Categorias',new Set(D.works.map(w=>w.kind||'case')).size],
-   ['▧','Arquivos',D.works.reduce((a,w)=>a+(w.gallery||[]).length,0)+D.works.filter(w=>w.image).length],
-   ['#','Números',D.stats.length],['◎','Idiomas',5]]
-  .forEach(([ic,l,v])=>{
-    const kp=mk(`<div class="kpi kpi-ic"><i class="kic">${ic}</i><b>0</b><span>${l}</span></div>`);
-    k.appendChild(kp);
-    const b=kp.querySelector('b');
-    if(typeof animateCount==='function') requestAnimationFrame(()=>animateCount(b,v,'')); else b.textContent=v;
-  });
-  c.appendChild(k);
-  c.appendChild(mk(`<div class="hint" style="margin-top:14px">Alterações não publicadas: <b>${pend}</b></div>`));
-  m.appendChild(c);
+  /* FIX: este wrapper desenhava seu PRÓPRIO card "Visão geral do
+     conteúdo" com ícones antigos (◧◐▤◉▦▧#◎) e métricas desatualizadas
+     (sem Rascunhos, sem o contador real de Arquivos na biblioteca) —
+     e a função original (chamada logo abaixo via _dashboard(m)) desenha
+     a versão certa e atualizada. As duas apareciam juntas, uma em cima
+     da outra, mostrando números conflitantes. Removido o card duplicado
+     daqui; a única "Visão geral" agora é a da função original. */
   quickActions(m);
   recentActivity(m);
   _dashboard(m);                                   /* painéis originais: git, traduções, pendências, SEO */
