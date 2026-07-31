@@ -35,12 +35,6 @@ textarea{min-height:88px;resize:vertical}
 label{display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0 0 7px}
 .hint{font-size:12px;color:var(--mute);margin-top:5px}
 .miss{display:inline-block;width:7px;height:7px;border-radius:99px;background:var(--err);margin-left:6px;vertical-align:1px}
-.miss[hidden]{display:none}
-.tr-status{margin-left:8px;font-size:10.5px;font-weight:600;letter-spacing:.02em;vertical-align:1px}
-.tr-status[hidden]{display:none}
-.tr-status.busy{color:var(--mute)}
-.tr-status.ok{color:var(--green-d)}
-.tr-status.err{color:var(--err);cursor:help;text-decoration:underline dotted}
 
 #top{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,rgba(15,21,22,.97),rgba(13,18,19,.94));backdrop-filter:blur(14px) saturate(1.4);color:var(--bone);display:flex;align-items:center;gap:16px;padding:15px 24px;flex-wrap:wrap;box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 8px 28px rgba(0,0,0,.22);border-bottom:1px solid rgba(255,255,255,.06)}
 #top .logo{display:flex;align-items:center;gap:13px}
@@ -122,8 +116,6 @@ main{min-height:70vh}
 .item{border:1px solid var(--line2);border-radius:var(--r-sm);padding:17px 18px;margin-bottom:12px;background:#FCFAF8;transition:border-color .3s,box-shadow .3s,transform .2s var(--ez)}
 .item:hover{border-color:#D8D0C6;box-shadow:var(--sh-sm)}
 .item-head{display:flex;align-items:center;gap:8px;margin-bottom:12px}
-.draft-badge{margin-left:auto;font-size:10px;font-weight:700;letter-spacing:.08em;
-  padding:3px 9px;border-radius:99px;background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
 .item-head b{flex:1;font-size:13px;color:var(--mute)}
 .ic{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--mute);font-size:14px;display:grid;place-items:center;transition:color .15s,border-color .15s,transform .15s var(--ez)}
 .ic:active{transform:scale(.9)}
@@ -223,8 +215,7 @@ main{min-height:70vh}
 .dash-orbs span:nth-child(3){width:130px;height:130px;background:#4C6B66;top:10px;right:44%;opacity:.22;animation:orbfloat 9s ease-in-out infinite}
 @keyframes orbfloat{0%,100%{transform:translate(0,0)}50%{transform:translate(-18px,14px)}}
 
-.gc-ico{width:17px;height:17px;flex:none;display:block}
-.kic{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:6.5px;border-radius:9px;background:var(--bone);color:var(--green-d);margin-bottom:10px;flex:none}
+.kic{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--bone);color:var(--green-d);font-size:14px;margin-bottom:10px}
 .kpi-ic{position:relative}
 .kpis-3{grid-template-columns:repeat(3,1fr)}
 .livedot{display:inline-block;width:7px;height:7px;border-radius:99px;background:var(--warn);margin-right:5px;animation:pulse 1.6s ease-in-out infinite}
@@ -982,59 +973,35 @@ let RAW=null, DATA=null, L="pt", SEC="dash", pendingFonts={}, autoTr=true;
 let LOADED_SHA=null, CMS_VERSION="2.0.0", SCHEMA_VERSION="1.0.0";
 
 /* ── Tradução automática (PT → EN·ES·ZH·NO) ─────────────
-   FIX: o endpoint antigo (translate.googleapis.com) NÃO envia cabeçalho
-   CORS quando chamado direto do navegador a partir de outro domínio — o
-   Google bloqueia a leitura da resposta silenciosamente. Toda chamada
-   falhava, caía no catch, e o único aviso era um toast genérico que
-   passava despercebido. Por isso "às vezes não traduz" — na real, nunca
-   traduzia, sempre falhava.
-   Agora: MyMemory (api.mymemory.translated.net) como motor principal —
-   documentado para funcionar via CORS direto do navegador, sem chave —
-   com o endpoint antigo do Google como reserva caso o MyMemory esteja
-   fora do ar. Erros ficam visíveis por idioma, não só um toast genérico. */
+   Usa o endpoint público do Google Translate (sem chave).
+   Requer internet; revise sempre ZH e NO — tradução de
+   máquina é rascunho, não versão final.                  */
 const TL={en:"en",es:"es",zh:"zh-CN",no:"no"};
-async function mymemory(text,tl){
-  const u="https://api.mymemory.translated.net/get?q="+encodeURIComponent(text)+"&langpair=pt|"+tl;
-  const r=await fetch(u); if(!r.ok) throw new Error("HTTP "+r.status);
-  const j=await r.json();
-  const t=j?.responseData?.translatedText;
-  if(!t || /MYMEMORY WARNING|INVALID|QUERY LENGTH/i.test(t)) throw new Error("mymemory: "+(t||"resposta vazia"));
-  return t;
-}
 async function gtx(text,tl){
   const u="https://translate.googleapis.com/translate_a/single?client=gtx&sl=pt&tl="+tl+"&dt=t&q="+encodeURIComponent(text);
   const r=await fetch(u); if(!r.ok) throw new Error("HTTP "+r.status);
   const j=await r.json();
-  const t=(j[0]||[]).map(s=>s&&s[0]||"").join("");
-  if(!t) throw new Error("gtx: resposta vazia");
-  return t;
+  return (j[0]||[]).map(s=>s&&s[0]||"").join("");
 }
-async function translateOne(text,tl){
-  try{ return await mymemory(text,tl); }
-  catch(e1){ try{ return await gtx(text,tl); } catch(e2){ throw new Error(tl+": "+e1.message+" / "+e2.message); } }
-}
-async function translateObj(o,onFieldError){
+async function translateObj(o){
   const src=String(o.pt||"").trim(); if(!src) return false;
   const langs=Object.keys(TL);
-  const errs=[];
-  const res=await Promise.all(langs.map(l=>translateOne(src,TL[l]).catch(e=>{errs.push(l.toUpperCase()+": "+e.message);return null;})));
+  const res=await Promise.all(langs.map(l=>gtx(src,TL[l]).catch(()=>null)));
   let ok=false;
   langs.forEach((l,i)=>{ if(res[i]){ o[l]=res[i]; ok=true; } });
-  if(errs.length && typeof onFieldError==="function") onFieldError(errs);
   return ok;
 }
 async function translateAll(){
   const list=[]; walkML(DATA,o=>{ if(String(o.pt||"").trim()) list.push(o); });
-  let done=0, fail=0; const failMsgs=[];
+  let done=0, fail=0;
   toast(`Traduzindo ${list.length} campos do PT…`,true);
   const CONC=3;
   for(let i=0;i<list.length;i+=CONC){
-    await Promise.all(list.slice(i,i+CONC).map(o=>translateObj(o,errs=>failMsgs.push(...errs)).then(ok=>{ok?done++:fail++;}).catch(()=>fail++)));
+    await Promise.all(list.slice(i,i+CONC).map(o=>translateObj(o).then(ok=>{ok?done++:fail++;}).catch(()=>fail++)));
     if((i/CONC)%5===0) toast(`Traduzindo… ${Math.min(i+CONC,list.length)}/${list.length}`,true);
   }
   renderSec();
-  if(fail && failMsgs.length) console.warn("Falhas de tradução:",failMsgs);
-  toast(fail?`Traduzidos ${done}; ${fail} falharam (veja o console para detalhes).`:`${done} campos traduzidos para 4 idiomas. Revise ZH e NO.`,!fail);
+  toast(fail?`Traduzidos ${done}; ${fail} falharam (tente de novo).`:`${done} campos traduzidos para 4 idiomas. Revise ZH e NO.`,!fail);
 }
 
 /* gate */
@@ -1080,44 +1047,28 @@ function miniCave(){
   if(reducedA)return;
   const wrap=document.createElement('div');wrap.id='adload';
   const cv=document.createElement('canvas');wrap.appendChild(cv);document.body.appendChild(wrap);
-  /* FIX (tela preta travada): tudo que segue é só uma transição visual.
-     Se o canvas falhar em qualquer ponto — contexto 2D indisponível
-     (extensão de privacidade bloqueando fingerprinting, navegador in-app
-     restrito, etc.) — a camada preta NUNCA pode ficar presa na tela.
-     1) qualquer exceção aqui remove a camada na hora, em vez de deixá-la
-        pintada e travada; 2) um cronômetro de segurança remove a camada
-        de qualquer forma em 2s, mesmo que o loop de animação trave por
-        outro motivo qualquer. */
-  const safety=setTimeout(()=>wrap.remove(), 2000);
-  try{
-    const x=cv.getContext('2d');
-    if(!x) throw new Error('contexto 2D indisponível');
-    const D=Math.min(2,devicePixelRatio||1),W=innerWidth,H=innerHeight;
-    cv.width=W*D;cv.height=H*D;x.setTransform(D,0,0,D,0,0);
-    const P=["#0E3B22","#178A48","#1BD974","#6DD77D"],t0=performance.now();
-    (function f(n){
-      try{
-        const t=(n-t0)/1000,k=Math.min(1,t/1.3);
-        x.clearRect(0,0,W,H);
-        if(k>=1){clearTimeout(safety);wrap.remove();return;}
-        x.fillStyle="#0F1516";x.fillRect(0,0,W,H);
-        const base=Math.min(W,H),fade=Math.max(0,(k-.5)/.5);
-        for(let i=4;i>=0;i--){
-          const rr=base*(.05+i*.05)*(.3+.7*Math.min(1,t*1.8))*(1+Math.pow(fade,1.6)*3);
-          x.beginPath();
-          for(let j=0;j<=72;j++){const ang=j/72*Math.PI*2,w=.06*Math.sin(3*ang+t*3+i)+.04*Math.sin(6*ang-t*2),R=rr*(1+w);
-            j?x.lineTo(W/2+Math.cos(ang)*R,H/2+Math.sin(ang)*R):x.moveTo(W/2+Math.cos(ang)*R,H/2+Math.sin(ang)*R);}
-          x.closePath();
-          if(i===0){x.fillStyle=P[2];x.globalAlpha=1-fade;x.fill();}
-          else{x.strokeStyle=P[i%P.length];x.lineWidth=1.6;x.globalAlpha=(1-i*.12)*(1-fade);x.stroke();}
-          x.globalAlpha=1;}
-        if(k>.45){const hole=Math.pow((k-.45)/.55,1.5)*Math.hypot(W,H)*.72;
-          x.globalCompositeOperation='destination-out';x.beginPath();x.arc(W/2,H/2,hole,0,7);x.fill();
+  const x=cv.getContext('2d'),D=Math.min(2,devicePixelRatio||1),W=innerWidth,H=innerHeight;
+  cv.width=W*D;cv.height=H*D;x.setTransform(D,0,0,D,0,0);
+  const P=["#0E3B22","#178A48","#1BD974","#6DD77D"],t0=performance.now();
+  (function f(n){const t=(n-t0)/1000,k=Math.min(1,t/1.3);
+    x.clearRect(0,0,W,H);
+    if(k>=1){wrap.remove();return;}
+    x.fillStyle="#0F1516";x.fillRect(0,0,W,H);
+    const base=Math.min(W,H),fade=Math.max(0,(k-.5)/.5);
+    for(let i=4;i>=0;i--){
+      const rr=base*(.05+i*.05)*(.3+.7*Math.min(1,t*1.8))*(1+Math.pow(fade,1.6)*3);
+      x.beginPath();
+      for(let j=0;j<=72;j++){const ang=j/72*Math.PI*2,w=.06*Math.sin(3*ang+t*3+i)+.04*Math.sin(6*ang-t*2),R=rr*(1+w);
+        j?x.lineTo(W/2+Math.cos(ang)*R,H/2+Math.sin(ang)*R):x.moveTo(W/2+Math.cos(ang)*R,H/2+Math.sin(ang)*R);}
+      x.closePath();
+      if(i===0){x.fillStyle=P[2];x.globalAlpha=1-fade;x.fill();}
+      else{x.strokeStyle=P[i%P.length];x.lineWidth=1.6;x.globalAlpha=(1-i*.12)*(1-fade);x.stroke();}
+      x.globalAlpha=1;}
+    if(k>.45){const hole=Math.pow((k-.45)/.55,1.5)*Math.hypot(W,H)*.72;
+      x.globalCompositeOperation='destination-out';x.beginPath();x.arc(W/2,H/2,hole,0,7);x.fill();
       x.globalCompositeOperation='source-over';}
-        requestAnimationFrame(f);
-      }catch(e){ clearTimeout(safety); wrap.remove(); console.warn('[Greencave] animação de entrada interrompida (removendo overlay):', e.message); }
-    })(t0);
-  }catch(e){ clearTimeout(safety); wrap.remove(); console.warn('[Greencave] transição de entrada indisponível (seguindo sem ela):', e.message); }
+    requestAnimationFrame(f);
+  })(t0);
 }
 function confetti(){
   const wrap=document.createElement('div');wrap.id='adload';
@@ -1137,7 +1088,7 @@ function confetti(){
 function normalizeData(D){
   if(Array.isArray(D.awards)&&D.awards.length&&!("items" in D.awards[0]))
     D.awards=[{label:ml5("Conquistas"),items:D.awards}];
-  (D.works||[]).forEach(w=>{w.kind=w.kind||"case";w.blocks=w.blocks||[];w.gallery=w.gallery||[];w.status=w.status||"published";});
+  (D.works||[]).forEach(w=>{w.kind=w.kind||"case";w.blocks=w.blocks||[];w.gallery=w.gallery||[];});
   D.about.values=(D.about.values||[]).map(v=>("word" in v)?v:{word:v,line:ml5("")});
   D.lab=D.lab||{items:[]};
   D.quem=D.quem||[]; D.reel=D.reel||{url:""};
@@ -1162,16 +1113,7 @@ addEventListener('keydown',e=>{
 });
 async function tryEnter(){
   if(pin.value===PASS){
-    gate.remove();
-    /* FIX (tela preta travada): miniCave() é só uma transição visual —
-       se o canvas falhar por qualquer motivo (extensão de privacidade que
-       bloqueia canvas/fingerprinting, navegador in-app restrito, etc.),
-       a função quebrava ANTES de completar a animação, deixando a tela
-       presa no preenchimento preto do primeiro frame — e pior, como isso
-       acontecia antes de carregar o conteúdo, o painel nunca aparecia
-       atrás. Agora qualquer falha aqui é só ignorada: pior caso, a
-       transição bonita não roda, mas o conteúdo sempre carrega. */
-    try{ miniCave(); }catch(e){ console.warn('[Greencave] transição de entrada falhou (ignorando):', e.message); }
+    gate.remove(); miniCave();
     await CONFIG_READY; // garante que config.json (repo/branch/caminhos) já carregou antes de buscar o conteúdo
     autoLoadPublished();
   }
@@ -1540,44 +1482,18 @@ function toast(msg,ok){
 function el(html){const d=document.createElement('div');d.innerHTML=html.trim();return d.firstChild;}
 const isML=o=>o&&typeof o==="object"&&!Array.isArray(o)&&"pt"in o&&"en"in o;
 function missing(o){return LANGS.some(([k])=>!String(o?.[k]??"").trim());}
-/* FIX: antes ml5(v) repetia o MESMO texto (geralmente um placeholder em
-   PT, tipo "Novo case") nos 5 idiomas de uma vez — então trocar de idioma
-   no site mostrava o texto certo, só que sempre em português, mascarando
-   a falta de tradução. Agora só o PT nasce preenchido; os outros ficam
-   vazios de verdade, o que: (1) marca visivelmente o campo como "falta
-   tradução", e (2) deixa a tradução automática em tempo real preencher
-   sozinha assim que a pessoa digitar o texto real em PT. */
-const ml5=(v="")=>({pt:v,en:"",es:"",zh:"",no:""});
+const ml5=(v="")=>({pt:v,en:v,es:v,zh:v,no:v});
 const deep=o=>JSON.parse(JSON.stringify(o));
 
 function mlField(labelTxt,obj,{area=false,hint=""}={}){
-  const f=el(`<div class="field"><label>${labelTxt}<span class="miss" title="Falta tradução" ${missing(obj)?"":"hidden"}></span><span class="tr-status" hidden></span></label></div>`);
+  const f=el(`<div class="field"><label>${labelTxt}${missing(obj)?'<span class="miss" title="Falta tradução"></span>':''}</label></div>`);
   const inp=el(area?`<textarea></textarea>`:`<input type="text">`);
   inp.value=obj[L]??""; inp.addEventListener('input',()=>{obj[L]=inp.value;});
-  const missEl=f.querySelector('.miss');
-  const stEl=f.querySelector('.tr-status');
-  const setStatus=(mode,msg)=>{
-    stEl.hidden=!mode;
-    if(mode==="ok"){ stEl.className="tr-status ok"; stEl.textContent="✓ traduzido"; setTimeout(()=>stEl.hidden=true,2400); }
-    else if(mode==="busy"){ stEl.className="tr-status busy"; stEl.textContent="traduzindo…"; }
-    else if(mode==="err"){ stEl.className="tr-status err"; stEl.title=msg||""; stEl.textContent="⚠ falhou — passe o mouse"; }
-    missEl.hidden = !missing(obj);
-  };
-  if(L==="pt"){
-    let deb=null;
-    const run=async()=>{
-      if(!autoTr||!inp.value.trim())return;
-      setStatus("busy");
-      const errs=[];
-      const ok=await translateObj(obj,e=>errs.push(...e)).catch(e=>{errs.push(e.message);return false;});
-      setStatus(ok?"ok":"err", errs.join(" · "));
-    };
-    /* tempo real: dispara sozinho ~1.1s depois que a pessoa para de digitar,
-       sem precisar sair do campo — é o comportamento que faltava em
-       projetos/textos novos, onde ninguém lembra de clicar fora do campo */
-    inp.addEventListener('input',()=>{ clearTimeout(deb); deb=setTimeout(run,1100); });
-    inp.addEventListener('change',()=>{ clearTimeout(deb); run(); });
-  }
+  if(L==="pt") inp.addEventListener('change',async()=>{
+    if(!autoTr||!inp.value.trim())return;
+    const ok=await translateObj(obj).catch(()=>false);
+    toast(ok?"Traduzido para EN · ES · ZH · NO":"Sem internet? Tradução falhou.",ok);
+  });
   f.appendChild(inp);
   if(hint)f.appendChild(el(`<div class="hint">${hint}</div>`));
   return f;
@@ -1593,10 +1509,10 @@ function txtField(labelTxt,obj,key,{type="text",hint=""}={}){
 function itemControls(arr,i,rerender,name){
   const h=el(`<div class="item-head"><b>${name} ${String(i+1).padStart(2,"0")}</b></div>`);
   const mk=(t,g,fn,cls="")=>{const b=el(`<button class="ic ${cls}" title="${t}">${g}</button>`);b.addEventListener('click',fn);return b};
-  h.appendChild(mk("Subir",svg('up'),()=>{if(i>0){[arr[i-1],arr[i]]=[arr[i],arr[i-1]];rerender();}}));
-  h.appendChild(mk("Descer",svg('down'),()=>{if(i<arr.length-1){[arr[i+1],arr[i]]=[arr[i],arr[i+1]];rerender();}}));
-  h.appendChild(mk("Duplicar",svg('dup'),()=>{arr.splice(i+1,0,deep(arr[i]));rerender();toast("Item duplicado.",true);},"dup"));
-  h.appendChild(mk("Excluir",svg('trash'),()=>{if(confirm("Excluir este item?")){arr.splice(i,1);rerender();}},"del"));
+  h.appendChild(mk("Subir","↑",()=>{if(i>0){[arr[i-1],arr[i]]=[arr[i],arr[i-1]];rerender();}}));
+  h.appendChild(mk("Descer","↓",()=>{if(i<arr.length-1){[arr[i+1],arr[i]]=[arr[i],arr[i+1]];rerender();}}));
+  h.appendChild(mk("Duplicar","⧉",()=>{arr.splice(i+1,0,deep(arr[i]));rerender();toast("Item duplicado.",true);},"dup"));
+  h.appendChild(mk("Excluir","✕",()=>{if(confirm("Excluir este item?")){arr.splice(i,1);rerender();}},"del"));
   return h;
 }
 function addBtn(txt,fn){const b=el(`<button class="add">+ ${txt}</button>`);b.addEventListener('click',fn);return b;}
@@ -1612,18 +1528,18 @@ function renderLangs(){
   });
 }
 function SECS(){return [
-  ["dash","Dashboard","","dash"],
-  ["geral","Geral & Hero","","hero"],
-  ["ui","Textos da interface",Object.keys(DATA.ui).length,"text"],
-  ["clientes","Clientes",DATA.clients.length,"users"],
-  ["servicos","Serviços",DATA.services.length,"grid"],
-  ["numeros","Crawl & Números",DATA.stats.length,"hash"],
-  ["works","Trabalhos (Cases)",DATA.works.length,"work"],
-  ["estudio","Estúdio & Time",DATA.about.team.length,"team"],
-  ["contato","Contato & Rodapé","","mail"],
-  ["fontes","Tipografia","","type"],
-  ["midia","Mídia (imagens)","","img"],
-  ["pub","Publicação","","rocket"]
+  ["dash","Dashboard","","◆"],
+  ["geral","Geral & Hero","","✦"],
+  ["ui","Textos da interface",Object.keys(DATA.ui).length,"✎"],
+  ["clientes","Clientes",DATA.clients.length,"◐"],
+  ["servicos","Serviços",DATA.services.length,"▤"],
+  ["numeros","Crawl & Números",DATA.stats.length,"#"],
+  ["works","Trabalhos (Cases)",DATA.works.length,"▦"],
+  ["estudio","Estúdio & Time",DATA.about.team.length,"◉"],
+  ["contato","Contato & Rodapé","","☏"],
+  ["fontes","Tipografia","","Aa"],
+  ["midia","Mídia (imagens)","","▧"],
+  ["pub","Publicação","","▲"]
 ];}
 function renderSide(){
   const s=document.getElementById('side'); s.innerHTML="";
@@ -1632,7 +1548,7 @@ function renderSide(){
   s.appendChild(head);
   const ind=el('<div class="side-ind"></div>'); s.appendChild(ind);
   SECS().forEach(([k,n,c,ic])=>{
-    const b=el(`<button class="${k===SEC?'on':''}" data-k="${k}">${svg(ic)}<span>${n}</span>${c!==""?`<span class="cnt">${c}</span>`:""}</button>`);
+    const b=el(`<button class="${k===SEC?'on':''}" data-k="${k}"><i class="sic">${ic||''}</i><span>${n}</span>${c!==""?`<span class="cnt">${c}</span>`:""}</button>`);
     b.addEventListener('click',()=>{
       SEC=k;renderSide();renderSec();
       document.getElementById('wrap').classList.remove('drawer-open');
@@ -1698,41 +1614,26 @@ function dashboard(m){
       const st=JSON.parse(decodeURIComponent(escape(atob(j.content))));
       const when=new Date(st.publishedAt).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'});
       gbox.innerHTML=`<div class="kpis kpis-3">
-        <div class="kpi kpi-ic">${svg('clock','gc-ico kic')}<b>${when}</b><span>Última publicação</span></div>
-        <div class="kpi kpi-ic">${svg('commit','gc-ico kic')}<b>${(st.lastPublishedSHA||"—").slice(0,7)}</b><span>Commit (SHA)</span></div>
-        <div class="kpi kpi-ic">${svg('rocket','gc-ico kic')}<b>v${st.cmsVersion||"—"}</b><span>Versão do CMS</span></div>
+        <div class="kpi kpi-ic"><i class="kic">🕓</i><b>${when}</b><span>Última publicação</span></div>
+        <div class="kpi kpi-ic"><i class="kic">◆</i><b>${(st.lastPublishedSHA||"—").slice(0,7)}</b><span>Commit (SHA)</span></div>
+        <div class="kpi kpi-ic"><i class="kic">✦</i><b>v${st.cmsVersion||"—"}</b><span>Versão do CMS</span></div>
       </div>`;
     }catch(e){ gbox.innerHTML='<div class="hint"><span class="livedot"></span> '+e.message+'</div>'; }
   })();
 
   let c=card("Visão geral do conteúdo","O que o site publicado contém hoje.");
   const k=el(`<div class="kpis"></div>`);
-  const drafts=D.works.filter(w=>w.status==="draft").length;
-  const metrics=[["work","Cases",D.works.length],["users","Clientes",D.clients.length],["grid","Serviços",D.services.length],
-   ["team","Pessoas no time",D.about.team.length],["globe","Idiomas",5],["hash","Números na faixa",D.stats.length],
-   ["img","Cases com imagem real",D.works.filter(w=>w.image).length,"/"+D.works.length],
-   ["gallery","Fotos de galeria",D.works.reduce((a,w)=>a+(w.gallery||[]).length,0)],["layers","Blocos de conteúdo",D.works.reduce((a,w)=>a+(w.blocks||[]).length,0)]];
-  if(drafts) metrics.push(["eyeoff","Rascunhos (ocultos no site)",drafts]);
+  const metrics=[["◧","Cases",D.works.length],["◐","Clientes",D.clients.length],["▤","Serviços",D.services.length],
+   ["◉","Pessoas no time",D.about.team.length],["◎","Idiomas",5],["#","Números na faixa",D.stats.length],
+   ["▦","Cases com imagem real",D.works.filter(w=>w.image).length,"/"+D.works.length],
+   ["▧","Fotos de galeria",D.works.reduce((a,w)=>a+(w.gallery||[]).length,0)],["▣","Blocos de conteúdo",D.works.reduce((a,w)=>a+(w.blocks||[]).length,0)]];
   metrics.forEach(([ic,l,v,suf])=>{
-    const kp=el(`<div class="kpi kpi-ic">${svg(ic,'gc-ico kic')}<b>0</b><span>${l}</span></div>`);
+    const kp=el(`<div class="kpi kpi-ic"><i class="kic">${ic}</i><b>0</b><span>${l}</span></div>`);
     k.appendChild(kp);
     const bEl=kp.querySelector('b');
     requestAnimationFrame(()=>animateCount(bEl, typeof v==="number"?v:parseInt(v)||0, suf||""));
   });
-  /* métrica real de arquivos na biblioteca — consulta o GitHub ao vivo,
-     igual ao card de Status do Git logo acima. Antes, o painel só contava
-     URLs referenciadas no content.json (galeria/blocos), que é sempre menor
-     que o total real de arquivos enviados — por isso "não batia". */
-  const kFiles=el(`<div class="kpi kpi-ic kpi-async">${svg('folder','gc-ico kic')}<b>…</b><span>Arquivos na biblioteca</span></div>`);
-  k.appendChild(kFiles);
   c.appendChild(k); m.appendChild(c);
-  (async()=>{
-    try{
-      const items=await fetchAllMedia(true);
-      const bEl=kFiles.querySelector('b');
-      requestAnimationFrame(()=>animateCount(bEl, items.length, ""));
-    }catch(e){ kFiles.querySelector('b').textContent="—"; kFiles.querySelector('span').textContent="Arquivos (offline)"; }
-  })();
 
   c=card("Completude das traduções","Percentual de campos preenchidos por idioma.");
   const tot={}; LANGS.forEach(([l])=>tot[l]=[0,0]);
@@ -1901,17 +1802,6 @@ function renderSec(){
         sel.addEventListener('change',()=>w.kind=sel.value);
         f.appendChild(sel); it.appendChild(f);
       })();
-      (function(){
-        /* status: publicado x rascunho — permite tirar do ar sem apagar
-           o trabalho já feito (ex: cliente pediu pra esperar antes de publicar) */
-        const f=el('<div class="field"><label>Status</label><div class="hint" style="margin-bottom:8px">Rascunho fica salvo aqui, mas some do site — sem excluir nada.</div></div>');
-        const sel=el(`<select><option value="published" ${w.status!=="draft"?"selected":""}>🟢 Publicado — visível no site</option><option value="draft" ${w.status==="draft"?"selected":""}>◻ Rascunho — oculto no site</option></select>`);
-        sel.addEventListener('change',()=>{w.status=sel.value;renderSec();});
-        f.appendChild(sel); it.appendChild(f);
-      })();
-      if(w.status==="draft"){
-        it.querySelector('.item-head').appendChild(el('<span class="draft-badge">RASCUNHO</span>'));
-      }
       const r=el(`<div class="row3"></div>`);
       r.appendChild(txtField("Cliente",w,"client"));
       r.appendChild(txtField("Ano",w,"year"));
@@ -2176,6 +2066,14 @@ function renderSec(){
      4. sidebar V2                9. render
      5. cabeçalho + modal
    ══════════════════════════════════════════════════════════════ */
+(function(){
+"use strict";
+const EZ='cubic-bezier(.22,1,.36,1)';
+const $=(s,r=document)=>r.querySelector(s);
+const mk=h=>{const d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ml=o=>{ if(o==null)return""; if(typeof o==='string')return o; return o[typeof L!=='undefined'?L:'pt']||o.pt||""; };
+
 /* ── 1. ícones ─────────────────────────────────────────────── */
 const I={
   dash:'<path d="M3 3h7v7H3zM14 3h7v4h-7zM14 10h7v11h-7zM3 13h7v8H3z"/>',
@@ -2193,30 +2091,9 @@ const I={
   chev:'<path d="M14 6l-6 6 6 6"/>',
   search:'<path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/>',
   plus:'<path d="M12 5v14M5 12h14"/>',
-  rocket:'<path d="M12 3c4 2 6 6 6 10l-3 3H9l-3-3c0-4 2-8 6-10zM12 11a1.5 1.5 0 100-3 1.5 1.5 0 000 3"/>',
-  globe:'<path d="M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9z"/>',
-  layers:'<path d="M12 2l9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/>',
-  folder:'<path d="M3 6a1 1 0 011-1h5l2 2h9a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1z"/>',
-  eyeoff:'<path d="M2 2l20 20M9.9 9.9a3 3 0 004.2 4.2M6.1 6.5C4 8 2.7 10 2 12c1.5 3.9 5.5 7 10 7 1.7 0 3.3-.4 4.7-1.1M10.6 5.1A10.8 10.8 0 0112 5c4.5 0 8.5 3.1 10 7-.5 1.3-1.3 2.6-2.3 3.7"/>',
-  gallery:'<path d="M3 5h14v12H3zM3 15l4-4 3 3 5-5 2 2M7 8a1 1 0 11-2 0 1 1 0 012 0zM7 19h14V7"/>',
-  clock:'<path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3.5 2"/>',
-  commit:'<path d="M12 8a4 4 0 100 8 4 4 0 000-8zM2 12h6M16 12h6"/>',
-  up:'<path d="M12 19V5M5 12l7-7 7 7"/>',
-  down:'<path d="M12 5v14M5 12l7 7 7-7"/>',
-  dup:'<path d="M9 9h11v11H9zM5 15H4a1 1 0 01-1-1V4a1 1 0 011-1h10a1 1 0 011 1v1"/>',
-  trash:'<path d="M4 7h16M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M6 7l1 13a1 1 0 001 1h8a1 1 0 001-1l1-13"/>'
+  rocket:'<path d="M12 3c4 2 6 6 6 10l-3 3H9l-3-3c0-4 2-8 6-10zM12 11a1.5 1.5 0 100-3 1.5 1.5 0 000 3"/>'
 };
 const svg=(k,cls='gc-ico')=>`<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${I[k]||I.grid}</svg>`;
-
-(function(){
-"use strict";
-const EZ='cubic-bezier(.22,1,.36,1)';
-const $=(s,r=document)=>r.querySelector(s);
-const mk=h=>{const d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;};
-const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const ml=o=>{ if(o==null)return""; if(typeof o==='string')return o; return o[typeof L!=='undefined'?L:'pt']||o.pt||""; };
-
-
 
 /* ── 2. motor de arraste ───────────────────────────────────── */
 function flip(nodes,mutate){
@@ -2588,13 +2465,24 @@ const _dashboard=window.dashboard;
 window.dashboard=function(m){
   statusBar(m);
   syncCard(m);
-  /* FIX: este wrapper desenhava seu PRÓPRIO card "Visão geral do
-     conteúdo" com ícones antigos (◧◐▤◉▦▧#◎) e métricas desatualizadas
-     (sem Rascunhos, sem o contador real de Arquivos na biblioteca) —
-     e a função original (chamada logo abaixo via _dashboard(m)) desenha
-     a versão certa e atualizada. As duas apareciam juntas, uma em cima
-     da outra, mostrando números conflitantes. Removido o card duplicado
-     daqui; a única "Visão geral" agora é a da função original. */
+  const D=DATA;
+  const c=card('Visão geral do conteúdo','Números lidos direto do content.json carregado.');
+  const k=mk('<div class="kpis"></div>');
+  const badge=document.getElementById('dirtybadge');
+  const pend=badge&&!badge.hidden?'sim':'não';
+  [['◧','Projetos',D.works.length],['◐','Clientes',D.clients.length],['▤','Serviços',D.services.length],
+   ['◉','Equipe',D.about.team.length],['▦','Categorias',new Set(D.works.map(w=>w.kind||'case')).size],
+   ['▧','Arquivos',D.works.reduce((a,w)=>a+(w.gallery||[]).length,0)+D.works.filter(w=>w.image).length],
+   ['#','Números',D.stats.length],['◎','Idiomas',5]]
+  .forEach(([ic,l,v])=>{
+    const kp=mk(`<div class="kpi kpi-ic"><i class="kic">${ic}</i><b>0</b><span>${l}</span></div>`);
+    k.appendChild(kp);
+    const b=kp.querySelector('b');
+    if(typeof animateCount==='function') requestAnimationFrame(()=>animateCount(b,v,'')); else b.textContent=v;
+  });
+  c.appendChild(k);
+  c.appendChild(mk(`<div class="hint" style="margin-top:14px">Alterações não publicadas: <b>${pend}</b></div>`));
+  m.appendChild(c);
   quickActions(m);
   recentActivity(m);
   _dashboard(m);                                   /* painéis originais: git, traduções, pendências, SEO */
@@ -2910,25 +2798,11 @@ document.addEventListener('click',e=>{
    própria subpasta em media/projetos/{slug-do-cliente}/, gerada a partir
    do que já está cadastrado em Projetos — na hora de enviar e na hora de
    listar. */
-/* FIX (bug de duplicação na biblioteca): antes, a pasta de mídia de cada
-   projeto era recalculada a cada chamada a partir de slug(w.client) — um
-   campo de texto editável. Qualquer edição no nome do cliente (acento,
-   maiúscula, espaço) gerava um slug novo, "mudando" a pasta em silêncio:
-   as imagens antigas ficavam órfãs numa pasta, e a próxima imagem enviada
-   ia para uma pasta nova com nome parecido — na Biblioteca isso aparecia
-   como o mesmo projeto duplicado. Agora a pasta é calculada UMA VEZ e
-   gravada em w.mediaFolder; depois disso, nunca muda, mesmo que o nome do
-   cliente seja editado. Compatível com o que já existe no repositório:
-   na primeira vez que roda após esta correção, o valor calculado é
-   idêntico ao nome de pasta que já estava em uso (mesmo algoritmo). */
 function projectFolders(){
-  return (DATA.works||[]).map(w=>{
-    if(!w.mediaFolder){
-      w.mediaFolder='projetos/'+slug(w.client||w.id||'projeto');
-      try{ if(typeof markDirty==='function') markDirty(); }catch(_){}
-    }
-    return {key:w.mediaFolder, label:(w.client||'Projeto')+' — '+(ml(w.title)||''), _w:w};
-  });
+  return (DATA.works||[]).map(w=>({
+    key:'projetos/'+slug(w.client||w.id||'projeto'),
+    label:(w.client||'Projeto')+' — '+(ml(w.title)||''),
+  }));
 }
 /* CORREÇÃO: a função original enviava os arquivos em silêncio total — nada
    na tela até o toast final. Em conexão lenta ou arquivo grande, parece que

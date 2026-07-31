@@ -833,15 +833,7 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
 let lang = "pt";
 const $ = id => document.getElementById(id);
-/* FIX: antes só caía pro PT quando o campo era null/undefined — uma
-   string vazia "" (comum em texto recém-criado, ainda não traduzido)
-   passava direto, e o visitante via texto em branco em vez do PT.
-   Agora qualquer valor vazio/só espaço também cai pro português. */
-const T = o => {
-  if(!o) return "";
-  const v = o[lang];
-  return (v!=null && String(v).trim()!=="") ? v : (o.pt ?? "");
-};
+const T = o => (o && (o[lang] ?? o.pt)) ?? "";
 const EM = s => String(s).replace(/\*([^*]+)\*/g,'<em>$1</em>');
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const linky = s => esc(s).replace(/https?:\/\/[^\s<]+/g,u=>`<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\/(www\.)?/,"").split("/")[0]} ↗</a>`);
@@ -955,8 +947,8 @@ function render(){
   $('statgrid').innerHTML=C.stats.map(s=>`
     <div class="stat reveal"><b data-target="${s.value}" data-suffix="${esc(s.suffix||"")}">0${esc(s.suffix||"")}</b><span>${esc(T(s.label))}</span></div>`).join("");
 
-  const idxCases=C.works.map((w,i)=>({w,i})).filter(x=>x.w.kind!=="craft"&&x.w.status!=="draft");
-  const idxCraft=C.works.map((w,i)=>({w,i})).filter(x=>x.w.kind==="craft"&&x.w.status!=="draft");
+  const idxCases=C.works.map((w,i)=>({w,i})).filter(x=>x.w.kind!=="craft");
+  const idxCraft=C.works.map((w,i)=>({w,i})).filter(x=>x.w.kind==="craft");
   $('wrail').innerHTML=idxCases.map(({w,i},n)=>`
     <article class="wcard" data-i="${i}" data-cur="view">
       <div class="media"><span class="chip${w.client.startsWith("Confidencial")?" nda":""}">${esc(w.client)}</span>${media(w,i,"thumb")}${vBadge(w)}${aiBadge(w)}<span class="go">↗</span><span class="no">${String(n+1).padStart(2,"0")}</span></div>
@@ -1074,8 +1066,7 @@ function buildHeroSlider(){
   const sl=$('hslider');
   sl.querySelectorAll('.slide').forEach(e=>e.remove());
   const veil=sl.querySelector('.veil');
-  heroList=C.works.map((w,i)=>({w,i})).filter(x=>x.w.kind!=="craft"&&x.w.status!=="draft");
-  if(!heroList.length) heroList=C.works.map((w,i)=>({w,i})).filter(x=>x.w.status!=="draft");
+  heroList=C.works.map((w,i)=>({w,i})).filter(x=>x.w.kind!=="craft");
   if(!heroList.length) heroList=C.works.map((w,i)=>({w,i}));
   hIdx=Math.min(hIdx,heroList.length-1);
   heroList.forEach(({w,i},n)=>{
@@ -1207,17 +1198,9 @@ function renderBlocks(w){
 }
 
 /* ---------- case overlay ---------- */
-function nextPublished(i){
-  for(let k=1;k<=C.works.length;k++){
-    const j=(i+k)%C.works.length;
-    if(C.works[j].status!=="draft") return j;
-  }
-  return (i+1)%C.works.length;
-}
 const caseEl=$('case');
 function openCase(i){
   const w=C.works[i];
-  const ni=nextPublished(i);
   const gal=(w.gallery||[]).filter(Boolean).map(u=>`<figure><img src="${esc(u)}" alt="" loading="lazy" decoding="async"></figure>`).join("");
   $('casebody').innerHTML=`
     <p class="k-client">${esc(w.client)}${aiTag(w)}</p>
@@ -1235,11 +1218,11 @@ function openCase(i){
     ${gal?`<div class="gal">${gal}</div>`:""}
     <div id="knext">
       <p class="lbl">${esc(T(C.ui.ui_next))}</p>
-      <div class="row"><h3>${esc(T(C.works[ni].title))}</h3>
-      <div class="mini">${media(C.works[ni],ni,"thumb")}</div></div>
+      <div class="row"><h3>${esc(T(C.works[(i+1)%C.works.length].title))}</h3>
+      <div class="mini">${media(C.works[(i+1)%C.works.length],(i+1)%C.works.length,"thumb")}</div></div>
     </div>`;
   const kn=document.getElementById('knext');
-  kn.addEventListener('click',()=>openCase(ni));
+  kn.addEventListener('click',()=>openCase((i+1)%C.works.length));
   if(!reduced){
     [...document.getElementById('casebody').children].forEach((el,k)=>{
       el.animate([{opacity:0,transform:"translateY(30px)"},{opacity:1,transform:"none"}],
