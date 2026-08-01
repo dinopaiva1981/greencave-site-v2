@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-01T03:58:13.113Z",
+  "generatedAt": "2026-08-01T13:59:40.738Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -591,7 +591,7 @@
       "client": "Aché Laboratórios",
       "year": "",
       "art": "orbit",
-      "image": "media/projetos/ache-laboratorios/ache_styleframe_1.jpg",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/ache-laboratorios/ache_styleframe_2.jpg",
       "gallery": [],
       "title": {
         "pt": "Cuidados Pela Vida",
@@ -617,13 +617,30 @@
       "blocks": [
         {
           "type": "video",
-          "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
+          "url": "https://vimeo.com/1214814092?share=copy&fl=sv&fe=ci",
           "caption": {
-            "pt": "Motion Brand para ativação de comunicação",
-            "en": "Motion Brand for communication activation",
-            "es": "Motion Brand para activación de comunicación",
-            "zh": "用于激活沟通的 Motion Brand",
-            "no": "Motion Brand for kommunikasjonsaktivering"
+            "pt": "Campanha de lançamento - Trilha de Cuidados",
+            "en": "Launch campaign - Care Trail",
+            "es": "Campaña de lanzamiento - Care Trail",
+            "zh": "启动活动 - 关怀之路",
+            "no": "Lanseringskampanje - Omsorgsløypa"
+          }
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "*Trilha de Cuidados*",
+            "en": "*Care Trail*",
+            "es": "*Ruta de atención*",
+            "zh": "*护理追踪*",
+            "no": "*Omsorgssti*"
+          },
+          "body": {
+            "pt": "Ao lado do time de Branding da Aché Laboratórios, fomos desafiados a desenvolver esta campanha utilizando Inteligência Artificial como parte fundamental de todo o processo criativo e de produção. Da concepção às entregas finais, exploramos o potencial da IA para acelerar ideias, ampliar possibilidades criativas e garantir eficiência sem abrir mão da qualidade.\nO resultado foi um projeto do qual temos grande orgulho: o primeiro vídeo oficial que marcou o lançamento da plataforma e dos serviços do Cuidados Pela Vida, dando início à presença da marca nesse novo momento no mercado brasileiro.",
+            "en": "Script, concept, styleframes, motion, AI-generated films, digital production for web and social media across multiple formats, plus content for internal events and sales-force training — covering the entire journey of patients, doctors, pharmacies and partners. From the institutional PDV positivação video to the brand positioning campaign, Greencave sits on the creative line end to end.",
+            "es": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
+            "zh": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
+            "no": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta."
           }
         },
         {
@@ -641,6 +658,17 @@
             "es": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
             "zh": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
             "no": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta."
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
+          "caption": {
+            "pt": "Motion Brand para ativação de comunicação",
+            "en": "Motion Brand for communication activation",
+            "es": "Motion Brand para activación de comunicación",
+            "zh": "用于激活沟通的 Motion Brand",
+            "no": "Motion Brand for kommunikasjonsaktivering"
           }
         },
         {
