@@ -75,6 +75,9 @@ main{min-height:70vh}
 .card h2{font-weight:700;font-size:17px;margin-bottom:5px;letter-spacing:-.015em;color:#0D0F0E}
 .card .sub{color:var(--mute);font-size:13.5px;margin-bottom:20px;line-height:1.55;max-width:62ch}
 .field{margin-bottom:16px}
+.draft-field{background:var(--bone);border-radius:10px;padding:12px 14px;border:1.5px solid var(--line)}
+.draft-toggle{display:flex;align-items:center;gap:10px;cursor:pointer;font-weight:600;font-size:13.5px}
+.draft-toggle input{width:36px;height:20px;flex:none;accent-color:var(--green)}
 .field input[type=text],.field input[type=password],.field textarea,.field select{border:1.5px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14px;width:100%;transition:border-color .2s,box-shadow .2s;background:#fff}
 .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--green-d);box-shadow:0 0 0 4px rgba(27,217,116,.13)}
 .field label{font-size:12.5px;font-weight:600;color:var(--teal);display:block;margin-bottom:6px;letter-spacing:.01em}
@@ -824,6 +827,9 @@ body:has(#gate){overflow:hidden}
 .pcard .badge.ai-badge{
   top:9px;left:auto;right:9px;background:rgba(52,211,153,.16);border-color:rgba(52,211,153,.5);color:var(--green);
 }
+.pcard .badge.draft-badge{
+  top:auto;bottom:9px;left:auto;right:9px;background:rgba(230,180,60,.18);border-color:rgba(230,180,60,.55);color:#E6B43C;
+}
 
 /* ── importar projeto de uma URL ────────────────────────────────── */
 .gc-importbox{
@@ -1095,7 +1101,7 @@ function confetti(){
 function normalizeData(D){
   if(Array.isArray(D.awards)&&D.awards.length&&!("items" in D.awards[0]))
     D.awards=[{label:ml5("Conquistas"),items:D.awards}];
-  (D.works||[]).forEach(w=>{w.kind=w.kind||"case";w.blocks=w.blocks||[];w.gallery=w.gallery||[];});
+  (D.works||[]).forEach(w=>{w.kind=w.kind||"case";w.blocks=w.blocks||[];w.gallery=w.gallery||[];if(typeof w.draft!=="boolean")w.draft=false;});
   D.about.values=(D.about.values||[]).map(v=>("word" in v)?v:{word:v,line:ml5("")});
   D.lab=D.lab||{items:[]};
   D.quem=D.quem||[]; D.reel=D.reel||{url:""};
@@ -1169,10 +1175,24 @@ function download(name,text,type){
   a.download=name; a.click(); URL.revokeObjectURL(a.href);
 }
 function buildContentJson(){ return JSON.stringify(DATA,null,2); }
+/* CORREÇÃO: recurso de rascunho — cases marcados como draft ficam visíveis
+   e editáveis no painel, mas nunca devem ir pro site publicado. Em vez de
+   filtrar em cada lugar que gera conteúdo (fácil esquecer um), centralizei
+   aqui: toda publicação passa por publishableData(), que devolve uma cópia
+   de DATA sem os rascunhos. O DATA original nunca é alterado — os rascunhos
+   continuam no painel normalmente. */
+function publishableData(){
+  const draftCount=(DATA.works||[]).filter(w=>w.draft).length;
+  if(!draftCount) return DATA;
+  const pub=JSON.parse(JSON.stringify(DATA));
+  pub.works=pub.works.filter(w=>!w.draft);
+  return pub;
+}
+function buildPublishContentJson(){ return JSON.stringify(publishableData(),null,2); }
 function buildSiteHtml(){
   if(!RAW){ toast("index.html completo só pode ser gerado a partir de um arquivo antigo carregado manualmente (não é necessário no fluxo normal — o conteúdo publica via content.json).",false); return null; }
   let out=RAW.replace(/(<script id="gc-content" type="application\/json">)[\s\S]*?(<\/script>)/,
-    (_,a,b)=>a+"\n"+JSON.stringify(DATA,null,2)+"\n"+b);
+    (_,a,b)=>a+"\n"+JSON.stringify(publishableData(),null,2)+"\n"+b);
   for(const fam in pendingFonts){
     const pf=pendingFonts[fam];
     const re=new RegExp("(@font-face\\{font-family:'"+fam+"';src:url\\(data:font\\/)[a-z0-9]+(;base64,)[^)]+(\\) format\\(')[a-z0-9]+('\\))");
@@ -1181,7 +1201,7 @@ function buildSiteHtml(){
   return out;
 }
 document.getElementById('dl-site').addEventListener('click',()=>{
-  download("content.json",buildContentJson(),"application/json");
+  download("content.json",buildPublishContentJson(),"application/json");
   toast("content.json gerado — suba este arquivo no repositório (raiz, ao lado do index.html).",true); confetti(); clearDirty();
 });
 document.getElementById('prev-site').addEventListener('click',async()=>{
@@ -1469,8 +1489,9 @@ async function ghPublish(btn){
     DATA.schemaVersion=SCHEMA_VERSION;
     DATA.generatedAt=new Date().toISOString();
 
-    setStep("Gravando content.json…");
-    const contentSha=await putFile(repo,branch,GHS.contentPath||"content.json",buildContentJson(),"content: atualização via painel Greencave",tok);
+    const draftCount=(DATA.works||[]).filter(w=>w.draft).length;
+    setStep(draftCount?`Gravando content.json (${draftCount} rascunho${draftCount===1?"":"s"} ficando de fora)…`:"Gravando content.json…");
+    const contentSha=await putFile(repo,branch,GHS.contentPath||"content.json",buildPublishContentJson(),"content: atualização via painel Greencave",tok);
 
     if(hasFontChange){
       setStep("Fonte nova detectada — atualizando index.html…");
@@ -1728,6 +1749,8 @@ function dashboard(m){
     if(["en","es","zh","no"].some(l=>String(o[l]||"").trim()===pt)) untranslated++;
   });
   if(untranslated) pend.push(["warn",`${untranslated} campo(s) com texto ainda igual ao PT em outro idioma — provável tradução pendente. Reabra o campo em PT (ou use "🌐 Traduzir tudo do PT" na aba Publicação).`]);
+  const draftWorks=D.works.filter(w=>w.draft);
+  if(draftWorks.length) pend.push(["warn",`${draftWorks.length} case(s) em rascunho — não aparecem no site até você marcar como publicado.`]);
   if(!pend.length) pend.push(["ok","Nenhuma pendência — conteúdo 100% real. 🎉"]);
   pend.forEach(([t,txt])=>ul.appendChild(el(`<li${t==="ok"?' class="done"':''}><span class="dot ${t}"></span><span>${txt}</span></li>`)));
   c.appendChild(ul); m.appendChild(c);
@@ -1863,6 +1886,20 @@ function renderSec(){
       const it=el(`<div class="item"></div>`);
       it.appendChild(itemControls(DATA.works,i,renderSec,"Case"));
       (function(){
+        const f=el('<div class="field draft-field"><label>Publicação</label></div>');
+        const wrap=el('<label class="draft-toggle"></label>');
+        const cb=el(`<input type="checkbox" ${w.draft?"":"checked"}>`);
+        const txt=el(`<span>${w.draft?"🔒 Rascunho — não aparece no site publicado":"🌍 Publicado — vai pro site na próxima publicação"}</span>`);
+        cb.addEventListener('change',()=>{
+          w.draft=!cb.checked;
+          txt.textContent=w.draft?"🔒 Rascunho — não aparece no site publicado":"🌍 Publicado — vai pro site na próxima publicação";
+        });
+        wrap.appendChild(cb); wrap.appendChild(txt);
+        f.appendChild(wrap);
+        f.appendChild(el('<div class="hint">Deixe desmarcado pra continuar editando sem que o card apareça no site. Marque quando estiver pronto pra ir ao ar.</div>'));
+        it.appendChild(f);
+      })();
+      (function(){
         const f=el('<div class="field"><label>Seção no site</label></div>');
         const sel=el(`<select><option value="case" ${w.kind!=="craft"?"selected":""}>Case (estrutura & relevância)</option><option value="craft" ${w.kind==="craft"?"selected":""}>Trabalho (craft avulso)</option></select>`);
         sel.addEventListener('change',()=>w.kind=sel.value);
@@ -1928,7 +1965,7 @@ function renderSec(){
       f2.appendChild(ta); it.appendChild(f2);
       c.appendChild(it);
     });
-    c.appendChild(addBtn("Adicionar case",()=>{DATA.works.push({id:genId("work"),client:"Cliente",year:String(new Date().getFullYear()),art:"rings",kind:"case",image:"",gallery:[],blocks:[],title:ml5("Novo case"),tags:ml5(""),body:ml5("")});renderSec();}));
+    c.appendChild(addBtn("Adicionar case",()=>{DATA.works.push({id:genId("work"),client:"Cliente",year:String(new Date().getFullYear()),art:"rings",kind:"case",draft:true,image:"",gallery:[],blocks:[],title:ml5("Novo case"),tags:ml5(""),body:ml5("")});renderSec();}));
     m.appendChild(c);
   }
 
@@ -2390,7 +2427,7 @@ function cardsView(sec){
     works:{arr:DATA.works,label:'Case',layout:'grid',data:w=>({
       title:ml(w.title)||w.client||'Sem título',
       meta:[w.client,w.year].filter(Boolean).join(' · '),
-      tags:ml(w.tags), img:w.image, ai:!!w.ai,
+      tags:ml(w.tags), img:w.image, ai:!!w.ai, draft:!!w.draft,
       badge:w.kind==='craft'?'Trabalho':'Case', isCase:w.kind!=='craft'})},
     clientes:{arr:DATA.clients,label:'Cliente',layout:'list',data:c=>({title:String(c||''),meta:'',tags:'',img:'',badge:'',isCase:false})},
     servicos:{arr:DATA.services,label:'Serviço',layout:'grid',data:s=>({title:ml(s.title)||'Serviço',meta:'',tags:ml(s.desc),img:'',badge:'',isCase:false})}
@@ -2421,6 +2458,7 @@ function cardsView(sec){
     </div>`):mk(`<div class="pcard">
       <div class="thumb">${d.img?`<img src="${esc(d.img)}" alt="" loading="lazy">`:`<span class="mono">${esc(initial(d.title))}</span>`}
         ${d.badge?`<span class="badge ${d.isCase?'case':''}">${esc(d.badge)}</span>`:''}
+        ${d.draft?'<span class="badge draft-badge" title="Não publicado">🔒 Rascunho</span>':''}
         ${d.ai?'<span class="badge ai-badge" title="IA aplicada">✨ IA</span>':''}</div>
       <div class="body"><h3>${esc(d.title)}</h3>
         ${d.meta?`<div class="meta">${esc(d.meta)}</div>`:''}
@@ -3579,7 +3617,7 @@ async function createWorkFromExtraction(ex, sourceUrl){
   if(!ex.title&&!ex.images.length) throw new Error('Não encontrei conteúdo reconhecível — confira se colou a página certa.');
   const clientName=(ex.title||'').split(/[—-]/)[0].trim().slice(0,40) || 'Cliente';
   const w={
-    id:genId('work'), kind:'case',
+    id:genId('work'), kind:'case', draft:true,
     client: clientName,
     year: new Date().getFullYear(),
     art:'wave',

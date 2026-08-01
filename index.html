@@ -87,7 +87,9 @@ nav a.nl i{display:block;font-style:normal;transition:transform .4s var(--ease)}
 nav a.nl i+i{color:var(--teal)}
 nav a.nl:hover i{transform:translateY(-100%)}
 .lang{display:flex;gap:2px;border:1px solid var(--ink);border-radius:99px;padding:3px}
-.lang button{font-size:11px;font-weight:600;padding:4px 9px;border-radius:99px;opacity:.5;transition:.25s}
+.lang button{font-size:11px;font-weight:600;padding:4px 9px;border-radius:99px;opacity:.5;transition:.25s;display:inline-flex;align-items:center;gap:5px}
+.lang button .flag{font-size:1.25em;line-height:1}
+.lang button .code{letter-spacing:.04em}
 @media(max-width:1240px){.lang button{padding:4px 7px;font-size:10.5px}nav{gap:clamp(14px,1.6vw,26px)}}
 @media(max-width:1080px){.lang{padding:4px}.lang button{font-size:13px;padding:8px 14px}}
 .lang button:hover{opacity:1}
@@ -166,7 +168,19 @@ body.ready #hero .cap{width:1.5em}
 #hero .lede{position:relative;z-index:2;display:flex;justify-content:flex-end;align-items:flex-end;gap:34px;flex-wrap:wrap;margin:20px 0 clamp(50px,5vw,80px);text-align:left}
 #hero .lede p{max-width:46ch;font-size:clamp(17.5px,1.5vw,21px);line-height:1.55;color:var(--mute);font-weight:430}
 #hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-#hero .geo-ring{top:12vh;right:clamp(-20px,3vw,90px);width:clamp(120px,13vw,200px);z-index:1}
+#hero .geo-ring{top:17vh;right:clamp(-20px,3vw,90px);width:clamp(120px,13vw,200px);z-index:1}
+/* a seta entra na posição inicial (apontando pra direita) e gira até mirar
+   em direção ao headline "PARA TODAS AS TELAS", com um leve balanço contínuo
+   pra parecer viva — em vez de girar sem parar junto com o scroll. Só começa
+   depois que o loader sai (body.ready), pra não rodar escondida atrás dele. */
+body.ready #hero .geo-ring{animation:aimHeadline 5.5s var(--ease) .3s both}
+@keyframes aimHeadline{
+  0%{transform:rotate(0deg)}
+  55%{transform:rotate(212deg)}
+  78%{transform:rotate(202deg)}
+  100%{transform:rotate(208deg)}
+}
+@media(prefers-reduced-motion:reduce){body.ready #hero .geo-ring{animation:none;transform:rotate(208deg)}}
 
 
 /* ---------- reel ---------- */
@@ -625,7 +639,7 @@ footer .base{font-size:13px}
   <section id="hero">
     <div class="guides"><i></i><i></i><i></i><i></i><i></i></div>
     <div class="hmeta"><span data-ui="hero_meta"></span></div>
-    <div class="geo geo-ring spin" data-rot=".05">
+    <div class="geo geo-ring">
       <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M32 50h30M54 42l8 8-8 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
     <p class="eyebrow reveal" data-ui="hero_eyebrow"></p>
@@ -782,6 +796,7 @@ footer .base{font-size:13px}
 function runApp(C){
 "use strict";
 const LANGS = ["pt","en","es","zh","no"];
+const LANG_FLAG={pt:"🇧🇷",en:"🇺🇸",es:"🇪🇸",zh:"🇨🇳",no:"🇳🇴"};
 const HTML_LANG = {pt:"pt-BR",en:"en",es:"es",zh:"zh-Hans",no:"nb-NO"};
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
@@ -868,7 +883,7 @@ function render(){
     return `<span class="ln"><span>${cap}${EM(esc(l))}${pill}</span></span>`;
   }).join("");
 
-  $('langbox').innerHTML=LANGS.map(l=>`<button data-l="${l}" class="${l===lang?'on':''}">${l.toUpperCase()}</button>`).join("");
+  $('langbox').innerHTML=LANGS.map(l=>`<button data-l="${l}" class="${l===lang?'on':''}" aria-label="${l.toUpperCase()}"><span class="flag">${LANG_FLAG[l]}</span><span class="code">${l.toUpperCase()}</span></button>`).join("");
 
   const names=C.clients.map(c=>`<span class="cl">${esc(c)}</span>`).join("");
   $('cltrack').innerHTML=names+names;
