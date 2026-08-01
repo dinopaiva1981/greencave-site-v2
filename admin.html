@@ -1743,7 +1743,15 @@ function renderSec(){
   const U=DATA.ui;
   const hintEm='Use *palavra* para itálico elegante.';
 
-  if(SEC==="dash"){ dashboard(m); return; }
+  /* CORREÇÃO: aqui tinha um "return" logo após montar o dashboard — isso pulava
+     o bloco no final da função que restaura a opacidade do #main (que é zerada
+     no topo, pra fazer o fade-in). Resultado: o conteúdo do dashboard era
+     montado normalmente, só que ficava com opacity:0 pra sempre — tela preta
+     com o menu lateral visível, exatamente como no seu print. Isso já vinha
+     assim no arquivo original, não é algo desta rodada. Removido o "return"
+     para o dashboard passar pelo mesmo fade-in de qualquer outra seção. */
+  if(SEC==="dash"){ dashboard(m); }
+  else
 
   if(SEC==="geral"){
     let c=card("SEO","Título e descrição no Google e na aba do navegador.");
