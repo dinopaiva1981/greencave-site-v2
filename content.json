@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-01T18:58:40.526Z",
+  "generatedAt": "2026-08-01T23:27:07.178Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -2115,13 +2115,13 @@
         },
         {
           "type": "video",
-          "url": "https://vimeo.com/868747897?share=copy&fl=sv&fe=ci",
+          "url": "https://vimeo.com/868747897",
           "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
+            "pt": "Lançamento da tecnologia Biofiber",
+            "en": "Launch of Biofiber technology",
+            "es": "Lanzamiento de la tecnología Biofibra",
+            "zh": "推出生物纤维技术",
+            "no": "Lansering av biofiberteknologi"
           }
         },
         {
