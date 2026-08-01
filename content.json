@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-01T03:32:33.363Z",
+  "generatedAt": "2026-08-01T03:58:13.113Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -582,7 +582,8 @@
         }
       ],
       "kind": "craft",
-      "id": "work_zahtq32w"
+      "id": "work_zahtq32w",
+      "draft": false
     },
     {
       "id": "work_jvssafo1",
@@ -759,7 +760,8 @@
           }
         }
       ],
-      "ai": true
+      "ai": true,
+      "draft": false
     },
     {
       "id": "work_5iwf8niy",
@@ -897,7 +899,8 @@
         "zh": "我们与 Formata Produções 合作，承担了 80 多个实景镜头的创意后期制作工作。这项工作涉及资产的创建、视觉细化以及在工作室录制的场景的构图，确保所有作品的审美一致性和高质量的交付。",
         "no": "I samarbeid med Formata Produções overtok vi den kreative postproduksjonen til mer enn 80 live action-plater. Arbeidet innebar opprettelse av eiendeler, visuell foredling og komposisjon av scener spilt inn i studio, og sikret estetisk konsistens og høy kvalitet på levering i alle stykker."
       },
-      "ai": true
+      "ai": true,
+      "draft": false
     },
     {
       "id": "work_n7lorw8r",
@@ -1027,7 +1030,8 @@
             "no": ""
           }
         }
-      ]
+      ],
+      "draft": false
     },
     {
       "id": "work_z0fyh22c",
@@ -1174,7 +1178,8 @@
           "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/polonia/p007.png"
         }
       ],
-      "ai": true
+      "ai": true,
+      "draft": false
     },
     {
       "id": "work_f0i6pxqm",
@@ -1359,7 +1364,8 @@
             "no": ""
           }
         }
-      ]
+      ],
+      "draft": false
     },
     {
       "kind": "craft",
@@ -1566,7 +1572,8 @@
           }
         }
       ],
-      "id": "work_xs7gsz4c"
+      "id": "work_xs7gsz4c",
+      "draft": false
     },
     {
       "id": "work_ixoec4v9",
@@ -1719,7 +1726,8 @@
           }
         }
       ],
-      "_importedFrom": ""
+      "_importedFrom": "",
+      "draft": false
     },
     {
       "id": "work_m8c86flf",
@@ -1743,11 +1751,11 @@
         "no": "Oppretting - Merkeinnhold - Live Action"
       },
       "body": {
-        "pt": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
-        "en": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
-        "es": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
-        "zh": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
-        "no": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!\n\nSemana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!"
+        "pt": "Semana de copa com jogo do Brasil, tudo fechando cedo e locação difícil de encontrar. Esse projeto foi sem dúvida um dos mais desafiadores que já enfrentamos. Cocriamos com o time da ESPN-BR e nossa missão foi criar o conceito e conduzir toda a operação, de ponta a ponta! Uma campanha para reforçar o sabor do café Pilão em dias corridos sem perder o bom humor!",
+        "en": "World Cup week with Brazil game, everything closing early and locations hard to find. This project was without a doubt one of the most challenging we have ever faced. We co-created with the ESPN-BR team and our mission was to create the concept and conduct the entire operation, from end to end! A campaign to reinforce the flavor of Pilão coffee on busy days without losing your good mood!",
+        "es": "Semana del Mundial con partido de Brasil, todo cierra temprano y lugares difíciles de encontrar. Este proyecto fue sin duda uno de los más desafiantes que jamás hayamos enfrentado. Co-creamos con el equipo de ESPN-BR y nuestra misión era crear el concepto y realizar toda la operación, ¡de principio a fin! ¡Una campaña para reforzar el sabor del café Pilão en los días de mayor afluencia sin perder el buen humor!",
+        "zh": "世界杯周有巴西队的比赛，一切都提前关门，而且位置很难找到。毫无疑问，这个项目是我们面临过的最具挑战性的项目之一。我们与 ESPN-BR 团队共同创建，我们的使命是创建概念并自始至终执行整个操作！一项活动，让您在忙碌的日子里增强 Pilão 咖啡的风味，同时又不失好心情！",
+        "no": "VM-uke med Brasil-kamp, ​​alt stenger tidlig og steder vanskelig å finne. Dette prosjektet var uten tvil et av de mest utfordrende vi noen gang har møtt. Vi lagde sammen med ESPN-BR-teamet og vårt oppdrag var å lage konseptet og gjennomføre hele operasjonen, fra ende til annen! En kampanje for å forsterke smaken av Pilão-kaffe på travle dager uten å miste det gode humøret!"
       },
       "gallery": [
         "https://cdn.prod.website-files.com/607af47c19c35305880a19d5/64e618fdb66bdb8d1cde6f35_3.png",
@@ -1768,7 +1776,8 @@
           }
         }
       ],
-      "_importedFrom": "https://greencave.webflow.io/projetos/pilao-cafe-forte-do-brasil"
+      "_importedFrom": "https://greencave.webflow.io/projetos/pilao-cafe-forte-do-brasil",
+      "draft": false
     },
     {
       "kind": "craft",
@@ -1828,7 +1837,8 @@
           }
         }
       ],
-      "id": "work_ccb7qbfm"
+      "id": "work_ccb7qbfm",
+      "draft": false
     },
     {
       "kind": "craft",
@@ -1992,7 +2002,8 @@
           ]
         }
       ],
-      "id": "work_xpp28h08"
+      "id": "work_xpp28h08",
+      "draft": false
     },
     {
       "id": "work_ohvqklqq",
@@ -2194,54 +2205,8 @@
             "no": ""
           }
         }
-      ]
-    },
-    {
-      "id": "work_cel48cmk",
-      "kind": "case",
-      "client": "Stone & Linx",
-      "year": "",
-      "art": "scan",
-      "image": "media/stone-linx/stone-01.jpg",
-      "gallery": [
-        "media/stone-linx/stone-02.jpg",
-        "media/stone-linx/stone-03.jpg",
-        "media/stone-linx/stone-04.png"
       ],
-      "title": {
-        "pt": "Um sonho ainda maior",
-        "en": "Um sonho ainda maior",
-        "es": "Un sueño aún más grande",
-        "zh": "更大的梦想",
-        "no": "En enda større drøm"
-      },
-      "tags": {
-        "pt": "Criação · Operação Criativa · Minilab Dedicado",
-        "en": "Creation · Creative Operation · Dedicated Minilab",
-        "es": "Creación · Operación creativa · Minilab dedicado",
-        "zh": "创作·创意运营·专用迷你实验室",
-        "no": "Oppretting · Kreativ drift · Dedikert Minilab"
-      },
-      "body": {
-        "pt": "Cocriamos com o time de experiência da Stone.co pra registrar um dos momentos mais importantes da união entre Stone e Linx — do key visual ao motion, com a operação inteira sob nossa gestão.",
-        "en": "We co-created with Stone.co's experience team to capture one of the most important moments in the Stone and Linx merger — from key visual to motion, with the full operation under our management.",
-        "es": "Cocreamos con el equipo de experiencia de Stone.co para registrar uno de los momentos más importantes de la unión entre Stone y Linx — del key visual al motion, con toda la operación bajo nuestra gestión.",
-        "zh": "与 Stone.co 体验团队联合创作，记录 Stone 与 Linx 合并历程中最重要的时刻之一 —— 从主视觉到动态制作，整个流程由我们统筹管理。",
-        "no": "Vi samskapte med Stone.co sitt opplevelsesteam for å fange et av de viktigste øyeblikkene i sammenslåingen mellom Stone og Linx — fra key visual til motion, med hele operasjonen under vår ledelse."
-      },
-      "blocks": [
-        {
-          "type": "video",
-          "url": "https://vimeo.com/574614587",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        }
-      ]
+      "draft": false
     }
   ],
   "about": {
