@@ -806,5 +806,13 @@
     "schemaVersion": "1.0.0",
     "backupPath": "backups/content-2026-08-01T18-58-38-651Z.json",
     "warnings": 0
+  },
+  {
+    "at": "2026-08-01T23:27:08.642Z",
+    "sha": "bd6d2d2770a3c538e2dbc4aecc4ae4a9f28b08cf",
+    "cmsVersion": "2.0.0",
+    "schemaVersion": "1.0.0",
+    "backupPath": "backups/content-2026-08-01T23-27-04-474Z.json",
+    "warnings": 0
   }
 ]
