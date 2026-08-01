@@ -154,7 +154,7 @@ section{position:relative;padding:clamp(88px,12vh,160px) var(--pad)}
 .hubpill{display:inline-flex;align-items:center;gap:.5em;border:1.5px solid var(--ink);border-radius:99px;font-size:.14em;letter-spacing:.2em;padding:.5em 1.1em;vertical-align:1.1em;margin-left:.3em;font-family:var(--sans);font-weight:600;background:var(--paper);transition:background .3s,color .3s}
 #hero h1:hover .hubpill{background:var(--green)}
 #hero h1 .ln{display:block;overflow:hidden;padding:.26em 0 .22em;margin:-.16em 0 -.14em}
-#hero h1 .ln>span{display:inline-flex;align-items:baseline;gap:.18em;transform:translateY(118%) rotate(2.5deg);transform-origin:left bottom;transition:transform 1.1s var(--ease)}
+#hero h1 .ln>span{display:inline-flex;align-items:baseline;gap:.18em;transform:translateY(112%);transform-origin:left bottom;transition:transform 1.05s var(--ease)}
 body.ready #hero h1 .ln>span{transform:none}
 #hero h1 .ln:nth-child(2)>span{transition-delay:.1s}
 #hero h1 .ln:nth-child(3)>span{transition-delay:.2s}
@@ -1303,9 +1303,19 @@ function boot(){
     const fr=f.getBoundingClientRect(), tr=t.getBoundingClientRect();
     if(!tr.width){fade();return;}
     t.style.opacity=0;
+    const DUR=1000, XFADE=220; /* crossfade window at the tail of the move, in ms */
     f.animate([{transform:'translate(0,0) scale(1)'},
       {transform:`translate(${tr.left-fr.left}px,${tr.top-fr.top}px) scale(${tr.width/fr.width})`}],
-      {duration:1000,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'}).onfinish=()=>{t.style.opacity='';f.style.opacity=0;};
+      {duration:DUR,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});
+    /* CORREÇÃO: a troca de opacidade era instantânea (1 frame), então qualquer
+       diferença de sub-pixel entre o clone animado e a posição real do elemento
+       no hero aparecia como um "pulinho" bem no fim. Agora os dois se
+       sobrepõem por ~220ms num crossfade suave — a diferença, se existir,
+       fica escondida dentro do dissolve em vez de aparecer como um corte. */
+    setTimeout(()=>{
+      t.animate([{opacity:0},{opacity:1}],{duration:XFADE,easing:'linear',fill:'forwards'}).onfinish=()=>{t.style.opacity='';};
+      f.animate([{opacity:1},{opacity:0}],{duration:XFADE,easing:'linear',fill:'forwards'}).onfinish=()=>{f.style.opacity=0;};
+    },DUR-XFADE);
   }
   function startExit(){
     if(exiting)return; exiting=true; exitT=performance.now();
