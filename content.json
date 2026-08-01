@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-01T18:40:31.067Z",
+  "generatedAt": "2026-08-01T18:58:40.526Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -627,13 +627,35 @@
           }
         },
         {
+          "type": "video",
+          "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
+          "caption": {
+            "pt": "Motion Brand para ativação de comunicação",
+            "en": "Motion Brand for communication activation",
+            "es": "Motion Brand para activación de comunicación",
+            "zh": "用于激活沟通的 Motion Brand",
+            "no": "Motion Brand for kommunikasjonsaktivering"
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=Z4ysCdbF3p8",
+          "caption": {
+            "pt": "",
+            "en": "Campanha Awareness — Cuidados Pela Vida 2024",
+            "es": "Campanha Awareness — Cuidados Pela Vida 2024",
+            "zh": "Campanha Awareness — Cuidados Pela Vida 2024",
+            "no": "Campanha Awareness — Cuidados Pela Vida 2024"
+          }
+        },
+        {
           "type": "text",
           "title": {
-            "pt": "*Trilha de Cuidados*",
-            "en": "*Care Trail*",
-            "es": "*Ruta de atención*",
-            "zh": "*护理追踪*",
-            "no": "*Omsorgssti*"
+            "pt": "*Parceria que cresce a cada projeto*",
+            "en": "*Partnership that grows with each project*",
+            "es": "*Asociación que crece con cada proyecto*",
+            "zh": "*随着每个项目的发展而发展的合作关系*",
+            "no": "*Partnerskap som vokser med hvert prosjekt*"
           },
           "body": {
             "pt": "Ao lado do time de Branding da Aché Laboratórios, fomos desafiados a desenvolver esta campanha utilizando Inteligência Artificial como parte fundamental de todo o processo criativo e de produção. Da concepção às entregas finais, exploramos o potencial da IA para acelerar ideias, ampliar possibilidades criativas e garantir eficiência sem abrir mão da qualidade.\nO resultado foi um projeto do qual temos grande orgulho: o primeiro vídeo oficial que marcou o lançamento da plataforma e dos serviços do Cuidados Pela Vida, dando início à presença da marca nesse novo momento no mercado brasileiro.",
@@ -658,17 +680,6 @@
             "es": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
             "zh": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta.",
             "no": "Roteiro, conceito, styleframes, motion, filmes com IA, produção digital para web e redes sociais em múltiplos formatos, além de conteúdo para eventos internos e treinamento de força de vendas — cobrindo toda a jornada de pacientes, médicos, farmácias e parceiros. Do vídeo institucional de positivação de PDV até a campanha de posicionamento de marca, a Greencave está na régua de criação de ponta a ponta."
-          }
-        },
-        {
-          "type": "video",
-          "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
-          "caption": {
-            "pt": "Motion Brand para ativação de comunicação",
-            "en": "Motion Brand for communication activation",
-            "es": "Motion Brand para activación de comunicación",
-            "zh": "用于激活沟通的 Motion Brand",
-            "no": "Motion Brand for kommunikasjonsaktivering"
           }
         },
         {
@@ -774,17 +785,6 @@
             "es": "",
             "zh": "",
             "no": ""
-          }
-        },
-        {
-          "type": "video",
-          "url": "https://www.youtube.com/watch?v=Z4ysCdbF3p8",
-          "caption": {
-            "pt": "",
-            "en": "Campanha Awareness — Cuidados Pela Vida 2024",
-            "es": "Campanha Awareness — Cuidados Pela Vida 2024",
-            "zh": "Campanha Awareness — Cuidados Pela Vida 2024",
-            "no": "Campanha Awareness — Cuidados Pela Vida 2024"
           }
         }
       ],
