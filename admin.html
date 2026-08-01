@@ -216,6 +216,7 @@ main{min-height:70vh}
 @keyframes orbfloat{0%,100%{transform:translate(0,0)}50%{transform:translate(-18px,14px)}}
 
 .kic{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--bone);color:var(--green-d);font-size:14px;margin-bottom:10px}
+.kic svg{width:16px;height:16px;stroke:currentColor;fill:none}
 .kpi-ic{position:relative}
 .kpis-3{grid-template-columns:repeat(3,1fr)}
 .livedot{display:inline-block;width:7px;height:7px;border-radius:99px;background:var(--warn);margin-right:5px;animation:pulse 1.6s ease-in-out infinite}
@@ -940,6 +941,7 @@ async function loadConfig(){
     const cfg=await r.json();
     if(cfg.repo) GHS.repo=cfg.repo;
     if(cfg.branch) GHS.branch=cfg.branch;
+    if(cfg.sitePath) GHS.path=cfg.sitePath;
     if(cfg.contentPath) GHS.contentPath=cfg.contentPath;
     if(cfg.statePath) GHS.statePath=cfg.statePath;
     if(cfg.logPath) GHS.logPath=cfg.logPath;
@@ -1200,7 +1202,15 @@ async function ghHistory(){
   vl.innerHTML='<div class="hint">Buscando…</div>';
   try{
     const h=GHS.token?ghHeaders():{Accept:"application/vnd.github+json"};
-    const r=await fetch(`https://api.github.com/repos/${GHS.repo}/commits?path=${encodeURIComponent(GHS.path)}&sha=${GHS.branch}&per_page=10`,{headers:h});
+    /* CORREÇÃO: histórico e restauração agora usam o content.json (JSON puro,
+       fonte de verdade desde o schema 2.0) em vez do index.html publicado.
+       A versão antiga tentava extrair o JSON de dentro do HTML publicado via
+       regex (<script id="gc-content">) — se a formatação do HTML mudasse de
+       um commit pro outro (minificação, espaços, etc.) a regex não batia e a
+       seta de "carregar esta versão" quebrava com erro. Ler o content.json
+       direto elimina essa fragilidade. */
+    const contentPath=GHS.contentPath||"content.json";
+    const r=await fetch(`https://api.github.com/repos/${GHS.repo}/commits?path=${encodeURIComponent(contentPath)}&sha=${GHS.branch}&per_page=10`,{headers:h});
     if(!r.ok) throw new Error("HTTP "+r.status+(r.status===403?" — cole o token acima e tente de novo":""));
     const cs=await r.json();
     if(!cs.length){ vl.innerHTML='<div class="hint">Nenhuma publicação encontrada ainda.</div>'; return; }
@@ -1212,12 +1222,19 @@ async function ghHistory(){
     vl.querySelectorAll('[data-sha]').forEach(b=>b.addEventListener('click',async()=>{
       if(!confirm("Carregar esta versão no painel? Suas edições não publicadas serão substituídas."))return;
       try{
-        const rr=await fetch(`https://raw.githubusercontent.com/${GHS.repo}/${b.dataset.sha}/${GHS.path}`);
+        const rr=await fetch(`https://raw.githubusercontent.com/${GHS.repo}/${b.dataset.sha}/${contentPath}`);
         if(!rr.ok) throw new Error("HTTP "+rr.status);
         const txt=await rr.text();
-        const mm=txt.match(/<script id="gc-content" type="application\/json">([\s\S]*?)<\/script>/);
-        if(!mm) throw new Error("conteúdo não encontrado no arquivo");
-        RAW=txt; DATA=JSON.parse(mm[1]); normalizeData(DATA);
+        let parsed;
+        try{ parsed=JSON.parse(txt); RAW=null; }
+        catch(_){
+          /* fallback: commits bem antigos, de antes do content.json separado,
+             ainda guardavam o JSON embutido no index.html publicado */
+          const mm=txt.match(/<script id="gc-content" type="application\/json">([\s\S]*?)<\/script>/);
+          if(!mm) throw new Error("conteúdo não encontrado nesse commit");
+          parsed=JSON.parse(mm[1]); RAW=txt;
+        }
+        DATA=parsed; normalizeData(DATA);
         renderSide(); renderSec(); markDirty();
         toast("Versão carregada — revise e clique em 🚀 Publicar para restaurá-la.",true);
       }catch(e){ toast("Falha ao carregar versão: "+e.message,false); }
@@ -1474,6 +1491,8 @@ document.getElementById('tr-all').addEventListener('click',()=>{ if(confirm("Tra
 document.getElementById('dl-json').addEventListener('click',()=>download("greencave-content.json",JSON.stringify(DATA,null,2),"application/json"));
 
 /* helpers */
+const normUrl=u=>String(u||"").trim();
+const dedupeUrls=arr=>{ const seen=new Set(), out=[]; arr.forEach(u=>{ const n=normUrl(u); if(n&&!seen.has(n)){ seen.add(n); out.push(n);} }); return out; };
 function toast(msg,ok){
   const t=document.getElementById('toast');
   t.textContent=msg; t.className=ok?"show ok":"show";
@@ -1586,6 +1605,28 @@ function animateCount(elm,target,suffix){
   }
   requestAnimationFrame(step);
 }
+/* conta TODA imagem/vídeo referenciado no content.json — usado pelo KPI
+   "Arquivos" do dashboard. A versão antiga só somava a capa + galeria dos
+   cases, deixando de fora fotos de equipe, blocos de conteúdo (imagem,
+   dupla, vídeo, galeria) e o talent — por isso o número parecia errado. */
+function countAllFiles(D){
+  const set=new Set();
+  const add=u=>{ if(u&&String(u).trim()) set.add(String(u).trim()); };
+  (D.works||[]).forEach(w=>{
+    add(w.image);
+    (w.gallery||[]).forEach(add);
+    (w.blocks||[]).forEach(b=>{
+      if(b.type==="image") add(b.url);
+      if(b.type==="duo"){ add(b.url1); add(b.url2); }
+      if(b.type==="video") add(b.url);
+      if(b.type==="gallery") (b.urls||[]).forEach(add);
+    });
+  });
+  ((D.about||{}).team||[]).forEach(p=>add(p.photo));
+  ((D.about||{}).talent||[]).forEach(p=>add(p.photo));
+  return set.size;
+}
+
 function dashboard(m){
   const D=DATA;
   const now=new Date();
@@ -1623,10 +1664,10 @@ function dashboard(m){
 
   let c=card("Visão geral do conteúdo","O que o site publicado contém hoje.");
   const k=el(`<div class="kpis"></div>`);
-  const metrics=[["◧","Cases",D.works.length],["◐","Clientes",D.clients.length],["▤","Serviços",D.services.length],
-   ["◉","Pessoas no time",D.about.team.length],["◎","Idiomas",5],["#","Números na faixa",D.stats.length],
-   ["▦","Cases com imagem real",D.works.filter(w=>w.image).length,"/"+D.works.length],
-   ["▧","Fotos de galeria",D.works.reduce((a,w)=>a+(w.gallery||[]).length,0)],["▣","Blocos de conteúdo",D.works.reduce((a,w)=>a+(w.blocks||[]).length,0)]];
+  const metrics=[[svg('work',''),"Cases",D.works.length],[svg('users',''),"Clientes",D.clients.length],[svg('grid',''),"Serviços",D.services.length],
+   [svg('team',''),"Pessoas no time",D.about.team.length],[svg('type',''),"Idiomas",5],[svg('hash',''),"Números na faixa",D.stats.length],
+   [svg('img',''),"Cases com imagem real",D.works.filter(w=>w.image).length,"/"+D.works.length],
+   [svg('img',''),"Arquivos (imagens/vídeos únicos)",countAllFiles(D)],[svg('text',''),"Blocos de conteúdo",D.works.reduce((a,w)=>a+(w.blocks||[]).length,0)]];
   metrics.forEach(([ic,l,v,suf])=>{
     const kp=el(`<div class="kpi kpi-ic"><i class="kic">${ic}</i><b>0</b><span>${l}</span></div>`);
     k.appendChild(kp);
@@ -1669,6 +1710,19 @@ function dashboard(m){
   if(phAw.length) pend.push(["err",`${phAw.length} conquista(s) com nome placeholder — edite em Contato & Rodapé.`]);
   const noGal=D.works.filter(w=>!(w.gallery||[]).length);
   if(noGal.length) pend.push(["warn",`${noGal.length} case(s) sem galeria de imagens.`]);
+  /* CORREÇÃO: "Completude das traduções" acima conta qualquer campo não-vazio
+     como preenchido — mas conteúdo recém-criado nasce com o mesmo texto em
+     PT copiado pros outros 4 idiomas, então aparecia como "100% traduzido"
+     sem ser. Aqui contamos campos onde EN/ES/ZH/NO ainda são idênticos ao
+     PT — sinal real de que a tradução automática não rodou (ex: sem
+     internet no momento, Auto-tradução desligada, ou item alterado fora do
+     fluxo normal de edição). */
+  let untranslated=0;
+  walkML(D,o=>{
+    const pt=String(o.pt||"").trim(); if(!pt) return;
+    if(["en","es","zh","no"].some(l=>String(o[l]||"").trim()===pt)) untranslated++;
+  });
+  if(untranslated) pend.push(["warn",`${untranslated} campo(s) com texto ainda igual ao PT em outro idioma — provável tradução pendente. Reabra o campo em PT (ou use "🌐 Traduzir tudo do PT" na aba Publicação).`]);
   if(!pend.length) pend.push(["ok","Nenhuma pendência — conteúdo 100% real. 🎉"]);
   pend.forEach(([t,txt])=>ul.appendChild(el(`<li${t==="ok"?' class="done"':''}><span class="dot ${t}"></span><span>${txt}</span></li>`)));
   c.appendChild(ul); m.appendChild(c);
@@ -1689,7 +1743,14 @@ function renderSec(){
   const U=DATA.ui;
   const hintEm='Use *palavra* para itálico elegante.';
 
-  if(SEC==="dash"){ dashboard(m); return; }
+  /* CORREÇÃO: aqui tinha um "return" logo após montar o dashboard — isso pulava
+     o bloco no final da função que restaura a opacidade do #main (que é zerada
+     no topo, pra fazer o fade-in). Resultado: o conteúdo do dashboard era
+     montado normalmente, só que ficava com opacity:0 pra sempre — tela preta
+     com o menu lateral visível. Removido o "return" para o dashboard passar
+     pelo mesmo fade-in de qualquer outra seção. */
+  if(SEC==="dash"){ dashboard(m); }
+  else
 
   if(SEC==="geral"){
     let c=card("SEO","Título e descrição no Google e na aba do navegador.");
@@ -1841,7 +1902,7 @@ function renderSec(){
         if(b.type==="gallery"){
           const f=el('<div class="field"><label>Imagens (uma URL por linha)</label></div>');
           const t=el('<textarea></textarea>'); t.value=(b.urls||[]).join("\n");
-          t.addEventListener('input',()=>{b.urls=t.value.split("\n").map(s=>s.trim()).filter(Boolean);});
+          t.addEventListener('input',()=>{b.urls=dedupeUrls(t.value.split("\n"));});
           f.appendChild(t); bit.appendChild(f);
         }
         bwrap.appendChild(bit);
@@ -1858,7 +1919,7 @@ function renderSec(){
       const f2=el('<div class="field"><label>Galeria rápida (URLs — uma por linha)</label></div>');
       const ta=el('<textarea placeholder="https://...\nhttps://..."></textarea>');
       ta.value=(w.gallery||[]).join("\n");
-      ta.addEventListener('input',()=>{w.gallery=ta.value.split("\n").map(s=>s.trim()).filter(Boolean);});
+      ta.addEventListener('input',()=>{w.gallery=dedupeUrls(ta.value.split("\n"));});
       f2.appendChild(ta); it.appendChild(f2);
       c.appendChild(it);
     });
@@ -2470,10 +2531,10 @@ window.dashboard=function(m){
   const k=mk('<div class="kpis"></div>');
   const badge=document.getElementById('dirtybadge');
   const pend=badge&&!badge.hidden?'sim':'não';
-  [['◧','Projetos',D.works.length],['◐','Clientes',D.clients.length],['▤','Serviços',D.services.length],
-   ['◉','Equipe',D.about.team.length],['▦','Categorias',new Set(D.works.map(w=>w.kind||'case')).size],
-   ['▧','Arquivos',D.works.reduce((a,w)=>a+(w.gallery||[]).length,0)+D.works.filter(w=>w.image).length],
-   ['#','Números',D.stats.length],['◎','Idiomas',5]]
+  [[svg('work',''),'Projetos',D.works.length],[svg('users',''),'Clientes',D.clients.length],[svg('grid',''),'Serviços',D.services.length],
+   [svg('team',''),'Equipe',D.about.team.length],[svg('grid',''),'Categorias',new Set(D.works.map(w=>w.kind||'case')).size],
+   [svg('img',''),'Arquivos',countAllFiles(D)],
+   [svg('hash',''),'Números',D.stats.length],[svg('type',''),'Idiomas',5]]
   .forEach(([ic,l,v])=>{
     const kp=mk(`<div class="kpi kpi-ic"><i class="kic">${ic}</i><b>0</b><span>${l}</span></div>`);
     k.appendChild(kp);
@@ -3231,8 +3292,13 @@ async function fetchAllMedia(force){
           url:`https://raw.githubusercontent.com/${GHS.repo}/${GHS.branch}/media/${cat}/${x.name}`}));
     }catch(_){ return []; }
   }));
-  MEDIA_ALL_CACHE=perCat.flat(); MEDIA_ALL_AT=Date.now();
+  MEDIA_ALL_CACHE=dedupeBy(perCat.flat(), x=>x.path); MEDIA_ALL_AT=Date.now();
   return MEDIA_ALL_CACHE;
+}
+function dedupeBy(arr,keyFn){
+  const seen=new Set(), out=[];
+  arr.forEach(x=>{ const k=keyFn(x); if(!seen.has(k)){ seen.add(k); out.push(x); } });
+  return out;
 }
 function pickerLabel(cat){
   const p=projectFolders().find(x=>x.key===cat);
@@ -3327,11 +3393,12 @@ function injectMediaPickers(root){
     if(area&&MULTI_URL_LABELS.test(txt)){
       const btn=mk('<button type="button" class="gc-pickbtn">📁 Escolher da biblioteca</button>');
       btn.addEventListener('click',()=>openMediaPicker({multi:true,onInsert:urls=>{
-        const cur=area.value.split('\n').map(s=>s.trim()).filter(Boolean);
-        urls.forEach(u=>{ if(!cur.includes(u)) cur.push(u); });
-        area.value=cur.join('\n');
+        const cur=area.value.split('\n');
+        const merged=dedupeUrls([...cur, ...urls]);
+        const added=merged.length-dedupeUrls(cur).length;
+        area.value=merged.join('\n');
         area.dispatchEvent(new Event('input',{bubbles:true}));
-        toast(`${urls.length} imagem(ns) adicionada(s).`,true);
+        toast(added>0?`${added} imagem(ns) adicionada(s).`:'Essa(s) imagem(ns) já estava(m) na lista — nada duplicado.',true);
       }}));
       lb.insertAdjacentElement('afterend',btn);
     }
@@ -3546,6 +3613,18 @@ async function createWorkFromExtraction(ex, sourceUrl){
 
   DATA.works.unshift(w);
   renderSec();
+  /* CORREÇÃO: este era o único caminho de criação de conteúdo que nunca
+     disparava tradução — o card nascia com o mesmo texto extraído (em PT)
+     repetido em EN/ES/ZH/NO. As outras telas só traduzem quando o campo PT
+     é editado à mão; aqui o conteúdo já chega pronto, então traduzimos
+     automaticamente assim que o card é criado (se houver internet). */
+  (async()=>{
+    if(!autoTr) return;
+    const fields=[w.title,w.tags,w.body].filter(o=>String(o?.pt||"").trim());
+    if(!fields.length) return;
+    const oks=await Promise.all(fields.map(o=>translateObj(o).catch(()=>false)));
+    if(oks.some(Boolean)){ renderSec(); toast("Tradução automática aplicada (EN · ES · ZH · NO) — revise antes de publicar.",true); }
+  })();
   if(!allImgs.length || !GHS.token) toast(`Importado: ${ex.images.length} imagem(ns)${ex.video?', 1 vídeo':''}, texto e tags — revise antes de publicar.`, true);
   setTimeout(()=>{ const firstEd=document.querySelector('#main .pcard .ed'); if(firstEd) firstEd.click(); },250);
 }
