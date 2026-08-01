@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-01T14:44:52.155Z",
+  "generatedAt": "2026-08-01T18:40:31.067Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -2105,6 +2105,17 @@
         {
           "type": "image",
           "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/suzano/bio01.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://vimeo.com/868747897?share=copy&fl=sv&fe=ci",
           "caption": {
             "pt": "",
             "en": "",
