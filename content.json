@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-04T14:59:41.054Z",
+  "generatedAt": "2026-08-04T15:01:16.773Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -358,21 +358,21 @@
     }
   },
   "clients": [
-    "Warner",
+    "achē",
     "Estadão",
     "Disney",
-    "achē",
-    "Globo",
+    "Formata",
+    "Suzano",
+    "TV TEM",
+    "Warner",
     "ESPN",
     "Shellbox",
     "Elanco",
-    "Suzano",
     "Huggies",
-    "TV TEM",
+    "Globo",
     "Stone",
     "VMLY&R",
-    "GNT",
-    "Fremantle"
+    "GNT"
   ],
   "services": [
     {
