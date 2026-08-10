@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-04T15:03:09.873Z",
+  "generatedAt": "2026-08-10T15:55:05.914Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -14,7 +14,7 @@
       "en": "Creative operations for agencies, brands, channels and events. Design, motion, 3D and branded content — since 2017, in São Paulo.",
       "es": "Operaciones creativas para agencias, marcas, canales y eventos. Diseño, movimiento, 3D y branded content, desde 2017, en São Paulo.",
       "zh": "代理机构、品牌、渠道和活动的创意运营。设计、动态、3D 和品牌内容——自 2017 年起，在圣保罗。",
-      "no": "Kreativ drift for byråer, merkevarer, kanaler og arrangementer. Design, bevegelse, 3D og merkevareinnhold — siden 2017, i São Paulo."
+      "no": "Kreativ drift for byråer, merkevarer, kanaler og arrangementer. Design, bevegelse, 3D og merkeinnhold — siden 2017, i São Paulo."
     }
   },
   "ui": {
@@ -47,18 +47,18 @@
       "no": "Kontakt"
     },
     "hero_eyebrow": {
-      "pt": "Hub criativo — São Paulo, Brasil",
-      "en": "Creative Hub — São Paulo, Brazil",
-      "es": "Centro creativo: São Paulo, Brasil",
-      "zh": "创意中心 — 巴西圣保罗",
-      "no": "Kreativt senter – São Paulo, Brasil"
+      "pt": "Operação Criativa — São Paulo, Brasil",
+      "en": "Operação Criativa — São Paulo, Brazil",
+      "es": "Operação Criativa — São Paulo, Brasil",
+      "zh": "Operação Criativa — 巴西圣保罗",
+      "no": "Operação Criativa — São Paulo, Brasil"
     },
     "hero_sub": {
-      "pt": "Entramos em cena quando os desafios aumentam. Atuamos integrados aos times de branding, marketing, canais, agências e produtoras, assumindo a criação, o design e a produção de conteúdo digital para todas as plataformas como uma extensão natural -- e, de vez em quando, ajudamos a inventar produtos, campanhas e experiências do zero.",
-      "en": "We step in when challenges increase. We work integrated with branding, marketing, channels, agencies and production teams, taking on the creation, design and production of digital content for all platforms as a natural extension -- and, from time to time, we help invent products, campaigns and experiences from scratch.",
-      "es": "Intervenimos cuando los desafíos aumentan. Trabajamos integrados con branding, marketing, canales, agencias y equipos de producción, asumiendo la creación, diseño y producción de contenido digital para todas las plataformas como una extensión natural y, de vez en cuando, ayudamos a inventar productos, campañas y experiencias desde cero.",
-      "zh": "当挑战增加时，我们会介入。我们与品牌、营销、渠道、机构和制作团队合作，将所有平台的数字内容的创作、设计和制作作为自然延伸——并且，我们不时帮助从头开始发明产品、活动和体验。",
-      "no": "Vi trår til når utfordringene øker. Vi jobber integrert med merkevarebygging, markedsføring, kanaler, byråer og produksjonsteam, og tar på oss opprettelse, design og produksjon av digitalt innhold for alle plattformer som en naturlig forlengelse – og fra tid til annen hjelper vi til med å finne opp produkter, kampanjer og opplevelser fra bunnen av."
+      "pt": "Somos uma operação criativa que roda plugada com a sua empresa. Entramos como extensão do seu time para assumir criação, design, conteúdo e produção contínua — com squads dedicados, gestão, tecnologia e escala para transformar demanda em entrega, sem aumentar a complexidade da sua estrutura.",
+      "en": "We are a creative operation that runs plugged in with your company. We come in as an extension of your team to take on creation, design, content and continuous production — with dedicated squads, management, technology and scale to transform demand into delivery, without increasing the complexity of your structure.",
+      "es": "Somos una operación creativa que funciona conectada a su empresa. Llegamos como una extensión de su equipo para encargarnos de la creación, el diseño, el contenido y la producción continua, con equipos dedicados, administración, tecnología y escala para transformar la demanda en entrega, sin aumentar la complejidad de su estructura.",
+      "zh": "我们是一家与您的公司紧密结合的创意企业。我们作为您团队的延伸，负责创作、设计、内容和持续生产——拥有专门的团队、管理、技术和规模，将需求转化为交付，而不增加您的结构的复杂性。",
+      "no": "Vi er en kreativ virksomhet som går koblet til din bedrift. Vi kommer inn som en forlengelse av teamet ditt for å ta på oss skapelse, design, innhold og kontinuerlig produksjon – med dedikerte lag, ledelse, teknologi og skala for å transformere etterspørsel til levering, uten å øke kompleksiteten i strukturen din."
     },
     "hero_cta1": {
       "pt": "Ver trabalhos",
@@ -384,11 +384,11 @@
         "no": "Kontinuerlig kreativ drift"
       },
       "desc": {
-        "pt": "Um time dedicado, integrado à sua rotina e orientado por gestão, curadoria e entregas contínuas. Você ganha uma operação criativa pronta para produzir desde o primeiro dia, contratada como serviço — sem processos seletivos, sem aumento da folha de pagamento e sem a complexidade de estruturar uma equipe interna.",
-        "en": "A dedicated team, integrated into your routine and guided by management, curation and continuous deliveries. You get a creative operation ready to produce from day one, hired as a service — without selection processes, without increasing the payroll and without the complexity of structuring an internal team.",
-        "es": "Un equipo dedicado, integrado en tu rutina y guiado por la gestión, la curación y las entregas continuas. Obtienes una operación creativa lista para producir desde el primer día, contratada como un servicio, sin procesos de selección, sin aumentar la nómina y sin la complejidad de estructurar un equipo interno.",
-        "zh": "一支专注的团队，融入您的日常工作，并以管理、策划和持续交付为指导。从第一天起，您就可以进行创造性的运作，以服务的形式聘用——无需筛选流程，无需增加工资，也无需构建内部团队的复杂性。",
-        "no": "Et dedikert team, integrert i rutinen din og ledet av ledelse, kurering og kontinuerlige leveranser. Du får en kreativ drift klar til å produsere fra dag én, leid inn som en tjeneste — uten utvelgelsesprosesser, uten å øke lønnen og uten kompleksiteten med å strukturere et internt team."
+        "pt": "Um time criativo dedicado, integrado à sua rotina e pronto para operar desde o primeiro dia. Assumimos a gestão, a criação e a produção contínua como extensão da sua equipe — com capacidade escalável, custo previsível e sem a complexidade de ampliar sua estrutura interna.",
+        "en": "A dedicated creative team, integrated into your routine and ready to operate from day one. We take on management, creation and continuous production as an extension of your team — with scalable capacity, predictable cost and without the complexity of expanding your internal structure.",
+        "es": "Un equipo creativo dedicado, integrado en tu rutina y listo para operar desde el primer día. Asumimos la gestión, la creación y la producción continua como una extensión de su equipo, con capacidad escalable, costos predecibles y sin la complejidad de expandir su estructura interna.",
+        "zh": "一支专注的创意团队，融入您的日常工作，从第一天起就准备好运作。我们将管理、创作和持续生产作为您团队的延伸——具有可扩展的能力、可预测的成本，并且无需扩展内部结构的复杂性。",
+        "no": "Et dedikert kreativt team, integrert i rutinen din og klar til drift fra dag én. Vi tar på oss ledelse, opprettelse og kontinuerlig produksjon som en forlengelse av teamet ditt – med skalerbar kapasitet, forutsigbare kostnader og uten kompleksiteten med å utvide din interne struktur."
       },
       "id": "svc_oylp4tmo"
     },
@@ -401,11 +401,11 @@
         "no": "Design og bevegelse"
       },
       "desc": {
-        "pt": "Criamos identidades que ganham vida. Do conceito criativo à animação e à entrega final, desenvolvemos experiências visuais com o padrão de excelência Greencave, unindo estratégia, design e motion em cada detalhe.\n",
-        "en": "We create identities that come to life. From the creative concept to animation and final delivery, we develop visual experiences with the Greencave standard of excellence, combining strategy, design and motion in every detail.",
-        "es": "Creamos identidades que cobran vida. Desde el concepto creativo hasta la animación y la entrega final, desarrollamos experiencias visuales con el estándar de excelencia de Greencave, combinando estrategia, diseño y movimiento en cada detalle.",
-        "zh": "我们创造栩栩如生的身份。从创意概念到动画和最终交付，我们按照 Greencave 的卓越标准开发视觉体验，在每个细节中结合策略、设计和动作。",
-        "no": "Vi skaper identiteter som kommer til live. Fra det kreative konseptet til animasjon og endelig levering, utvikler vi visuelle opplevelser med Greencave-standarden for fortreffelighet, og kombinerer strategi, design og bevegelse i hver detalj."
+        "pt": "Transformamos estratégia em sistemas visuais que funcionam em movimento. Criamos identidades, campanhas e conteúdos que combinam design, direção de arte e motion para manter consistência, expressão e impacto em todos os pontos de contato da marca.",
+        "en": "We transform strategy into visual systems that work on the move. We create identities, campaigns and content that combine design, art direction and motion to maintain consistency, expression and impact across all brand touchpoints.",
+        "es": "Transformamos la estrategia en sistemas visuales que funcionan en movimiento. Creamos identidades, campañas y contenido que combinan diseño, dirección de arte y movimiento para mantener la coherencia, la expresión y el impacto en todos los puntos de contacto de la marca.",
+        "zh": "我们将策略转化为可移动的视觉系统。我们创建将设计、艺术指导和动作相结合的身份、活动和内容，以保持所有品牌接触点的一致性、表达力和影响力。",
+        "no": "Vi transformerer strategi til visuelle systemer som fungerer på farten. Vi skaper identiteter, kampanjer og innhold som kombinerer design, kunstretning og bevegelse for å opprettholde konsistens, uttrykk og effekt på tvers av alle merkevarekontaktpunkter."
       },
       "id": "svc_2p97ys17"
     },
@@ -418,11 +418,11 @@
         "no": "3D og illustrasjon"
       },
       "desc": {
-        "pt": "Desenvolvemos peças em 2D e 3D para campanhas, produtos e plataformas, combinando direção criativa, design e excelência técnica. Cada entrega é produzida sob medida, respeitando os padrões visuais, os objetivos estratégicos e o nível de qualidade que cada cliente exige.\n",
-        "en": "We develop 2D and 3D pieces for campaigns, products and platforms, combining creative direction, design and technical excellence. Each delivery is custom-made, respecting the visual standards, strategic objectives and the level of quality that each client demands.",
-        "es": "Desarrollamos piezas 2D y 3D para campañas, productos y plataformas, combinando dirección creativa, diseño y excelencia técnica. Cada entrega se realiza a medida, respetando los estándares visuales, los objetivos estratégicos y el nivel de calidad que exige cada cliente.",
-        "zh": "我们为活动、产品和平台开发 2D 和 3D 作品，将创意方向、设计和卓越技术相结合。每次交付都是定制的，尊重每个客户要求的视觉标准、战略目标和质量水平。",
-        "no": "Vi utvikler 2D- og 3D-deler for kampanjer, produkter og plattformer, og kombinerer kreativ retning, design og teknisk fortreffelighet. Hver leveranse er skreddersydd, med respekt for de visuelle standardene, strategiske målene og kvalitetsnivået som hver kunde krever."
+        "pt": "Criamos universos visuais para explicar, valorizar e dar forma a ideias complexas. Desenvolvemos ilustrações e assets 3D para campanhas, produtos, plataformas e experiências, combinando direção criativa, linguagem visual e excelência técnica.",
+        "en": "We create visual universes to explain, value and give shape to complex ideas. We develop illustrations and 3D assets for campaigns, products, platforms and experiences, combining creative direction, visual language and technical excellence.",
+        "es": "Creamos universos visuales para explicar, valorar y dar forma a ideas complejas. Desarrollamos ilustraciones y activos 3D para campañas, productos, plataformas y experiencias, combinando dirección creativa, lenguaje visual y excelencia técnica.",
+        "zh": "我们创造视觉宇宙来解释、评价和塑造复杂的想法。我们结合创意方向、视觉语言和卓越技术，为活动、产品、平台和体验开发插图和 3D 资产。",
+        "no": "Vi skaper visuelle univers for å forklare, verdsette og gi form til komplekse ideer. Vi utvikler illustrasjoner og 3D-ressurser for kampanjer, produkter, plattformer og opplevelser, og kombinerer kreativ retning, visuelt språk og teknisk fortreffelighet."
       },
       "id": "svc_9kf5vora"
     },
@@ -435,11 +435,11 @@
         "no": "Merket innhold og underholdning"
       },
       "desc": {
-        "pt": "Criamos formatos que fortalecem marcas e geram conexão com o público. Do desenvolvimento do conceito e do roteiro à produção e entrega final, cada projeto é pensado para transformar estratégia em conteúdo relevante, memorável e com propósito.\n",
-        "en": "We create formats that strengthen brands and generate connection with the public. From concept and script development to production and final delivery, each project is designed to transform strategy into relevant, memorable and purposeful content.",
-        "es": "Creamos formatos que fortalecen las marcas y generan conexión con el público. Desde el desarrollo del concepto y el guión hasta la producción y la entrega final, cada proyecto está diseñado para transformar la estrategia en contenido relevante, memorable y con un propósito.",
-        "zh": "我们创建的形式可以强化品牌并与公众建立联系。从概念和剧本开发到制作和最终交付，每个项目都旨在将战略转化为相关的、令人难忘的和有目的的内容。",
-        "no": "Vi lager formater som styrker merkevarer og skaper kontakt med publikum. Fra konsept- og manusutvikling til produksjon og endelig levering, er hvert prosjekt designet for å transformere strategi til relevant, minneverdig og målrettet innhold."
+        "pt": "Criamos conteúdo que transforma marcas em histórias, formatos e experiências. Da ideia ao roteiro e da produção à entrega, desenvolvemos projetos de branded content e entretenimento que conectam objetivos de marca, audiência e cultura.",
+        "en": "We create content that transforms brands into stories, formats and experiences. From idea to script and from production to delivery, we develop branded content and entertainment projects that connect brand, audience and cultural objectives.",
+        "es": "Creamos contenido que transforma las marcas en historias, formatos y experiencias. Desde la idea hasta el guión y desde la producción hasta la entrega, desarrollamos contenido de marca y proyectos de entretenimiento que conectan la marca, la audiencia y los objetivos culturales.",
+        "zh": "我们创造的内容将品牌转化为故事、形式和体验。从创意到剧本，从制作到交付，我们开发将品牌、受众和文化目标联系起来的品牌内容和娱乐项目。",
+        "no": "Vi lager innhold som forvandler merkevarer til historier, formater og opplevelser. Fra idé til manus og fra produksjon til levering utvikler vi merkeinnhold og underholdningsprosjekter som kobler sammen merkevare, publikum og kulturelle mål."
       },
       "id": "svc_65k9mfgt"
     },
@@ -452,11 +452,11 @@
         "no": "Kringkasting og store begivenheter"
       },
       "desc": {
-        "pt": "Desenvolvemos identidades visuais e conteúdo para TV, streaming, eventos, palco e ativações de marca. Criamos experiências que unem estratégia, design e execução para entregar consistência visual em qualquer plataforma ou ponto de contato.\n",
-        "en": "We develop visual identities and content for TV, streaming, events, stage and brand activations. We create experiences that combine strategy, design and execution to deliver visual consistency across any platform or touchpoint.",
-        "es": "Desarrollamos identidades visuales y contenidos para TV, streaming, eventos, escenarios y activaciones de marca. Creamos experiencias que combinan estrategia, diseño y ejecución para brindar coherencia visual en cualquier plataforma o punto de contacto.",
-        "zh": "我们为电视、流媒体、活动、舞台和品牌激活开发视觉识别和内容。我们创造将战略、设计和执行相结合的体验，以在任何平台或接触点上提供视觉一致性。",
-        "no": "Vi utvikler visuelle identiteter og innhold for TV, streaming, arrangementer, scene- og merkeaktiveringer. Vi skaper opplevelser som kombinerer strategi, design og utførelse for å levere visuell konsistens på tvers av enhver plattform eller berøringspunkt."
+        "pt": "Criamos identidades e experiências visuais para operações que acontecem ao vivo, em escala e sem margem para erro. Desenvolvemos branding, conteúdo e motion para TV, streaming, eventos, palco e ativações — da identidade à execução em múltiplos formatos e pontos de contato.",
+        "en": "We create identities and visual experiences for operations that happen live, at scale and without margin for error. We develop branding, content and motion for TV, streaming, events, stage and activations — from identity to execution in multiple formats and touchpoints.",
+        "es": "Creamos identidades y experiencias visuales para operaciones que suceden en vivo, a escala y sin margen de error. Desarrollamos branding, contenido y movimiento para TV, streaming, eventos, escenarios y activaciones, desde la identidad hasta la ejecución en múltiples formatos y puntos de contacto.",
+        "zh": "我们为大规模、不容许任何错误的实时运营创造身份和视觉体验。我们为电视、流媒体、活动、舞台和激活开发品牌、内容和动作——从身份到多种格式和接触点的执行。",
+        "no": "Vi skaper identiteter og visuelle opplevelser for operasjoner som skjer live, i skala og uten margin for feil. Vi utvikler merkevarebygging, innhold og bevegelse for TV, streaming, arrangementer, scene og aktiveringer – fra identitet til utførelse i flere formater og kontaktpunkter."
       },
       "id": "svc_9re0usjo"
     },
@@ -469,11 +469,11 @@
         "no": "AI brukt på merkevaren"
       },
       "desc": {
-        "pt": "Aplicamos Inteligência Artificial Generativa de forma estratégica, sempre onde ela realmente agrega valor à operação. Validamos tecnologias, desenhamos fluxos de trabalho e incorporamos IA aos processos criativos com foco em qualidade, segurança, governança e responsabilidade.\n",
-        "en": "We apply Generative Artificial Intelligence strategically, always where it truly adds value to the operation. We validate technologies, design workflows and incorporate AI into creative processes with a focus on quality, security, governance and responsibility.",
-        "es": "Aplicamos la Inteligencia Artificial Generativa de forma estratégica, siempre donde realmente aporta valor a la operación. Validamos tecnologías, diseñamos flujos de trabajo e incorporamos IA en procesos creativos con enfoque en calidad, seguridad, gobernanza y responsabilidad.",
-        "zh": "我们战略性地应用生成人工智能，始终在它真正为运营增加价值的地方。我们验证技术、设计工作流程并将人工智能融入创意流程，重点关注质量、安全、治理和责任。",
-        "no": "Vi bruker generativ kunstig intelligens strategisk, alltid der den virkelig tilfører verdi til operasjonen. Vi validerer teknologier, designer arbeidsflyter og inkorporerer AI i kreative prosesser med fokus på kvalitet, sikkerhet, styring og ansvar."
+        "pt": "IA não substitui nossa criatividade. Amplia o que somos capazes de fazer. Incorporamos Inteligência Artificial aos processos de criação e produção para acelerar fluxos, explorar novas linguagens e ampliar a capacidade da operação — com curadoria, segurança e responsabilidade.",
+        "en": "AI does not replace our creativity. It expands what we are capable of doing. We incorporate Artificial Intelligence into the creation and production processes to accelerate flows, explore new languages ​​and expand the operation’s capacity — with curation, security and responsibility.",
+        "es": "La IA no reemplaza nuestra creatividad. Amplía lo que somos capaces de hacer. Incorporamos Inteligencia Artificial a los procesos de creación y producción para acelerar flujos, explorar nuevos lenguajes y ampliar la capacidad de operación, con curaduría, seguridad y responsabilidad.",
+        "zh": "人工智能不会取代我们的创造力。它扩展了我们的能力。我们将人工智能融入创作和制作流程中，以加速流程、探索新语言并扩大运营能力——同时提供策划、安全和责任。",
+        "no": "AI erstatter ikke vår kreativitet. Det utvider det vi er i stand til å gjøre. Vi inkorporerer kunstig intelligens i etablerings- og produksjonsprosessene for å akselerere flyter, utforske nye språk og utvide operasjonens kapasitet – med kurasjon, sikkerhet og ansvar."
       },
       "id": "svc_xlr5v2or"
     }
@@ -515,7 +515,7 @@
         "pt": "marcas, agências e canais",
         "en": "brands, agencies and channels",
         "es": "marcas, agencias y canales",
-        "zh": "品牌、代理机构和渠道",
+        "zh": "品牌、代理机构及渠道",
         "no": "merkevarer, byråer og kanaler"
       }
     },
@@ -918,14 +918,14 @@
         "en": "Creative Operation - Post Production - Dedicated Minilab",
         "es": "Operación creativa - Postproducción - Minilab dedicado",
         "zh": "创意运营-后期制作-专用Minilab",
-        "no": "Kreativ drift - Etterproduksjon - Dedikert Minilab"
+        "no": "Kreativ drift - Postproduksjon - Dedikert Minilab"
       },
       "body": {
         "pt": "Em parceria com a Formata Produções, assumimos a operação criativa de pós-produção de mais de 80 plates em live action. O trabalho envolveu a criação de assets, refinamento visual e composição das cenas gravadas em estúdio, garantindo consistência estética e alta qualidade de entrega em todas as peças.\n",
-        "en": "In partnership with Formata Produções, we took over the creative post-production operation of more than 80 live action plates. The work involved the creation of assets, visual refinement and composition of scenes recorded in the studio, ensuring aesthetic consistency and high quality of delivery in all pieces.",
+        "en": "In partnership with Formata Produções, we took on the creative post-production operation of more than 80 live action plates. The work involved the creation of assets, visual refinement and composition of scenes recorded in the studio, ensuring aesthetic consistency and high quality of delivery in all pieces.",
         "es": "En colaboración con Formata Produções, asumimos la operación de postproducción creativa de más de 80 placas de acción real. El trabajo implicó la creación de activos, refinamiento visual y composición de escenas grabadas en el estudio, asegurando consistencia estética y alta calidad de entrega en todas las piezas.",
-        "zh": "我们与 Formata Produções 合作，接管了 80 多个实景镜头的创意后期制作工作。这项工作涉及资产的创建、视觉细化以及在工作室录制的场景的构图，确保所有作品的审美一致性和高质量的交付。",
-        "no": "I samarbeid med Formata Produções tok vi over den kreative postproduksjonen til mer enn 80 live actionplater. Arbeidet innebar opprettelse av eiendeler, visuell foredling og komposisjon av scener spilt inn i studio, og sikret estetisk konsistens og høy kvalitet på levering i alle stykker."
+        "zh": "我们与 Formata Produções 合作，承担了 80 多个实景镜头的创意后期制作工作。这项工作涉及资产的创建、视觉细化以及在工作室录制的场景的构图，确保所有作品的审美一致性和高质量的交付。",
+        "no": "I samarbeid med Formata Produções tok vi på oss den kreative postproduksjonen av mer enn 80 live action-plater. Arbeidet innebar opprettelse av eiendeler, visuell foredling og komposisjon av scener spilt inn i studio, og sikret estetisk konsistens og høy kvalitet på levering i alle stykker."
       },
       "ai": true,
       "draft": false
@@ -966,7 +966,7 @@
         "pt": "A versão brasileira do reality de namoro que já roda em mercados como Reino Unido, Polônia e Canadá — produzida pela Formata para o Globoplay. ",
         "en": "The Brazilian version of the dating reality show that already runs in markets such as the United Kingdom, Poland and Canada — produced by Formata for Globoplay.",
         "es": "La versión brasileña del reality de citas que ya se presenta en mercados como Reino Unido, Polonia y Canadá, producido por Formata para Globoplay.",
-        "zh": "由 Formata 为 Globoplay 制作的巴西版约会真人秀节目已在英国、波兰和加拿大等市场播出。",
+        "zh": "巴西版的约会真人秀节目已在英国、波兰和加拿大等市场播出，由 Formata 为 Globoplay 制作。",
         "no": "Den brasilianske versjonen av dating-reality-programmet som allerede kjører i markeder som Storbritannia, Polen og Canada – produsert av Formata for Globoplay."
       },
       "blocks": [
@@ -1574,7 +1574,7 @@
         "pt": "\"A sua empresa fora do Brasil.\" Do naming à papelaria: construímos a identidade da Weasyplan, plataforma que ajuda empresas brasileiras a se internacionalizarem — o símbolo da bandeira carrega essa travessia.",
         "en": "\"Your company outside Brazil.\" From naming to stationery: we built the identity of Weasyplan, a platform that helps Brazilian companies to internationalize — the flag symbol carries this message.",
         "es": "\"Su empresa fuera de Brasil.\" Del naming a la papelería: construimos la identidad de Weasyplan, una plataforma que ayuda a las empresas brasileñas a internacionalizarse; el símbolo de la bandera lleva este mensaje.",
-        "zh": "“你的公司在巴西境外。”从命名到文具：我们建立了 Weasyplan 的形象，这是一个帮助巴西公司国际化的平台——旗帜符号就传达了这一信息。",
+        "zh": "“你的公司在巴西境外。”从命名到文具：我们建立了 Weasyplan 的形象，这是一个帮助巴西公司国际化的平台 - 旗帜符号传达了这一信息。",
         "no": "\"Ditt firma utenfor Brasil.\" Fra navn til skrivesaker: vi bygde identiteten til Weasyplan, en plattform som hjelper brasilianske selskaper med å internasjonalisere – flaggsymbolet bærer denne meldingen."
       },
       "blocks": [
@@ -1790,7 +1790,7 @@
         "pt": "Implementamos um dos nossos MiniLabs para atender gargalos críticos da Suzano em um momento estratégico da empresa. O desafio exigia rapidez na resposta, organização impecável, alto nível de execução e uma parceria baseada em confiança. Com uma operação dedicada e integrada à equipe do cliente, garantimos agilidade na produção, excelência nas entregas e total previsibilidade durante todo o processo. \n",
         "en": "We implemented one of our MiniLabs to address critical bottlenecks at Suzano at a strategic moment for the company. The challenge required quick response, impeccable organization, a high level of execution and a partnership based on trust. With a dedicated operation integrated with the client's team, we guarantee agility in production, excellence in deliveries and total predictability throughout the process.",
         "es": "Implementamos uno de nuestros MiniLabs para abordar cuellos de botella críticos en Suzano en un momento estratégico para la empresa. El desafío requería una respuesta rápida, una organización impecable, un alto nivel de ejecución y una asociación basada en la confianza. Con una operación dedicada e integrada con el equipo del cliente, garantizamos agilidad en la producción, excelencia en las entregas y total previsibilidad en todo el proceso.",
-        "zh": "我们在 Suzano 的战略时刻实施了一个迷你实验室，以解决该公司的关键瓶颈。这一挑战需要快速响应、无可挑剔的组织、高水平的执行力和基于信任的伙伴关系。通过与客户团队整合的专门运营，我们保证生产的敏捷性、卓越的交付以及整个过程的总体可预测性。",
+        "zh": "我们在 Suzano 的战略时刻实施了一个迷你实验室来解决该公司的关键瓶颈。这一挑战需要快速响应、无可挑剔的组织、高水平的执行力和基于信任的伙伴关系。通过与客户团队整合的专门运营，我们保证生产的敏捷性、卓越的交付以及整个过程的总体可预测性。",
         "no": "Vi implementerte en av våre MiniLabs for å løse kritiske flaskehalser i Suzano på et strategisk tidspunkt for selskapet. Utfordringen krevde rask respons, upåklagelig organisering, høy gjennomføringsgrad og et samarbeid basert på tillit. Med en dedikert operasjon integrert med kundens team garanterer vi smidighet i produksjonen, fortreffelighet i leveranser og total forutsigbarhet gjennom hele prosessen."
       },
       "blocks": [
@@ -1894,7 +1894,7 @@
             "pt": "Enquanto um rebranding global era desdobrado para clientes, fornecedores e parceiros em três idiomas, outra equipe desenvolvia uma campanha institucional de segurança para fortalecer a cultura de uso de EPIs. Paralelamente, uma nova tecnologia ganhava vida por meio de estratégia, roteiro, design, produção 3D e acabamento de altíssimo nível.\n",
             "en": "While a global rebranding was rolled out to customers, suppliers and partners in three languages, another team developed an institutional safety campaign to strengthen the culture of using PPE. At the same time, a new technology came to life through strategy, script, design, 3D production and high-level finishing.",
             "es": "Mientras se implementaba un cambio de marca global para clientes, proveedores y socios en tres idiomas, otro equipo desarrolló una campaña de seguridad institucional para fortalecer la cultura del uso de EPP. Al mismo tiempo, una nueva tecnología cobró vida a través de estrategia, guión, diseño, producción 3D y acabados de alto nivel.",
-            "zh": "在以三种语言向客户、供应商和合作伙伴推出全球品牌重塑的同时，另一个团队开展了机构安全活动，以加强使用个人防护装备的文化。与此同时，一项新技术通过策略、剧本、设计、3D 制作和高水平的后期处理而变得栩栩如生。",
+            "zh": "在以三种语言向客户、供应商和合作伙伴推出全球品牌重塑的同时，另一个团队开展了机构安全活动，以加强使用个人防护装备的文化。与此同时，一项新技术通过策略、脚本、设计、3D 制作和高水平的后期处理而变得栩栩如生。",
             "no": "Mens en global rebranding ble rullet ut til kunder, leverandører og partnere på tre språk, utviklet et annet team en institusjonell sikkerhetskampanje for å styrke kulturen for bruk av PPE. Samtidig kom en ny teknologi til live gjennom strategi, manus, design, 3D-produksjon og etterbehandling på høyt nivå."
           }
         },
@@ -2046,7 +2046,7 @@
         "en": "Design · Animation · Illustration · Branded Content",
         "es": "Diseño · Animación · Ilustración · Branded Content",
         "zh": "设计·动画·插画·品牌内容",
-        "no": "Design · Animasjon · Illustrasjon · Merkeinnhold"
+        "no": "Design · Animasjon · Illustrasjon · Merkevareinnhold"
       },
       "body": {
         "pt": "Cocriado com a Disney Company Brasil: assumimos o design e a operação criativa in-company do canal Disney Jr. pra dar corpo ao branded content do lançamento da linha Huggies Supreme Care.",
@@ -2570,7 +2570,7 @@
         "en": "When the job gets tight, we get into its flow and understand the customer quickly, with the standard that the account expects.",
         "es": "Cuando el trabajo se complica, nos involucramos en su flujo y entendemos al cliente rápidamente, con el estándar que la cuenta espera.",
         "zh": "当工作变得紧张时，我们会按照客户期望的标准进入流程并快速了解客户。",
-        "no": "Når jobben blir trang kommer vi inn i flyten og forstår kunden raskt, med den standarden som kontoen forventer."
+        "no": "Når jobben blir trang, kommer vi inn i dens flyt og forstår kunden raskt, med den standarden som kontoen forventer."
       },
       "id": "quem_scm3x96l"
     },
