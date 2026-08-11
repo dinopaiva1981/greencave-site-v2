@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-10T15:55:05.914Z",
+  "generatedAt": "2026-08-11T13:57:15.759Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -628,24 +628,13 @@
         },
         {
           "type": "video",
-          "url": "https://vimeo.com/893820776?fl=pl&fe=sh",
+          "url": "https://www.youtube.com/watch?v=Z4ysCdbF3p8",
           "caption": {
             "pt": "Motion Brand para ativação de comunicação",
             "en": "Motion Brand for communication activation",
             "es": "Motion Brand para activación de comunicación",
             "zh": "用于激活沟通的 Motion Brand",
             "no": "Motion Brand for kommunikasjonsaktivering"
-          }
-        },
-        {
-          "type": "video",
-          "url": "https://www.youtube.com/watch?v=Z4ysCdbF3p8",
-          "caption": {
-            "pt": "",
-            "en": "Campanha Awareness — Cuidados Pela Vida 2024",
-            "es": "Campanha Awareness — Cuidados Pela Vida 2024",
-            "zh": "Campanha Awareness — Cuidados Pela Vida 2024",
-            "no": "Campanha Awareness — Cuidados Pela Vida 2024"
           }
         },
         {
