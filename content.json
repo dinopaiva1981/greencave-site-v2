@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-11T19:49:42.320Z",
+  "generatedAt": "2026-08-11T19:58:12.373Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -2249,28 +2249,28 @@
           "no": "Rytme"
         },
         "line": {
-          "pt": "Entrega no dia combinado. Sem novela.",
-          "en": "Delivery on the agreed day. No soap opera.",
-          "es": "Entrega en el día acordado. Nada de telenovela.",
-          "zh": "在约定的日期交货。没有肥皂剧。",
-          "no": "Levering på avtalt dag. Ingen såpeopera."
+          "pt": "Entendemos prioridades, combinamos prazos e mantemos a operação em movimento até a entrega.",
+          "en": "We understand priorities, agree deadlines and keep the operation moving until delivery.",
+          "es": "Entendemos las prioridades, acordamos plazos y mantenemos la operación en movimiento hasta la entrega.",
+          "zh": "我们了解优先事项、商定最后期限并保持运营直至交付。",
+          "no": "Vi forstår prioriteringer, avtaler tidsfrister og holder driften i gang frem til levering."
         },
         "id": "value_jolb6jfu"
       },
       {
         "word": {
-          "pt": "Bastidor",
-          "en": "Backstage",
-          "es": "Entre bastidores",
-          "zh": "后台",
-          "no": "Bak scenen"
+          "pt": "Integração",
+          "en": "Integration",
+          "es": "Integración",
+          "zh": "一体化",
+          "no": "Integrering"
         },
         "line": {
-          "pt": "A verdade mora na parceria do dia a dia.",
-          "en": "The truth lives in everyday partnership.",
-          "es": "La verdad vive en la colaboración cotidiana.",
-          "zh": "真理存在于日常伙伴关系中。",
-          "no": "Sannheten lever i hverdagslig partnerskap."
+          "pt": "Entramos no fluxo existente, colaboramos com os times e conectamos os especialistas necessários para cada desafio.",
+          "en": "We enter the existing flow, collaborate with teams and connect the experts needed for each challenge.",
+          "es": "Entramos en el flujo existente, colaboramos con equipos y conectamos a los expertos necesarios para cada desafío.",
+          "zh": "我们进入现有流程，与团队协作并联系每个挑战所需的专家。",
+          "no": "Vi går inn i den eksisterende flyten, samarbeider med team og kobler sammen ekspertene som trengs for hver utfordring."
         },
         "id": "value_uuyiulyw"
       },
@@ -2283,28 +2283,28 @@
           "no": "Håndverk"
         },
         "line": {
-          "pt": "O detalhe que só quem já rodou agência, TV e evento enxerga.",
-          "en": "The detail that only those who have worked in agencies, TV and events can see.",
-          "es": "El detalle que sólo pueden ver quienes han trabajado en agencias, TV y eventos.",
-          "zh": "只有那些在机构、电视和活动中工作过的人才能看到的细节。",
-          "no": "Detaljen som bare de som har jobbet i byråer, TV og events kan se."
+          "pt": "Direção, gestão e produção pra alcançar a melhor entrega possível.",
+          "en": "Direction, management and production to achieve the best possible delivery.",
+          "es": "Dirección, gestión y producción para conseguir la mejor entrega posible.",
+          "zh": "指导、管理和生产以实现最佳交付。",
+          "no": "Regi, ledelse og produksjon for å oppnå best mulig leveranse."
         },
         "id": "value_a1bvg7v9"
       },
       {
         "word": {
-          "pt": "Confiança",
-          "en": "Trust",
-          "es": "Confianza",
-          "zh": "相信",
-          "no": "Tillit"
+          "pt": "Continuidade",
+          "en": "Continuity",
+          "es": "Continuidad",
+          "zh": "连续性",
+          "no": "Kontinuitet"
         },
         "line": {
-          "pt": "Cliente de anos, não de projeto único.",
-          "en": "Client for years, not a single project.",
-          "es": "Cliente desde hace años, ni un solo proyecto.",
-          "zh": "多年的客户，而不是一个项目。",
-          "no": "Kunde i årevis, ikke et eneste prosjekt."
+          "pt": "Construímos relações de longo prazo, acumulamos conhecimento da operação e evoluímos junto com o cliente.",
+          "en": "We build long-term relationships, accumulate operational knowledge and evolve together with the client.",
+          "es": "Construimos relaciones de largo plazo, acumulamos conocimiento operativo y evolucionamos junto al cliente.",
+          "zh": "我们与客户建立长期合作关系，积累运营知识并共同发展。",
+          "no": "Vi bygger langsiktige relasjoner, akkumulerer operasjonell kunnskap og utvikler oss sammen med kunden."
         },
         "id": "value_qtnn90s6"
       }
