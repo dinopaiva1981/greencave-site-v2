@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-11T14:01:11.031Z",
+  "generatedAt": "2026-08-11T19:49:42.320Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -2493,97 +2493,97 @@
   "quem": [
     {
       "aud": {
-        "pt": "Times internos para médias e grandes empresas",
-        "en": "Internal teams for medium and large companies",
-        "es": "Equipos internos para medianas y grandes empresas",
-        "zh": "大中型企业内部团队",
-        "no": "Interne team for mellomstore og store bedrifter"
+        "pt": "Times internos de marketing, comunicação e branding",
+        "en": "Internal marketing, communications and branding teams",
+        "es": "Equipos internos de marketing, comunicaciones y branding.",
+        "zh": "内部营销、传播和品牌团队",
+        "no": "Interne markedsførings-, kommunikasjons- og merkevareteam"
       },
       "pain": {
-        "pt": "A rotina, o time interno dá conta. O pico é outra conversa.",
-        "en": "The internal team can handle the routine. The peak is another conversation.",
-        "es": "El equipo interno puede manejar la rutina. El pico es otra conversación.",
-        "zh": "内部团队可以处理日常事务。高峰是另一场谈话。",
-        "no": "Det interne teamet kan håndtere rutinen. Toppen er en annen samtale."
+        "pt": "A demanda cresce, mas o time continua sendo o mesmo.",
+        "en": "Demand grows, but the team remains the same.",
+        "es": "La demanda crece, pero el equipo sigue siendo el mismo.",
+        "zh": "需求增长，但团队保持不变。",
+        "no": "Etterspørselen vokser, men teamet forblir det samme."
       },
       "text": {
-        "pt": "Quando a demanda estoura, a gente vira reforço no seu time — sem processo de contratação no meio do caminho.",
-        "en": "When demand surges, we become reinforcements for your team — without the hiring process getting in the way.",
-        "es": "Cuando aumenta la demanda, nos convertimos en refuerzos para su equipo, sin que el proceso de contratación se interponga en su camino.",
-        "zh": "当需求激增时，我们会成为您团队的增援，而不会妨碍招聘流程。",
-        "no": "Når etterspørselen øker, blir vi forsterkninger for teamet ditt – uten at ansettelsesprosessen kommer i veien."
+        "pt": "Somos uma extensão do time. Entramos no fluxo existente para ampliar a capacidade de criação e produção, trazendo especialistas conforme a necessidade e mantendo o contexto da marca.",
+        "en": "We are an extension of the team. We enter the existing flow to expand creation and production capacity, bringing in specialists as needed and maintaining the brand's context.",
+        "es": "Somos una extensión del equipo. Nos adentramos en el flujo existente para ampliar la capacidad de creación y producción, incorporando especialistas según sea necesario y manteniendo el contexto de la marca.",
+        "zh": "我们是团队的延伸。我们进入现有流程以扩大创作和生产能力，根据需要引入专家并维护品牌背景。",
+        "no": "Vi er en forlengelse av laget. Vi går inn i den eksisterende flyten for å utvide produksjons- og produksjonskapasiteten, hente inn spesialister etter behov og opprettholde merkevarens kontekst."
       },
       "id": "quem_rjnkp5np"
     },
     {
       "aud": {
-        "pt": "Canais, streaming & conteúdo",
-        "en": "Channels, streaming & content",
-        "es": "Canales, streaming y contenido",
-        "zh": "频道、流媒体和内容",
-        "no": "Kanaler, streaming og innhold"
+        "pt": "Emissoras, canais, streaming e grupos de mídia",
+        "en": "Broadcasters, channels, streaming and media groups",
+        "es": "Broadcasters, canales, streaming y grupos de medios",
+        "zh": "广播公司、频道、流媒体和媒体集团",
+        "no": "Kringkastere, kanaler, streaming og mediegrupper"
       },
       "pain": {
-        "pt": "O On-Air não espera ninguém.",
-        "en": "On-Air doesn't wait for anyone.",
-        "es": "On-Air no espera a nadie.",
-        "zh": "On-Air 不等待任何人。",
-        "no": "On-Air venter ikke på noen."
+        "pt": "O ritmo do conteúdo exige uma operação que acompanhe.",
+        "en": "The pace of content requires an operation to keep up.",
+        "es": "El ritmo del contenido requiere una operación para mantenerse al día.",
+        "zh": "内容的节奏需要运营来跟上。",
+        "no": "Tempoet på innholdet krever en operasjon for å følge med."
       },
       "text": {
-        "pt": "Entendemos o ritmo de quem trabalha com grade: identidade, chamadas, promos e pacotes gráficos.",
-        "en": "We understand the rhythm of those who work with grids: identity, calls, promos and graphic packages.",
-        "es": "Entendemos el ritmo de quienes trabajan con grids: identidad, convocatorias, promos y paquetes gráficos.",
-        "zh": "我们了解那些使用网格的人的节奏：身份、电话、促销和图形包。",
-        "no": "Vi forstår rytmen til de som jobber med grids: identitet, samtaler, kampanjer og grafiske pakker."
+        "pt": "Integramos direção, design, motion, audiovisual e tecnologia para transformar demandas em entregas consistentes para diferentes telas e formatos.",
+        "en": "We integrate direction, design, motion, audiovisual and technology to transform demands into consistent deliveries for different screens and formats.",
+        "es": "Integramos dirección, diseño, movimiento, audiovisual y tecnología para transformar las demandas en entregas consistentes para diferentes pantallas y formatos.",
+        "zh": "我们整合导演、设计、动作、视听和技术，将需求转化为针对不同屏幕和格式的一致交付。",
+        "no": "Vi integrerer retning, design, bevegelse, audiovisuelt og teknologi for å transformere krav til konsistente leveranser for ulike skjermer og formater."
       },
       "id": "quem_7ugem8tj"
     },
     {
       "aud": {
-        "pt": "Agências & houses",
-        "en": "Agencies & houses",
-        "es": "Agencias y casas",
-        "zh": "机构和机构",
-        "no": "Byråer og hus"
+        "pt": "Agências, produtoras e houses criativas",
+        "en": "Agencies, production companies and creative houses",
+        "es": "Agencias, productoras y casas creativas",
+        "zh": "代理机构、制作公司和创意公司",
+        "no": "Byråer, produksjonsselskaper og kreative hus"
       },
       "pain": {
-        "pt": "Pico de demanda não avisa.",
-        "en": "Peak demand does not warn.",
-        "es": "La demanda máxima no avisa.",
-        "zh": "高峰需求不会发出警告。",
-        "no": "Toppetterspørsel varsler ikke."
+        "pt": "Nem todo pico de demanda justifica aumentar a estrutura.",
+        "en": "Not every peak in demand justifies increasing the structure.",
+        "es": "No todos los picos de demanda justifican un aumento de la estructura.",
+        "zh": "并非每次需求高峰都适合增加结构。",
+        "no": "Ikke hver topp i etterspørselen rettferdiggjør å øke strukturen."
       },
       "text": {
-        "pt": "Quando o job aperta, entramos no seu fluxo e entendemos o cliente rápido, com o padrão que a conta espera.",
-        "en": "When the job gets tight, we get into its flow and understand the customer quickly, with the standard that the account expects.",
-        "es": "Cuando el trabajo se complica, nos involucramos en su flujo y entendemos al cliente rápidamente, con el estándar que la cuenta espera.",
-        "zh": "当工作变得紧张时，我们会按照客户期望的标准进入流程并快速了解客户。",
-        "no": "Når jobben blir trang, kommer vi inn i dens flyt og forstår kunden raskt, med den standarden som kontoen forventer."
+        "pt": "Podemos assumir uma frente, complementar o time ou conduzir uma entrega completa, trabalhando dentro do processo e da linguagem da agência.",
+        "en": "We can take on one front, complement the team or lead a complete delivery, working within the agency's process and language.",
+        "es": "Podemos asumir un frente, complementar el equipo o liderar una entrega completa, trabajando dentro del proceso y lenguaje de la agencia.",
+        "zh": "我们可以在代理机构的流程和语言范围内开展工作，补充团队或领导完整的交付。",
+        "no": "Vi kan ta på én front, komplettere teamet eller lede en komplett leveranse, og jobbe innenfor byråets prosess og språk."
       },
       "id": "quem_scm3x96l"
     },
     {
       "aud": {
-        "pt": "Eventos & ativações",
-        "en": "Events & activations",
-        "es": "Eventos y activaciones",
-        "zh": "事件和激活",
-        "no": "Arrangementer og aktiveringer"
+        "pt": "Eventos, ativações e projetos especiais",
+        "en": "Events, activations and special projects",
+        "es": "Eventos, activaciones y proyectos especiales.",
+        "zh": "活动、活动和特别项目",
+        "no": "Arrangementer, aktiveringer og spesialprosjekter"
       },
       "pain": {
-        "pt": "O prazo não perdoa.",
-        "en": "The deadline is unforgiving.",
-        "es": "El plazo es implacable.",
-        "zh": "截止日期是无情的。",
-        "no": "Fristen er uforsonlig."
+        "pt": "Quando o deadline está definido, tudo precisa estar pronto ao mesmo tempo.",
+        "en": "When the deadline is set, everything needs to be ready at the same time.",
+        "es": "Cuando se fija la fecha límite, todo debe estar listo al mismo tiempo.",
+        "zh": "当截止日期确定后，一切都需要同时准备好。",
+        "no": "Når fristen er satt, må alt være klart samtidig."
       },
       "text": {
-        "pt": "Já vivemos a pressão de grandes eventos, mas não abrimos mão da melhor entrega.",
-        "en": "We have already experienced the pressure of major events, but we do not give up on the best delivery.",
-        "es": "Ya hemos experimentado la presión de los grandes acontecimientos, pero no renunciamos a la mejor entrega.",
-        "zh": "我们已经经历过重大事件的压力，但我们不会放弃最好的交付。",
-        "no": "Vi har allerede opplevd presset fra store arrangementer, men vi gir ikke opp på den beste leveransen."
+        "pt": "Conectamos direção, especialistas e produção em um fluxo integrado, acompanhando as diferentes necessidades do projeto até a entrega.",
+        "en": "We connect management, specialists and production in an integrated flow, following the different needs of the project until delivery.",
+        "es": "Conectamos gestión, especialistas y producción en un flujo integrado, siguiendo las diferentes necesidades del proyecto hasta la entrega.",
+        "zh": "我们将管理人员、专家和生产连接到一个集成流程中，满足项目的不同需求，直至交付。",
+        "no": "Vi kobler sammen ledelse, spesialister og produksjon i en integrert flyt, og følger prosjektets ulike behov frem til levering."
       },
       "id": "quem_469pdwyd"
     }
