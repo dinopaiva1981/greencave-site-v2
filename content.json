@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-11T13:57:15.759Z",
+  "generatedAt": "2026-08-11T14:01:11.031Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -2618,6 +2618,30 @@
         "id": "lab_kknh3vwx"
       },
       {
+        "name": "Offy Ofertas",
+        "partner": "App",
+        "what": {
+          "pt": "Ponta a ponta: design de serviço, desenvolvimento, sistemas de pagamento, lançamento e gestão",
+          "en": "End-to-end: service design, development, payment systems, launch and management",
+          "es": "Extremo a extremo: diseño, desarrollo, sistemas de pago, lanzamiento y gestión de servicios.",
+          "zh": "端到端：服务设计、开发、支付系统、启动和管理",
+          "no": "End-to-end: tjenestedesign, utvikling, betalingssystemer, lansering og administrasjon"
+        },
+        "id": "lab_envyfmt1"
+      },
+      {
+        "name": "Risco das Bets",
+        "partner": "Estadão",
+        "what": {
+          "pt": "Criação, conceito e produção criativa  de peças gráficas para campanha de posicionamento contra as bets",
+          "en": "Creation, concept and creative production of graphic pieces for a positioning campaign against betting",
+          "es": "Creación, concepto y producción creativa de piezas gráficas para una campaña de posicionamiento frente a las apuestas.",
+          "zh": "针对博彩定位活动的图形作品的创作、概念和创意制作",
+          "no": "Oppretting, konsept og kreativ produksjon av grafiske stykker for en posisjoneringskampanje mot spill"
+        },
+        "id": "lab_1zrvasws"
+      },
+      {
         "name": "WarnerBox",
         "partner": "WarnerMedia",
         "what": {
@@ -2652,30 +2676,6 @@
           "no": "Vekststrategi og råd"
         },
         "id": "lab_tai8lytv"
-      },
-      {
-        "name": "Offy Ofertas",
-        "partner": "App",
-        "what": {
-          "pt": "Ponta a ponta: design de serviço, desenvolvimento, sistemas de pagamento, lançamento e gestão",
-          "en": "End-to-end: service design, development, payment systems, launch and management",
-          "es": "Extremo a extremo: diseño, desarrollo, sistemas de pago, lanzamiento y gestión de servicios.",
-          "zh": "端到端：服务设计、开发、支付系统、启动和管理",
-          "no": "End-to-end: tjenestedesign, utvikling, betalingssystemer, lansering og administrasjon"
-        },
-        "id": "lab_envyfmt1"
-      },
-      {
-        "name": "Risco das Bets",
-        "partner": "Estadão",
-        "what": {
-          "pt": "Criação, conceito e produção criativa  de peças gráficas para campanha de posicionamento contra as bets",
-          "en": "Creation, concept and creative production of graphic pieces for a positioning campaign against betting",
-          "es": "Creación, concepto y producción creativa de piezas gráficas para una campaña de posicionamiento frente a las apuestas.",
-          "zh": "针对博彩定位活动的图形作品的创作、概念和创意制作",
-          "no": "Oppretting, konsept og kreativ produksjon av grafiske stykker for en posisjoneringskampanje mot spill"
-        },
-        "id": "lab_1zrvasws"
       }
     ]
   }
