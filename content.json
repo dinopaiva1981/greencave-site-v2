@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-11T19:58:12.373Z",
+  "generatedAt": "2026-08-26T21:16:06.294Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -586,6 +586,145 @@
       "draft": false
     },
     {
+      "id": "work_5iwf8niy",
+      "client": "Formata - MultiShow",
+      "year": "",
+      "art": "rings",
+      "kind": "case",
+      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/frame-no-corre.jpg",
+      "gallery": [],
+      "blocks": [
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/frame-no-corre.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.39.25.webp",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-30-as-00.14.10.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-30-as-00.14.28.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-30-as-00.14.51.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-30-as-00.13.52.webp"
+          ]
+        },
+        {
+          "type": "video",
+          "url": "https://youtu.be/aZUr6QrB3EE",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=f4x0xUEmNOw",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "urls": [
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.43.18.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.43.49.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.44.23.webp",
+            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.44.14.webp"
+          ]
+        },
+        {
+          "type": "text",
+          "title": {
+            "pt": "*Operação Contínua*",
+            "en": "*Continuous Operation*",
+            "es": "*Operación continua*",
+            "zh": "*连续运行*",
+            "no": "*Kontinuerlig drift*"
+          },
+          "body": {
+            "pt": "Ao longo de quatro meses, montamos um MiniLab exclusivo para atender à segunda temporada do projeto. Com uma operação enxuta, gestão estratégica e um workflow cuidadosamente estruturado, garantimos agilidade, previsibilidade e total integração entre as equipes. O resultado foi uma produção fluida, com decisões rápidas, aprovações instantâneas e entregas consistentes durante toda a operação.\n",
+            "en": "Over the course of four months, we set up an exclusive MiniLab to serve the second season of the project. With a lean operation, strategic management and a carefully structured workflow, we guarantee agility, predictability and total integration between teams. The result was fluid production, with quick decisions, instant approvals and consistent deliveries throughout the operation.",
+            "es": "En el transcurso de cuatro meses, montamos un MiniLab exclusivo para dar servicio a la segunda temporada del proyecto. Con una operación ágil, una gestión estratégica y un flujo de trabajo cuidadosamente estructurado, garantizamos agilidad, previsibilidad y total integración entre equipos. El resultado fue una producción fluida, con decisiones rápidas, aprobaciones instantáneas y entregas consistentes durante toda la operación.",
+            "zh": "在四个月的时间里，我们建立了一个专属的MiniLab来服务该项目的第二季。凭借精益运营、战略管理和精心构建的工作流程，我们保证团队之间的敏捷性、可预测性和全面集成。结果是在整个运营过程中实现了流畅的生产、快速决策、即时批准和一致的交付。",
+            "no": "I løpet av fire måneder satte vi opp en eksklusiv MiniLab for å betjene den andre sesongen av prosjektet. Med en slank drift, strategisk ledelse og en nøye strukturert arbeidsflyt garanterer vi smidighet, forutsigbarhet og total integrasjon mellom teamene. Resultatet var flytende produksjon, med raske beslutninger, øyeblikkelige godkjenninger og konsistente leveranser gjennom hele operasjonen."
+          }
+        },
+        {
+          "type": "duo",
+          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc01.jpg",
+          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc02.jpg"
+        },
+        {
+          "type": "quote",
+          "text": {
+            "pt": "+10 episódios atendidos • +80 plates produzidos • 4 meses de operação dedicada.",
+            "en": "+10 episodes attended • +80 plates produced • 4 months of dedicated operation.",
+            "es": "+10 episodios atendidos • +80 placas producidas • 4 meses de operación dedicada.",
+            "zh": "观看了超过 10 集 • 制作了超过 80 个板块 • 4 个月的专注运营。",
+            "no": "+10 episoder deltok • +80 plater produsert • 4 måneder med dedikert drift."
+          }
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc03.jpg",
+          "caption": {
+            "pt": "",
+            "en": "",
+            "es": "",
+            "zh": "",
+            "no": ""
+          }
+        }
+      ],
+      "title": {
+        "pt": "No Corre MultiShow - Temporada 2",
+        "en": "No Corre MultiShow - Season 2",
+        "es": "MultiShow No Corre - Temporada 2",
+        "zh": "没有 Corre MultiShow - 第 2 季",
+        "no": "No Corre MultiShow – sesong 2"
+      },
+      "tags": {
+        "pt": "Operação Criativa - Pós Produção - Minilab dedicado",
+        "en": "Creative Operation - Post Production - Dedicated Minilab",
+        "es": "Operación creativa - Postproducción - Minilab dedicado",
+        "zh": "创意运营-后期制作-专用Minilab",
+        "no": "Kreativ drift - Postproduksjon - Dedikert Minilab"
+      },
+      "body": {
+        "pt": "Em parceria com a Formata Produções, assumimos a operação criativa de pós-produção de mais de 80 plates em live action. O trabalho envolveu a criação de assets, refinamento visual e composição das cenas gravadas em estúdio, garantindo consistência estética e alta qualidade de entrega em todas as peças.\n",
+        "en": "In partnership with Formata Produções, we took on the creative post-production operation of more than 80 live action plates. The work involved the creation of assets, visual refinement and composition of scenes recorded in the studio, ensuring aesthetic consistency and high quality of delivery in all pieces.",
+        "es": "En colaboración con Formata Produções, asumimos la operación de postproducción creativa de más de 80 placas de acción real. El trabajo implicó la creación de activos, refinamiento visual y composición de escenas grabadas en el estudio, asegurando consistencia estética y alta calidad de entrega en todas las piezas.",
+        "zh": "我们与 Formata Produções 合作，承担了 80 多个实景镜头的创意后期制作工作。这项工作涉及资产的创建、视觉细化以及在工作室录制的场景的构图，确保所有作品的审美一致性和高质量的交付。",
+        "no": "I samarbeid med Formata Produções tok vi på oss den kreative postproduksjonen av mer enn 80 live action-plater. Arbeidet innebar opprettelse av eiendeler, visuell foredling og komposisjon av scener spilt inn i studio, og sikret estetisk konsistens og høy kvalitet på levering i alle stykker."
+      },
+      "ai": true,
+      "draft": false
+    },
+    {
       "id": "work_jvssafo1",
       "kind": "case",
       "client": "Aché Laboratórios",
@@ -777,145 +916,6 @@
           }
         }
       ],
-      "ai": true,
-      "draft": false
-    },
-    {
-      "id": "work_5iwf8niy",
-      "client": "Formata - MultiShow",
-      "year": "",
-      "art": "rings",
-      "kind": "case",
-      "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/frame-no-corre.jpg",
-      "gallery": [],
-      "blocks": [
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/frame-no-corre.jpg",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.39.25.webp",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "urls": [
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-30-as-00.14.10.webp",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-30-as-00.14.28.webp",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-30-as-00.14.51.webp",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-30-as-00.13.52.webp"
-          ]
-        },
-        {
-          "type": "video",
-          "url": "https://youtu.be/aZUr6QrB3EE",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "video",
-          "url": "https://www.youtube.com/watch?v=f4x0xUEmNOw",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "urls": [
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.43.18.webp",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.43.49.webp",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.44.23.webp",
-            "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/captura-de-tela-2026-07-29-as-22.44.14.webp"
-          ]
-        },
-        {
-          "type": "text",
-          "title": {
-            "pt": "*Operação Contínua*",
-            "en": "*Continuous Operation*",
-            "es": "*Operación continua*",
-            "zh": "*连续运行*",
-            "no": "*Kontinuerlig drift*"
-          },
-          "body": {
-            "pt": "Ao longo de quatro meses, montamos um MiniLab exclusivo para atender à segunda temporada do projeto. Com uma operação enxuta, gestão estratégica e um workflow cuidadosamente estruturado, garantimos agilidade, previsibilidade e total integração entre as equipes. O resultado foi uma produção fluida, com decisões rápidas, aprovações instantâneas e entregas consistentes durante toda a operação.\n",
-            "en": "Over the course of four months, we set up an exclusive MiniLab to serve the second season of the project. With a lean operation, strategic management and a carefully structured workflow, we guarantee agility, predictability and total integration between teams. The result was fluid production, with quick decisions, instant approvals and consistent deliveries throughout the operation.",
-            "es": "En el transcurso de cuatro meses, montamos un MiniLab exclusivo para dar servicio a la segunda temporada del proyecto. Con una operación ágil, una gestión estratégica y un flujo de trabajo cuidadosamente estructurado, garantizamos agilidad, previsibilidad y total integración entre equipos. El resultado fue una producción fluida, con decisiones rápidas, aprobaciones instantáneas y entregas consistentes durante toda la operación.",
-            "zh": "在四个月的时间里，我们建立了一个专属的MiniLab来服务该项目的第二季。凭借精益运营、战略管理和精心构建的工作流程，我们保证团队之间的敏捷性、可预测性和全面集成。结果是在整个运营过程中实现了流畅的生产、快速决策、即时批准和一致的交付。",
-            "no": "I løpet av fire måneder satte vi opp en eksklusiv MiniLab for å betjene den andre sesongen av prosjektet. Med en slank drift, strategisk ledelse og en nøye strukturert arbeidsflyt garanterer vi smidighet, forutsigbarhet og total integrasjon mellom teamene. Resultatet var flytende produksjon, med raske beslutninger, øyeblikkelige godkjenninger og konsistente leveranser gjennom hele operasjonen."
-          }
-        },
-        {
-          "type": "duo",
-          "url1": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc01.jpg",
-          "url2": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc02.jpg"
-        },
-        {
-          "type": "quote",
-          "text": {
-            "pt": "+10 episódios atendidos • +80 plates produzidos • 4 meses de operação dedicada.",
-            "en": "+10 episodes attended • +80 plates produced • 4 months of dedicated operation.",
-            "es": "+10 episodios atendidos • +80 placas producidas • 4 meses de operación dedicada.",
-            "zh": "观看了超过 10 集 • 制作了超过 80 个板块 • 4 个月的专注运营。",
-            "no": "+10 episoder deltok • +80 plater produsert • 4 måneder med dedikert drift."
-          }
-        },
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/formata-multishow/ref_nc03.jpg",
-          "caption": {
-            "pt": "",
-            "en": "",
-            "es": "",
-            "zh": "",
-            "no": ""
-          }
-        }
-      ],
-      "title": {
-        "pt": "No Corre MultiShow - Temporada 2",
-        "en": "No Corre MultiShow - Season 2",
-        "es": "MultiShow No Corre - Temporada 2",
-        "zh": "没有 Corre MultiShow - 第 2 季",
-        "no": "No Corre MultiShow – sesong 2"
-      },
-      "tags": {
-        "pt": "Operação Criativa - Pós Produção - Minilab dedicado",
-        "en": "Creative Operation - Post Production - Dedicated Minilab",
-        "es": "Operación creativa - Postproducción - Minilab dedicado",
-        "zh": "创意运营-后期制作-专用Minilab",
-        "no": "Kreativ drift - Postproduksjon - Dedikert Minilab"
-      },
-      "body": {
-        "pt": "Em parceria com a Formata Produções, assumimos a operação criativa de pós-produção de mais de 80 plates em live action. O trabalho envolveu a criação de assets, refinamento visual e composição das cenas gravadas em estúdio, garantindo consistência estética e alta qualidade de entrega em todas as peças.\n",
-        "en": "In partnership with Formata Produções, we took on the creative post-production operation of more than 80 live action plates. The work involved the creation of assets, visual refinement and composition of scenes recorded in the studio, ensuring aesthetic consistency and high quality of delivery in all pieces.",
-        "es": "En colaboración con Formata Produções, asumimos la operación de postproducción creativa de más de 80 placas de acción real. El trabajo implicó la creación de activos, refinamiento visual y composición de escenas grabadas en el estudio, asegurando consistencia estética y alta calidad de entrega en todas las piezas.",
-        "zh": "我们与 Formata Produções 合作，承担了 80 多个实景镜头的创意后期制作工作。这项工作涉及资产的创建、视觉细化以及在工作室录制的场景的构图，确保所有作品的审美一致性和高质量的交付。",
-        "no": "I samarbeid med Formata Produções tok vi på oss den kreative postproduksjonen av mer enn 80 live action-plater. Arbeidet innebar opprettelse av eiendeler, visuell foredling og komposisjon av scener spilt inn i studio, og sikret estetisk konsistens og høy kvalitet på levering i alle stykker."
-      },
       "ai": true,
       "draft": false
     },
