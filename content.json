@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-27T13:39:26.869Z",
+  "generatedAt": "2026-08-27T16:12:23.818Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -2336,18 +2336,6 @@
         "id": "team_2pc3xntk"
       },
       {
-        "name": "Machado",
-        "photo": "media/team/machado.png",
-        "role": {
-          "pt": "3D Ops",
-          "en": "3D Ops",
-          "es": "Operaciones 3D",
-          "zh": "3D 行动",
-          "no": "3D Ops"
-        },
-        "id": "team_vo6e4l9q"
-      },
-      {
         "id": "team_fz4vdyqj",
         "name": "Adrian",
         "photo": "media/team/adrian.webp",
@@ -2358,6 +2346,18 @@
           "zh": "首席技术官",
           "no": "CTO"
         }
+      },
+      {
+        "name": "Machado",
+        "photo": "media/team/machado.png",
+        "role": {
+          "pt": "3D Ops",
+          "en": "3D Ops",
+          "es": "Operaciones 3D",
+          "zh": "3D 行动",
+          "no": "3D Ops"
+        },
+        "id": "team_vo6e4l9q"
       }
     ],
     "talent": {
