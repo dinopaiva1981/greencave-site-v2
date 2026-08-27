@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-26T21:16:06.294Z",
+  "generatedAt": "2026-08-27T13:39:26.869Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para todas as telas",
@@ -359,10 +359,10 @@
   },
   "clients": [
     "achē",
-    "Estadão",
     "Disney",
-    "Formata",
+    "Estadão",
     "Suzano",
+    "Formata",
     "TV TEM",
     "Warner",
     "ESPN",
@@ -2008,7 +2008,8 @@
         }
       ],
       "_importedFrom": "https://greencave.webflow.io/projetos/pilao-cafe-forte-do-brasil",
-      "draft": false
+      "draft": false,
+      "ai": false
     },
     {
       "kind": "craft",
