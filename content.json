@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-09T17:15:22.791Z",
+  "generatedAt": "2026-09-09T17:45:53.666Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa",
@@ -2250,11 +2250,11 @@
           "no": "Rytme"
         },
         "line": {
-          "pt": "Entendemos prioridades, combinamos prazos e mantemos a operação em movimento até a entrega.",
-          "en": "We understand priorities, agree deadlines and keep the operation moving until delivery.",
-          "es": "Entendemos las prioridades, acordamos plazos y mantenemos la operación en movimiento hasta la entrega.",
-          "zh": "我们了解优先事项、商定最后期限并保持运营直至交付。",
-          "no": "Vi forstår prioriteringer, avtaler tidsfrister og holder driften i gang frem til levering."
+          "pt": "Entendemos prioridades, combinamos prazos e mantemos a produção em movimento.",
+          "en": "We understand priorities, agree deadlines and keep production moving.",
+          "es": "Entendemos las prioridades, acordamos plazos y mantenemos la producción en movimiento.",
+          "zh": "我们了解优先事项、商定最后期限并保持生产顺利进行。",
+          "no": "Vi forstår prioriteringer, avtaler tidsfrister og holder produksjonen i gang."
         },
         "id": "value_jolb6jfu"
       },
@@ -2267,11 +2267,11 @@
           "no": "Integrering"
         },
         "line": {
-          "pt": "Entramos no fluxo existente, colaboramos com os times e conectamos os especialistas necessários para cada desafio.",
-          "en": "We enter the existing flow, collaborate with teams and connect the experts needed for each challenge.",
-          "es": "Entramos en el flujo existente, colaboramos con equipos y conectamos a los expertos necesarios para cada desafío.",
-          "zh": "我们进入现有流程，与团队协作并联系每个挑战所需的专家。",
-          "no": "Vi går inn i den eksisterende flyten, samarbeider med team og kobler sammen ekspertene som trengs for hver utfordring."
+          "pt": "Entramos no fluxo existente, trabalhamos junto aos times e conectamos os especialistas certos para cada desafio.",
+          "en": "We enter the existing flow, work alongside teams and connect the right experts for each challenge.",
+          "es": "Entramos en el flujo existente, trabajamos junto con equipos y conectamos a los expertos adecuados para cada desafío.",
+          "zh": "我们进入现有流程，与团队一起工作，并为每个挑战联系合适的专家。",
+          "no": "Vi går inn i den eksisterende flyten, jobber sammen med team og kobler sammen de riktige ekspertene for hver utfordring."
         },
         "id": "value_uuyiulyw"
       },
