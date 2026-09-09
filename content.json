@@ -1,20 +1,20 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-02T21:31:50.822Z",
+  "generatedAt": "2026-09-09T17:12:38.812Z",
   "meta": {
     "title": {
-      "pt": "Greencave — Operação criativa para todas as telas",
-      "en": "Greencave — Creative operation for all screens",
-      "es": "Greencave: operación creativa para todas las pantallas",
-      "zh": "Greencave——全屏创意操作",
-      "no": "Greencave — Kreativ operasjon for alle skjermer"
+      "pt": "Greencave — Operação criativa",
+      "en": "Greencave — Creative Operation",
+      "es": "Greencave — Operación creativa",
+      "zh": "Greencave——创意运营",
+      "no": "Greencave — Kreativ operasjon"
     },
     "desc": {
-      "pt": "Somos um facilitador em  operação criativa  para agências, marcas e mídias. Estrutura criativa, MiniLabs de produção de conteúdo  — desde 2017, em São Paulo.",
-      "en": "We are a facilitator in creative operations for agencies, brands and media. Creative structure, content production MiniLabs — since 2017, in São Paulo.",
-      "es": "Somos facilitadores en operaciones creativas para agencias, marcas y medios. Estructura creativa, producción de contenidos MiniLabs — desde 2017, en São Paulo.",
-      "zh": "我们是机构、品牌和媒体创意运营的推动者。创意结构、内容制作迷你实验室——自 2017 年起在圣保罗。",
-      "no": "Vi er en tilrettelegger i kreativ drift for byråer, merkevarer og media. Kreativ struktur, innholdsproduksjon MiniLabs — siden 2017, i São Paulo."
+      "pt": "Somos um facilitador em  operação criativa  para agências, marcas e mídias. A Greencave entra junto para ampliar sua capacidade criativa — da direção à produção, do design à tecnologia, no ritmo que o negócio precisa.",
+      "en": "We are a facilitator in creative operations for agencies, brands and media. Greencave comes together to expand your creative capacity — from direction to production, from design to technology, at the pace your business needs.",
+      "es": "Somos facilitadores en operaciones creativas para agencias, marcas y medios. Greencave se une para expandir su capacidad creativa, desde la dirección hasta la producción, desde el diseño hasta la tecnología, al ritmo que su negocio necesita.",
+      "zh": "我们是机构、品牌和媒体创意运营的推动者。 Greencave 齐心协力，按照您的业务需求的节奏，扩展您的创意能力——从指导到制作，从设计到技术。",
+      "no": "Vi er en tilrettelegger i kreativ drift for byråer, merkevarer og media. Greencave kommer sammen for å utvide din kreative kapasitet – fra retning til produksjon, fra design til teknologi, i det tempoet virksomheten din trenger."
     }
   },
   "ui": {
@@ -54,11 +54,11 @@
       "no": "Operação Criativa — São Paulo, Brasil"
     },
     "hero_sub": {
-      "pt": "Somos um facilitador em  operação criativa  para agências, marcas e mídias através de estrutura criativa e MiniLabs de produção de conteúdo  — desde 2017, em São Paulo.\nEntramos como extensão do seu time para assumir criação, design, conteúdo e produção contínua dedicado ou sob demanda.",
-      "en": "We are a facilitator in creative operations for agencies, brands and media through creative structure and content production MiniLabs — since 2017, in São Paulo.\nWe come in as an extension of your team to take on dedicated or on-demand creation, design, content and continuous production.",
-      "es": "Somos facilitadores de operaciones creativas para agencias, marcas y medios a través de MiniLabs de estructura creativa y producción de contenidos, desde 2017, en São Paulo.\nLlegamos como una extensión de su equipo para encargarnos de la creación, el diseño, el contenido y la producción continua dedicados o bajo demanda.",
-      "zh": "自 2017 年起，我们在圣保罗通过创意结构和内容制作迷你实验室，成为机构、品牌和媒体创意运营的推动者。\n我们作为您团队的延伸，负责专门或按需的创作、设计、内容和持续生产。",
-      "no": "Vi er en tilrettelegger i kreative operasjoner for byråer, merkevarer og media gjennom kreativ struktur og innholdsproduksjon MiniLabs — siden 2017, i São Paulo.\nVi kommer inn som en forlengelse av teamet ditt for å ta på oss dedikert eller on-demand-skaping, design, innhold og kontinuerlig produksjon."
+      "pt": "Somos um facilitador em  operação criativa  para agências, marcas e mídias   — desde 2017, em São Paulo.\nEntramos junto para ampliar sua capacidade criativa — da direção à produção, do design à tecnologia, no ritmo que o negócio precisa.",
+      "en": "We are a facilitator in creative operations for agencies, brands and media — since 2017, in São Paulo.\nWe come together to expand your creative capacity — from direction to production, from design to technology, at the pace your business needs.",
+      "es": "Somos facilitadores de operaciones creativas para agencias, marcas y medios, desde 2017, en São Paulo.\nNos reunimos para ampliar su capacidad creativa, desde la dirección hasta la producción, desde el diseño hasta la tecnología, al ritmo que su negocio necesita.",
+      "zh": "自 2017 年起，我们在圣保罗成为代理机构、品牌和媒体创意运营的推动者。\n我们齐心协力，按照您的业务需求的节奏，扩展您的创意能力——从指导到生产，从设计到技术。",
+      "no": "Vi er en tilrettelegger i kreative operasjoner for byråer, merkevarer og media — siden 2017, i São Paulo.\nVi kommer sammen for å utvide din kreative kapasitet – fra retning til produksjon, fra design til teknologi, i det tempoet virksomheten din trenger."
     },
     "hero_cta1": {
       "pt": "Ver trabalhos",
@@ -124,11 +124,11 @@
       "no": "Vi er et kreativt *økosystem*"
     },
     "about_manifesto": {
-      "pt": "Depois de quase 10 anos rodando operação criativa para marca, agência e canal, aprendemos uma coisa: o que funciona é virar time, não só fornecedor. Isso não se explica em briefing — se prova no segundo projeto, no terceiro, no décimo. É isso que fazemos aqui: entramos na rotina, entendemos o contexto e entregamos no ritmo que o negócio precisa.",
-      "en": "After almost 10 years running a creative operation for brand, agency and channel, we learned one thing: what works is becoming a team, not just a supplier. This is not explained in a briefing — it is proven in the second project, the third, the tenth. That's what we do here: we get into the routine, understand the context and deliver at the pace the business needs.",
-      "es": "Después de casi 10 años dirigiendo una operación creativa para marca, agencia y canal, aprendimos una cosa: lo que funciona es convertirse en un equipo, no solo en un proveedor. Esto no se explica en un informe, se demuestra en el segundo proyecto, el tercero, el décimo. Eso es lo que hacemos aquí: nos adentramos en la rutina, entendemos el contexto y entregamos al ritmo que el negocio necesita.",
-      "zh": "经过近 10 年的品牌、代理和渠道创意运营，我们学到了一件事：有效的方法是成为一个团队，而不仅仅是一个供应商。这在简报中没有得到解释——它在第二个、第三个、第十个项目中得到了证明。这就是我们在这里所做的：我们进入日常工作，了解背景并按照业务需要的速度交付。",
-      "no": "Etter nesten 10 år å ha drevet en kreativ virksomhet for merkevare, byrå og kanal, lærte vi én ting: det som fungerer er å bli et team, ikke bare en leverandør. Dette er ikke forklart i en orientering - det er bevist i det andre prosjektet, det tredje, det tiende. Det er det vi gjør her: vi kommer inn i rutinen, forstår konteksten og leverer i det tempoet virksomheten trenger."
+      "pt": "Depois de quase 10 anos rodando operação criativa para marca, agência e canal, aprendemos uma coisa: o que funciona é *virar time*, não só fornecedor. Isso não se explica em briefing — se prova no segundo projeto, no terceiro, no décimo. É isso que fazemos aqui: entramos na rotina, entendemos o contexto e entregamos no ritmo que o negócio precisa.",
+      "en": "After almost 10 years running creative operations for brands, agencies and channels, we learned one thing: what works is *becoming a team*, not just a supplier. This is not explained in a briefing — it is proven in the second project, the third, the tenth. That's what we do here: we get into the routine, understand the context and deliver at the pace the business needs.",
+      "es": "Después de casi 10 años dirigiendo operaciones creativas para marcas, agencias y canales, aprendimos una cosa: lo que funciona es *convertirse en un equipo*, no solo en un proveedor. Esto no se explica en un informe, se demuestra en el segundo proyecto, el tercero, el décimo. Eso es lo que hacemos aquí: nos adentramos en la rutina, entendemos el contexto y entregamos al ritmo que el negocio necesita.",
+      "zh": "在为品牌、代理机构和渠道运营创意运营近 10 年之后，我们了解到一件事：有效的方法是“成为一个团队”，而不仅仅是一个供应商。这在简报中没有得到解释——它在第二个、第三个、第十个项目中得到了证明。这就是我们在这里所做的：我们进入日常工作，了解背景并按照业务需要的速度交付。",
+      "no": "Etter nesten 10 år med kreativ virksomhet for merkevarer, byråer og kanaler, lærte vi én ting: Det som fungerer er å *bli et team*, ikke bare en leverandør. Dette er ikke forklart i en orientering - det er bevist i det andre prosjektet, det tredje, det tiende. Det er det vi gjør her: vi kommer inn i rutinen, forstår konteksten og leverer i det tempoet virksomheten trenger."
     },
     "contact_eyebrow": {
       "pt": "Contato",
@@ -350,11 +350,11 @@
   },
   "hero": {
     "h1": {
-      "pt": "Operação\n*criativa*\npara todas as telas.",
-      "en": "Operation\n*creative*\nfor all screens.",
-      "es": "Operación\n*creativo*\npara todas las pantallas.",
-      "zh": "操作\n*创意*\n对于所有屏幕。",
-      "no": "Drift\n*kreativ*\nfor alle skjermer."
+      "pt": "Colocamos \n*capacidade criativa*\ndentro da sua operação.",
+      "en": "We put \n*creative ability*\nwithin your operation.",
+      "es": "ponemos \n*capacidad creativa*\ndentro de su operación.",
+      "zh": "我们把 \n*创造力*\n在您的运营范围内。",
+      "no": "Vi legger \n*kreativ evne*\ninnenfor operasjonen din."
     }
   },
   "clients": [
