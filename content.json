@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-09T18:04:01.538Z",
+  "generatedAt": "2026-09-09T18:07:36.900Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa",
@@ -2532,59 +2532,59 @@
         "no": "Tempoet på innholdet krever en operasjon for å følge med."
       },
       "text": {
-        "pt": "Integramos direção, design, motion, audiovisual e tecnologia para transformar demandas em entregas consistentes para diferentes telas e formatos.",
-        "en": "We integrate direction, design, motion, audiovisual and technology to transform demands into consistent deliveries for different screens and formats.",
-        "es": "Integramos dirección, diseño, movimiento, audiovisual y tecnología para transformar las demandas en entregas consistentes para diferentes pantallas y formatos.",
-        "zh": "我们整合导演、设计、动作、视听和技术，将需求转化为针对不同屏幕和格式的一致交付。",
-        "no": "Vi integrerer retning, design, bevegelse, audiovisuelt og teknologi for å transformere krav til konsistente leveranser for ulike skjermer og formater."
+        "pt": "Conectamos criação, design, audiovisual e tecnologia para manter volume, qualidade e velocidade.",
+        "en": "We connect creation, design, audiovisual and technology to maintain volume, quality and speed.",
+        "es": "Conectamos creación, diseño, audiovisual y tecnología para mantener volumen, calidad y velocidad.",
+        "zh": "我们将创作、设计、视听和技术联系起来，以保持数量、质量和速度。",
+        "no": "Vi kobler sammen kreasjon, design, audiovisuelt og teknologi for å opprettholde volum, kvalitet og hastighet."
       },
       "id": "quem_7ugem8tj"
     },
     {
       "aud": {
-        "pt": "Agências, produtoras e houses criativas",
-        "en": "Agencies, production companies and creative houses",
-        "es": "Agencias, productoras y casas creativas",
-        "zh": "代理机构、制作公司和创意公司",
-        "no": "Byråer, produksjonsselskaper og kreative hus"
+        "pt": "AGÊNCIAS, PRODUTORAS E HOUSES CRIATIVAS",
+        "en": "AGENCIES, PRODUCERS AND CREATIVE HOUSES",
+        "es": "AGENCIAS, PRODUCTORAS Y CASAS CREATIVAS",
+        "zh": "机构、制片人和创意公司",
+        "no": "BYRER, PRODUSENTER OG KREATIVE HUS"
       },
       "pain": {
-        "pt": "Nem todo pico de demanda justifica aumentar a estrutura.",
-        "en": "Not every peak in demand justifies increasing the structure.",
-        "es": "No todos los picos de demanda justifican un aumento de la estructura.",
-        "zh": "并非每次需求高峰都适合增加结构。",
-        "no": "Ikke hver topp i etterspørselen rettferdiggjør å øke strukturen."
+        "pt": "Quando o projeto pede mais capacidade, entramos junto.",
+        "en": "When the project calls for more capacity, we come along.",
+        "es": "Cuando el proyecto requiere más capacidad, nosotros lo acompañamos.",
+        "zh": "当项目需要更多容量时，我们就会出现。",
+        "no": "Når prosjektet krever mer kapasitet, kommer vi med."
       },
       "text": {
-        "pt": "Podemos assumir uma frente, complementar o time ou conduzir uma entrega completa, trabalhando dentro do processo e da linguagem da agência.",
-        "en": "We can take on one front, complement the team or lead a complete delivery, working within the agency's process and language.",
-        "es": "Podemos asumir un frente, complementar el equipo o liderar una entrega completa, trabajando dentro del proceso y lenguaje de la agencia.",
-        "zh": "我们可以在代理机构的流程和语言范围内开展工作，补充团队或领导完整的交付。",
-        "no": "Vi kan ta på én front, komplettere teamet eller lede en komplett leveranse, og jobbe innenfor byråets prosess og språk."
+        "pt": "Assumimos frentes, complementamos equipes ou conduzimos entregas completas dentro do fluxo de cada parceiro.",
+        "en": "We take on fronts, complement teams or conduct complete deliveries within each partner’s flow.",
+        "es": "Asumimos frentes, complementamos equipos o realizamos entregas completas dentro del flujo de cada socio.",
+        "zh": "我们在每个合作伙伴的流程中发挥作用、补充团队或完成交付。",
+        "no": "Vi tar fronter, kompletterer team eller gjennomfører komplette leveranser innenfor hver partners flyt."
       },
       "id": "quem_scm3x96l"
     },
     {
       "aud": {
-        "pt": "Eventos, ativações e projetos especiais",
-        "en": "Events, activations and special projects",
-        "es": "Eventos, activaciones y proyectos especiales.",
+        "pt": "EVENTOS, ATIVAÇÕES E PROJETOS ESPECIAIS",
+        "en": "EVENTS, ACTIVATIONS AND SPECIAL PROJECTS",
+        "es": "EVENTOS, ACTIVACIONES Y PROYECTOS ESPECIALES",
         "zh": "活动、活动和特别项目",
-        "no": "Arrangementer, aktiveringer og spesialprosjekter"
+        "no": "ARRANGEMENTER, AKTIVERINGER OG SPESIELLE PROSJEKTER"
       },
       "pain": {
-        "pt": "Quando o deadline está definido, tudo precisa estar pronto ao mesmo tempo.",
-        "en": "When the deadline is set, everything needs to be ready at the same time.",
-        "es": "Cuando se fija la fecha límite, todo debe estar listo al mismo tiempo.",
-        "zh": "当截止日期确定后，一切都需要同时准备好。",
-        "no": "Når fristen er satt, må alt være klart samtidig."
+        "pt": "Quando tudo precisa acontecer ao mesmo tempo.",
+        "en": "When everything needs to happen at the same time.",
+        "es": "Cuando todo tiene que suceder al mismo tiempo.",
+        "zh": "当一切都需要同时发生时。",
+        "no": "Når alt skal skje samtidig."
       },
       "text": {
-        "pt": "Conectamos direção, especialistas e produção em um fluxo integrado, acompanhando as diferentes necessidades do projeto até a entrega.",
-        "en": "We connect management, specialists and production in an integrated flow, following the different needs of the project until delivery.",
-        "es": "Conectamos gestión, especialistas y producción en un flujo integrado, siguiendo las diferentes necesidades del proyecto hasta la entrega.",
-        "zh": "我们将管理人员、专家和生产连接到一个集成流程中，满足项目的不同需求，直至交付。",
-        "no": "Vi kobler sammen ledelse, spesialister og produksjon i en integrert flyt, og følger prosjektets ulike behov frem til levering."
+        "pt": "Reunimos direção, especialistas e produção em uma operação integrada, do conceito à entrega.",
+        "en": "We bring together management, experts and production in an integrated operation, from concept to delivery.",
+        "es": "Reunimos gestión, expertos y producción en una operación integrada, desde el concepto hasta la entrega.",
+        "zh": "我们将管理、专家和生产融为一体，从概念到交付。",
+        "no": "Vi samler ledelse, eksperter og produksjon i en integrert drift, fra konsept til levering."
       },
       "id": "quem_469pdwyd"
     }
