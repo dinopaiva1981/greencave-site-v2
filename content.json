@@ -1,20 +1,20 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-09T18:00:52.809Z",
+  "generatedAt": "2026-09-09T18:04:01.538Z",
   "meta": {
     "title": {
-      "pt": "Greencave | Operação Criativa, Creative Ops e Minilabs",
-      "en": "Greencave | Creative Operation, Creative Ops and Minilabs",
-      "es": "Cueva Verde | Operación creativa, operaciones creativas y minilaboratorios",
-      "zh": "格林卡夫 |创意运营、创意运营和迷你实验室",
-      "no": "Greencave | Creative Operation, Creative Ops og Minilabs"
+      "pt": "Greencave — Operação criativa",
+      "en": "Greencave — Creative Operation",
+      "es": "Greencave — Operación creativa",
+      "zh": "Greencave——创意运营",
+      "no": "Greencave — Kreativ operasjon"
     },
     "desc": {
-      "pt": "A Greencave é uma operação criativa que integra pessoas, design, produção, tecnologia e IA. Minilabs dedicados para ampliar times, acelerar projetos e construir novos produtos e negócios.",
-      "en": "Greencave is a creative operation that integrates people, design, production, technology and AI. Dedicated minilabs to expand teams, accelerate projects and build new products and businesses.",
-      "es": "Greencave es una operación creativa que integra personas, diseño, producción, tecnología e inteligencia artificial. Minilaboratorios dedicados para ampliar equipos, acelerar proyectos y crear nuevos productos y negocios.",
-      "zh": "Greencave 是一家集人、设计、生产、技术和人工智能于一体的创意运营公司。专用迷你实验室用于扩大团队、加速项目以及开发新产品和业务。",
-      "no": "Greencave er en kreativ operasjon som integrerer mennesker, design, produksjon, teknologi og AI. Dedikerte minilabs for å utvide team, akselerere prosjekter og bygge nye produkter og virksomheter."
+      "pt": "Somos um facilitador em  operação criativa  para agências, marcas e mídias. A Greencave entra junto para ampliar sua capacidade criativa — da direção à produção, do design à tecnologia, no ritmo que o negócio precisa.",
+      "en": "We are a facilitator in creative operations for agencies, brands and media. Greencave comes together to expand your creative capacity — from direction to production, from design to technology, at the pace your business needs.",
+      "es": "Somos facilitadores en operaciones creativas para agencias, marcas y medios. Greencave se une para expandir su capacidad creativa, desde la dirección hasta la producción, desde el diseño hasta la tecnología, al ritmo que su negocio necesita.",
+      "zh": "我们是机构、品牌和媒体创意运营的推动者。 Greencave 齐心协力，按照您的业务需求的节奏，扩展您的创意能力——从指导到制作，从设计到技术。",
+      "no": "Vi er en tilrettelegger i kreativ drift for byråer, merkevarer og media. Greencave kommer sammen for å utvide din kreative kapasitet – fra retning til produksjon, fra design til teknologi, i det tempoet virksomheten din trenger."
     }
   },
   "ui": {
@@ -377,103 +377,103 @@
   "services": [
     {
       "title": {
-        "pt": "Operação Criativa Contínua",
-        "en": "Continuous Creative Operation",
-        "es": "Operación creativa continua",
-        "zh": "持续创意运营",
-        "no": "Kontinuerlig kreativ drift"
+        "pt": "OPERAMOS ",
+        "en": "WE OPERATE",
+        "es": "OPERAMOS",
+        "zh": "我们经营",
+        "no": "VI OPERER"
       },
       "desc": {
-        "pt": "Um time criativo dedicado, integrado à sua rotina e pronto para operar desde o primeiro dia. Assumimos a gestão, a criação e a produção contínua como extensão da sua equipe — com capacidade escalável, custo previsível e sem a complexidade de ampliar sua estrutura interna.",
-        "en": "A dedicated creative team, integrated into your routine and ready to operate from day one. We take on management, creation and continuous production as an extension of your team — with scalable capacity, predictable cost and without the complexity of expanding your internal structure.",
-        "es": "Un equipo creativo dedicado, integrado en tu rutina y listo para operar desde el primer día. Asumimos la gestión, la creación y la producción continua como una extensión de su equipo, con capacidad escalable, costos predecibles y sin la complejidad de expandir su estructura interna.",
-        "zh": "一支专注的创意团队，融入您的日常工作，从第一天起就准备好运作。我们将管理、创作和持续生产作为您团队的延伸——具有可扩展的能力、可预测的成本，并且无需扩展内部结构的复杂性。",
-        "no": "Et dedikert kreativt team, integrert i rutinen din og klar til drift fra dag én. Vi tar på oss ledelse, opprettelse og kontinuerlig produksjon som en forlengelse av teamet ditt – med skalerbar kapasitet, forutsigbare kostnader og uten kompleksiteten med å utvide din interne struktur."
+        "pt": "Operação criativa contínua, integrada ao seu time.",
+        "en": "Continuous creative operation, integrated with your team.",
+        "es": "Operación creativa continua, integrada con tu equipo.",
+        "zh": "持续创意运作，与您的团队融为一体。",
+        "no": "Kontinuerlig kreativ drift, integrert med teamet ditt."
       },
       "id": "svc_oylp4tmo"
     },
     {
       "title": {
-        "pt": "Design & Motion",
-        "en": "Design & Motion",
-        "es": "Diseño y movimiento",
-        "zh": "设计与动作",
-        "no": "Design og bevegelse"
+        "pt": "CRIAMOS",
+        "en": "WE CREATE",
+        "es": "CREAMOS",
+        "zh": "我们创造",
+        "no": "VI SKAPER"
       },
       "desc": {
-        "pt": "Transformamos estratégia em sistemas visuais que funcionam em movimento. Criamos identidades, campanhas e conteúdos que combinam design, direção de arte e motion para manter consistência, expressão e impacto em todos os pontos de contato da marca.",
-        "en": "We transform strategy into visual systems that work on the move. We create identities, campaigns and content that combine design, art direction and motion to maintain consistency, expression and impact across all brand touchpoints.",
-        "es": "Transformamos la estrategia en sistemas visuales que funcionan en movimiento. Creamos identidades, campañas y contenido que combinan diseño, dirección de arte y movimiento para mantener la coherencia, la expresión y el impacto en todos los puntos de contacto de la marca.",
-        "zh": "我们将策略转化为可移动的视觉系统。我们创建将设计、艺术指导和动作相结合的身份、活动和内容，以保持所有品牌接触点的一致性、表达力和影响力。",
-        "no": "Vi transformerer strategi til visuelle systemer som fungerer på farten. Vi skaper identiteter, kampanjer og innhold som kombinerer design, kunstretning og bevegelse for å opprettholde konsistens, uttrykk og effekt på tvers av alle merkevarekontaktpunkter."
+        "pt": "Marcas, campanhas, conteúdo, design e experiências.",
+        "en": "Brands, campaigns, content, design and experiences.",
+        "es": "Marcas, campañas, contenidos, diseño y experiencias.",
+        "zh": "品牌、活动、内容、设计和体验。",
+        "no": "Merker, kampanjer, innhold, design og opplevelser."
       },
       "id": "svc_2p97ys17"
     },
     {
       "title": {
-        "pt": "3D & Ilustração",
-        "en": "3D & Illustration",
-        "es": "3D e ilustración",
-        "zh": "3D 与插图",
-        "no": "3D og illustrasjon"
+        "pt": "PRODUZIMOS",
+        "en": "WE PRODUCE",
+        "es": "PRODUCIMOS",
+        "zh": "我们生产",
+        "no": "VI PRODUSERER"
       },
       "desc": {
-        "pt": "Criamos universos visuais para explicar, valorizar e dar forma a ideias complexas. Desenvolvemos ilustrações e assets 3D para campanhas, produtos, plataformas e experiências, combinando direção criativa, linguagem visual e excelência técnica.",
-        "en": "We create visual universes to explain, value and give shape to complex ideas. We develop illustrations and 3D assets for campaigns, products, platforms and experiences, combining creative direction, visual language and technical excellence.",
-        "es": "Creamos universos visuales para explicar, valorar y dar forma a ideas complejas. Desarrollamos ilustraciones y activos 3D para campañas, productos, plataformas y experiencias, combinando dirección creativa, lenguaje visual y excelencia técnica.",
-        "zh": "我们创造视觉宇宙来解释、评价和塑造复杂的想法。我们结合创意方向、视觉语言和卓越技术，为活动、产品、平台和体验开发插图和 3D 资产。",
-        "no": "Vi skaper visuelle univers for å forklare, verdsette og gi form til komplekse ideer. Vi utvikler illustrasjoner og 3D-ressurser for kampanjer, produkter, plattformer og opplevelser, og kombinerer kreativ retning, visuelt språk og teknisk fortreffelighet."
+        "pt": "Audiovisual, motion, 3D e produção em escala.",
+        "en": "Audiovisual, motion, 3D and scale production.",
+        "es": "Producción audiovisual, motion, 3D y escala.",
+        "zh": "视听、动画、3D 和规模制作。",
+        "no": "Audiovisuell, bevegelse, 3D og skalaproduksjon."
       },
       "id": "svc_9kf5vora"
     },
     {
       "title": {
-        "pt": "Branded Content & Entretenimento",
-        "en": "Branded Content & Entertainment",
-        "es": "Contenido de marca y entretenimiento",
-        "zh": "品牌内容和娱乐",
-        "no": "Merket innhold og underholdning"
+        "pt": "ACELERAMOS",
+        "en": "WE ACCELERATE",
+        "es": "ACELERAMOS",
+        "zh": "我们加速",
+        "no": "VI AKSELERERER"
       },
       "desc": {
-        "pt": "Criamos conteúdo que transforma marcas em histórias, formatos e experiências. Da ideia ao roteiro e da produção à entrega, desenvolvemos projetos de branded content e entretenimento que conectam objetivos de marca, audiência e cultura.",
-        "en": "We create content that transforms brands into stories, formats and experiences. From idea to script and from production to delivery, we develop branded content and entertainment projects that connect brand, audience and cultural objectives.",
-        "es": "Creamos contenido que transforma las marcas en historias, formatos y experiencias. Desde la idea hasta el guión y desde la producción hasta la entrega, desarrollamos contenido de marca y proyectos de entretenimiento que conectan la marca, la audiencia y los objetivos culturales.",
-        "zh": "我们创造的内容将品牌转化为故事、形式和体验。从创意到剧本，从制作到交付，我们开发将品牌、受众和文化目标联系起来的品牌内容和娱乐项目。",
-        "no": "Vi lager innhold som forvandler merkevarer til historier, formater og opplevelser. Fra idé til manus og fra produksjon til levering utvikler vi merkeinnhold og underholdningsprosjekter som kobler sammen merkevare, publikum og kulturelle mål."
+        "pt": "Tecnologia e IA aplicadas para tirar ideias do papel.",
+        "en": "Technology and AI applied to get ideas off paper.",
+        "es": "Tecnología e IA aplicadas para sacar ideas del papel.",
+        "zh": "技术和人工智能的应用将想法变成纸上谈兵。",
+        "no": "Teknologi og kunstig intelligens ble brukt for å få ideer ut av papiret."
       },
       "id": "svc_65k9mfgt"
     },
     {
       "title": {
-        "pt": "Broadcast & Grandes Eventos",
-        "en": "Broadcast & Major Events",
-        "es": "Transmisión y eventos importantes",
-        "zh": "广播及重大活动",
-        "no": "Kringkasting og store begivenheter"
+        "pt": "CONSTRUÍMOS",
+        "en": "WE BUILD",
+        "es": "CONSTRUIMOS",
+        "zh": "我们建造",
+        "no": "VI BYGGER"
       },
       "desc": {
-        "pt": "Criamos identidades e experiências visuais para operações que acontecem ao vivo, em escala e sem margem para erro. Desenvolvemos branding, conteúdo e motion para TV, streaming, eventos, palco e ativações — da identidade à execução em múltiplos formatos e pontos de contato.",
-        "en": "We create identities and visual experiences for operations that happen live, at scale and without margin for error. We develop branding, content and motion for TV, streaming, events, stage and activations — from identity to execution in multiple formats and touchpoints.",
-        "es": "Creamos identidades y experiencias visuales para operaciones que suceden en vivo, a escala y sin margen de error. Desarrollamos branding, contenido y movimiento para TV, streaming, eventos, escenarios y activaciones, desde la identidad hasta la ejecución en múltiples formatos y puntos de contacto.",
-        "zh": "我们为大规模、不容许任何错误的实时运营创造身份和视觉体验。我们为电视、流媒体、活动、舞台和激活开发品牌、内容和动作——从身份到多种格式和接触点的执行。",
+        "pt": "Produtos, plataformas, formatos e experiências digitais.",
+        "en": "Digital products, platforms, formats and experiences.",
+        "es": "Productos, plataformas, formatos y experiencias digitales.",
+        "zh": "数字产品、平台、格式和体验。",
         "no": "Vi skaper identiteter og visuelle opplevelser for operasjoner som skjer live, i skala og uten margin for feil. Vi utvikler merkevarebygging, innhold og bevegelse for TV, streaming, arrangementer, scene og aktiveringer – fra identitet til utførelse i flere formater og kontaktpunkter."
       },
       "id": "svc_9re0usjo"
     },
     {
       "title": {
-        "pt": "IA Aplicada à Marca",
-        "en": "AI Applied to the Brand",
-        "es": "IA aplicada a la marca",
-        "zh": "人工智能应用于品牌",
-        "no": "AI brukt på merkevaren"
+        "pt": "TRANSFORMAMOS",
+        "en": "WE TRANSFORM",
+        "es": "NOS TRANSFORMAMOS",
+        "zh": "我们转型",
+        "no": "VI FORANDRINGER"
       },
       "desc": {
-        "pt": "IA não substitui nossa criatividade. Amplia o que somos capazes de fazer. Incorporamos Inteligência Artificial aos processos de criação e produção para acelerar fluxos, explorar novas linguagens e ampliar a capacidade da operação — com curadoria, segurança e responsabilidade.",
-        "en": "AI does not replace our creativity. It expands what we are capable of doing. We incorporate Artificial Intelligence into the creation and production processes to accelerate flows, explore new languages ​​and expand the operation’s capacity — with curation, security and responsibility.",
-        "es": "La IA no reemplaza nuestra creatividad. Amplía lo que somos capaces de hacer. Incorporamos Inteligencia Artificial a los procesos de creación y producción para acelerar flujos, explorar nuevos lenguajes y ampliar la capacidad de operación, con curaduría, seguridad y responsabilidad.",
-        "zh": "人工智能不会取代我们的创造力。它扩展了我们的能力。我们将人工智能融入创作和制作流程中，以加速流程、探索新语言并扩大运营能力——同时提供策划、安全和责任。",
-        "no": "AI erstatter ikke vår kreativitet. Det utvider det vi er i stand til å gjøre. Vi inkorporerer kunstig intelligens i etablerings- og produksjonsprosessene for å akselerere flyter, utforske nye språk og utvide operasjonens kapasitet – med kurasjon, sikkerhet og ansvar."
+        "pt": "Criatividade aplicada a novas oportunidades e negócios.",
+        "en": "Creativity applied to new opportunities and businesses.",
+        "es": "Creatividad aplicada a nuevas oportunidades y negocios.",
+        "zh": "创造力应用于新的机会和业务。",
+        "no": "Kreativitet brukt på nye muligheter og virksomheter."
       },
       "id": "svc_xlr5v2or"
     }
@@ -2250,11 +2250,11 @@
           "no": "Rytme"
         },
         "line": {
-          "pt": "Entendemos prioridades, combinamos prazos e mantemos a produção em movimento.",
-          "en": "We understand priorities, agree deadlines and keep production moving.",
-          "es": "Entendemos las prioridades, acordamos plazos y mantenemos la producción en movimiento.",
-          "zh": "我们了解优先事项、商定最后期限并保持生产顺利进行。",
-          "no": "Vi forstår prioriteringer, avtaler tidsfrister og holder produksjonen i gang."
+          "pt": "Entendemos prioridades, combinamos prazos e mantemos a operação em movimento até a entrega.",
+          "en": "We understand priorities, agree deadlines and keep the operation moving until delivery.",
+          "es": "Entendemos las prioridades, acordamos plazos y mantenemos la operación en movimiento hasta la entrega.",
+          "zh": "我们了解优先事项、商定最后期限并保持运营直至交付。",
+          "no": "Vi forstår prioriteringer, avtaler tidsfrister og holder driften i gang frem til levering."
         },
         "id": "value_jolb6jfu"
       },
@@ -2267,11 +2267,11 @@
           "no": "Integrering"
         },
         "line": {
-          "pt": "Entramos no fluxo existente, trabalhamos junto aos times e conectamos os especialistas certos para cada desafio.",
-          "en": "We enter the existing flow, work alongside teams and connect the right experts for each challenge.",
-          "es": "Entramos en el flujo existente, trabajamos junto con equipos y conectamos a los expertos adecuados para cada desafío.",
-          "zh": "我们进入现有流程，与团队一起工作，并为每个挑战联系合适的专家。",
-          "no": "Vi går inn i den eksisterende flyten, jobber sammen med team og kobler sammen de riktige ekspertene for hver utfordring."
+          "pt": "Entramos no fluxo existente, colaboramos com os times e conectamos os especialistas necessários para cada desafio.",
+          "en": "We enter the existing flow, collaborate with teams and connect the experts needed for each challenge.",
+          "es": "Entramos en el flujo existente, colaboramos con equipos y conectamos a los expertos necesarios para cada desafío.",
+          "zh": "我们进入现有流程，与团队协作并联系每个挑战所需的专家。",
+          "no": "Vi går inn i den eksisterende flyten, samarbeider med team og kobler sammen ekspertene som trengs for hver utfordring."
         },
         "id": "value_uuyiulyw"
       },
@@ -2494,35 +2494,35 @@
   "quem": [
     {
       "aud": {
-        "pt": "Times internos de marketing, comunicação e branding",
-        "en": "Internal marketing, communications and branding teams",
-        "es": "Equipos internos de marketing, comunicaciones y branding.",
-        "zh": "内部营销、传播和品牌团队",
-        "no": "Interne markedsførings-, kommunikasjons- og merkevareteam"
+        "pt": "TIMES INTERNOS DE MARKETING, COMUNICAÇÃO E BRANDING",
+        "en": "INTERNAL MARKETING, COMMUNICATION AND BRANDING TEAMS",
+        "es": "EQUIPOS DE MARKETING INTERNO, COMUNICACIÓN Y MARCA",
+        "zh": "内部营销、沟通和品牌团队",
+        "no": "INTERNE MARKEDSFØRINGS-, KOMMUNIKASJONS- OG MERKEVERKTEAM"
       },
       "pain": {
-        "pt": "A demanda cresce, mas o time continua sendo o mesmo.",
-        "en": "Demand grows, but the team remains the same.",
-        "es": "La demanda crece, pero el equipo sigue siendo el mismo.",
-        "zh": "需求增长，但团队保持不变。",
-        "no": "Etterspørselen vokser, men teamet forblir det samme."
+        "pt": "Quando a demanda cresce, o time não precisa crescer sozinho.",
+        "en": "When demand grows, the team does not need to grow alone.",
+        "es": "Cuando la demanda crece, el equipo no necesita crecer solo.",
+        "zh": "当需求增长时，团队不需要单独成长。",
+        "no": "Når etterspørselen vokser, trenger ikke teamet å vokse alene."
       },
       "text": {
-        "pt": "Somos uma extensão do time. Entramos no fluxo existente para ampliar a capacidade de criação e produção, trazendo especialistas conforme a necessidade e mantendo o contexto da marca.",
-        "en": "We are an extension of the team. We enter the existing flow to expand creation and production capacity, bringing in specialists as needed and maintaining the brand's context.",
-        "es": "Somos una extensión del equipo. Nos adentramos en el flujo existente para ampliar la capacidad de creación y producción, incorporando especialistas según sea necesario y manteniendo el contexto de la marca.",
-        "zh": "我们是团队的延伸。我们进入现有流程以扩大创作和生产能力，根据需要引入专家并维护品牌背景。",
-        "no": "Vi er en forlengelse av laget. Vi går inn i den eksisterende flyten for å utvide produksjons- og produksjonskapasiteten, hente inn spesialister etter behov og opprettholde merkevarens kontekst."
+        "pt": "Entramos como extensão da equipe, ampliando criação e produção sem perder contexto, ritmo ou consistência.",
+        "en": "We enter as an extension of the team, expanding creation and production without losing context, rhythm or consistency.",
+        "es": "Entramos como una extensión del equipo, ampliando la creación y producción sin perder contexto, ritmo o consistencia.",
+        "zh": "我们作为团队的延伸，在不失去背景、节奏或一致性的情况下扩大创作和制作。",
+        "no": "Vi går inn som en forlengelse av teamet, utvider skapelse og produksjon uten å miste kontekst, rytme eller konsistens."
       },
       "id": "quem_rjnkp5np"
     },
     {
       "aud": {
-        "pt": "Emissoras, canais, streaming e grupos de mídia",
-        "en": "Broadcasters, channels, streaming and media groups",
-        "es": "Broadcasters, canales, streaming y grupos de medios",
-        "zh": "广播公司、频道、流媒体和媒体集团",
-        "no": "Kringkastere, kanaler, streaming og mediegrupper"
+        "pt": "EMISSORAS, CANAIS, STREAMING E GRUPOS DE MÍDIA",
+        "en": "BROADCASTS, CHANNELS, STREAMING AND MEDIA GROUPS",
+        "es": "TRANSMISIONES, CANALES, STREAMING Y GRUPOS DE MEDIOS",
+        "zh": "广播、频道、流媒体和媒体组",
+        "no": "SENDINGER, KANALER, STREAMING OG MEDIEGRUPPER"
       },
       "pain": {
         "pt": "O ritmo do conteúdo exige uma operação que acompanhe.",
