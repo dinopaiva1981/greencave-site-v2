@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-10T01:23:47.262Z",
+  "generatedAt": "2026-09-10T01:35:08.934Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa",
@@ -350,11 +350,11 @@
   },
   "hero": {
     "h1": {
-      "pt": "Somos capacidade\n*criativa* dentro\nda sua operação.",
-      "en": "We are capacity\n*creative* inside\nof your operation.",
-      "es": "somos capacidad\n*creativo* por dentro\nde su operación.",
-      "zh": "我们是能力\n*里面有创意*\n您的操作。",
-      "no": "Vi er kapasitet\n*kreativ* på innsiden\nav operasjonen din."
+      "pt": "Capacidade\n*criativa* dentro da\nsua operação.",
+      "en": "Capacity\n*creative* within\nits operation.",
+      "es": "Capacidad\n*creativo* dentro\nsu funcionamiento.",
+      "zh": "容量\n*创意*内\n它的运作。",
+      "no": "Kapasitet\n*kreativ* innenfor\ndens drift."
     }
   },
   "clients": [
