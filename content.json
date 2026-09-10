@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-10T15:14:24.919Z",
+  "generatedAt": "2026-09-10T15:17:30.702Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para Comunicação, Marketing e Entretenimento",
@@ -350,11 +350,11 @@
   },
   "hero": {
     "h1": {
-      "pt": "Do conteúdo que\n*precisa* ser entregue,\nao produto que pode ser\nconstruído.\n\n",
-      "en": "From the content that\n*needs* to be delivered,\nto the product that can be\nbuilt.",
-      "es": "Del contenido que\n*necesita* ser entregado,\nal producto que puede ser\nconstruido.",
-      "zh": "从内容来看\n*需要*交付，\n到可以的产品\n建造的。",
-      "no": "Fra innholdet som\n*må* leveres,\ntil produktet som kan være\nbygget."
+      "pt": "Do conteúdo que\n*precisa* ser entregue,\nao produto que *pode ser*\nconstruído.\n\n",
+      "en": "From the content that\n*needs* to be delivered,\nto the product that *may be*\nbuilt.",
+      "es": "Del contenido que\n*necesita* ser entregado,\nal producto que *puede ser*\nconstruido.",
+      "zh": "从内容来看\n*需要*交付，\n*可能*的产品\n建造的。",
+      "no": "Fra innholdet som\n*må* leveres,\ntil produktet som *kan være*\nbygget."
     }
   },
   "clients": [
