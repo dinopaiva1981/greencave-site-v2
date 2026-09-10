@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-10T01:19:38.324Z",
+  "generatedAt": "2026-09-10T01:23:47.262Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa",
@@ -54,11 +54,11 @@
       "no": "Operação Criativa — São Paulo, Brasil"
     },
     "hero_sub": {
-      "pt": "Somos um facilitador em  operação criativa  para agências, marcas e mídias   — desde 2017.\nEntramos junto para ampliar sua capacidade criativa — da direção à produção, do design à tecnologia, no ritmo que o negócio precisa.",
-      "en": "We are a facilitator in creative operations for agencies, brands and media — since 2017.\nWe come together to expand your creative capacity — from direction to production, from design to technology, at the pace your business needs.",
-      "es": "Somos facilitadores de operaciones creativas para agencias, marcas y medios, desde 2017.\nNos reunimos para ampliar su capacidad creativa, desde la dirección hasta la producción, desde el diseño hasta la tecnología, al ritmo que su negocio necesita.",
-      "zh": "自 2017 年以来，我们一直是代理机构、品牌和媒体创意运营的推动者。\n我们齐心协力，按照您的业务需求的节奏，扩展您的创意能力——从指导到生产，从设计到技术。",
-      "no": "Vi er en tilrettelegger i kreativ drift for byråer, merkevarer og media — siden 2017.\nVi kommer sammen for å utvide din kreative kapasitet – fra retning til produksjon, fra design til teknologi, i det tempoet virksomheten din trenger."
+      "pt": "A Greencave é uma operação criativa para agências, marcas e mídias   — desde 2017.\nEntramos junto para ampliar sua capacidade criativa — da direção à produção, do design à tecnologia, no ritmo que o negócio precisa.",
+      "en": "Greencave is a creative operation for agencies, brands and media — since 2017.\nWe come together to expand your creative capacity — from direction to production, from design to technology, at the pace your business needs.",
+      "es": "Greencave es una operación creativa para agencias, marcas y medios, desde 2017.\nNos reunimos para ampliar su capacidad creativa, desde la dirección hasta la producción, desde el diseño hasta la tecnología, al ritmo que su negocio necesita.",
+      "zh": "自 2017 年以来，Greencave 一直是一家为代理机构、品牌和媒体提供创意服务的机构。\n我们齐心协力，按照您的业务需求的节奏，扩展您的创意能力——从指导到生产，从设计到技术。",
+      "no": "Greencave er en kreativ virksomhet for byråer, merkevarer og media — siden 2017.\nVi kommer sammen for å utvide din kreative kapasitet – fra retning til produksjon, fra design til teknologi, i det tempoet virksomheten din trenger."
     },
     "hero_cta1": {
       "pt": "Ver trabalhos",
@@ -350,11 +350,11 @@
   },
   "hero": {
     "h1": {
-      "pt": "Colocamos capacidade\n*criativa* dentro da\nsua operação.",
-      "en": "We put capacity\n*creative* within\nits operation.",
-      "es": "ponemos capacidad\n*creativo* dentro\nsu funcionamiento.",
-      "zh": "我们把产能\n*创意*内\n它的运作。",
-      "no": "Vi legger kapasitet\n*kreativ* innenfor\ndens drift."
+      "pt": "Somos capacidade\n*criativa* dentro\nda sua operação.",
+      "en": "We are capacity\n*creative* inside\nof your operation.",
+      "es": "somos capacidad\n*creativo* por dentro\nde su operación.",
+      "zh": "我们是能力\n*里面有创意*\n您的操作。",
+      "no": "Vi er kapasitet\n*kreativ* på innsiden\nav operasjonen din."
     }
   },
   "clients": [
