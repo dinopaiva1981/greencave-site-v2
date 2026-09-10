@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-10T15:17:30.702Z",
+  "generatedAt": "2026-09-10T15:39:38.718Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para Comunicação, Marketing e Entretenimento",
@@ -350,11 +350,11 @@
   },
   "hero": {
     "h1": {
-      "pt": "Do conteúdo que\n*precisa* ser entregue,\nao produto que *pode ser*\nconstruído.\n\n",
-      "en": "From the content that\n*needs* to be delivered,\nto the product that *may be*\nbuilt.",
-      "es": "Del contenido que\n*necesita* ser entregado,\nal producto que *puede ser*\nconstruido.",
-      "zh": "从内容来看\n*需要*交付，\n*可能*的产品\n建造的。",
-      "no": "Fra innholdet som\n*må* leveres,\ntil produktet som *kan være*\nbygget."
+      "pt": "Construímos e\nOperamos\n*Times Criativos* \n",
+      "en": "We build and\nWe operate\n*Creative Teams*",
+      "es": "Construimos y\nOperamos\n*Equipos creativos*",
+      "zh": "我们建造并\n我们经营\n*创意团队*",
+      "no": "Vi bygger og\nVi driver\n*Kreative team*"
     }
   },
   "clients": [
