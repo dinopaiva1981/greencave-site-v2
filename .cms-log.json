@@ -1046,5 +1046,13 @@
     "schemaVersion": "1.0.0",
     "backupPath": "backups/content-2026-09-09T18-07-33-775Z.json",
     "warnings": 0
+  },
+  {
+    "at": "2026-09-10T01:19:39.964Z",
+    "sha": "3789009788730608541428b3dfef1f19c6d2597e",
+    "cmsVersion": "2.0.0",
+    "schemaVersion": "1.0.0",
+    "backupPath": "backups/content-2026-09-10T01-19-36-026Z.json",
+    "warnings": 0
   }
 ]
