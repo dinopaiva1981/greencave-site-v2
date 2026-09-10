@@ -1102,5 +1102,13 @@
     "schemaVersion": "1.0.0",
     "backupPath": "backups/content-2026-09-10T15-14-21-372Z.json",
     "warnings": 0
+  },
+  {
+    "at": "2026-09-10T15:17:31.984Z",
+    "sha": "d4dd5552ccc03e2e78dfdbe4fcfd4d4b79443c39",
+    "cmsVersion": "2.0.0",
+    "schemaVersion": "1.0.0",
+    "backupPath": "backups/content-2026-09-10T15-17-28-704Z.json",
+    "warnings": 0
   }
 ]
