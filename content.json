@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-10T15:43:31.704Z",
+  "generatedAt": "2026-09-10T20:47:35.683Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para Comunicação, Marketing e Entretenimento",
@@ -350,11 +350,11 @@
   },
   "hero": {
     "h1": {
-      "pt": "Construímos e\nOperamos\n*Times Criativos.* \n",
-      "en": "We build and\nWe operate\n*Creative Teams.*",
-      "es": "Construimos y\nOperamos\n*Equipos creativos.*",
+      "pt": "Construímos e\nOperamos\n*times criativos.* \n",
+      "en": "We build and\nWe operate\n*creative teams.*",
+      "es": "Construimos y\nOperamos\n*equipos creativos.*",
       "zh": "我们建造并\n我们经营\n*创意团队。*",
-      "no": "Vi bygger og\nVi driver\n*Kreative team.*"
+      "no": "Vi bygger og\nVi driver\n*kreative team.*"
     }
   },
   "clients": [
