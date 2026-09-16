@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-12T17:11:43.067Z",
+  "generatedAt": "2026-09-16T19:08:59.150Z",
   "meta": {
     "title": {
       "pt": "Greencave — Operação criativa para Comunicação, Marketing e Entretenimento",
@@ -1059,11 +1059,11 @@
       "image": "https://raw.githubusercontent.com/dinopaiva1981/greencave-site-v2/main/media/projetos/disney-espn/223a8a225202777.6841fecedbe9b.png",
       "gallery": [],
       "title": {
-        "pt": "Bola de Prata 2024",
-        "en": "Silver Ball 2024",
-        "es": "Balón de Plata 2024",
-        "zh": "2024 年银球奖",
-        "no": "Sølvball 2024"
+        "pt": "Bola de Prata",
+        "en": "Silver Ball",
+        "es": "Bola de Plata",
+        "zh": "银球",
+        "no": "Sølvball"
       },
       "tags": {
         "pt": "Evento · Operação Criativa · Minilab dedicado",
